@@ -9,8 +9,8 @@ Participating in the Diamondz Shadow ecosystem is designed to be accessible for 
 Our blockchain runs on the OP Stack with the following specifications:
 
 - **Network Name**: Diamondz Shadow
-- **RPC URL**: http://34.28.159.9:8545
-- **Chain ID**: 55951
+- **RPC URL**: http://34.28.159.9:8545 (Test)
+- **Chain ID**: 55951 (Test)
 - **Currency Symbol**: ETH
 - **Block Explorer**: [Coming Soon]
 
@@ -100,7 +100,7 @@ If you need assistance at any point:
 - **Documentation**: Visit our comprehensive documentation at [URL]
 - **Community Forum**: Ask questions on our community forum
 - **Discord**: Join our Discord server for real-time support
-- **Support Email**: Contact support@diamondzshadow.com
+- **Support Email**: Contact development@diamondzshadow.com
 - **Weekly Onboarding Calls**: Join our weekly calls for new participants
 
 By participating in the Diamondz Shadow ecosystem, you're not just supporting a project—you're becoming a co-creator in a revolutionary approach to content creation and distribution powered by blockchain technology.
