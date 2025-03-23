@@ -58,7 +58,7 @@ We constantly evolve our technology, governance, and creative processes to stay 
 
 By 2030, we aim to:
 
-1. Empower 1000,000 creators to earn sustainable livelihoods through our platform
+1. Empower 100,000 creators to earn sustainable livelihoods through our platform
 2. Engage 100 million community members in active participation and governance
 3. Produce award-winning content that demonstrates the power of decentralized production
 4. Establish new standards for transparent economics in the media industry
