@@ -40,8 +40,8 @@ Ultimately, SDM's mission is to create a decentralized, sustainable, and transpa
 - **Website**: [diamondzshadow.com](https://diamondzshadow.com)
 - **GitHub**: [github.com/DiamondzShadow](https://github.com/DiamondzShadow)
 - **Discord**: [discord.gg/diamondzshadow](https://discord.gg/diamondzshadow)
-- **Twitter**: [@DiamondShadowHQ](https://twitter.com/DiamondShadowHQ)
-- **Email**: info@diamondzshadow.com
+- **Twitter**: [@DiamondShadoM](https://twitter.com/DiamondShadoM)
+- **Email**: development@diamondzshadow.com
 
 ## Legal Disclaimer
 
