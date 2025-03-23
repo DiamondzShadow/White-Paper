@@ -32,7 +32,7 @@ Diamondz Shadow utilizes a custom implementation of the OP Stack to create a hig
 - **Gas Fees**: ~0.0001 ETH per transaction
 - **Finality Time**: ~10 minutes (for L1 confirmation)
 - **Smart Contract Language**: Solidity
-- **RPC Endpoint**: http://34.28.159.9:8545
+- **RPC Endpoint**: http://34.28.159.9:8545 (Test)
 - **Chain ID**: 55951
 - **Native Token**: ETH (for gas)
 - **Utility Token**: SDM (for governance and rewards)
