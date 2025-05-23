@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/diggaz_reward_nft.jpg
+cover: .gitbook/assets/diggaz_reward_nft (1).jpg
 coverY: 0
 ---
 

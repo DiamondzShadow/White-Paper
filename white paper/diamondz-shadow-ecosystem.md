@@ -1,12 +1,19 @@
-### Diamondz Shadow Ecosystem
+---
+cover: .gitbook/assets/Untitled.jpeg
+coverY: 0
+---
 
-## Overview of the Ecosystem
+# Diamondz Shadow Ecosystem
+
+#### Diamondz Shadow Ecosystem
+
+### Overview of the Ecosystem
 
 The Diamondz Shadow ecosystem represents a revolutionary blockchain solution transforming the entertainment industry through comprehensive tokenization. Our ecosystem creates a symbiotic relationship between creators, audiences, and investors by enabling the tokenization of everything—from movies and music to comedy shows, fashion, gaming, and live streams.
 
 Operating on our custom mainnet "Diamond zChain" (launching June 2025) with "Diamond zLab" testnet, our platform combines advanced tokenomics, community governance, and real-world revenue integration to ensure all stakeholders benefit from the success of Diamondz Shadow productions. This proprietary infrastructure provides high throughput, low gas fees, and seamless interoperability while enabling our unique Proof of Contribution consensus mechanism.
 
-## Multi-Token Architecture
+### Multi-Token Architecture
 
 Our ecosystem employs a strategic four-token model, with each token serving a specialized function:
 
@@ -15,8 +22,7 @@ Our ecosystem employs a strategic four-token model, with each token serving a sp
 3. **GaM3**: Our gaming interaction token that powers all gaming-related activities, including integration with major titles, betting functionality, and in-game asset transactions.
 4. **DuSTD**: Our ecosystem stablecoin that maintains a 1:1 peg to the US Dollar, providing stability for transactions and serving as the primary settlement currency for entertainment and gaming monetization.
 
-
-## Core Components of the Ecosystem
+### Core Components of the Ecosystem
 
 1. **Comprehensive Tokenization**: Any form of digital entertainment can be tokenized within our ecosystem, creating new ownership and monetization models.
 2. **Community Governance**: Token holders vote on creative and operational decisions, shaping the direction of productions through our on-chain voting system.
@@ -26,61 +32,54 @@ Our ecosystem employs a strategic four-token model, with each token serving a sp
 6. **NFT Functionality**: Exclusive NFTs tied to productions serve as collectibles and additional revenue streams, minted directly on Diamond zChain.
 7. **Proof of Contribution**: Our unique consensus mechanism rewards users based on their meaningful contributions to the ecosystem rather than computational power or token holdings.
 
-
-## Token Utility and Governance
+### Token Utility and Governance
 
 Each token in our ecosystem provides specific utility:
 
-### SDM Utility
+#### SDM Utility
 
-- Powers all transactions as our custom gas token on Diamond zChain
-- Maintains the security and operation of the network
-- Enables efficient micro-transactions across the platform
+* Powers all transactions as our custom gas token on Diamond zChain
+* Maintains the security and operation of the network
+* Enables efficient micro-transactions across the platform
 
+#### TuBE Utility
 
-### TuBE Utility
+* Enables tokenization of entertainment content
+* Provides governance rights for content-related decisions
+* Rewards content creators and contributors
+* Facilitates fractional ownership of entertainment productions
 
-- Enables tokenization of entertainment content
-- Provides governance rights for content-related decisions
-- Rewards content creators and contributors
-- Facilitates fractional ownership of entertainment productions
+#### GaM3 Utility
 
+* Powers all gaming-related activities
+* Enables betting on game outcomes
+* Facilitates in-game asset ownership and trading
+* Supports cross-game asset compatibility
 
-### GaM3 Utility
+#### DuSTD Utility
 
-- Powers all gaming-related activities
-- Enables betting on game outcomes
-- Facilitates in-game asset ownership and trading
-- Supports cross-game asset compatibility
+* Provides stable value for transactions and payments
+* Serves as primary settlement currency
+* Reduces volatility risk for creators and investors
+* Bridges traditional finance with our token ecosystem
 
-
-### DuSTD Utility
-
-- Provides stable value for transactions and payments
-- Serves as primary settlement currency
-- Reduces volatility risk for creators and investors
-- Bridges traditional finance with our token ecosystem
-
-
-## Governance in Action
+### Governance in Action
 
 Our governance system empowers community members to participate in key decisions:
 
-- **Production Selection**: Voting on which entertainment and gaming projects receive funding
-- **Creative Direction**: Influencing storylines, casting, and other creative elements
-- **Revenue Allocation**: Determining how platform revenue is distributed
-- **Technical Development**: Prioritizing platform features and improvements
-
+* **Production Selection**: Voting on which entertainment and gaming projects receive funding
+* **Creative Direction**: Influencing storylines, casting, and other creative elements
+* **Revenue Allocation**: Determining how platform revenue is distributed
+* **Technical Development**: Prioritizing platform features and improvements
 
 Our on-chain governance ensures:
 
-- Transparent voting with immutable records
-- Proportional voting power based on token holdings and contribution history
-- Executable results that automatically trigger production workflows
-- Protection against manipulation through secure smart contracts
+* Transparent voting with immutable records
+* Proportional voting power based on token holdings and contribution history
+* Executable results that automatically trigger production workflows
+* Protection against manipulation through secure smart contracts
 
-
-## Revenue Integration
+### Revenue Integration
 
 A key innovation in our ecosystem is the integration of traditional revenue streams with our blockchain:
 
@@ -90,31 +89,28 @@ A key innovation in our ecosystem is the integration of traditional revenue stre
 4. **Transparent Distribution**: All revenue flows are recorded on-chain, providing complete transparency to all stakeholders.
 5. **Gaming Revenue**: Revenue from game sales, in-game purchases, and betting markets is distributed to developers, contributors, and token holders.
 
-
-## Proof of Contribution Consensus
+### Proof of Contribution Consensus
 
 Unlike traditional consensus mechanisms, our Proof of Contribution system:
 
-- Rewards users based on meaningful contributions to the ecosystem
-- Considers multiple contribution types across entertainment and gaming
-- Reduces energy consumption compared to Proof of Work
-- Prevents wealth concentration issues common in Proof of Stake
-- Creates a more equitable and participatory network
-- Aligns incentives between creators, audiences, and investors
+* Rewards users based on meaningful contributions to the ecosystem
+* Considers multiple contribution types across entertainment and gaming
+* Reduces energy consumption compared to Proof of Work
+* Prevents wealth concentration issues common in Proof of Stake
+* Creates a more equitable and participatory network
+* Aligns incentives between creators, audiences, and investors
 
-
-## Technical Infrastructure
+### Technical Infrastructure
 
 Our blockchain infrastructure is built on:
 
-- **Diamond zChain**: Our custom mainnet launching in June 2025, purpose-built for entertainment and gaming tokenization
-- **Diamond zLab**: Our testnet environment for development and testing
-- **Custom Smart Contracts**: Purpose-built for content creation, revenue sharing, and governance
-- **Cross-Chain Compatibility**: Enabling interaction with other blockchain ecosystems
-- **Decentralized Storage**: Content metadata and ownership records stored on-chain with content on IPFS
+* **Diamond zChain**: Our custom mainnet launching in June 2025, purpose-built for entertainment and gaming tokenization
+* **Diamond zLab**: Our testnet environment for development and testing
+* **Custom Smart Contracts**: Purpose-built for content creation, revenue sharing, and governance
+* **Cross-Chain Compatibility**: Enabling interaction with other blockchain ecosystems
+* **Decentralized Storage**: Content metadata and ownership records stored on-chain with content on IPFS
 
-
-## Ecosystem Growth Strategy
+### Ecosystem Growth Strategy
 
 The Diamondz Shadow ecosystem grows through:
 
@@ -124,6 +120,5 @@ The Diamondz Shadow ecosystem grows through:
 4. **Technical Development**: Ongoing improvements to our Diamond zChain infrastructure and user interfaces
 5. **Strategic Partnerships**: Collaborating with entertainment studios, gaming publishers, and other blockchain projects
 6. **Educational Initiatives**: Teaching users about blockchain technology and our unique contribution model
-
 
 By creating a self-reinforcing ecosystem where quality entertainment and gaming content drives engagement, which generates revenue that rewards contributors, we establish a sustainable model for decentralized content creation and distribution designed to thrive for decades.
