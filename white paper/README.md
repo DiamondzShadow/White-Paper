@@ -31,8 +31,9 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 5. [Technology and Infrastructure](technology-and-infrastructure.md)
 6. [Tokenomics](tokenomics.md)
 7. [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
-8. [How to Participate](how-to-participate.md)
-9. [Roadmap](roadmap.md)
+8. [Quality Improvement Proposals (QIPs)](qips.md)
+9. [How to Participate](how-to-participate.md)
+10. [Roadmap](roadmap.md)
 
 
 ## Key Innovations
