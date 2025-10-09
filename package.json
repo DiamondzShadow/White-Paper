@@ -1,0 +1,23 @@
+{
+  "name": "diamondz-shadow-movies",
+  "version": "1.0.0",
+  "description": "ERC677 token for Diamondz Shadow Movies ecosystem",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "test:coverage": "forge coverage",
+    "fmt": "forge fmt",
+    "lint": "solhint 'src/**/*.sol'",
+    "clean": "forge clean"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart-contracts",
+    "erc677",
+    "chainlink",
+    "ccip"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}
