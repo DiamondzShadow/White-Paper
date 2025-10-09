@@ -1,0 +1,30 @@
+# Compiler files
+cache/
+out/
+
+# Node
+node_modules/
+
+# Env files
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+
+# Foundry
+broadcast/
+lib/
+
+# Build artifacts
+artifacts/
+typechain/
+typechain-types/
+
+# Coverage
+coverage/
+coverage.json
+
+# Hardhat
+cache_hardhat/
