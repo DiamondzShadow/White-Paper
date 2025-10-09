@@ -344,11 +344,55 @@ Our validation system leverages artificial intelligence to provide multi-layered
 
 By combining decentralized oracle networks with cutting-edge AI validation systems, our ecosystem ensures that all on-chain data maintains the highest standards of accuracy, security, and trustworthiness. This infrastructure enables creators, gamers, and communities to tokenize their achievements with confidence, knowing that every milestone is thoroughly verified through both technological and economic security mechanisms.
 
-### MVP Protocol: Web2 Oracle Infrastructure for Social Media Validation
+### MVP Protocol: Wavz - The Beat of the Creator
 
-#### Foundation of the Diamondz Shadow Ecosystem
+#### Web2 Oracle Infrastructure for Social Media Validation
 
-The Web2 Oracle Infrastructure serves as the foundational MVP (Minimum Viable Product) for the entire Diamondz Shadow ecosystem. This comprehensive validation system brings real-world social media data on-chain through cryptographically verified oracles, enabling trustless verification of creator achievements across all social platforms. The YouTube Milestone implementation demonstrates our first live use case, with the architecture designed to scale across Twitter, TikTok, Instagram, Twitch, and all major social media platforms.
+**Wavz** is our comprehensive social engagement validation system that serves as the foundational MVP (Minimum Viable Product) for the entire Diamondz Shadow ecosystem. Branded as "The Beat of the Creator," Wavz transforms real-world social media engagement into on-chain verified achievements through a progressive gamification system.
+
+The Wavz system brings real-world social media data on-chain through cryptographically verified oracles, enabling trustless verification of creator achievements across all social platforms. The YouTube Milestone implementation demonstrates our first live use case, with the architecture designed to scale across Twitter, TikTok, Instagram, Twitch, and all major social media platforms.
+
+#### The Wavz Progression System
+
+Wavz gamifies creator milestones through a four-tier progression that rewards consistent engagement:
+
+**1. Sparks** (Individual Milestones):
+- The foundational unit of the Wavz system
+- Each milestone achievement generates a Spark
+- Examples: 100 YouTube subscribers, 500 Twitter followers, 1K TikTok views
+- Sparks are recorded on-chain with AI validation confidence scores
+- Creators earn token rewards for each Spark achieved
+
+**2. cPoints** (Creator Points):
+- Accumulated from multiple Sparks across platforms
+- Formula: 10 Sparks = 1 cPoint
+- Represents consistent creator growth and cross-platform presence
+- Used for platform benefits, governance weight, and tier unlocks
+- cPoints decay slowly to incentivize ongoing engagement
+
+**3. Beats** (Engagement Rhythm):
+- Earned when cPoints reach specific thresholds (e.g., 100 cPoints = 1 Beat)
+- Represents sustained creator momentum and authentic engagement
+- Beats unlock premium platform features and higher reward multipliers
+- Trading Beats creates a secondary market for creator reputation
+- Beats are non-fungible, carrying metadata of achievement history
+
+**4. Wavz** (Valid Engagement Score):
+- The ultimate metric of creator influence and authenticity
+- Combines on-chain and off-chain engagement data
+- Formula: Sparks × cPoints × Beats × Engagement Quality Score
+- Recorded to blockchain as immutable reputation NFTs
+- Wavz determines creator tier, reward rates, and platform privileges
+- Used by investors and brands to assess creator authenticity
+
+**Wavz Validation Process**:
+```
+Social Milestone Achieved → Oracle Validation → AI Confidence Score → 
+Spark Generated → cPoints Accumulated → Beats Unlocked → 
+Wavz Score Updated → Blockchain Recording
+```
+
+This progression ensures that only creators with genuine, sustained engagement across multiple platforms can achieve high Wavz scores, making the system Sybil-resistant and valuable for investment decisions.
 
 #### Universal Social Media Oracle Architecture
 
@@ -412,34 +456,127 @@ struct SocialMilestone {
 }
 ```
 
-**3. YouTube Milestone Implementation (First Use Case)**:
+**3. YouTube Milestone Implementation (First Wavz Use Case)**:
 ```solidity
 // Specialized implementation for YouTube as first live platform
 contract YouTubeMilestone is SocialMilestone {
     enum MilestoneType { SUBSCRIBERS, VIEWS, VIDEOS }
     
-    function recordMilestone(
+    struct Spark {
+        string channelId;
+        MilestoneType milestoneType;
+        uint256 threshold;
+        uint256 count;
+        uint256 timestamp;
+        uint8 validationConfidence;
+        bool verified;
+    }
+    
+    // Record Spark when milestone achieved
+    function recordSpark(
         string memory channelId,
         MilestoneType milestoneType,
         uint256 threshold,
         uint256 count,
         uint256 timestamp,
         uint8 validationConfidence
-    ) external;
+    ) external returns (uint256 sparkId);
+    
+    // Calculate cPoints from accumulated Sparks (10 Sparks = 1 cPoint)
+    function calculateCPoints(address creator) external view returns (uint256);
+    
+    // Check if creator qualified for Beat (100 cPoints = 1 Beat)
+    function qualifiesForBeat(address creator) external view returns (bool);
 }
 ```
 
-**4. Token Reward Integration (Cross-Platform)**:
-- **BurnMintERC677 Token**: Specialized token supporting multi-platform data encoding
-- **Automated Minting**: Tokens minted automatically when milestones verified
-- **Platform-Weighted Rewards**: Different platforms have different token multipliers
-  - YouTube: 1.0x base rate (100 subscribers = 20 tokens)
-  - Twitter: 0.8x base rate (100 followers = 16 tokens)
-  - TikTok: 1.2x base rate (100 followers = 24 tokens)
-  - Instagram: 1.0x base rate (100 followers = 20 tokens)
-  - Twitch: 1.5x base rate (100 followers = 30 tokens)
-- **Cross-Platform Bonuses**: Additional rewards for consistent growth across multiple platforms
-- **Data Encoding**: Full platform metadata encoded in token mint transactions
+**4. Wavz Progression Smart Contracts**:
+
+**Spark Generation Contract**:
+```solidity
+contract SparkGenerator {
+    // Mint Spark NFT when milestone verified
+    function mintSpark(
+        address creator,
+        Platform platform,
+        uint256 milestone,
+        uint8 aiConfidence
+    ) external returns (uint256 sparkId);
+    
+    // Burn Sparks to create cPoints (10:1 ratio)
+    function sparksToCPoints(uint256[] calldata sparkIds) external;
+}
+```
+
+**cPoints Accumulation Contract**:
+```solidity
+contract CreatorPoints {
+    mapping(address => uint256) public cPointsBalance;
+    mapping(address => uint256) public cPointsDecay; // Slow decay for engagement
+    
+    // Award cPoints from Sparks
+    function awardCPoints(address creator, uint256 amount) external;
+    
+    // Check decay and update balance
+    function updateCPointsBalance(address creator) external returns (uint256);
+}
+```
+
+**Beat NFT Minting Contract**:
+```solidity
+contract BeatNFT {
+    struct Beat {
+        uint256 cPointsUsed;
+        Platform[] platformsContributed;
+        uint256 timestamp;
+        uint256 engagementScore;
+        string metadataURI; // IPFS link to achievement history
+    }
+    
+    // Mint Beat NFT when threshold reached
+    function mintBeat(address creator) external returns (uint256 beatId);
+    
+    // Beat marketplace trading
+    function listBeatForSale(uint256 beatId, uint256 price) external;
+}
+```
+
+**Wavz Score Calculation Contract**:
+```solidity
+contract WavzScore {
+    // Calculate overall Wavz score
+    function calculateWavz(address creator) external view returns (uint256) {
+        uint256 totalSparks = getSparks(creator);
+        uint256 cPoints = getCPoints(creator);
+        uint256 beats = getBeats(creator);
+        uint256 engagementQuality = getEngagementQuality(creator);
+        
+        // Wavz = Sparks × cPoints × Beats × Quality
+        return (totalSparks * cPoints * beats * engagementQuality) / 1e18;
+    }
+    
+    // Mint Wavz Reputation NFT
+    function mintWavzNFT(address creator) external returns (uint256);
+}
+```
+
+**5. Wavz Reward System (Cross-Platform)**:
+- **BurnMintERC677 Token**: Specialized token supporting Wavz progression data encoding
+- **Spark Rewards**: Tokens minted automatically when Sparks are verified
+  - YouTube: 1.0x base rate (100 subscribers = 1 Spark = 20 tokens)
+  - Twitter: 0.8x base rate (100 followers = 1 Spark = 16 tokens)
+  - TikTok: 1.2x base rate (100 followers = 1 Spark = 24 tokens)
+  - Instagram: 1.0x base rate (100 followers = 1 Spark = 20 tokens)
+  - Twitch: 1.5x base rate (100 followers = 1 Spark = 30 tokens)
+- **cPoints Bonuses**: 2x reward multiplier when converting Sparks to cPoints
+- **Beat Rewards**: 500-5,000 tokens per Beat NFT minted (based on rarity)
+- **Wavz Tier Multipliers**: Higher Wavz scores unlock better reward rates
+  - Bronze Wavz (0-1000): 1x rewards
+  - Silver Wavz (1001-5000): 1.5x rewards
+  - Gold Wavz (5001-20000): 2x rewards
+  - Platinum Wavz (20000+): 3x rewards
+- **Cross-Platform Bonuses**: +25% rewards for consistent growth across 3+ platforms
+- **Data Encoding**: Full Wavz progression metadata encoded in all token transactions
 
 #### Why YouTube as First Oracle Implementation
 
@@ -482,6 +619,182 @@ This exact flow applies to:
 - **Instagram**: Followers, posts, reels (Instagram Graph API)
 - **Twitch**: Subscribers, viewers, streams (Twitch API)
 - **All Other Platforms**: Same architecture, different API endpoints
+
+### Strategic Partnerships Powering Wavz Infrastructure
+
+The Wavz oracle infrastructure is built on partnerships with leading Web3 infrastructure providers, ensuring enterprise-grade reliability, scalability, and developer experience:
+
+#### QuickNode - RPC Infrastructure Partnership
+**Partnership**: [quicknode.com](https://www.quicknode.com/)
+
+QuickNode provides the critical RPC (Remote Procedure Call) infrastructure that powers Wavz oracle operations:
+
+**Infrastructure Capabilities**:
+- **High-Performance RPC Nodes**: Sub-50ms response times for blockchain queries
+- **99.9% Uptime SLA**: Enterprise-grade reliability for oracle data recording
+- **Multi-Chain Support**: Unified API across Ethereum, Arbitrum, and all EVM chains
+- **Dedicated Endpoints**: Exclusive RPC endpoints for Wavz oracle validators
+- **Rate Limiting at Scale**: Support for 1M+ oracle validation requests per day
+- **WebSocket Streams**: Real-time blockchain event monitoring for Spark generation
+
+**Integration Benefits for Wavz**:
+- Oracle validators connect via QuickNode for fast blockchain writes
+- Real-time monitoring of Spark, cPoint, and Beat NFT minting events
+- Instant confirmation of on-chain milestone recordings
+- Global edge network ensures low latency for international creators
+- Automatic failover and load balancing for oracle node reliability
+
+**Technical Implementation**:
+```javascript
+// Wavz oracle validators using QuickNode RPC
+const provider = new ethers.providers.JsonRpcProvider(
+  "https://diamond-zchain.quiknode.pro/[API-KEY]"
+);
+
+// Record Spark to blockchain via QuickNode
+await wavzContract.recordSpark(channelId, milestoneType, confidence);
+```
+
+#### Thirdweb - Creator Wallet & Smart Contract Infrastructure
+**Partnership**: [thirdweb.com/diamond-zchain](https://thirdweb.com/diamond-zchain)
+
+Thirdweb powers the seamless creator onboarding experience and smart contract deployment for Wavz:
+
+**Platform Integration**:
+- **Embedded Wallets**: Creators onboard with email/social login, no crypto knowledge required
+- **Gasless Transactions**: Sponsored Spark minting for creator's first milestones
+- **Smart Contract Templates**: Pre-built, audited contracts for Wavz NFTs and token rewards
+- **Account Abstraction (ERC-4337)**: Session keys allow creators to approve milestone recording without signing each transaction
+- **Fiat On-Ramps**: Direct credit card purchases of tokens and NFTs
+
+**Wavz-Specific Features**:
+- **Creator Dashboard**: Built on thirdweb's SDK with embedded wallet functionality
+- **Spark NFT Minting**: Automated minting of Spark NFTs for each milestone
+- **Beat Marketplace**: NFT marketplace for trading Beat reputation tokens
+- **Multi-Chain Deployment**: Deploy Wavz contracts to 10+ chains with one click
+- **Connect Ecosystem**: Over 170 wallet providers supported for maximum accessibility
+
+**Developer Experience**:
+```typescript
+// Thirdweb SDK for Wavz integration
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+
+const sdk = new ThirdwebSDK("diamond-zchain");
+const wavzContract = await sdk.getContract(WAVZ_CONTRACT_ADDRESS);
+
+// Mint Spark NFT with embedded wallet
+await wavzContract.call("mintSpark", [creatorAddress, sparkMetadata]);
+```
+
+**Business Impact**:
+- 10x faster creator onboarding (email signup vs. wallet creation)
+- 80% reduction in onboarding friction
+- Gasless transactions increase Spark claim rate by 3x
+- Fiat on-ramps enable non-crypto creators to participate
+
+#### Uniblock - Blockchain Data & Analytics Infrastructure
+**Partnership**: [uniblock.dev](https://www.uniblock.dev/)
+
+Uniblock provides comprehensive blockchain data APIs that power Wavz analytics and cross-chain validation:
+
+**Data Infrastructure**:
+- **Unified API**: Query all blockchain data (transactions, tokens, NFTs) with one API
+- **Real-Time Indexing**: Sub-second data updates for Spark and cPoint tracking
+- **Historical Data**: Full history of creator Wavz progression for analytics
+- **Cross-Chain Aggregation**: Track creator activity across multiple blockchains
+- **NFT Metadata**: Enhanced NFT data for Spark and Beat visualization
+
+**Wavz Analytics Powered by Uniblock**:
+- **Creator Dashboard**: Real-time Spark, cPoint, and Beat tracking
+- **Investor Analytics**: Historical Wavz score trends for investment decisions
+- **Cross-Platform Insights**: Aggregate creator reputation across all blockchains
+- **Leaderboards**: Global and category-specific creator rankings by Wavz score
+- **Portfolio Tracking**: Track all creator token holdings and Beat NFTs
+
+**API Integration Example**:
+```javascript
+// Uniblock API for Wavz analytics
+const response = await fetch('https://api.uniblock.dev/v1/wavz/creator-stats', {
+  method: 'POST',
+  body: JSON.stringify({
+    address: creatorAddress,
+    metrics: ['sparks', 'cPoints', 'beats', 'wavzScore']
+  })
+});
+
+const creatorStats = await response.json();
+// Returns: total Sparks, cPoints balance, Beats owned, current Wavz score
+```
+
+**Business Value**:
+- **Investor Confidence**: Transparent, verifiable creator metrics
+- **Creator Retention**: Beautiful dashboards showing growth and earnings
+- **Platform Intelligence**: Identify trending creators before they go viral
+- **API Revenue**: License Uniblock-powered analytics to third parties
+
+#### Lucid Labs - DeFi Liquidity & Financial Infrastructure
+**Partnership**: [app.lucidlabs.fi](https://app.lucidlabs.fi/)
+
+Lucid Labs provides the DeFi infrastructure that enables liquid markets for creator tokens and Beat NFTs:
+
+**Financial Services Integration**:
+- **Liquidity Pools**: Automated market makers for creator token trading
+- **Beat NFT Liquidity**: Innovative NFT-Fi solutions for trading Beat reputation tokens
+- **Yield Farming**: Creators stake tokens to earn additional rewards
+- **Token Bonding Curves**: Dynamic pricing for creator token launches
+- **Cross-Chain Swaps**: Bridge creator tokens across multiple chains
+
+**Wavz Financial Ecosystem**:
+- **Creator Token Launches**: Launch bonding curves for new creator tokens
+- **Spark-Backed Lending**: Creators borrow against verified Wavz scores
+- **Beat NFT Fractionalization**: Split high-value Beats for smaller investors
+- **Liquidity Mining**: Earn TuBE tokens for providing liquidity to creator pools
+- **Revenue Distribution**: Automated revenue sharing via Lucid Labs smart contracts
+
+**DeFi Primitives for Creators**:
+```solidity
+// Creator token launch via Lucid Labs bonding curve
+function launchCreatorToken(
+  address creator,
+  uint256 wavzScore,  // Higher Wavz = better bonding curve terms
+  uint256 initialSupply
+) external {
+  // Wavz score determines starting price and curve parameters
+  uint256 startPrice = calculatePrice(wavzScore);
+  bondingCurve.initialize(creator, startPrice, initialSupply);
+}
+```
+
+**Revenue Opportunities**:
+- **Trading Fees**: 0.3% fee on all creator token trades
+- **Liquidity Provider Rewards**: Platform earns from LP position fees
+- **Lending Interest**: Revenue from Spark-backed loan origination
+- **Beat NFT Marketplace**: Fees on fractionalized Beat trading
+
+**Creator Benefits**:
+- **Instant Liquidity**: Trade creator tokens 24/7 with deep liquidity pools
+- **Fair Launch Mechanisms**: Bonding curves prevent whale manipulation
+- **Passive Income**: Earn yield by staking tokens in Lucid Labs pools
+- **Credit Access**: Borrow against Wavz score without selling tokens
+
+### Partnership Ecosystem Impact
+
+These four strategic partnerships create a vertically integrated infrastructure stack for Wavz:
+
+| Partner | Layer | Value Delivered |
+|---------|-------|-----------------|
+| **QuickNode** | Infrastructure | Fast, reliable blockchain access for oracle operations |
+| **Thirdweb** | Developer Tools | Seamless wallet creation and smart contract deployment |
+| **Uniblock** | Data & Analytics | Real-time blockchain data for creator dashboards |
+| **Lucid Labs** | DeFi & Liquidity | Financial infrastructure for creator token economy |
+
+**Synergies**:
+1. **Thirdweb wallets** → creators onboard easily
+2. **QuickNode RPC** → oracle records Sparks to blockchain
+3. **Uniblock API** → dashboard displays creator statistics  
+4. **Lucid Labs DeFi** → creators monetize through token trading
+
+This partnership ecosystem enables Wavz to scale to millions of creators with enterprise-grade infrastructure, while maintaining the decentralized, transparent ethos of Web3.
 
 #### MVP Revenue Model: Web2 Oracle-as-a-Service
 

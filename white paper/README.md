@@ -6,15 +6,22 @@
 
 The Diamondz Shadow ecosystem represents a paradigm shift in media production and consumption through comprehensive tokenization of all content forms. Built on our custom Diamond zChain—a Layer 3 blockchain leveraging Arbitrum Nitro technology—we've created a revolutionary framework that tokenizes everything from movies and music to gaming achievements and social media streams.
 
-### MVP Protocol: Web2 Oracle Infrastructure for All Social Platforms
+### MVP Protocol: Wavz - The Beat of the Creator
 
-Our **Web2 Oracle Infrastructure** serves as the foundation MVP, bringing validated social media data on-chain across all major platforms:
+**Wavz** is our revolutionary social engagement validation system that transforms Web2 creator milestones into gamified on-chain achievements. As "The Beat of the Creator," Wavz brings validated social media data on-chain across all major platforms through a progressive four-tier system:
 
+**The Wavz Progression**:
+- **Sparks**: Individual milestone achievements (100 subscribers = 1 Spark)
+- **cPoints**: Creator Points accumulated from 10 Sparks = 1 cPoint
+- **Beats**: Engagement rhythm unlocked at 100 cPoints = 1 Beat NFT
+- **Wavz**: Ultimate reputation score combining Sparks × cPoints × Beats × Quality
+
+**Platform Coverage**:
 - **Universal Social Validation**: Oracle system validating YouTube, Twitter, TikTok, Instagram, Twitch, and more
-- **YouTube Milestone**: First live implementation demonstrating the oracle architecture
+- **YouTube Milestone**: First live Spark generation implementation demonstrating the oracle architecture
 - **AI-Powered Fraud Detection**: 95%+ accuracy in detecting fake followers, bot engagement, and metric manipulation
 - **Platform-Agnostic Design**: Single oracle architecture scales to any social platform with an API
-- **Cross-Platform Identity**: Link all social accounts to one on-chain reputation score
+- **Cross-Platform Identity**: Link all social accounts to one unified Wavz score
 
 **Oracle-as-a-Service Revenue Model**:
 - **Oracle Validation Services**: $0.10-0.75 per milestone validation across all platforms
@@ -111,13 +118,45 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 
 ## Key Innovations
 
+- **Wavz Social Engagement System**: Gamified progression (Sparks → cPoints → Beats → Wavz) validating creator authenticity
+- **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
-- **Universal Media Tokenization**: Comprehensive platform for tokenizing all forms of digital content
-- **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities
+- **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities (SDM, TuBE, GaM3, DuSTD)
+- **Strategic Infrastructure Partnerships**: Enterprise-grade stack powered by QuickNode, Thirdweb, Uniblock, and Lucid Labs
 - **Cross-Chain Tokenization Infrastructure**: Native connectivity to Ethereum, Arbitrum, and Solana ecosystems
 - **Cyclical Supply Management**: Innovative mechanism maintaining economic sustainability
-- **Proof of Contribution Consensus**: Rewards meaningful contributions to the ecosystem
-- **AI-Enhanced Creative Tools**: Supporting components to optimize the tokenization process
+- **Proof of Contribution Consensus**: Rewards meaningful contributions validated through Wavz scores
+- **AI-Enhanced Validation**: Supporting fraud detection and confidence scoring for all oracle validations
+
+## Strategic Partnerships
+
+Diamondz Shadow is powered by leading Web3 infrastructure providers:
+
+### QuickNode - RPC Infrastructure
+- **Partnership**: [quicknode.com](https://www.quicknode.com/)
+- **Role**: Enterprise-grade RPC nodes for oracle validators
+- **Value**: 99.9% uptime, sub-50ms response times, 1M+ requests/day capacity
+- **Integration**: Oracle validators connect via QuickNode for fast Spark recording
+
+### Thirdweb - Creator Onboarding & Smart Contracts
+- **Partnership**: [thirdweb.com/diamond-zchain](https://thirdweb.com/diamond-zchain)
+- **Role**: Embedded wallets, gasless transactions, smart contract deployment
+- **Value**: Email/social login, ERC-4337 account abstraction, 170+ wallet support
+- **Integration**: Creator dashboard built on thirdweb SDK with embedded wallets
+
+### Uniblock - Blockchain Data & Analytics
+- **Partnership**: [uniblock.dev](https://www.uniblock.dev/)
+- **Role**: Real-time blockchain data APIs for creator analytics
+- **Value**: Unified API for all on-chain data, sub-second indexing, cross-chain aggregation
+- **Integration**: Powers Wavz dashboards with real-time Spark, cPoint, Beat, and Wavz tracking
+
+### Lucid Labs - DeFi Liquidity Infrastructure
+- **Partnership**: [app.lucidlabs.fi](https://app.lucidlabs.fi/)
+- **Role**: AMM liquidity pools, creator token bonding curves, NFT-Fi for Beats
+- **Value**: Instant liquidity, yield farming, Spark-backed lending
+- **Integration**: Creator token launches and Beat NFT marketplace powered by Lucid Labs
+
+**Partnership Synergy**: Thirdweb (onboarding) → QuickNode (blockchain) → Wavz oracles (validation) → Uniblock (analytics) → Lucid Labs (liquidity)
 
 
 ## Contact and Resources
