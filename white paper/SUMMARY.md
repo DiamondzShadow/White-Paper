@@ -8,5 +8,6 @@
 * [Technology and Infrastructure](technology-and-infrastructure.md)
 * [Tokenomics](tokenomics.md)
 * [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
+* [Quality Improvement Proposals (QIPs)](qips.md)
 * [How to Participate](how-to-participate.md)
 * [Roadmap](roadmap.md)
