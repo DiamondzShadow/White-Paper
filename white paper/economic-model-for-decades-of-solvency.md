@@ -132,23 +132,27 @@ The YouTube Milestone protocol establishes the foundational revenue model that s
   - Hourly rate: $300-500
   - Target: $150K in Year 1
 
-**MVP Revenue Projection Summary**:
+**Web2 Oracle Infrastructure Revenue Projection Summary**:
 
 | Revenue Stream | Year 1 | Year 2 | Year 3 |
 |----------------|--------|--------|--------|
-| Transaction Fees | $2.25M | $8M | $20M |
-| Creator Services | $1.125M | $5M | $15M |
-| Subscriptions | $720K | $2M | $5M |
-| Ad Revenue Integration | $0 (Phase 2) | $4.5M | $15M |
-| B2B/Enterprise | $530K | $2M | $5M |
-| **Total Annual Revenue** | **$4.625M** | **$21.5M** | **$60M** |
+| Oracle Validation Services | $2.15M | $8.5M | $25M |
+| Infrastructure Licensing (B2B) | $1.25M | $3.5M | $12M |
+| Identity & Reputation Services | $680K | $4M | $15M |
+| API & Analytics Access | $1M | $3.5M | $12M |
+| Platform Revenue Integration | $0 (Phase 2) | $8.7M | $28M |
+| Enterprise Oracle Solutions | $1.6M | $4.5M | $15M |
+| New Platform Integrations | $0 | $0 | $8M |
+| **Total Annual Revenue** | **$6.68M** | **$32.7M** | **$115M** |
 
-**Revenue Growth Drivers**:
-1. Network effects: Each new creator attracts more investors and fans
-2. Milestone compounding: Successful creators reach more milestones over time
-3. Ad revenue scaling: Phase 2 unlocks exponential revenue growth
-4. Multi-platform expansion: Extend proven model to music, gaming, social media
-5. B2B multiplication: Enterprise clients bring their own creator ecosystems
+**Oracle Infrastructure Growth Drivers**:
+1. **Platform Expansion**: YouTube → Twitter → TikTok → Instagram → 30+ platforms
+2. **B2B Multiplier**: Each enterprise client brings thousands of creators needing validation
+3. **Cross-Platform Synergy**: Multi-platform bundles increase ARPU by 3-5x
+4. **Phase 2 Revenue Integration**: Direct platform revenue tokenization unlocks exponential growth
+5. **Oracle Licensing**: Other Web3 projects licensing our validation infrastructure
+6. **Identity Services**: Sybil resistance becomes critical need across all Web3
+7. **Network Effects**: More validated data → better AI models → higher accuracy → more users
 
 ### Comprehensive Revenue Streams Beyond MVP
 
