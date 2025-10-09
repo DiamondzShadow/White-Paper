@@ -120,30 +120,51 @@ The YouTube Milestone protocol establishes the foundational revenue model that s
   - Target: 30% of ad-integrating creators = $30K/year
 
 **5. B2B and Enterprise Revenue (High Value)**:
-- **White-Label Licensing**: License MVP protocol to other platforms
+- **White-Label Licensing**: License Wavz oracle protocol to other platforms
   - Setup fee: $25,000-50,000 per client
   - Monthly SaaS fee: $2,500-5,000 per client
-  - Target: 5 enterprise clients in Year 1 = $200K setup + $180K recurring
+  - Target: 5 enterprise clients in Year 1 = $200K setup + $180K recurring = **$380K**
 - **Custom Oracle Development**: Build specialized validation systems
   - Project fee: $50,000-150,000
   - Maintenance: $5,000-10,000/month
-  - Target: 2 custom oracle projects in Year 1 = $200K
+  - Target: 2 custom oracle projects in Year 1 = **$200K**
 - **Consulting Services**: Integration support and strategy
   - Hourly rate: $300-500
-  - Target: $150K in Year 1
+  - Target: **$150K** in Year 1
+- **Total B2B/Enterprise Year 1**: **$730K**
 
 **Web2 Oracle Infrastructure Revenue Projection Summary**:
+
+**Year 1 Quarterly Breakdown**:
+
+| Revenue Stream | Q1 | Q2 | Q3 | Q4 | Year 1 Total |
+|----------------|----|----|----|----|--------------|
+| Oracle Validation Services | $150K | $400K | $700K | $900K | **$2.15M** |
+| Infrastructure Licensing (B2B) | $50K | $200K | $400K | $600K | **$1.25M** |
+| Identity & Reputation Services | $50K | $150K | $300K | $500K | **$1M** |
+| API & Analytics Access | $100K | $250K | $400K | $550K | **$1.3M** |
+| B2B Enterprise Solutions | $100K | $180K | $200K | $250K | **$730K** |
+| Platform Revenue Integration | $0 | $0 | $0 | $0 | **$0** (Phase 2) |
+| **Quarterly Total** | **$450K** | **$1.18M** | **$2M** | **$2.8M** | **$6.43M** |
+
+*Platform Rollout Timeline*:
+- Q1: YouTube only (beta launch, 500 creators)
+- Q2: YouTube + Twitter (1,500 total creators)
+- Q3: YouTube + Twitter + TikTok + Instagram (3,000 creators)
+- Q4: All platforms + Twitch (5,000 creators)
+
+**Multi-Year Revenue Projections**:
 
 | Revenue Stream | Year 1 | Year 2 | Year 3 |
 |----------------|--------|--------|--------|
 | Oracle Validation Services | $2.15M | $8.5M | $25M |
 | Infrastructure Licensing (B2B) | $1.25M | $3.5M | $12M |
-| Identity & Reputation Services | $680K | $4M | $15M |
-| API & Analytics Access | $1M | $3.5M | $12M |
+| Identity & Reputation Services | $1M | $4M | $15M |
+| API & Analytics Access | $1.3M | $3.5M | $12M |
 | Platform Revenue Integration | $0 (Phase 2) | $8.7M | $28M |
-| Enterprise Oracle Solutions | $1.6M | $4.5M | $15M |
+| B2B Enterprise Solutions | $730K | $4.5M | $15M |
 | New Platform Integrations | $0 | $0 | $8M |
-| **Total Annual Revenue** | **$6.68M** | **$32.7M** | **$115M** |
+| **Total Annual Revenue** | **$6.43M** | **$32.7M** | **$115M** |
 
 **Oracle Infrastructure Growth Drivers**:
 1. **Platform Expansion**: YouTube → Twitter → TikTok → Instagram → 30+ platforms

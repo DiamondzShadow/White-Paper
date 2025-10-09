@@ -31,7 +31,7 @@ The Diamondz Shadow ecosystem represents a paradigm shift in media production an
 - **Platform Revenue Integration**: 10-15% fee on tokenized creator revenue (Phase 2)
 - **Enterprise Solutions**: $50K-500K for custom oracle development and private networks
 
-**Year 1 Projected Revenue**: $6.68M (Web2 oracle services)
+**Year 1 Projected Revenue**: $6.43M (Web2 oracle services)
 **Year 3 Projected Revenue**: $115M+ (full multi-platform oracle ecosystem)
 
 At the core of our ecosystem is a sophisticated four-token model designed to power diverse functionalities:
@@ -49,7 +49,7 @@ The Diamondz Shadow ecosystem eliminates reliance on speculative trading by anch
 
 Our economic model generates sustainable revenue through Web2 Oracle Infrastructure and tokenization services:
 
-**1. Web2 Oracle Infrastructure Revenue** ($6.68M Year 1 → $115M Year 3):
+**1. Web2 Oracle Infrastructure Revenue** ($6.43M Year 1 → $115M Year 3):
    - **Oracle Validation Services**: Per-validation fees across YouTube, Twitter, TikTok, Instagram, Twitch, etc.
    - **Infrastructure Licensing**: B2B oracle SDK for analytics platforms, marketing agencies, Web3 projects
    - **Identity & Reputation**: Cross-platform identity verification and Sybil resistance services
@@ -86,7 +86,7 @@ Our economic model generates sustainable revenue through Web2 Oracle Infrastruct
 **Key Financial Projections**:
 | Metric | Year 1 | Year 2 | Year 3 |
 |--------|--------|--------|--------|
-| Oracle Services Revenue | $6.68M | $32.7M | $115M |
+| Oracle Services Revenue | $6.43M | $32.7M | $115M |
 | Gross Margin | 70%+ | 72%+ | 75%+ |
 | B2B Clients | 10 | 25 | 100+ |
 | Validated Creators | 5,000 | 10,000 | 50,000 |

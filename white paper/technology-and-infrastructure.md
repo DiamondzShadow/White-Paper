@@ -796,161 +796,32 @@ These four strategic partnerships create a vertically integrated infrastructure 
 
 This partnership ecosystem enables Wavz to scale to millions of creators with enterprise-grade infrastructure, while maintaining the decentralized, transparent ethos of Web3.
 
-#### MVP Revenue Model: Web2 Oracle-as-a-Service
+#### Wavz Revenue Model Overview
 
-The Web2 Oracle Infrastructure creates multiple revenue streams through validation services for all social platforms:
+The Wavz oracle infrastructure creates multiple revenue streams through validation services across all social platforms. For detailed revenue projections and financial models, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md) section.
 
-**1. Oracle Validation Services (Core Revenue)**:
+**Core Revenue Streams**:
 
-*Per-Platform Validation Fees*:
-- **YouTube**: $0.10-0.50 per milestone validation
-- **Twitter**: $0.08-0.40 per milestone validation
-- **TikTok**: $0.12-0.60 per milestone validation (higher due to viral nature)
-- **Instagram**: $0.10-0.50 per milestone validation
-- **Twitch**: $0.15-0.75 per milestone validation (real-time premium)
-- **Multi-Platform Bundles**: 20% discount for validating across 3+ platforms
+**1. Oracle Validation Services**: Per-validation fees for Spark generation across all platforms ($0.10-0.75 per validation)
 
-*Validation Tiers*:
-- **Standard Validation**: Free (24-48 hour processing with AI only)
-- **Priority Validation**: $5-10 (1-6 hour processing with AI + fast-track)
-- **Premium Validation**: $25-50 (Instant validation with AI + human review)
-- **Enterprise SLA**: Custom pricing with guaranteed uptime and response times
+**2. Infrastructure Licensing**: B2B oracle SDK licensing for enterprises ($10K-100K setup + monthly recurring)
 
-*Annual Projection (5,000 creators across all platforms)*:
-- Milestone validations: $2M/year
-- Priority upgrades: $500K/year
-- Premium validations: $300K/year
-- Total validation revenue: **$2.8M/year**
+**3. Identity & Reputation Services**: Cross-platform identity verification and Wavz score tracking ($10-29/month per user)
 
-**2. Oracle Infrastructure Licensing (B2B)**:
+**4. API & Analytics Access**: Data access tiers for developers and enterprises ($99-2,500+/month)
 
-*Web2 Oracle SDK License*:
-- **Startup License**: $10K setup + $2K/month (up to 1,000 validations/month)
-- **Growth License**: $25K setup + $5K/month (up to 10,000 validations/month)
-- **Enterprise License**: $50K-100K setup + $10K-25K/month (unlimited validations)
-- **Revenue Projection**: 10 enterprise clients = **$1.5M-3M/year recurring**
+**5. Platform Revenue Integration**: Tokenization fees on creator ad revenue and platform earnings (10-15% platform fee, Phase 2)
 
-*Use Cases for Oracle Licensing*:
-- **Social Media Analytics Platforms**: License oracle for fraud detection
-- **Influencer Marketing Agencies**: Validate creator authenticity
-- **Brand Deal Platforms**: Verify influencer metrics before sponsorships
-- **Web3 Projects**: Integrate social proof into their tokenomics
-- **Gaming Platforms**: Validate player achievements across social profiles
+**6. Enterprise Solutions**: Custom oracle development and managed services ($50K-500K per engagement)
 
-**3. Cross-Platform Identity & Reputation Services**:
+**Financial Performance Summary**:
+- **Year 1 Revenue**: $6.43M (Wavz oracle infrastructure)
+- **Year 2 Revenue**: $32.7M (multi-platform scale + Phase 2 integration)
+- **Year 3 Revenue**: $115M+ (universal Web2 oracle layer)
+- **Gross Margins**: 70%+ on oracle validation services
+- **Target B2B Clients**: 10 (Year 1) → 25 (Year 2) → 100+ (Year 3)
 
-*Identity Verification*:
-- **Link Social Accounts**: $10 per platform to verify and link to on-chain identity
-- **Aggregate Influence Score**: $29/month for real-time cross-platform influence tracking
-- **Reputation NFTs**: $50-500 to mint verifiable reputation NFTs based on validated achievements
-- **Revenue Projection**: **$800K/year** with 5,000 active users
-
-*B2B Identity Solutions*:
-- **KYC Integration**: $1-5 per identity verification for other platforms
-- **Sybil Resistance**: $0.50 per user verification for bot detection
-- **Target Market**: DeFi protocols, DAOs, airdrops, whitelist management
-- **Revenue Projection**: **$2M/year** with 500K verifications
-
-**4. Data and Analytics API Services**:
-
-*Oracle Data Access Tiers*:
-- **Free Tier**: 100 requests/day (validated milestone data only)
-- **Developer**: $99/month for 10K requests/day (includes historical data)
-- **Business**: $499/month for 100K requests/day (includes AI confidence scores)
-- **Enterprise**: $2,500+/month for unlimited access (includes raw validation data)
-
-*Premium Analytics Dashboard*:
-- **Creator Analytics**: $19.99/month (track own metrics across all platforms)
-- **Investor Analytics**: $49.99/month (discover and track creators)
-- **Agency Analytics**: $199/month (manage multiple creator portfolios)
-- **Revenue Projection**: **$1.2M/year** with 3,000 subscribers
-
-**5. Platform-Specific Revenue Integration**:
-
-*YouTube Ad Revenue Tokenization* (Phase 2):
-- 15% platform fee on tokenized ad revenue
-- Example: Creator tokenizes $5K/month in ad revenue → $750/month platform fee
-- Target: 500 creators = **$4.5M/year**
-
-*TikTok Creator Fund Integration* (Phase 2):
-- 12% platform fee on tokenized creator fund payments
-- Target: 300 creators = **$1.8M/year**
-
-*Twitch Subscription Sharing* (Phase 2):
-- 10% platform fee on tokenized subscription revenue
-- Target: 200 creators = **$2.4M/year**
-
-*Total Platform Revenue Integration*: **$8.7M/year** (Phase 2)
-
-**6. Enterprise Oracle Solutions (High-Value B2B)**:
-
-*Custom Oracle Development*:
-- **New Platform Integration**: $50K-150K per platform (e.g., add Discord, Clubhouse)
-- **Private Oracle Networks**: $100K-500K for dedicated enterprise oracle infrastructure
-- **White-Label Oracle Service**: $200K+ for fully branded oracle solution
-
-*Consulting and Integration*:
-- **Hourly Consulting**: $300-500/hour for oracle integration support
-- **Managed Oracle Service**: $10K-50K/month for fully managed oracle operations
-- **Training and Certification**: $5K per person for oracle operator training
-
-*Annual B2B Revenue Projection*:
-- 3 custom platform integrations: $300K
-- 2 private oracle networks: $400K
-- 5 managed service clients: $1.8M
-- Total: **$2.5M/year**
-
-#### Revenue Projections: Web2 Oracle Infrastructure
-
-**Year 1 Revenue Breakdown (MVP - YouTube + Initial Platform Expansion)**:
-
-| Revenue Stream | Q1 | Q2 | Q3 | Q4 | Year 1 Total |
-|----------------|----|----|----|----|--------------|
-| Oracle Validation Services | $150K | $400K | $700K | $900K | **$2.15M** |
-| Oracle Infrastructure Licensing | $50K | $200K | $400K | $600K | **$1.25M** |
-| Identity & Reputation Services | $30K | $100K | $200K | $350K | **$680K** |
-| API & Analytics Services | $50K | $150K | $300K | $500K | **$1M** |
-| B2B Enterprise Solutions | $100K | $300K | $500K | $700K | **$1.6M** |
-| **Quarterly Total** | **$380K** | **$1.15M** | **$2.1M** | **$3.05M** | **$6.68M** |
-
-*Platform Rollout Timeline*:
-- Q1: YouTube only (beta launch)
-- Q2: YouTube + Twitter
-- Q3: YouTube + Twitter + TikTok + Instagram
-- Q4: All platforms + Twitch
-
-**Year 2 Revenue (Multi-Platform Scale + Phase 2 Revenue Integration)**:
-
-| Revenue Stream | Year 2 Projection |
-|----------------|-------------------|
-| Oracle Validation Services (10K+ creators) | **$8.5M** |
-| Oracle Infrastructure Licensing (25 clients) | **$3.5M** |
-| Identity & Reputation Services (25K users) | **$4M** |
-| API & Analytics Services (10K subscribers) | **$3.5M** |
-| Platform Revenue Integration (Phase 2) | **$8.7M** |
-| B2B Enterprise Solutions | **$4.5M** |
-| **Year 2 Total** | **$32.7M** |
-
-**Year 3 Revenue (Full Ecosystem Maturity)**:
-
-| Revenue Stream | Year 3 Projection |
-|----------------|-------------------|
-| Oracle Validation Services (50K+ creators) | **$25M** |
-| Oracle Infrastructure Licensing (100+ clients) | **$12M** |
-| Identity & Reputation Services (100K users) | **$15M** |
-| API & Analytics Services (50K subscribers) | **$12M** |
-| Platform Revenue Integration | **$28M** |
-| B2B Enterprise Solutions | **$15M** |
-| New Platform Integrations | **$8M** |
-| **Year 3 Total** | **$115M** |
-
-**Revenue Growth Drivers**:
-1. **Network Effects**: Each validated creator attracts more validators and users
-2. **B2B Multiplier**: Enterprise clients bring entire creator ecosystems
-3. **Cross-Platform Synergy**: Multi-platform bundles increase average revenue per user
-4. **Phase 2 Scaling**: Platform revenue integration provides exponential growth
-5. **Oracle Infrastructure Demand**: Growing Web3 projects need validated Web2 data
-6. **Identity Services**: Sybil resistance becomes critical for all Web3 platforms
+For comprehensive revenue breakdowns, pricing structures, and detailed financial projections with quarterly breakdowns, refer to the [Economic Model section](economic-model-for-decades-of-solvency.md).
 
 #### MVP Success Metrics
 
