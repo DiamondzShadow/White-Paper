@@ -5,11 +5,20 @@ coverY: 0
 
 # Economic Model for Decades of Solvency
 
-#### Economic Model for Decades of Solvency
+## How We Stay Sustainable Forever
 
-### Sustainable Economic Foundation
+### The Real Picture: Revenue Tied to Real Value
 
-The Diamondz Shadow ecosystem is designed with long-term economic sustainability as a core principle. At the heart of our model is the production and monetization of entertainment and gaming content, supported by a robust blockchain infrastructure. Unlike many blockchain projects that focus solely on short-term token appreciation, our model creates multiple revenue streams and value capture mechanisms that ensure the project's solvency for decades to come.
+Most crypto projects fail because they have no real revenue—just speculation. Diamondz Shadow is different. Our economic model is built on **actual revenue from actual content creation**, not hype. Here's how we maintain solvency for decades:
+
+**The Simple Truth:**
+- Creators make content (YouTube videos, music, games)
+- Content generates real revenue (ad revenue, streams, views)
+- Revenue funds the ecosystem treasury
+- Treasury rewards contributors with tokens
+- More creators join → More revenue → More sustainability
+
+This creates a **self-sustaining flywheel** where the ecosystem gets stronger with each new creator and each piece of content.
 
 ### Entertainment and Gaming Production Focus
 
