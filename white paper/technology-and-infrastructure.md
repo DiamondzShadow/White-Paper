@@ -164,7 +164,12 @@ Our platform leverages thirdweb's comprehensive infrastructure to provide seamle
 Our platform integrates with major content, music, and gaming platforms:
 
 1. **Content Platform APIs**:
-2. **YouTube Data API**: Track performance, revenue, and engagement metrics
+2. **YouTube Data API with Validator Oracle**: Track performance, revenue, and engagement metrics with AI-powered validation for milestone achievements. Our custom YouTube Validator Oracle provides:
+   - On-chain recording of subscriber, view, and video milestones
+   - AI validation confidence scoring (0-100) to prevent fraud
+   - Automated token rewards for verified achievements
+   - Immutable proof of creator performance
+   - See [QIP-007](qips.md#qip-007-youtube-validator-oracle-system) for full details
 3. **Twitch API**: Monitor streaming metrics and subscriber data
 4. **TikTok Business API**: Analyze short-form content performance
 5. **Instagram Graph API**: Track visual content engagement
