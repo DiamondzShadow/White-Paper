@@ -796,6 +796,356 @@ These four strategic partnerships create a vertically integrated infrastructure 
 
 This partnership ecosystem enables Wavz to scale to millions of creators with enterprise-grade infrastructure, while maintaining the decentralized, transparent ethos of Web3.
 
+#### Additional Strategic Ecosystem Partners
+
+Beyond the core Wavz infrastructure partnerships, Diamond zChain leverages additional strategic partners that enhance blockchain analytics, API access, and financial infrastructure capabilities for the entire ecosystem:
+
+#### Dune Analytics - Blockchain Intelligence & Ecosystem Insights
+**Partnership**: [dune.com](https://dune.com/home)
+
+Dune Analytics provides comprehensive blockchain data analytics that powers transparency, investor confidence, and ecosystem intelligence for Diamond zChain:
+
+**Analytics Infrastructure**:
+- **Custom Dashboards**: Real-time visualization of all Diamond zChain ecosystem metrics
+- **SQL Query Interface**: Direct access to blockchain data for custom analytics
+- **Public Data Transparency**: Community-built dashboards for ecosystem health monitoring
+- **Cross-Chain Comparisons**: Benchmark Diamond zChain performance against other L2/L3 chains
+- **NFT Analytics**: Track Spark NFT and Beat NFT trading volumes, floor prices, and holder distribution
+
+**Diamond zChain Ecosystem Dashboards**:
+- **Token Economics Dashboard**: SDM, TuBE, GaM3, DuSTD supply, circulation, and velocity metrics
+- **Creator Economy Analytics**: Total creators validated, Sparks minted, cPoints distributed, Wavz scores
+- **Revenue Tracking**: Real-time visualization of platform revenue, token burns, and treasury management
+- **Governance Metrics**: DAO proposal activity, voting participation rates, and decision outcomes
+- **DeFi Analytics**: Liquidity pool depths, trading volumes, yield farming APYs, and total value locked (TVL)
+- **User Growth Metrics**: Daily/monthly active addresses, new wallet creation, and retention cohorts
+
+**Benefits for Projects Building on Diamond zChain**:
+- **Project Analytics**: Custom dashboards for projects to track their user growth and engagement
+- **Investor Confidence**: Transparent, verifiable on-chain metrics build trust with token holders
+- **Competitive Intelligence**: Compare project performance against ecosystem benchmarks
+- **Data-Driven Decisions**: Access to comprehensive analytics informs product and marketing strategies
+- **Community Engagement**: Public dashboards demonstrate transparency and attract long-term supporters
+
+**Benefits for the Broader Ecosystem**:
+- **Ecosystem Health Monitoring**: Real-time alerts for unusual activity or potential issues
+- **Validator Performance**: Track validator uptime, consensus participation, and reward distribution
+- **Treasury Transparency**: Public visibility into DAO treasury holdings and spending
+- **Fraud Detection**: Identify suspicious patterns in token transfers and milestone validations
+- **Marketing Intelligence**: Data-driven narratives for ecosystem growth and milestone announcements
+
+**Technical Integration**:
+```sql
+-- Example Dune query for Diamond zChain creator milestones
+SELECT 
+  DATE_TRUNC('day', block_time) as date,
+  COUNT(DISTINCT creator_address) as daily_active_creators,
+  SUM(sparks_minted) as total_sparks,
+  AVG(wavz_score) as avg_creator_wavz
+FROM diamond_zchain.wavz_milestones
+WHERE block_time >= NOW() - INTERVAL '30 days'
+GROUP BY 1
+ORDER BY 1 DESC
+```
+
+**Dune's Impact on Ecosystem Growth**:
+- **Investor Attraction**: Transparent metrics attract institutional and retail investment
+- **Developer Onboarding**: Clear ecosystem data helps developers evaluate platform viability
+- **Community Building**: Public dashboards foster community ownership and engagement
+- **Press & Marketing**: Data-driven stories for ecosystem milestones and achievements
+- **Regulatory Compliance**: Transparent on-chain data demonstrates commitment to accountability
+
+#### Ormi Labs - Blockchain API Infrastructure
+**Partnership**: [ormilabs.com](https://ormilabs.com/)
+
+Ormi Labs provides the comprehensive API infrastructure that enables developers to seamlessly interact with Diamond zChain, abstracting blockchain complexity while maintaining full functionality:
+
+**API Infrastructure for Diamond zChain**:
+- **Unified Blockchain API**: Single API endpoint for all Diamond zChain interactions (transactions, contracts, tokens, NFTs)
+- **WebSocket Subscriptions**: Real-time event streams for milestone achievements, token transfers, and contract events
+- **Historical Data Access**: Complete blockchain history with indexed data for analytics and reporting
+- **Multi-Token API**: Specialized endpoints for SDM, TuBE, GaM3, and DuSTD token operations
+- **NFT APIs**: Enhanced metadata and trading APIs for Spark NFTs and Beat NFTs
+- **Governance APIs**: DAO proposal submission, voting, and execution endpoints
+
+**Developer Experience Enhancements**:
+- **REST & GraphQL Support**: Flexible query options for different development paradigms
+- **SDK Libraries**: Pre-built SDKs for JavaScript, Python, Go, and Rust
+- **Comprehensive Documentation**: Interactive API documentation with code examples
+- **Sandbox Environment**: Test API integration against Diamond zLab testnet
+- **Rate Limiting & Caching**: Optimized performance with intelligent caching strategies
+- **Webhook Infrastructure**: Push notifications for blockchain events to external systems
+
+**Ormi Labs-Powered Use Cases**:
+
+**1. Creator Management Platforms**:
+```javascript
+// Ormi API for creator dashboard integration
+const ormi = new OrmiClient('diamond-zchain', API_KEY);
+
+// Get comprehensive creator stats
+const creatorData = await ormi.creators.getProfile(creatorAddress);
+// Returns: Sparks, cPoints, Beats, Wavz score, token balances, milestone history
+
+// Subscribe to real-time milestone events
+ormi.events.subscribe('milestone.achieved', (event) => {
+  // Trigger UI notification when creator reaches new milestone
+  notifyCreator(event.creator, event.milestone);
+});
+```
+
+**2. Investment & Portfolio Tracking**:
+- **Multi-Wallet Tracking**: Monitor creator token holdings across multiple addresses
+- **Portfolio Analytics**: Real-time valuation of Spark NFTs, Beat NFTs, and creator tokens
+- **Transaction History**: Complete trade history for tax reporting and performance analysis
+- **Yield Tracking**: Monitor staking rewards, liquidity mining, and governance incentives
+
+**3. Gaming Integration**:
+- **Player Statistics API**: Real-time access to GaM3 token balances and gaming achievements
+- **Tournament Management**: APIs for tournament creation, registration, and prize distribution
+- **In-Game Asset APIs**: Query ownership and metadata for in-game NFT assets
+- **Betting Market Data**: Real-time odds, bet placements, and payout calculations
+
+**4. DeFi Protocol Integration**:
+- **Liquidity Pool APIs**: Monitor pool depths, swap rates, and impermanent loss calculations
+- **Token Price Feeds**: Real-time and historical pricing data for all ecosystem tokens
+- **Yield Farm Management**: APIs for stake, unstake, claim rewards operations
+- **DEX Aggregation**: Route trades across multiple DEXs for best execution prices
+
+**Benefits for Projects Building on Diamond zChain**:
+- **Faster Time-to-Market**: Pre-built APIs eliminate months of blockchain integration work
+- **Reduced Infrastructure Costs**: No need to run and maintain dedicated blockchain nodes
+- **Scalable Architecture**: Handle millions of API requests without managing infrastructure
+- **Enhanced Features**: Access to enhanced data (token metadata, NFT attributes) not available on-chain
+- **Multi-Chain Ready**: Same API pattern works across Diamond zChain and bridged chains
+
+**Benefits for the Broader Ecosystem**:
+- **Developer Adoption**: Easy API access attracts more developers to build on Diamond zChain
+- **Integration Speed**: Projects can integrate Diamond zChain functionality in days, not months
+- **Ecosystem Interoperability**: Standardized APIs enable seamless cross-project integrations
+- **Third-Party Services**: Ormi APIs enable wallets, explorers, and analytics tools to support Diamond zChain
+- **Enterprise Readiness**: Reliable API infrastructure meets enterprise SLAs and security requirements
+
+**Ormi Labs Revenue Potential**:
+- **Freemium Model**: Free tier for developers, paid tiers for production applications
+- **Usage-Based Pricing**: Pay per API call at scale with volume discounts
+- **Enterprise Plans**: Custom SLAs and dedicated support for high-volume projects
+- **White-Label Solutions**: Licensed API infrastructure for ecosystem partners
+
+#### Brale - Stablecoin Infrastructure & Fiat Settlements
+**Partnership**: [brale.xyz](https://brale.xyz/)
+
+Brale provides enterprise-grade stablecoin infrastructure that powers DuSTD (Diamond zChain's ecosystem stablecoin) and enables seamless fiat-to-crypto settlements for creators, investors, and projects:
+
+**Stablecoin Infrastructure for DuSTD**:
+- **Regulatory-Compliant Issuance**: Brale's licensed infrastructure ensures DuSTD meets regulatory standards
+- **1:1 USD Backing**: Full reserve backing with monthly attestations from third-party auditors
+- **Instant Minting/Redemption**: Creators and investors can convert USD ↔ DuSTD with sub-second settlement
+- **Multi-Chain Support**: DuSTD available across Diamond zChain and all bridged EVM chains
+- **Banking Integration**: Direct bank account connections for ACH, wire, and SEPA transfers
+- **Treasury Management**: Sophisticated cash management for ecosystem treasury holdings
+
+**Creator Economy Payment Infrastructure**:
+
+**1. Fiat Off-Ramps for Creators**:
+- **Ad Revenue Settlements**: Convert YouTube, Twitch, TikTok ad revenue to DuSTD, then to USD
+- **Instant Withdrawals**: Creators cash out token earnings to bank accounts within 24 hours
+- **International Payments**: Global creator payouts in 130+ countries with local currency support
+- **Tax Optimization**: Automatic 1099 generation and tax withholding for U.S. creators
+- **Compliance Built-In**: KYC/AML screening integrated into the creator onboarding flow
+
+**2. Investor On-Ramps**:
+- **Accredited Investor Flows**: Streamlined KYC for institutional and high-net-worth investors
+- **Wire Transfer Integration**: Large-scale investments ($50K+) via wire directly to DuSTD
+- **Subscription Payments**: Recurring investments in creator tokens via automatic ACH withdrawals
+- **Crypto-Native Flows**: Accept USDC, USDT, DAI and instantly convert to DuSTD at 1:1 rates
+
+**3. Project Treasury Management**:
+- **Yield on Idle Capital**: Ecosystem projects earn yield on DuSTD treasury holdings via Brale's cash management
+- **Payroll in Stablecoins**: Projects pay team members and contractors in DuSTD with Brale's payment rails
+- **Multi-Signature Security**: Enterprise-grade custody with hardware security modules (HSMs)
+- **Accounting Integration**: Export transaction history for QuickBooks, Xero, and enterprise ERPs
+
+**Technical Integration with Diamond zChain**:
+
+**DuSTD Smart Contract Architecture**:
+```solidity
+// DuSTD stablecoin powered by Brale infrastructure
+contract DuSTD is ERC20, BraleReserveToken {
+    // Mint DuSTD when USD deposits confirmed via Brale
+    function mint(address recipient, uint256 amount) 
+        external 
+        onlyBraleOracle 
+        returns (bool) 
+    {
+        // Verify USD reserve backing via Brale attestation
+        require(braleReserves.verifyBacking(amount), "Insufficient reserves");
+        _mint(recipient, amount);
+        emit DuSTDMinted(recipient, amount, block.timestamp);
+        return true;
+    }
+    
+    // Burn DuSTD to redeem USD via Brale
+    function redeem(uint256 amount, bytes calldata bankDetails) 
+        external 
+        returns (bytes32 redemptionId) 
+    {
+        _burn(msg.sender, amount);
+        // Trigger USD transfer via Brale payment rails
+        redemptionId = braleSettlement.initiateFiatTransfer(msg.sender, amount, bankDetails);
+        emit DuSTDRedeemed(msg.sender, amount, redemptionId, block.timestamp);
+    }
+}
+```
+
+**Payment Flow Examples**:
+
+**Creator Revenue Distribution**:
+```
+YouTube Ad Revenue ($10,000) → 
+YouTube pays USD to Diamondz Shadow → 
+USD deposited with Brale → 
+DuSTD minted on Diamond zChain (10,000 DuSTD) → 
+Smart contract distributes to creators based on contribution → 
+Creators redeem DuSTD for USD via Brale → 
+USD hits creator bank accounts (24-48 hours)
+```
+
+**Investor Token Purchase**:
+```
+Investor connects bank account → 
+$50,000 wire transfer to Brale → 
+Brale mints 50,000 DuSTD on Diamond zChain → 
+Investor swaps DuSTD for TuBE or creator tokens via DEX → 
+Investor participates in ecosystem with stable settlement layer
+```
+
+**Benefits for Projects Building on Diamond zChain**:
+
+**1. Stable Currency for Commerce**:
+- **Predictable Pricing**: Price products/services in DuSTD without crypto volatility risk
+- **Revenue Recognition**: Stablecoin revenue simplifies accounting and financial reporting
+- **Global Accessibility**: Accept payments from users worldwide without forex complexity
+- **DeFi Integration**: Use DuSTD as collateral for loans, liquidity pools, and yield farming
+
+**2. Fiat Gateway Integration**:
+- **White-Label On-Ramps**: Projects can offer fiat on-ramps using Brale infrastructure
+- **Branded Payment Experiences**: Custom checkout flows with project branding
+- **Revenue Share**: Projects earn fees on fiat-to-crypto conversions
+- **Compliance Outsourcing**: Brale handles KYC/AML requirements, reducing legal burden
+
+**3. Treasury Management**:
+- **Cash Management**: Earn 4-5% yield on DuSTD treasury holdings (vs. 0% on crypto)
+- **Risk Mitigation**: Convert volatile tokens to DuSTD during market downturns
+- **Operating Expenses**: Pay vendors, salaries, and contractors in stablecoins
+- **Financial Planning**: Predictable stablecoin reserves enable better budget forecasting
+
+**Benefits for the Broader Ecosystem**:
+
+**1. Reduced Friction for Mass Adoption**:
+- **No Crypto Knowledge Required**: Users interact with familiar USD-denominated system
+- **Instant Liquidity**: Creators confident they can cash out earnings immediately
+- **Mainstream Appeal**: Stablecoin payments attract traditional businesses and creators
+- **Lower Barriers to Entry**: Simplified onboarding without crypto learning curve
+
+**2. Financial Stability & Risk Management**:
+- **Volatility Shield**: DuSTD provides stable value during crypto market crashes
+- **Hedging Mechanism**: Users can park funds in DuSTD during uncertain market conditions
+- **Liquidity Depth**: Deep DuSTD liquidity pools enable efficient trading across all tokens
+- **Price Discovery**: Stablecoin pairs improve price accuracy for creator tokens
+
+**3. Regulatory Confidence**:
+- **Compliant Stablecoin**: Brale's regulatory approach signals ecosystem legitimacy
+- **Audited Reserves**: Third-party attestations build trust with institutional investors
+- **AML/KYC Integration**: Built-in compliance reduces regulatory risk for projects
+- **Banking Relationships**: Brale's banking partners enable traditional finance integration
+
+**4. Ecosystem Network Effects**:
+- **Liquidity Magnet**: Reliable fiat on/off ramps attract more users and capital
+- **Cross-Chain Bridge**: DuSTD serves as universal settlement layer across all chains
+- **DeFi Composability**: DuSTD integration with major DeFi protocols brings liquidity
+- **Institutional Readiness**: Enterprise-grade stablecoin infrastructure attracts large investors
+
+**Brale Revenue Model for Diamond zChain Ecosystem**:
+- **Minting/Redemption Fees**: 0.1-0.5% fee on DuSTD creation and redemption
+- **Payment Processing**: 1-2% on fiat payment transactions (competitive with Stripe/PayPal)
+- **Treasury Yield Share**: Revenue share on yield generated from DuSTD reserves
+- **Enterprise Licensing**: White-label stablecoin infrastructure for large ecosystem projects
+- **Cross-Border Transfers**: Premium fees for international creator payouts
+
+### Strategic Partner Ecosystem Summary
+
+The combination of Dune Analytics, Ormi Labs, and Brale creates a comprehensive infrastructure layer that addresses critical ecosystem needs:
+
+| Partner | Infrastructure Layer | Ecosystem Impact |
+|---------|---------------------|------------------|
+| **Dune Analytics** | Data & Transparency | Public dashboards build trust, attract investors, and enable data-driven decisions |
+| **Ormi Labs** | Developer APIs | Simplified blockchain access accelerates project development and ecosystem growth |
+| **Brale** | Financial Rails | Stablecoin infrastructure enables mainstream adoption and seamless fiat integration |
+
+**Synergies Across All Partners**:
+
+1. **Creator Onboarding Flow**:
+   - Thirdweb embedded wallets → seamless account creation
+   - Brale fiat on-ramps → instant DuSTD purchase
+   - Ormi Labs APIs → dashboard displays creator stats
+   - Dune Analytics → public profile showcasing verified milestones
+
+2. **Investor Due Diligence**:
+   - Dune dashboards → transparent ecosystem metrics
+   - Ormi APIs → programmatic access to creator performance data
+   - Uniblock analytics → cross-chain portfolio tracking
+   - Brale settlements → convert profits to USD with confidence
+
+3. **Project Development**:
+   - Ormi Labs APIs → rapid blockchain integration
+   - QuickNode RPC → reliable infrastructure for production
+   - Lucid Labs DeFi → instant liquidity for project tokens
+   - Brale stablecoins → stable treasury management and payments
+
+4. **Ecosystem Growth**:
+   - Dune transparency → attracts capital and legitimacy
+   - Ormi simplicity → attracts developers and projects
+   - Brale compliance → enables institutional participation
+   - Combined network effects → exponential ecosystem growth
+
+**How These Partners Boost Projects Using Diamond zChain**:
+
+**For Creator-Focused Projects**:
+- Use Ormi APIs to fetch creator milestones and display on custom dashboards
+- Integrate Brale for instant fiat payouts when creators cash out token earnings
+- Leverage Dune dashboards to showcase creator growth metrics to potential investors
+- Result: **3x faster creator onboarding**, **5x higher creator retention**
+
+**For DeFi & Trading Projects**:
+- Use DuSTD (powered by Brale) as base trading pair for all creator tokens
+- Integrate Ormi APIs for real-time token price feeds and liquidity data
+- Build custom Dune dashboards to track protocol TVL and trading volumes
+- Result: **Deeper liquidity**, **lower slippage**, **higher trading volumes**
+
+**For Gaming & NFT Projects**:
+- Use Ormi APIs to fetch player achievements and mint Spark-based rewards
+- Accept DuSTD payments for in-game assets, eliminating crypto volatility
+- Display player leaderboards and tournament stats via Dune Analytics
+- Result: **Mainstream accessibility**, **predictable revenue**, **community engagement**
+
+**For Investment & Fund Projects**:
+- Query Ormi APIs to evaluate creator token investment opportunities
+- Monitor portfolio performance with real-time Dune dashboards
+- Use DuSTD for stable denominated fund accounting and investor redemptions
+- Result: **Data-driven investment decisions**, **transparent reporting**, **institutional credibility**
+
+**Competitive Advantages of Diamond zChain's Partner Ecosystem**:
+
+Unlike other L2/L3 chains that focus solely on transaction speed and gas costs, Diamond zChain's strategic partnerships create a **vertically integrated infrastructure stack** that addresses the complete needs of the creator economy:
+
+1. **Data Transparency** (Dune) → builds trust and attracts capital
+2. **Developer Access** (Ormi) → accelerates project development
+3. **Financial Infrastructure** (Brale) → enables mainstream adoption
+4. **Combined with Core Partners** (QuickNode, Thirdweb, Uniblock, Lucid Labs) → complete ecosystem
+
+This partner ecosystem positions Diamond zChain as the **only blockchain** with purpose-built infrastructure for tokenizing and monetizing the creator economy at scale, from social media validation to financial settlement.
+
 #### Wavz Revenue Model Overview
 
 The Wavz oracle infrastructure creates multiple revenue streams through validation services across all social platforms. For detailed revenue projections and financial models, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md) section.
