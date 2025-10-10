@@ -1,10 +1,15 @@
+---
+cover: .gitbook/assets/2025_10_08_02_45_32_LE_upscale_balanced_x4.jpg
+coverY: 0
+---
+
 # Diamondz Validator — The Ascendant Wave Sale
 
 ## 💎 **Diamondz Validator — The Ascendant Wave Sale**
 
 **Three-phase validator mint. One evolving ecosystem. Infinite validator power.**
 
-The *Ascendant Wave Sale* introduces DiamondzChain's first on-chain validator NFT economy — a system where every LIONSMANE NFT represents real validator power, SDM stake, and energy within the DiamondzChain network.
+The _Ascendant Wave Sale_ introduces DiamondzChain's first on-chain validator NFT economy — a system where every LIONSMANE NFT represents real validator power, SDM stake, and energy within the DiamondzChain network.
 
 Each NFT level (Lv 0–23) holds SDM equivalent to its mint price, with **private ($0.003)**, **presale ($0.006)**, and **public ($0.009)** rates — plus tier bonuses of **+9%**, **+6%**, and **+3%** SDM, respectively.
 
@@ -19,13 +24,13 @@ Each NFT can be **traded**, **upgraded**, and **merged** to increase validator o
 
 The Ascendant Wave Sale is the genesis of DiamondzChain's validator-driven world — where NFTs are more than art or status; they are **living engines of the chain**.
 
----
+***
 
 ## OpenSea Collection
 
 View the collection on OpenSea: [Diamondz Validator — The Ascendant Wave](https://opensea.io/collection/diamondz-validator-the-ascendant-wave)
 
----
+***
 
 ## How The Validator System Works
 
@@ -158,10 +163,11 @@ TOTAL POOL REVENUE = Your % × Pool Count × Pool Earnings
 ```
 
 This creates a **dual income stream**:
+
 1. Your own validator node(s) earning rewards
 2. Percentage ownership of community shared pools
 
----
+***
 
 ## Sale Phase Data Examples
 
@@ -170,6 +176,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ### 🧩 Private Sale (rate **$0.003**, **+9%** bonus)
 
 **Example: Entry Level**
+
 ```json
 {
   "name": "LIONSMANE — Apex Rogue (Lv 9)",
@@ -187,6 +194,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ```
 
 **Example: Mid Tier with Pool Share**
+
 ```json
 {
   "name": "LIONSMANE — Cosmic Crown (Lv 13)",
@@ -205,6 +213,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ```
 
 **Example: Maximum Tier**
+
 ```json
 {
   "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
@@ -225,6 +234,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ### 🧩 Presale (rate **$0.006**, **+6%** bonus)
 
 **Example: Entry Level**
+
 ```json
 {
   "name": "LIONSMANE — Storm Monarch (Lv 10)",
@@ -243,6 +253,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ```
 
 **Example: Maximum Tier**
+
 ```json
 {
   "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
@@ -260,11 +271,12 @@ Below are example data structures for each sale phase. The full collection inclu
 }
 ```
 
----
+***
 
 ### 🧩 Public Sale (rate **$0.009**, **+3%** bonus)
 
 **Example: Entry Level**
+
 ```json
 {
   "name": "LIONSMANE — Prism Archon (Lv 11)",
@@ -283,6 +295,7 @@ Below are example data structures for each sale phase. The full collection inclu
 ```
 
 **Example: Maximum Tier**
+
 ```json
 {
   "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
@@ -300,7 +313,7 @@ Below are example data structures for each sale phase. The full collection inclu
 }
 ```
 
----
+***
 
 ## Ascendant Overflow Protocol Explained
 
@@ -390,7 +403,7 @@ Step 4: NETWORK GROWTH
    └────────────────────────────────────────────────────┘
 ```
 
----
+***
 
 ## Economic Mechanics Deep Dive
 
@@ -426,7 +439,7 @@ Calculation:
 
 This overflow of **450,000 SDM** can complete **4 full shared pools** (4 × 100K = 400K) with 50K left over!
 
----
+***
 
 ## NFT Upgrade & Evolution Paths
 
@@ -477,7 +490,7 @@ PATH 4: SELL FOR PROFIT
 └──────────────────────────────────────────────────────────┘
 ```
 
----
+***
 
 ## Validator Reward Economics
 
@@ -536,7 +549,7 @@ If ZSDM = $1.00:
 
 **Note:** Projections are illustrative. Actual returns depend on network activity, ZSDM price, and validator performance.
 
----
+***
 
 ## Complete LIONSMANE Hierarchy (Lv 9-23)
 
@@ -566,6 +579,6 @@ Lv 23  LIONSMANE Prime         $15,000    54.50         15%
 
 **Private Sale provides the best value** - same price across all phases, but 3x more SDM than Public Sale!
 
----
+***
 
-*Last Updated: 2025-10-10*
+_Last Updated: 2025-10-10_
