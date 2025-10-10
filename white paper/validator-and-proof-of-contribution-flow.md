@@ -136,6 +136,42 @@ Step 6: CONTINUOUS LOOP
 ║                      VALIDATOR HIERARCHY                          ║
 ╚═══════════════════════════════════════════════════════════════════╝
 
+Level 0: BASE VALIDATORS (Consensus Layer)
+┌────────────────────────────────────────────────────────────────┐
+│  ⚡ CONSENSUS NODES  •  DECENTRALIZED  •  STAKE OR LP REQUIRED │
+│                                                                │
+│  ✓ Run by projects/communities using protocol                 │
+│  ✓ Form consensus on validation results                       │
+│  ✓ Minimum 50K ZSDM stake OR 100K in LP                      │
+│  ✓ Earn protocol fees + validation rewards                    │
+│                                                                │
+│  OPERATES → Oracle infrastructure                             │
+│  VALIDATES → Cross-checks all validator outputs               │
+│  CONSENSUS → Multi-signature approval for high-value          │
+│  EARNS → 10% of all minted tokens distributed to nodes        │
+│                                                                │
+│  NODE REQUIREMENTS:                                            │
+│  • Uptime: 99%+ availability                                   │
+│  • Stake: 50K ZSDM (lockup period: 90 days)                   │
+│  • OR LP: 100K ZSDM worth in ZSDM/ETH pool                    │
+│  • Hardware: 4 CPU, 16GB RAM, 500GB SSD                       │
+│  • Network: Static IP, 100Mbps+                               │
+│                                                                │
+│  SLASHING CONDITIONS:                                          │
+│  • Downtime > 1%: -5% stake                                    │
+│  • False validation: -20% stake                               │
+│  • Malicious behavior: -100% stake (permanent ban)            │
+│                                                                │
+│  WHY RUN A BASE VALIDATOR?                                     │
+│  • Projects build nodes for their community                    │
+│  • Earn sustainable revenue from protocol fees                │
+│  • Participate in governance decisions                         │
+│  • Support decentralization of the network                    │
+│  • Cost to run: ~$100-200/month                               │
+│  • Avg earnings: 500-2000 ZSDM/month                          │
+└────────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
 Level 1: AI VALIDATORS (Automated)
 ┌────────────────────────────────────────────────────────────┐
 │  🤖 ALWAYS ACTIVE  •  INSTANT  •  NO STAKING REQUIRED     │
@@ -182,6 +218,224 @@ Level 3: COMMUNITY VALIDATORS (Future)
 │  MODERATES → Community standards                          │
 │  GROWS → Validator reputation                             │
 └────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## BASE VALIDATOR CONSENSUS MECHANISM
+
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║           HOW BASE VALIDATORS FORM CONSENSUS                      ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+CONSENSUS MODEL: Proof of Stake + Proof of Validation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For Standard Milestones (< 100K):
+┌────────────────────────────────────────────────────────────┐
+│  1. AI Validator detects milestone                         │
+│  2. Base Validator Node receives validation request        │
+│  3. Node independently verifies via API                    │
+│  4. If confidence > 95%: Auto-approve                      │
+│  5. Record on-chain with node signature                    │
+│  6. Node earns validation fee (0.5% of minted tokens)      │
+└────────────────────────────────────────────────────────────┘
+
+For High-Value Milestones (> 100K):
+┌────────────────────────────────────────────────────────────┐
+│  1. AI Validator detects milestone                         │
+│  2. Broadcast to ALL active Base Validator nodes           │
+│  3. Each node independently verifies (5 min window)        │
+│  4. Nodes submit signed validation votes                   │
+│  5. Consensus threshold: 66% agreement required            │
+│  6. Multi-sig approval from validator set                  │
+│  7. Record on-chain with all signatures                    │
+│  8. Participating nodes split 10% of minted tokens         │
+└────────────────────────────────────────────────────────────┘
+
+VALIDATOR SET SELECTION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Minimum 21 active Base Validators required for consensus
+• Maximum 100 validators in active set at any time
+• Selection based on:
+  - Stake amount (50K-500K ZSDM)
+  - Uptime history (99%+ required)
+  - Validation accuracy (98%+ required)
+  - Community reputation score
+  
+ROTATION & FAIRNESS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Validators rotate in/out of active set every epoch (24 hours)
+• Random selection weighted by stake amount
+• Ensures all validators get fair opportunity to earn
+• Prevents centralization and collusion
+
+ORACLE COST DISTRIBUTION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Running oracle infrastructure has costs:
+• API calls: $0.001 per validation
+• Server costs: $100-200/month per node
+• Bandwidth: ~$20/month
+• Monitoring tools: $30/month
+
+Who pays?
+├─ Protocol takes 2% of all minted tokens
+├─ 1% goes to Base Validator pool
+├─ 0.5% covers infrastructure costs
+└─ 0.5% goes to protocol treasury
+
+This makes running a node profitable while covering real costs.
+```
+
+---
+
+## SETTING UP A BASE VALIDATOR NODE
+
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║         FOR PROJECTS BUILDING ON DIAMONDZ SHADOW                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+WHY YOUR PROJECT SHOULD RUN A BASE VALIDATOR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. REVENUE GENERATION
+   • Earn 0.5-2% of all tokens minted through your validations
+   • Average: 500-2000 ZSDM/month per node
+   • Scales with network growth
+   
+2. SUPPORT YOUR COMMUNITY
+   • Your users' milestones validated by your node
+   • Build trust and reliability
+   • Strengthen community bonds
+   
+3. GOVERNANCE POWER
+   • Base Validators vote on protocol upgrades
+   • Influence reward structures
+   • Shape the future of the ecosystem
+   
+4. NETWORK DECENTRALIZATION
+   • More validators = more secure network
+   • Reduces single points of failure
+   • Aligns with Web3 principles
+
+
+SETUP GUIDE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: MEET REQUIREMENTS
+┌────────────────────────────────────────────────────────────┐
+│  Minimum Stake: 50,000 ZSDM                                │
+│  OR Liquidity Provision: 100,000 ZSDM worth in LP tokens   │
+│                                                            │
+│  Hardware:                                                 │
+│  • CPU: 4 cores (8 recommended)                            │
+│  • RAM: 16GB minimum (32GB recommended)                    │
+│  • Storage: 500GB SSD (NVMe preferred)                     │
+│  • Network: 100Mbps+ with static IP                        │
+│                                                            │
+│  Software:                                                 │
+│  • Ubuntu 22.04 LTS or similar                             │
+│  • Docker & Docker Compose                                 │
+│  • Node.js 18+ (for validator client)                      │
+│  • SSL certificate (Let's Encrypt)                         │
+└────────────────────────────────────────────────────────────┘
+
+STEP 2: STAKE OR PROVIDE LIQUIDITY
+┌────────────────────────────────────────────────────────────┐
+│  Option A: Direct Staking                                  │
+│  $ validator-cli stake --amount 50000                      │
+│  • Lockup: 90 days minimum                                 │
+│  • Rewards: Start immediately                              │
+│  • Unstaking: 7-day cooldown period                        │
+│                                                            │
+│  Option B: LP Provision (Higher Rewards)                   │
+│  $ validator-cli lp-stake --pool ZSDM-ETH --amount 100000 │
+│  • Earn LP fees + validation rewards                       │
+│  • Lockup: 90 days minimum                                 │
+│  • Higher APY (15-30% vs 10-20% staking)                   │
+└────────────────────────────────────────────────────────────┘
+
+STEP 3: DEPLOY VALIDATOR NODE
+┌────────────────────────────────────────────────────────────┐
+│  # Clone validator software                                │
+│  git clone https://github.com/diamondz-shadow/validator    │
+│  cd validator                                              │
+│                                                            │
+│  # Configure your node                                     │
+│  cp .env.example .env                                      │
+│  vim .env  # Add your settings                             │
+│                                                            │
+│  # Required environment variables:                         │
+│  VALIDATOR_ADDRESS=0x...                                   │
+│  STAKE_AMOUNT=50000                                        │
+│  RPC_ENDPOINT=https://rpc.diamondz-shadow.io              │
+│  PRIVATE_KEY=your_secure_key                               │
+│  API_KEYS_YOUTUBE=...                                      │
+│  API_KEYS_SPOTIFY=...                                      │
+│  API_KEYS_TWITCH=...                                       │
+│                                                            │
+│  # Start validator                                         │
+│  docker-compose up -d                                      │
+│                                                            │
+│  # Verify it's running                                     │
+│  validator-cli status                                      │
+└────────────────────────────────────────────────────────────┘
+
+STEP 4: REGISTER ON-CHAIN
+┌────────────────────────────────────────────────────────────┐
+│  # Register your validator                                 │
+│  validator-cli register \                                  │
+│    --name "YourProject Validator" \                        │
+│    --description "Supporting the community" \              │
+│    --commission 5                                          │
+│                                                            │
+│  # Commission: Your fee (1-10%)                            │
+│  # Recommended: 3-5% for community validators              │
+│                                                            │
+│  # Wait for activation (up to 24 hours)                    │
+│  validator-cli check-status                                │
+└────────────────────────────────────────────────────────────┘
+
+STEP 5: MONITOR & MAINTAIN
+┌────────────────────────────────────────────────────────────┐
+│  # Check node health                                       │
+│  validator-cli health                                      │
+│                                                            │
+│  # View earnings                                           │
+│  validator-cli earnings                                    │
+│                                                            │
+│  # Update software (monthly)                               │
+│  git pull && docker-compose up -d --build                  │
+│                                                            │
+│  # Monitoring dashboard                                    │
+│  https://validator-dashboard.diamondz-shadow.io            │
+└────────────────────────────────────────────────────────────┘
+
+
+ECONOMICS FOR NODE OPERATORS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Monthly Costs:
+├─ Server (VPS/Cloud): $100-150
+├─ API calls: $30-50
+├─ Bandwidth: $20
+├─ Monitoring: $30
+└─ Total: ~$180-250/month
+
+Monthly Revenue (Average):
+├─ Validation rewards: 500-1000 ZSDM
+├─ Consensus participation: 200-500 ZSDM
+├─ LP fees (if using Option B): 300-600 ZSDM
+└─ Total: 1000-2100 ZSDM/month
+
+At $1 ZSDM = $1 USD:
+✓ Profit: $750-1850/month
+✓ ROI on stake: 18-44% APY
+✓ Payback period: 3-6 months
+
+PLUS: Governance power & community benefits
 ```
 
 ---
@@ -361,6 +615,13 @@ Timeline: 48 hours maximum for dispute resolution
               🤖 AI Validator Service
               (Monitors & Validates)
                          │
+                         ▼
+              ⚡ BASE VALIDATOR NODES
+            (Consensus Layer - 21-100 nodes)
+            • Each node verifies independently
+            • Vote on validation results
+            • Submit multi-sig approvals
+                         │
                          │
         ━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━
                          │
@@ -368,12 +629,29 @@ Timeline: 48 hours maximum for dispute resolution
                          │
                          ▼
         ┌────────────────────────────────┐
+        │   ValidatorRegistry.sol        │
+        │   (NEW - Base Validator Mgmt)  │
+        │                                │
+        │   • registerValidator()        │
+        │   • stakeTokens()              │
+        │   • stakeLPTokens()            │
+        │   • submitVote()               │
+        │   • getActiveValidators()      │
+        │   • slashValidator()           │
+        │   • distributeRewards()        │
+        └────────────┬───────────────────┘
+                     │
+                     │ Validators approved
+                     │
+                     ▼
+        ┌────────────────────────────────┐
         │   YouTubeMilestone.sol         │
         │                                │
         │   • recordMilestone()          │
         │   • verifyMilestone()          │
         │   • getMilestone()             │
         │   • hasMilestone()             │
+        │   • requireConsensus()  (NEW)  │
         └────────────┬───────────────────┘
                      │
                      │ Emits: MilestoneRecorded
@@ -400,19 +678,21 @@ Timeline: 48 hours maximum for dispute resolution
         │   • burn()                     │
         └────────────┬───────────────────┘
                      │
-                     │ Emits: Transfer
-                     │
-                     ▼
-                💰 Creator Wallet
-                   (You get paid!)
+                     ├─────────────────────────┐
+                     │                         │
+                     ▼                         ▼
+            💰 Creator Wallet         ⚡ Validator Rewards
+               (You get paid!)         (Validators get paid!)
+                                      • 1% of minted tokens
+                                      • Split among active nodes
 
 
 Contract Addresses:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 • BurnMintERC677: 0x2eEe2880F8bC24aeBad3B3c22Dd7541c7D846676
+• ValidatorRegistry: [Pending deployment] (NEW)
 • YouTubeMilestone: [Pending deployment]
 • ProofOfContribution: [Pending deployment]
-• ValidatorRegistry: [Pending deployment]
 ```
 
 ---
@@ -512,18 +792,19 @@ Plus ongoing rewards for:
                       │  ECOSYSTEM   │
                       └───────┬──────┘
                               │
-            ┌─────────────────┼─────────────────┐
-            │                 │                 │
-            ▼                 ▼                 ▼
-      ┌──────────┐      ┌──────────┐     ┌──────────┐
-      │ CREATORS │      │VALIDATORS│     │ PLATFORM │
-      └────┬─────┘      └────┬─────┘     └────┬─────┘
-           │                 │                 │
-           │                 │                 │
-    Creates content    Validates work    Provides infra
-    Earns tokens       Earns fees        Earns revenue
-           │                 │                 │
-           └────────┬────────┴────────┬────────┘
+            ┌─────────────────┼─────────────────┬─────────────────┐
+            │                 │                 │                 │
+            ▼                 ▼                 ▼                 ▼
+      ┌──────────┐      ┌──────────┐     ┌──────────┐     ┌──────────┐
+      │ CREATORS │      │   BASE   │     │VALIDATORS│     │ PLATFORM │
+      │          │      │VALIDATORS│     │ (AI/Human)│    │          │
+      └────┬─────┘      └────┬─────┘     └────┬─────┘     └────┬─────┘
+           │                 │                 │                 │
+           │                 │                 │                 │
+    Creates content   Runs consensus    Validates work    Provides infra
+    Earns tokens      Stakes/LP tokens  Earns fees        Earns revenue
+           │                 │                 │                 │
+           └────────┬────────┴────────┬────────┴─────────────────┘
                     │                 │
                     ▼                 ▼
               ┌──────────┐      ┌──────────┐
@@ -534,6 +815,7 @@ Plus ongoing rewards for:
                    │                 │
             Reward currency    Community votes
             Utility token      Protocol upgrades
+            Staking asset      Validator voting
                    │                 │
                    └────────┬────────┘
                             │
@@ -550,8 +832,11 @@ FLOWS BETWEEN COMPONENTS:
 Creators → Validators:
     Submit milestones for validation
 
-Validators → Creators:
-    Approve or reject milestones
+Validators → Base Validators:
+    Submit validation results for consensus
+
+Base Validators → Creators:
+    Approve or reject milestones (final decision)
     
 Creators → Platform:
     Use infrastructure, pay fees
@@ -559,20 +844,40 @@ Creators → Platform:
 Platform → Creators:
     Provide tools, analytics, support
     
-Validators → Platform:
-    Maintain network integrity
+Base Validators → Platform:
+    Run oracle infrastructure
+    Form consensus layer
+    Maintain network security
     
-Platform → Validators:
-    Pay validation fees
+Platform → Base Validators:
+    Pay validation fees (1% of mints)
+    Provide RPC/API access
+    Software updates
+    
+Projects → Base Validators:
+    Stake 50K ZSDM or provide LP
+    Run community nodes
+    Earn validation rewards
+    
+Base Validators → Projects:
+    Sustainable revenue stream
+    Governance participation
+    Community trust building
     
 Token → All:
     Medium of exchange & rewards
+    Staking asset for validators
+    LP provision option
     
 All → Governance:
     Vote on protocol changes
+    Validator requirements
+    Reward distributions
     
 Governance → All:
     Implement community decisions
+    Adjust consensus parameters
+    Update fee structures
 ```
 
-*Last Updated: 2025-10-09*
+*Last Updated: 2025-10-10*
