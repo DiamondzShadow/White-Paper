@@ -6,7 +6,7 @@
 
 The *Ascendant Wave Sale* introduces DiamondzChain's first on-chain validator NFT economy — a system where every LIONSMANE NFT represents real validator power, SDM stake, and energy within the DiamondzChain network.
 
-Each NFT level (Lv 0–23) holds SDM equivalent to its mint price, with **private (0.003)**, **presale (0.006)**, and **public (0.009)** rates — plus tier bonuses of **+9%**, **+6%**, and **+3%** SDM, respectively.
+Each NFT level (Lv 0–23) holds SDM equivalent to its mint price, with **private ($0.003)**, **presale ($0.006)**, and **public ($0.009)** rates — plus tier bonuses of **+9%**, **+6%**, and **+3%** SDM, respectively.
 
 Validators can evolve through levels and tiers, unlocking node control and SDM yield mechanics:
 
@@ -27,681 +27,544 @@ View the collection on OpenSea: [Diamondz Validator — The Ascendant Wave](http
 
 ---
 
-## Sale Phase Details
+## How The Validator System Works
 
-### 🧩 Private Sale (rate **$0.003**, **+9%** bonus)
+### The Three-Phase Sale Structure
 
-```json
-[
-  {
-    "name": "LIONSMANE — Apex Rogue (Lv 9)",
-    "price_usd": 300,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 100000,
-    "bonus_sdm": 9000,
-    "total_sdm": 109000,
-    "node_equivalents": 1.09,
-    "overflow_cache_sdm": 9000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool."
-  },
-  {
-    "name": "LIONSMANE — Storm Monarch (Lv 10)",
-    "price_usd": 600,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 200000,
-    "bonus_sdm": 18000,
-    "total_sdm": 218000,
-    "node_equivalents": 2.18,
-    "overflow_cache_sdm": 18000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 2 }
-  },
-  {
-    "name": "LIONSMANE — Prism Archon (Lv 11)",
-    "price_usd": 900,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 300000,
-    "bonus_sdm": 27000,
-    "total_sdm": 327000,
-    "node_equivalents": 3.27,
-    "overflow_cache_sdm": 27000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 3 }
-  },
-  {
-    "name": "LIONSMANE — Cataclysm Prime (Lv 12)",
-    "price_usd": 1200,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 400000,
-    "bonus_sdm": 36000,
-    "total_sdm": 436000,
-    "node_equivalents": 4.36,
-    "overflow_cache_sdm": 36000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 4 }
-  },
-  {
-    "name": "LIONSMANE — Cosmic Crown (Lv 13)",
-    "price_usd": 2400,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 800000,
-    "bonus_sdm": 72000,
-    "total_sdm": 872000,
-    "node_equivalents": 8.72,
-    "overflow_cache_sdm": 72000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 5 }
-  },
-  {
-    "name": "LIONSMANE — Quantum Chancellor (Lv 14)",
-    "price_usd": 3000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 1000000,
-    "bonus_sdm": 90000,
-    "total_sdm": 1090000,
-    "node_equivalents": 10.9,
-    "overflow_cache_sdm": 90000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 6 }
-  },
-  {
-    "name": "LIONSMANE — Aurora Matriarch (Lv 15)",
-    "price_usd": 3600,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 1200000,
-    "bonus_sdm": 108000,
-    "total_sdm": 1308000,
-    "node_equivalents": 13.08,
-    "overflow_cache_sdm": 8000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 7 }
-  },
-  {
-    "name": "LIONSMANE — Obsidian Saint (Lv 16)",
-    "price_usd": 4200,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 1400000,
-    "bonus_sdm": 126000,
-    "total_sdm": 1526000,
-    "node_equivalents": 15.26,
-    "overflow_cache_sdm": 26000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 8 }
-  },
-  {
-    "name": "LIONSMANE — Celestial Foundry (Lv 17)",
-    "price_usd": 5000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 1666667,
-    "bonus_sdm": 150000,
-    "total_sdm": 1816667,
-    "node_equivalents": 18.166667,
-    "overflow_cache_sdm": 16667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 9 }
-  },
-  {
-    "name": "LIONSMANE — Diamond Emissary (Lv 18)",
-    "price_usd": 6000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 2000000,
-    "bonus_sdm": 180000,
-    "total_sdm": 2180000,
-    "node_equivalents": 21.8,
-    "overflow_cache_sdm": 80000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 10 }
-  },
-  {
-    "name": "LIONSMANE — Solar Dominion (Lv 19)",
-    "price_usd": 7200,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 2400000,
-    "bonus_sdm": 216000,
-    "total_sdm": 2616000,
-    "node_equivalents": 26.16,
-    "overflow_cache_sdm": 16000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 11 }
-  },
-  {
-    "name": "LIONSMANE — Eternal Paragon (Lv 20)",
-    "price_usd": 8400,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 2800000,
-    "bonus_sdm": 252000,
-    "total_sdm": 3052000,
-    "node_equivalents": 30.52,
-    "overflow_cache_sdm": 52000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 12 }
-  },
-  {
-    "name": "LIONSMANE — Genesis Warden (Lv 21)",
-    "price_usd": 10000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 3333333,
-    "bonus_sdm": 300000,
-    "total_sdm": 3633333,
-    "node_equivalents": 36.333333,
-    "overflow_cache_sdm": 33333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 13 }
-  },
-  {
-    "name": "LIONSMANE — Etheric Magistrate (Lv 22)",
-    "price_usd": 12000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 4000000,
-    "bonus_sdm": 360000,
-    "total_sdm": 4360000,
-    "node_equivalents": 43.6,
-    "overflow_cache_sdm": 60000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 14 }
-  },
-  {
-    "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
-    "price_usd": 15000,
-    "phase": "Private",
-    "sdm_rate": 0.003,
-    "bonus_percent": 9,
-    "base_sdm": 5000000,
-    "bonus_sdm": 450000,
-    "total_sdm": 5450000,
-    "node_equivalents": 54.5,
-    "overflow_cache_sdm": 50000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 15 }
-  }
-]
+The Ascendant Wave Sale operates across three distinct phases, each with different SDM conversion rates and bonus structures:
+
 ```
+┌─────────────────────────────────────────────────────────────────┐
+│                     SALE PHASE COMPARISON                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  PRIVATE SALE                                                   │
+│  • Rate: $0.003 per SDM                                         │
+│  • Bonus: +9% SDM                                               │
+│  • Best Value: 3x more SDM than Public                          │
+│  • Example: $300 = 100,000 SDM + 9,000 bonus = 109,000 SDM     │
+│                                                                 │
+│  PRESALE                                                        │
+│  • Rate: $0.006 per SDM                                         │
+│  • Bonus: +6% SDM                                               │
+│  • Mid Value: 1.5x more SDM than Public                         │
+│  • Example: $300 = 50,000 SDM + 3,000 bonus = 53,000 SDM       │
+│                                                                 │
+│  PUBLIC SALE                                                    │
+│  • Rate: $0.009 per SDM                                         │
+│  • Bonus: +3% SDM                                               │
+│  • Standard Value: Base rate                                    │
+│  • Example: $300 = 33,333 SDM + 1,000 bonus = 34,333 SDM       │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Validator Level Progression
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║                    VALIDATOR TIER SYSTEM                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Lv 0-8: SHARED POOL TIER
+┌──────────────────────────────────────────────────────────┐
+│  • Collective staking power                              │
+│  • Pool validators together                              │
+│  • Lower individual cost                                 │
+│  • Community-driven rewards                              │
+│  • Entry point for new validators                        │
+└──────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+Lv 9: FULL NODE THRESHOLD
+┌──────────────────────────────────────────────────────────┐
+│  • 100,000 SDM capacity                                  │
+│  • Independent validator node                            │
+│  • Full control over your node                           │
+│  • Beginning of overflow mechanics                       │
+│                                                          │
+│  Example: Apex Rogue (Lv 9)                             │
+│  Private: 109,000 SDM (1.09 nodes)                      │
+│  Presale: 53,000 SDM (0.53 nodes)                       │
+│  Public: 34,333 SDM (0.34 nodes)                        │
+└──────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+Lv 10-23: ASCENDANT TIER
+┌──────────────────────────────────────────────────────────┐
+│  • Multi-node equivalents                                │
+│  • Overflow SDM generation                               │
+│  • Shared pool ownership (2%-15%)                        │
+│  • Governance influence                                  │
+│  • Network multiplier effects                            │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Understanding Node Equivalents
+
+**Node Equivalent** = Total SDM ÷ 100,000
+
+This determines how many validator nodes your NFT can power:
+
+```
+Examples Across Phases:
+
+LIONSMANE Prime (Lv 23) - $15,000
+├─ Private:  5,450,000 SDM = 54.5 nodes
+├─ Presale:  2,650,000 SDM = 26.5 nodes
+└─ Public:   1,716,667 SDM = 17.2 nodes
+
+Cosmic Crown (Lv 13) - $2,400
+├─ Private:  872,000 SDM = 8.72 nodes
+├─ Presale:  424,000 SDM = 4.24 nodes
+└─ Public:   274,667 SDM = 2.75 nodes
+
+Apex Rogue (Lv 9) - $300
+├─ Private:  109,000 SDM = 1.09 nodes
+├─ Presale:  53,000 SDM = 0.53 nodes
+└─ Public:   34,333 SDM = 0.34 nodes
+```
+
+### Shared Pool Share Mechanics
+
+Starting at **Level 10**, validators gain ownership percentages in shared validator pools:
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║              SHARED POOL OWNERSHIP PROGRESSION                ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Level 10: Storm Monarch
+  • Pools: 1
+  • Share: 2%
+  • You own 2% of 1 shared pool's rewards
+
+Level 13: Cosmic Crown
+  • Pools: 2
+  • Share: 5%
+  • You own 5% of 2 shared pools' rewards
+
+Level 18: Diamond Emissary
+  • Pools: 3
+  • Share: 10%
+  • You own 10% of 3 shared pools' rewards
+
+Level 23: LIONSMANE Prime
+  • Pools: 5
+  • Share: 15%
+  • You own 15% of 5 shared pools' rewards
+
+TOTAL POOL REVENUE = Your % × Pool Count × Pool Earnings
+```
+
+This creates a **dual income stream**:
+1. Your own validator node(s) earning rewards
+2. Percentage ownership of community shared pools
 
 ---
 
+## Sale Phase Data Examples
+
+Below are example data structures for each sale phase. The full collection includes Levels 9-23 across all three phases.
+
+### 🧩 Private Sale (rate **$0.003**, **+9%** bonus)
+
+**Example: Entry Level**
+```json
+{
+  "name": "LIONSMANE — Apex Rogue (Lv 9)",
+  "price_usd": 300,
+  "phase": "Private",
+  "sdm_rate": 0.003,
+  "bonus_percent": 9,
+  "base_sdm": 100000,
+  "bonus_sdm": 9000,
+  "total_sdm": 109000,
+  "node_equivalents": 1.09,
+  "overflow_cache_sdm": 9000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool."
+}
+```
+
+**Example: Mid Tier with Pool Share**
+```json
+{
+  "name": "LIONSMANE — Cosmic Crown (Lv 13)",
+  "price_usd": 2400,
+  "phase": "Private",
+  "sdm_rate": 0.003,
+  "bonus_percent": 9,
+  "base_sdm": 800000,
+  "bonus_sdm": 72000,
+  "total_sdm": 872000,
+  "node_equivalents": 8.72,
+  "overflow_cache_sdm": 72000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 2, "percent": 5 }
+}
+```
+
+**Example: Maximum Tier**
+```json
+{
+  "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
+  "price_usd": 15000,
+  "phase": "Private",
+  "sdm_rate": 0.003,
+  "bonus_percent": 9,
+  "base_sdm": 5000000,
+  "bonus_sdm": 450000,
+  "total_sdm": 5450000,
+  "node_equivalents": 54.5,
+  "overflow_cache_sdm": 50000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 5, "percent": 15 }
+}
+```
+
 ### 🧩 Presale (rate **$0.006**, **+6%** bonus)
 
+**Example: Entry Level**
 ```json
-[
-  {
-    "name": "LIONSMANE — Apex Rogue (Lv 9)",
-    "price_usd": 300,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 50000,
-    "bonus_sdm": 3000,
-    "total_sdm": 53000,
-    "node_equivalents": 0.53,
-    "overflow_cache_sdm": 3000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool."
-  },
-  {
-    "name": "LIONSMANE — Storm Monarch (Lv 10)",
-    "price_usd": 600,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 100000,
-    "bonus_sdm": 6000,
-    "total_sdm": 106000,
-    "node_equivalents": 1.06,
-    "overflow_cache_sdm": 6000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 2 }
-  },
-  {
-    "name": "LIONSMANE — Prism Archon (Lv 11)",
-    "price_usd": 900,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 150000,
-    "bonus_sdm": 9000,
-    "total_sdm": 159000,
-    "node_equivalents": 1.59,
-    "overflow_cache_sdm": 59000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 3 }
-  },
-  {
-    "name": "LIONSMANE — Cataclysm Prime (Lv 12)",
-    "price_usd": 1200,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 200000,
-    "bonus_sdm": 12000,
-    "total_sdm": 212000,
-    "node_equivalents": 2.12,
-    "overflow_cache_sdm": 12000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 4 }
-  },
-  {
-    "name": "LIONSMANE — Cosmic Crown (Lv 13)",
-    "price_usd": 2400,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 400000,
-    "bonus_sdm": 24000,
-    "total_sdm": 424000,
-    "node_equivalents": 4.24,
-    "overflow_cache_sdm": 24000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 5 }
-  },
-  {
-    "name": "LIONSMANE — Quantum Chancellor (Lv 14)",
-    "price_usd": 3000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 500000,
-    "bonus_sdm": 30000,
-    "total_sdm": 530000,
-    "node_equivalents": 5.3,
-    "overflow_cache_sdm": 30000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 6 }
-  },
-  {
-    "name": "LIONSMANE — Aurora Matriarch (Lv 15)",
-    "price_usd": 3600,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 600000,
-    "bonus_sdm": 36000,
-    "total_sdm": 636000,
-    "node_equivalents": 6.36,
-    "overflow_cache_sdm": 36000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 7 }
-  },
-  {
-    "name": "LIONSMANE — Obsidian Saint (Lv 16)",
-    "price_usd": 4200,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 700000,
-    "bonus_sdm": 42000,
-    "total_sdm": 742000,
-    "node_equivalents": 7.42,
-    "overflow_cache_sdm": 42000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 8 }
-  },
-  {
-    "name": "LIONSMANE — Celestial Foundry (Lv 17)",
-    "price_usd": 5000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 833333,
-    "bonus_sdm": 50000,
-    "total_sdm": 883333,
-    "node_equivalents": 8.833333,
-    "overflow_cache_sdm": 83333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 9 }
-  },
-  {
-    "name": "LIONSMANE — Diamond Emissary (Lv 18)",
-    "price_usd": 6000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 1000000,
-    "bonus_sdm": 60000,
-    "total_sdm": 1060000,
-    "node_equivalents": 10.6,
-    "overflow_cache_sdm": 60000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 10 }
-  },
-  {
-    "name": "LIONSMANE — Solar Dominion (Lv 19)",
-    "price_usd": 7200,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 1200000,
-    "bonus_sdm": 72000,
-    "total_sdm": 1272000,
-    "node_equivalents": 12.72,
-    "overflow_cache_sdm": 72000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 11 }
-  },
-  {
-    "name": "LIONSMANE — Eternal Paragon (Lv 20)",
-    "price_usd": 8400,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 1400000,
-    "bonus_sdm": 84000,
-    "total_sdm": 1484000,
-    "node_equivalents": 14.84,
-    "overflow_cache_sdm": 84000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 12 }
-  },
-  {
-    "name": "LIONSMANE — Genesis Warden (Lv 21)",
-    "price_usd": 10000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 1666667,
-    "bonus_sdm": 100000,
-    "total_sdm": 1766667,
-    "node_equivalents": 17.666667,
-    "overflow_cache_sdm": 66667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 13 }
-  },
-  {
-    "name": "LIONSMANE — Etheric Magistrate (Lv 22)",
-    "price_usd": 12000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 2000000,
-    "bonus_sdm": 120000,
-    "total_sdm": 2120000,
-    "node_equivalents": 21.2,
-    "overflow_cache_sdm": 20000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 14 }
-  },
-  {
-    "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
-    "price_usd": 15000,
-    "phase": "Presale",
-    "sdm_rate": 0.006,
-    "bonus_percent": 6,
-    "base_sdm": 2500000,
-    "bonus_sdm": 150000,
-    "total_sdm": 2650000,
-    "node_equivalents": 26.5,
-    "overflow_cache_sdm": 50000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 15 }
-  }
-]
+{
+  "name": "LIONSMANE — Storm Monarch (Lv 10)",
+  "price_usd": 600,
+  "phase": "Presale",
+  "sdm_rate": 0.006,
+  "bonus_percent": 6,
+  "base_sdm": 100000,
+  "bonus_sdm": 6000,
+  "total_sdm": 106000,
+  "node_equivalents": 1.06,
+  "overflow_cache_sdm": 6000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 1, "percent": 2 }
+}
+```
+
+**Example: Maximum Tier**
+```json
+{
+  "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
+  "price_usd": 15000,
+  "phase": "Presale",
+  "sdm_rate": 0.006,
+  "bonus_percent": 6,
+  "base_sdm": 2500000,
+  "bonus_sdm": 150000,
+  "total_sdm": 2650000,
+  "node_equivalents": 26.5,
+  "overflow_cache_sdm": 50000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 5, "percent": 15 }
+}
 ```
 
 ---
 
 ### 🧩 Public Sale (rate **$0.009**, **+3%** bonus)
 
+**Example: Entry Level**
 ```json
-[
-  {
-    "name": "LIONSMANE — Apex Rogue (Lv 9)",
-    "price_usd": 300,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 33333,
-    "bonus_sdm": 1000,
-    "total_sdm": 34333,
-    "node_equivalents": 0.34333,
-    "overflow_cache_sdm": 4333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool."
-  },
-  {
-    "name": "LIONSMANE — Storm Monarch (Lv 10)",
-    "price_usd": 600,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 66667,
-    "bonus_sdm": 2000,
-    "total_sdm": 68667,
-    "node_equivalents": 0.68667,
-    "overflow_cache_sdm": 68667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 2 }
-  },
-  {
-    "name": "LIONSMANE — Prism Archon (Lv 11)",
-    "price_usd": 900,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 100000,
-    "bonus_sdm": 3000,
-    "total_sdm": 103000,
-    "node_equivalents": 1.03,
-    "overflow_cache_sdm": 3000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 3 }
-  },
-  {
-    "name": "LIONSMANE — Cataclysm Prime (Lv 12)",
-    "price_usd": 1200,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 133333,
-    "bonus_sdm": 4000,
-    "total_sdm": 137333,
-    "node_equivalents": 1.373333,
-    "overflow_cache_sdm": 37333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 1, "percent": 4 }
-  },
-  {
-    "name": "LIONSMANE — Cosmic Crown (Lv 13)",
-    "price_usd": 2400,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 266667,
-    "bonus_sdm": 8000,
-    "total_sdm": 274667,
-    "node_equivalents": 2.746667,
-    "overflow_cache_sdm": 74667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 5 }
-  },
-  {
-    "name": "LIONSMANE — Quantum Chancellor (Lv 14)",
-    "price_usd": 3000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 333333,
-    "bonus_sdm": 10000,
-    "total_sdm": 343333,
-    "node_equivalents": 3.433333,
-    "overflow_cache_sdm": 43333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 6 }
-  },
-  {
-    "name": "LIONSMANE — Aurora Matriarch (Lv 15)",
-    "price_usd": 3600,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 400000,
-    "bonus_sdm": 12000,
-    "total_sdm": 412000,
-    "node_equivalents": 4.12,
-    "overflow_cache_sdm": 12000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 2, "percent": 7 }
-  },
-  {
-    "name": "LIONSMANE — Obsidian Saint (Lv 16)",
-    "price_usd": 4200,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 466667,
-    "bonus_sdm": 14000,
-    "total_sdm": 480667,
-    "node_equivalents": 4.806667,
-    "overflow_cache_sdm": 80667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 8 }
-  },
-  {
-    "name": "LIONSMANE — Celestial Foundry (Lv 17)",
-    "price_usd": 5000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 555556,
-    "bonus_sdm": 16667,
-    "total_sdm": 572223,
-    "node_equivalents": 5.72223,
-    "overflow_cache_sdm": 22223,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 9 }
-  },
-  {
-    "name": "LIONSMANE — Diamond Emissary (Lv 18)",
-    "price_usd": 6000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 666667,
-    "bonus_sdm": 20000,
-    "total_sdm": 686667,
-    "node_equivalents": 6.86667,
-    "overflow_cache_sdm": 86667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 3, "percent": 10 }
-  },
-  {
-    "name": "LIONSMANE — Solar Dominion (Lv 19)",
-    "price_usd": 7200,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 800000,
-    "bonus_sdm": 24000,
-    "total_sdm": 824000,
-    "node_equivalents": 8.24,
-    "overflow_cache_sdm": 24000,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 11 }
-  },
-  {
-    "name": "LIONSMANE — Eternal Paragon (Lv 20)",
-    "price_usd": 8400,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 933333,
-    "bonus_sdm": 28000,
-    "total_sdm": 961333,
-    "node_equivalents": 9.61333,
-    "overflow_cache_sdm": 61333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 4, "percent": 12 }
-  },
-  {
-    "name": "LIONSMANE — Genesis Warden (Lv 21)",
-    "price_usd": 10000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 1111111,
-    "bonus_sdm": 33333,
-    "total_sdm": 1144444,
-    "node_equivalents": 11.44444,
-    "overflow_cache_sdm": 44444,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 13 }
-  },
-  {
-    "name": "LIONSMANE — Etheric Magistrate (Lv 22)",
-    "price_usd": 12000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 1333333,
-    "bonus_sdm": 40000,
-    "total_sdm": 1373333,
-    "node_equivalents": 13.733333,
-    "overflow_cache_sdm": 73333,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 14 }
-  },
-  {
-    "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
-    "price_usd": 15000,
-    "phase": "Public",
-    "sdm_rate": 0.009,
-    "bonus_percent": 3,
-    "base_sdm": 1666667,
-    "bonus_sdm": 50000,
-    "total_sdm": 1716667,
-    "node_equivalents": 17.166667,
-    "overflow_cache_sdm": 16667,
-    "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
-    "shared_pool_share": { "pools": 5, "percent": 15 }
-  }
-]
+{
+  "name": "LIONSMANE — Prism Archon (Lv 11)",
+  "price_usd": 900,
+  "phase": "Public",
+  "sdm_rate": 0.009,
+  "bonus_percent": 3,
+  "base_sdm": 100000,
+  "bonus_sdm": 3000,
+  "total_sdm": 103000,
+  "node_equivalents": 1.03,
+  "overflow_cache_sdm": 3000,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 1, "percent": 3 }
+}
+```
+
+**Example: Maximum Tier**
+```json
+{
+  "name": "LIONSMANE — LIONSMANE Prime (Lv 23)",
+  "price_usd": 15000,
+  "phase": "Public",
+  "sdm_rate": 0.009,
+  "bonus_percent": 3,
+  "base_sdm": 1666667,
+  "bonus_sdm": 50000,
+  "total_sdm": 1716667,
+  "node_equivalents": 17.166667,
+  "overflow_cache_sdm": 16667,
+  "overflow_protocol": "Ascendant Overflow Protocol — overflow SDM auto-fills oldest incomplete shared pool.",
+  "shared_pool_share": { "pools": 5, "percent": 15 }
+}
 ```
 
 ---
 
-## Ascendant Overflow Protocol
+## Ascendant Overflow Protocol Explained
 
 The **Ascendant Overflow Protocol** is a unique mechanism that ensures no SDM energy is wasted in the validator ecosystem. When a validator NFT reaches Level 10 or above, it generates more SDM than can be contained in a single node (100,000 SDM capacity).
 
 ### How It Works
 
-1. **Overflow Detection**: When total SDM exceeds 100K multiples, the excess is identified as "overflow"
-2. **Pool Targeting**: Overflow SDM automatically targets the oldest incomplete shared pool (Lv 0-8)
-3. **Dynamic Allocation**: Fills incomplete pools progressively until they reach full validator status
-4. **Network Growth**: Creates new validators organically, strengthening the network
-5. **Community Benefit**: Lower-level pools get boosted by high-level holders' overflow
+```
+╔═══════════════════════════════════════════════════════════════╗
+║              OVERFLOW PROTOCOL FLOW                           ║
+╚═══════════════════════════════════════════════════════════════╝
 
-### Benefits
+Step 1: OVERFLOW DETECTION
+┌──────────────────────────────────────────────────────────┐
+│  Example: Cosmic Crown (Lv 13) Private Sale             │
+│                                                          │
+│  Total SDM: 872,000                                      │
+│  Node Capacity: 100,000 each                             │
+│  Full Nodes: 8 (800,000 SDM)                             │
+│  Overflow: 72,000 SDM ← This goes to shared pools       │
+└──────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+Step 2: POOL TARGETING
+┌──────────────────────────────────────────────────────────┐
+│  System identifies oldest incomplete shared pool         │
+│                                                          │
+│  Pool #42 Status:                                        │
+│  • Target: 100,000 SDM (full validator)                 │
+│  • Current: 35,000 SDM (incomplete)                      │
+│  • Needed: 65,000 SDM                                    │
+│                                                          │
+│  Your overflow: 72,000 SDM                               │
+└──────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+Step 3: DYNAMIC ALLOCATION
+┌──────────────────────────────────────────────────────────┐
+│  Pool #42 receives: 65,000 SDM (now FULL!)              │
+│  Remaining overflow: 7,000 SDM                           │
+│                                                          │
+│  → Pool #42 activates as validator                       │
+│  → Remaining 7,000 SDM goes to Pool #43                  │
+│  → Creates cascade effect across network                 │
+└──────────────────────────────────────────────────────────┘
+                          │
+                          ▼
+Step 4: NETWORK GROWTH
+┌──────────────────────────────────────────────────────────┐
+│  Your NFT just created/completed:                       │
+│  • 1 new validator node                                  │
+│  • Boosted network security                              │
+│  • Increased decentralization                            │
+│  • Community pools strengthened                          │
+└──────────────────────────────────────────────────────────┘
+```
 
-- **Network Scaling**: Automatic validator creation without manual intervention
-- **Fair Distribution**: Overflow benefits community pools, not just individual holders
-- **Economic Efficiency**: No SDM sits idle or unused
-- **Compounding Growth**: As network grows, more overflow creates more validators
-- **Decentralization**: Shared pools get powered by multiple overflow sources
+### Overflow Benefits
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║                 WHO BENEFITS FROM OVERFLOW?                   ║
+╚═══════════════════════════════════════════════════════════════╝
+
+1. SHARED POOL HOLDERS (Lv 0-8)
+   ┌────────────────────────────────────────────────────┐
+   │ • Get "free" SDM from high-level validators        │
+   │ • Their pools fill faster → activate sooner        │
+   │ • Lower entry cost, higher rewards                 │
+   │ • Community-driven validator creation              │
+   └────────────────────────────────────────────────────┘
+
+2. OVERFLOW GENERATORS (Lv 10+)
+   ┌────────────────────────────────────────────────────┐
+   │ • Own % of pools they help complete                │
+   │ • Earn from pools their overflow activated         │
+   │ • Governance influence increases                   │
+   │ • Network reputation boost                         │
+   └────────────────────────────────────────────────────┘
+
+3. THE ENTIRE NETWORK
+   ┌────────────────────────────────────────────────────┐
+   │ • More validators = more security                  │
+   │ • Automatic decentralization                       │
+   │ • No wasted SDM energy                             │
+   │ • Self-sustaining growth loop                      │
+   └────────────────────────────────────────────────────┘
+```
+
+---
+
+## Economic Mechanics Deep Dive
+
+### Price-to-SDM Conversion Formula
+
+```
+BASE SDM = Price (USD) ÷ SDM Rate
+
+BONUS SDM = BASE SDM × Bonus Percent
+
+TOTAL SDM = BASE SDM + BONUS SDM
+
+NODE EQUIVALENTS = TOTAL SDM ÷ 100,000
+
+OVERFLOW = TOTAL SDM - (Full Nodes × 100,000)
+```
+
+**Example Calculation: LIONSMANE Prime (Lv 23) Private Sale**
+
+```
+Given:
+├─ Price: $15,000
+├─ SDM Rate: $0.003
+└─ Bonus: 9%
+
+Calculation:
+├─ BASE SDM = $15,000 ÷ $0.003 = 5,000,000 SDM
+├─ BONUS SDM = 5,000,000 × 0.09 = 450,000 SDM
+├─ TOTAL SDM = 5,000,000 + 450,000 = 5,450,000 SDM
+├─ NODE EQUIVALENTS = 5,450,000 ÷ 100,000 = 54.5 nodes
+└─ OVERFLOW = 5,450,000 - (54 × 100,000) = 450,000 SDM
+```
+
+This overflow of **450,000 SDM** can complete **4 full shared pools** (4 × 100K = 400K) with 50K left over!
+
+---
+
+## NFT Upgrade & Evolution Paths
+
+### Trading & Merging Mechanics
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║              NFT EVOLUTION PATHWAYS                           ║
+╚═══════════════════════════════════════════════════════════════╝
+
+PATH 1: SINGLE NFT HOLD
+┌──────────────────────────────────────────────────────────┐
+│  Buy → Hold → Earn validator rewards + pool shares       │
+│                                                          │
+│  Example: Storm Monarch (Lv 10)                          │
+│  • 2.18 nodes (Private)                                  │
+│  • 2% share of 1 pool                                    │
+│  • Passive income from both sources                      │
+└──────────────────────────────────────────────────────────┘
+
+PATH 2: MERGE TO UPGRADE
+┌──────────────────────────────────────────────────────────┐
+│  2× Storm Monarch (Lv 10) → 1× Cataclysm Prime (Lv 12)  │
+│                                                          │
+│  Before: 2.18 + 2.18 = 4.36 nodes                        │
+│  After: 4.36 nodes (consolidated)                        │
+│  Benefit: Higher tier = more pool shares (4% vs 2%)      │
+└──────────────────────────────────────────────────────────┘
+
+PATH 3: STRATEGIC ACCUMULATION
+┌──────────────────────────────────────────────────────────┐
+│  Buy multiple low levels → Merge into apex tier          │
+│                                                          │
+│  5× Apex Rogue (Lv 9) = 5.45 total nodes                │
+│  Merge → 1× Cosmic Crown (Lv 13) = 8.72 nodes + 5% share│
+│                                                          │
+│  Trade-off: More nodes vs higher pool ownership          │
+└──────────────────────────────────────────────────────────┘
+
+PATH 4: SELL FOR PROFIT
+┌──────────────────────────────────────────────────────────┐
+│  Private mint → Hold → Sell at Presale/Public prices     │
+│                                                          │
+│  Example: LIONSMANE Prime (Lv 23)                        │
+│  • Buy Private: $15,000 (54.5 nodes)                     │
+│  • Sell Public: ~$45,000-60,000 (same NFT, 3x value)    │
+│  • Plus: Keep validator rewards earned while holding     │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Validator Reward Economics
+
+### Dual Income Stream Breakdown
+
+Every Level 10+ NFT earns from **two sources simultaneously**:
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║           INCOME SOURCE 1: YOUR VALIDATOR NODES               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Your Nodes Earn:
+├─ Transaction Fees: 0.5% of block rewards
+├─ Network Fees: Proportional to SDM staked
+├─ Validation Rewards: Per-block rewards
+└─ Governance Fees: Protocol upgrade fees
+
+Example: 10 nodes × 100 ZSDM/day = 1,000 ZSDM/day
+
+
+╔═══════════════════════════════════════════════════════════════╗
+║        INCOME SOURCE 2: SHARED POOL OWNERSHIP                 ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Pool Share Earnings:
+├─ Pool Count × Share % × Pool Daily Earnings
+│
+Example: LIONSMANE Prime (Lv 23)
+├─ 5 pools × 15% share × 500 ZSDM/pool/day
+└─ = 375 ZSDM/day from pool shares
+
+TOTAL DAILY = Node Earnings + Pool Earnings
+            = 1,000 + 375 = 1,375 ZSDM/day
+```
+
+### ROI Projection Example
+
+```
+LIONSMANE Prime (Lv 23) - Private Sale
+
+Initial Investment: $15,000
+Daily Earnings: ~1,375 ZSDM
+Monthly Earnings: ~41,250 ZSDM
+
+If ZSDM = $0.50:
+├─ Monthly Revenue: $20,625
+├─ Break-even: ~0.7 months
+└─ Year 1 ROI: ~1,650%
+
+If ZSDM = $1.00:
+├─ Monthly Revenue: $41,250
+├─ Break-even: ~0.36 months
+└─ Year 1 ROI: ~3,300%
+```
+
+**Note:** Projections are illustrative. Actual returns depend on network activity, ZSDM price, and validator performance.
+
+---
+
+## Complete LIONSMANE Hierarchy (Lv 9-23)
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║              COMPLETE VALIDATOR TIER LIST                     ║
+╚═══════════════════════════════════════════════════════════════╝
+
+Level  Name                    Price      Private Nodes  Pool %
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Lv 9   Apex Rogue              $300       1.09          —
+Lv 10  Storm Monarch           $600       2.18          2%
+Lv 11  Prism Archon            $900       3.27          3%
+Lv 12  Cataclysm Prime         $1,200     4.36          4%
+Lv 13  Cosmic Crown            $2,400     8.72          5%
+Lv 14  Quantum Chancellor      $3,000     10.90         6%
+Lv 15  Aurora Matriarch        $3,600     13.08         7%
+Lv 16  Obsidian Saint          $4,200     15.26         8%
+Lv 17  Celestial Foundry       $5,000     18.17         9%
+Lv 18  Diamond Emissary        $6,000     21.80         10%
+Lv 19  Solar Dominion          $7,200     26.16         11%
+Lv 20  Eternal Paragon         $8,400     30.52         12%
+Lv 21  Genesis Warden          $10,000    36.33         13%
+Lv 22  Etheric Magistrate      $12,000    43.60         14%
+Lv 23  LIONSMANE Prime         $15,000    54.50         15%
+```
+
+**Private Sale provides the best value** - same price across all phases, but 3x more SDM than Public Sale!
 
 ---
 
