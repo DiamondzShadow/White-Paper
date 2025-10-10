@@ -10,5 +10,6 @@
 * [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
 * [Quality Improvement Proposals (QIPs)](qips.md)
 * [Validator & Proof of Contribution Flow](validator-and-proof-of-contribution-flow.md)
+* [Diamondz Validator — The Ascendant Wave Sale](diamondz-validator-ascendant-wave-sale.md)
 * [How to Participate](how-to-participate.md)
 * [Roadmap](roadmap.md)
