@@ -49,7 +49,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * ⟳ Launch TikTok oracle for viral metrics and creator fund data
   * ⟳ Implement Instagram oracle for posts, reels, and stories engagement
   * ⟳ Deploy cross-platform identity linking system
-  * ⟳ Launch CrabbyTV Echo Creator Nest MVP for creator registry + milestone progression (Milestone Units/Creator Credits/Reputation Badges/Wavz Score)
+  * ⟳ Launch CrabbyTV Creator Progression MVP for creator registry + milestone progression (Milestone Units/Creator Credits/Reputation Badges/Wavz Score)
   * ⟳ Release unified API for all platform data access
   * ⟳ Target: 1,000 creators across 4 platforms, 10,000+ validations
 

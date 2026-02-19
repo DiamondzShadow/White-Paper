@@ -620,10 +620,10 @@ This exact flow applies to:
 - **Twitch**: Subscribers, viewers, streams (Twitch API)
 - **All Other Platforms**: Same architecture, different API endpoints
 
-#### CrabbyTV Echo Creator Nest MVP
+#### CrabbyTV Creator Progression MVP
 
 To extend the Wavz oracle design beyond YouTube-only milestone tracking, the ecosystem introduces the
-**CrabbyTV Echo Creator Nest MVP** as a generalized creator progression layer:
+**CrabbyTV Creator Progression MVP** as a generalized creator progression layer:
 
 **Terminology update for CrabbyTV MVP**:
 - **Milestone Units** represent verified milestone-level achievements
@@ -656,7 +656,7 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
    - Structured event emission for transparent indexing and analytics
    - Manual verify/reject fallback path for disputed milestones
 
-The CrabbyTV MVP is positioned as a practical "Echo Creator Nest" implementation that converts oracle-validated
+The CrabbyTV MVP is positioned as a practical creator progression implementation that converts oracle-validated
 social performance into a reusable on-chain reputation primitive compatible with the broader Wavz architecture.
 
 ### Strategic Partnerships Powering Wavz Infrastructure
@@ -709,7 +709,7 @@ Thirdweb powers the seamless creator onboarding experience and smart contract de
 **Wavz-Specific Features**:
 - **Creator Dashboard**: Built on thirdweb's SDK with embedded wallet functionality
 - **Milestone Unit NFT Minting**: Automated minting of Milestone Unit NFTs for each milestone
-- **Beat Marketplace**: NFT marketplace for trading Beat reputation tokens
+- **Reputation Badge Marketplace**: NFT marketplace for trading Reputation Badge reputation tokens
 - **Multi-Chain Deployment**: Deploy Wavz contracts to 10+ chains with one click
 - **Connect Ecosystem**: Over 170 wallet providers supported for maximum accessibility
 
@@ -741,10 +741,10 @@ Uniblock provides comprehensive blockchain data APIs that power Wavz analytics a
 - **Real-Time Indexing**: Sub-second data updates for Milestone Unit and Creator Credit tracking
 - **Historical Data**: Full history of creator Wavz progression for analytics
 - **Cross-Chain Aggregation**: Track creator activity across multiple blockchains
-- **NFT Metadata**: Enhanced NFT data for Milestone Unit and Beat visualization
+- **NFT Metadata**: Enhanced NFT data for Milestone Units and Reputation Badge visualization
 
 **Wavz Analytics Powered by Uniblock**:
-- **Creator Dashboard**: Real-time Milestone Unit, Creator Credit, and Beat tracking
+- **Creator Dashboard**: Real-time Milestone Units, Creator Credits, and Reputation Badges tracking
 - **Investor Analytics**: Historical Wavz score trends for investment decisions
 - **Cross-Platform Insights**: Aggregate creator reputation across all blockchains
 - **Leaderboards**: Global and category-specific creator rankings by Wavz score
@@ -778,7 +778,7 @@ Lucid Labs provides the DeFi infrastructure that enables liquid markets for crea
 
 **Financial Services Integration**:
 - **Liquidity Pools**: Automated market makers for creator token trading
-- **Reputation Badge NFT Liquidity**: Innovative NFT-Fi solutions for trading Beat reputation tokens
+- **Reputation Badge NFT Liquidity**: Innovative NFT-Fi solutions for trading Reputation Badge reputation tokens
 - **Yield Farming**: Creators stake tokens to earn additional rewards
 - **Token Bonding Curves**: Dynamic pricing for creator token launches
 - **Cross-Chain Swaps**: Bridge creator tokens across multiple chains
@@ -808,7 +808,7 @@ function launchCreatorToken(
 - **Trading Fees**: 0.3% fee on all creator token trades
 - **Liquidity Provider Rewards**: Platform earns from LP position fees
 - **Lending Interest**: Revenue from Milestone Unit-backed loan origination
-- **Reputation Badge NFT Marketplace**: Fees on fractionalized Beat trading
+- **Reputation Badge NFT Marketplace**: Fees on fractionalized Reputation Badge trading
 
 **Creator Benefits**:
 - **Instant Liquidity**: Trade creator tokens 24/7 with deep liquidity pools

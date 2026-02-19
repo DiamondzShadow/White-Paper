@@ -119,7 +119,7 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 ## Key Innovations
 
 - **Wavz Social Engagement System**: Gamified progression (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score) validating creator authenticity
-- **CrabbyTV Echo Creator Nest MVP**: Creator registry and oracle milestone progression layer extending Wavz beyond a single platform
+- **CrabbyTV Creator Progression MVP**: Creator registry and oracle milestone progression layer extending Wavz beyond a single platform
 - **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
 - **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities (SDM, TuBE, GaM3, DuSTD)
@@ -150,7 +150,7 @@ Diamondz Shadow is powered by leading Web3 infrastructure providers:
 - **Partnership**: [uniblock.dev](https://www.uniblock.dev/)
 - **Role**: Real-time blockchain data APIs for creator analytics
 - **Value**: Unified API for all on-chain data, sub-second indexing, cross-chain aggregation
-- **Integration**: Powers Wavz dashboards with real-time Milestone Unit, Creator Credit, Beat, and Wavz tracking
+- **Integration**: Powers Wavz dashboards with real-time Milestone Units, Creator Credits, Reputation Badges, and Wavz Score tracking
 
 ### Lucid Labs - DeFi Liquidity Infrastructure
 - **Partnership**: [app.lucidlabs.fi](https://app.lucidlabs.fi/)

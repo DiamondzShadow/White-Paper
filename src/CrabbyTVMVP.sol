@@ -11,9 +11,9 @@ interface ICrabbyRewardToken {
 
 /**
  * @title CrabbyTVMVP
- * @notice Echo Creator Nest MVP for CrabbyTV social milestone validation.
+ * @notice CrabbyTV creator progression MVP for social milestone validation.
  * @dev Tracks creator milestones and progression:
- *      Sparks -> cPoints -> Beats -> Wavz score.
+ *      Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score.
  */
 contract CrabbyTVMVP is Ownable, Pausable, ReentrancyGuard {
     enum MetricType {

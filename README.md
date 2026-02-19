@@ -26,7 +26,7 @@ A sophisticated ERC677 token implementation with burn/mint capabilities, designe
 │   ├── interfaces/
 │   │   ├── IERC677.sol           # ERC677 interface
 │   │   └── IERC677Receiver.sol   # Receiver interface
-│   ├── CrabbyTVMVP.sol           # Echo Creator Nest MVP for CrabbyTV
+│   ├── CrabbyTVMVP.sol           # CrabbyTV creator progression MVP
 │   └── tokens/
 │       ├── BurnMintERC677.sol    # Main token contract
 │       ├── wSDMSecure.sol        # Secure BTC-backed wrapper
@@ -40,7 +40,7 @@ A sophisticated ERC677 token implementation with burn/mint capabilities, designe
 └── README.md
 ```
 
-## CrabbyTV Echo Creator Nest MVP
+## CrabbyTV Creator Progression MVP
 
 `CrabbyTVMVP.sol` provides an MVP flow for creator milestone validation and progression:
 
@@ -48,10 +48,10 @@ A sophisticated ERC677 token implementation with burn/mint capabilities, designe
 - **Oracle milestone submission** (`recordMilestone`)
 - **Manual/auto verification** (`verifyMilestone`, confidence-based auto-verify)
 - **Progression model**:
-  - Sparks
-  - cPoints (`10 Sparks = 1 cPoint`)
-  - Beats (`100 cPoints = 1 Beat`)
-  - Wavz score (derived from verified progression + confidence)
+  - Milestone Units
+  - Creator Credits (`10 Milestone Units = 1 Creator Credit`)
+  - Reputation Badges (`100 Creator Credits = 1 Reputation Badge`)
+  - Wavz Score (derived from verified progression + confidence)
 - **Optional token rewards** via a mintable reward token (compatible with `BurnMintERC677` when this MVP contract has minter role)
 
 ### CrabbyTV Script Helpers
