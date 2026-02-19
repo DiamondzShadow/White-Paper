@@ -21,6 +21,7 @@ The Diamondz Shadow ecosystem utilizes a sophisticated four-token model, with ea
 * **Token Standard**: ERC-20
 * **Function**: Network gas token powering all transactions
 * **Transaction Throughput**: 100,000 TPS capacity
+* **Upside Extension**: SDM can also be wrapped into wSDM/gSDM/sSDM (BTC, gold, or USDC-backed baskets) for diversified upside participation
 
 #### TuBE: Content Creation Token
 
@@ -45,6 +46,83 @@ The Diamondz Shadow ecosystem utilizes a sophisticated four-token model, with ea
 * **Token Standard**: ERC-20 with price feed oracles
 * **Function**: Stable value transactions and revenue settlement
 * **Peg**: 1:1 USD through algorithmic and collateral backing
+
+### Secure Basket Wrapper Tokens (wSDM, gSDM, sSDM)
+
+To strengthen treasury-backed token products and provide asset-diversified exposure, the ecosystem introduces
+three hardened wrapper tokens:
+
+* **wSDM (Wrapped SDM - Bitcoin Backed)**: 50% SDM + 50% WBTC target composition
+* **gSDM (Gold-backed SDM)**: 50% SDM + 50% XAUT target composition
+* **sSDM (Stable SDM)**: 20% SDM + 80% USDC target composition
+
+These wrappers are designed with production-focused controls:
+
+1. **Slippage protection enforced**
+   * Mint includes minimum output controls (`minWsdmOut`, `minGsdmOut`, `minSsdmOut`)
+   * Redeem includes minimum output controls for both SDM and backing asset
+2. **Fee-adjusted quoting**
+   * `quoteMint` and `quoteRedeem` expose net user output after protocol fees
+3. **Stale price protection**
+   * Oracle reads enforce freshness windows (3h default threshold) and reject invalid values
+4. **Restricted emergency withdraw**
+   * Emergency transfers are restricted to backing assets and SDM only
+5. **Gas optimizations**
+   * Oracle decimals are cached to reduce repeated read overhead
+6. **Optional ratio enforcement**
+   * wSDM/gSDM target 50/50 with configurable tolerance
+   * sSDM targets 20/80 with configurable tolerance
+7. **Operational safety controls**
+   * Pausable operations, structured events, validation checks, and explicit admin controls
+
+This wrapper model complements the core four-token economy by adding transparent, collateral-aware instruments.
+As well as being the network token, SDM wrapped with gold, BTC, or USDC can provide additional upside exposure
+through diversified reserve backing while remaining inside the Diamondz Shadow ecosystem.
+
+#### Wrapper Mechanics (How Mint and Redeem Work)
+
+1. **Price Inputs and Normalization**
+   - SDM side uses protocol SDM/USD pricing.
+   - Backing-asset side uses oracle pricing (WBTC/USD, XAUT/USD, USDC/USD).
+   - All prices are normalized into consistent USD precision before output calculation.
+   - Oracle values must be fresh (3h max staleness) and strictly positive.
+
+2. **Mint Flow (User Deposits SDM + Backing Asset)**
+   - User submits deposit amounts and a minimum wrapper output.
+   - Contract computes:
+     - `sdmUsdValue`
+     - `backingUsdValue`
+     - `grossWrapperOut = (sdmUsdValue + backingUsdValue) * 1e12`
+   - Mint fee is deducted:
+     - `fee = grossWrapperOut * mintFee / 10_000`
+     - `netWrapperOut = grossWrapperOut - fee`
+   - Fee shares are minted to treasury, making mint/redeem fee accounting consistent.
+   - Transaction reverts if `netWrapperOut < minOut`.
+   - Optional ratio checks enforce the strategy target (50/50 or 20/80 with tolerance).
+
+3. **Redeem Flow (User Burns Wrapper for Underlying Assets)**
+   - User submits wrapper amount and minimum SDM/backing outputs.
+   - Contract computes pro-rata reserve share from current reserves:
+     - `assetOut = reserve * wrapperIn / totalSupply`
+   - Redeem fee is deducted per asset and routed to treasury.
+   - Transaction reverts if post-fee output is below user minimums.
+   - Wrapper is burned and net assets are transferred to user.
+
+4. **Quote Functions (User-Expected Net Output)**
+   - `quoteMint` and `quoteRedeem` expose **post-fee** output.
+   - This prevents UI/user mismatches between quoted and realized amounts.
+   - Quotes and execution both rely on the same stale-price and validation logic.
+
+5. **Operational Safety**
+   - Emergency pause halts mint/redeem during anomalies.
+   - Emergency withdraw is restricted to SDM/backing assets only.
+   - Admin fee updates are capped to prevent abusive parameter changes.
+
+6. **Simple Example (wSDM)**
+   - If a user contributes USD-equivalent value of `750`, then:
+     - Gross output is approximately `750 wSDM` (18-decimal token units)
+     - At 1% mint fee, net output is approximately `742.5 wSDM`
+   - User can protect execution with `minWsdmOut` so the transaction reverts if output degrades.
 
 ### Cyclical Supply Management
 
@@ -187,7 +265,10 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 
 #### Revenue Generation
 
-1. **Platform Fees**: Small fees from content tokenization and trading
+1. **Platform Fees (CrabbyTV 3-6% Revenue Share Band)**:
+   - **~3% class fees** on selected premium creator interactions (e.g., paid interaction events)
+   - **Up to ~6% class fees** on stake-based competitive gaming flows (e.g., Spades arena house fee model)
+   - Feature-level fee policy remains governance-adjustable within published risk controls
 2. **Gaming Revenue**: Fees from betting, tournaments, and in-game transactions
 3. **Cross-Chain Fees**: Revenue from bridge operations and cross-chain services
 4. **DeFi Yield**: Returns from treasury assets deployed in DeFi protocols
@@ -200,6 +281,18 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 3. **Governance Value**: Increased influence as platform grows
 4. **Utility Expansion**: New use cases increase token demand
 5. **Network Effects**: Growing user base increases all token values
+
+#### CRABBY ($Crabby) Capture of Platform Transaction Flow
+
+- A percentage of qualifying platform transactions is routed into CRABBY ($Crabby)-aligned value accrual pathways.
+- This includes treasury-directed protocol fees and governance-directed mechanisms such as buyback/burn, liquidity support, and contribution rewards for the $Crabby economy.
+- Design objective: as platform transaction volume grows (films, Spades, AMAs, paid events, NFT activity), $Crabby value capture scales with real usage rather than speculative-only demand.
+
+#### SDM Revenue Source (zdiamondex.store)
+
+- SDM monetization is positioned separately from CrabbyTV qualifying transaction flow.
+- SDM revenue is tied to the exchange/business model at **https://zdiamondex.store/**.
+- This creates a clear split: **$Crabby** captures qualifying CrabbyTV platform transactions, while **$SDM** captures exchange-linked revenue flow.
 
 #### Risk Management
 
