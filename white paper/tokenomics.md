@@ -78,6 +78,50 @@ This wrapper model complements the core four-token economy by adding transparent
 for users who want directional exposure to BTC, gold, and stablecoin-backed baskets while remaining within the
 Diamondz Shadow ecosystem.
 
+#### Wrapper Mechanics (How Mint and Redeem Work)
+
+1. **Price Inputs and Normalization**
+   - SDM side uses protocol SDM/USD pricing.
+   - Backing-asset side uses oracle pricing (WBTC/USD, XAUT/USD, USDC/USD).
+   - All prices are normalized into consistent USD precision before output calculation.
+   - Oracle values must be fresh (24h max staleness) and strictly positive.
+
+2. **Mint Flow (User Deposits SDM + Backing Asset)**
+   - User submits deposit amounts and a minimum wrapper output.
+   - Contract computes:
+     - `sdmUsdValue`
+     - `backingUsdValue`
+     - `grossWrapperOut = (sdmUsdValue + backingUsdValue) * 1e12`
+   - Mint fee is deducted:
+     - `fee = grossWrapperOut * mintFee / 10_000`
+     - `netWrapperOut = grossWrapperOut - fee`
+   - Transaction reverts if `netWrapperOut < minOut`.
+   - Optional ratio checks enforce the strategy target (50/50 or 20/80 with tolerance).
+
+3. **Redeem Flow (User Burns Wrapper for Underlying Assets)**
+   - User submits wrapper amount and minimum SDM/backing outputs.
+   - Contract computes pro-rata reserve share from current reserves:
+     - `assetOut = reserve * wrapperIn / totalSupply`
+   - Redeem fee is deducted per asset and routed to treasury.
+   - Transaction reverts if post-fee output is below user minimums.
+   - Wrapper is burned and net assets are transferred to user.
+
+4. **Quote Functions (User-Expected Net Output)**
+   - `quoteMint` and `quoteRedeem` expose **post-fee** output.
+   - This prevents UI/user mismatches between quoted and realized amounts.
+   - Quotes and execution both rely on the same stale-price and validation logic.
+
+5. **Operational Safety**
+   - Emergency pause halts mint/redeem during anomalies.
+   - Emergency withdraw is restricted to SDM/backing assets only.
+   - Admin fee updates are capped to prevent abusive parameter changes.
+
+6. **Simple Example (wSDM)**
+   - If a user contributes USD-equivalent value of `750`, then:
+     - Gross output is approximately `750 wSDM` (18-decimal token units)
+     - At 1% mint fee, net output is approximately `742.5 wSDM`
+   - User can protect execution with `minWsdmOut` so the transaction reverts if output degrades.
+
 ### Cyclical Supply Management
 
 Our ecosystem implements innovative cyclical supply management across all tokens to ensure long-term sustainability:

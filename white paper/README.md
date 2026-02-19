@@ -11,14 +11,14 @@ The Diamondz Shadow ecosystem represents a paradigm shift in media production an
 **Wavz** is our revolutionary social engagement validation system that transforms Web2 creator milestones into gamified on-chain achievements. As "The Beat of the Creator," Wavz brings validated social media data on-chain across all major platforms through a progressive four-tier system:
 
 **The Wavz Progression**:
-- **Sparks**: Individual milestone achievements (100 subscribers = 1 Spark)
-- **cPoints**: Creator Points accumulated from 10 Sparks = 1 cPoint
-- **Beats**: Engagement rhythm unlocked at 100 cPoints = 1 Beat NFT
-- **Wavz**: Ultimate reputation score combining Sparks × cPoints × Beats × Quality
+- **Milestone Units**: Individual verified achievements (for example, subscriber or view thresholds)
+- **Creator Credits**: Reputation credits accumulated from verified Milestone Units
+- **Reputation Badges**: Higher-tier, non-fungible recognition unlocked at major credit thresholds
+- **Wavz Score**: Composite reputation score combining milestone consistency, credits, badges, and quality
 
 **Platform Coverage**:
 - **Universal Social Validation**: Oracle system validating YouTube, Twitter, TikTok, Instagram, Twitch, and more
-- **YouTube Milestone**: First live Spark generation implementation demonstrating the oracle architecture
+- **YouTube Milestone**: First live Milestone Unit generation implementation demonstrating the oracle architecture
 - **AI-Powered Fraud Detection**: 95%+ accuracy in detecting fake followers, bot engagement, and metric manipulation
 - **Platform-Agnostic Design**: Single oracle architecture scales to any social platform with an API
 - **Cross-Platform Identity**: Link all social accounts to one unified Wavz score
@@ -118,7 +118,7 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 
 ## Key Innovations
 
-- **Wavz Social Engagement System**: Gamified progression (Sparks → cPoints → Beats → Wavz) validating creator authenticity
+- **Wavz Social Engagement System**: Gamified progression (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score) validating creator authenticity
 - **CrabbyTV Echo Creator Nest MVP**: Creator registry and oracle milestone progression layer extending Wavz beyond a single platform
 - **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
@@ -138,7 +138,7 @@ Diamondz Shadow is powered by leading Web3 infrastructure providers:
 - **Partnership**: [quicknode.com](https://www.quicknode.com/)
 - **Role**: Enterprise-grade RPC nodes for oracle validators
 - **Value**: 99.9% uptime, sub-50ms response times, 1M+ requests/day capacity
-- **Integration**: Oracle validators connect via QuickNode for fast Spark recording
+- **Integration**: Oracle validators connect via QuickNode for fast Milestone Unit recording
 
 ### Thirdweb - Creator Onboarding & Smart Contracts
 - **Partnership**: [thirdweb.com/diamond-zchain](https://thirdweb.com/diamond-zchain)
@@ -150,13 +150,13 @@ Diamondz Shadow is powered by leading Web3 infrastructure providers:
 - **Partnership**: [uniblock.dev](https://www.uniblock.dev/)
 - **Role**: Real-time blockchain data APIs for creator analytics
 - **Value**: Unified API for all on-chain data, sub-second indexing, cross-chain aggregation
-- **Integration**: Powers Wavz dashboards with real-time Spark, cPoint, Beat, and Wavz tracking
+- **Integration**: Powers Wavz dashboards with real-time Milestone Unit, Creator Credit, Beat, and Wavz tracking
 
 ### Lucid Labs - DeFi Liquidity Infrastructure
 - **Partnership**: [app.lucidlabs.fi](https://app.lucidlabs.fi/)
-- **Role**: AMM liquidity pools, creator token bonding curves, NFT-Fi for Beats
-- **Value**: Instant liquidity, yield farming, Spark-backed lending
-- **Integration**: Creator token launches and Beat NFT marketplace powered by Lucid Labs
+- **Role**: AMM liquidity pools, creator token bonding curves, NFT-Fi for Reputation Badges
+- **Value**: Instant liquidity, yield farming, Milestone Unit-backed lending
+- **Integration**: Creator token launches and Reputation Badge NFT marketplace powered by Lucid Labs
 
 **Partnership Synergy**: Thirdweb (onboarding) → QuickNode (blockchain) → Wavz oracles (validation) → Uniblock (analytics) → Lucid Labs (liquidity)
 
