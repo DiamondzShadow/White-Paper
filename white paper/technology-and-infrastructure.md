@@ -620,10 +620,10 @@ This exact flow applies to:
 - **Twitch**: Subscribers, viewers, streams (Twitch API)
 - **All Other Platforms**: Same architecture, different API endpoints
 
-#### CrabbyTV Creator Progression MVP
+#### CrabbyTV Live Creator Progression MVP
 
 To extend the Wavz oracle design beyond YouTube-only milestone tracking, the ecosystem introduces the
-**CrabbyTV Creator Progression MVP** as a generalized creator progression layer:
+**CrabbyTV Live Creator Progression MVP** as a generalized creator progression layer for live streaming creators:
 
 **Terminology update for CrabbyTV MVP**:
 - **Milestone Units** represent verified milestone-level achievements
@@ -656,7 +656,7 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
    - Structured event emission for transparent indexing and analytics
    - Manual verify/reject fallback path for disputed milestones
 
-The CrabbyTV MVP is positioned as a practical creator progression implementation that converts oracle-validated
+The CrabbyTV MVP is positioned as a practical creator progression implementation for live streaming creators that converts oracle-validated
 social performance into a reusable on-chain reputation primitive compatible with the broader Wavz architecture.
 
 ### Strategic Partnerships Powering Wavz Infrastructure

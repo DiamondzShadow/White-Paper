@@ -119,7 +119,7 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 ## Key Innovations
 
 - **Wavz Social Engagement System**: Gamified progression (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score) validating creator authenticity
-- **CrabbyTV Creator Progression MVP**: Creator registry and oracle milestone progression layer extending Wavz beyond a single platform
+- **CrabbyTV Live Creator Progression MVP**: Creator registry and oracle milestone progression layer extending Wavz to live streaming creators
 - **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
 - **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities (SDM, TuBE, GaM3, DuSTD)
