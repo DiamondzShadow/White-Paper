@@ -636,6 +636,7 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
 - Creator monetization rails (tips, paid content, NFT resale royalties, game winnings)
 - Wallet-native UX (embedded and external wallet connectivity)
 - Platform revenue-share rails in a 3-6% range depending transaction type
+- Qualifying platform transaction flow is directed to CRABBY ($Crabby) token value-capture pathways
 
 **Terminology update for CrabbyTV MVP**:
 - **Milestone Units** represent verified milestone-level achievements
@@ -662,7 +663,7 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
    - Optional token reward minting hooks for verified milestones
    - Configurable reward multipliers by metric class (followers, views, engagement, etc.)
    - On-chain progress query interfaces for creator dashboards, investor analytics, and ranking systems
-   - Token value-capture hooks so a percentage of qualifying platform transactions can flow into protocol token economics
+   - Token value-capture hooks so a percentage of qualifying platform transactions can flow into CRABBY ($Crabby) token economics
 
 5. **Safety and Operations**
    - Pausable controls and role-gated oracle submission

@@ -281,11 +281,17 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 4. **Utility Expansion**: New use cases increase token demand
 5. **Network Effects**: Growing user base increases all token values
 
-#### SDM Capture of Platform Transaction Flow
+#### CRABBY ($Crabby) Capture of Platform Transaction Flow
 
-- A percentage of qualifying platform transactions is routed into SDM-aligned value accrual pathways.
-- This includes treasury-directed protocol fees and governance-directed mechanisms such as buyback/burn, liquidity support, and contribution rewards.
-- Design objective: as platform transaction volume grows (films, Spades, AMAs, paid events, NFT activity), SDM value capture scales with real usage rather than speculative-only demand.
+- A percentage of qualifying platform transactions is routed into CRABBY ($Crabby)-aligned value accrual pathways.
+- This includes treasury-directed protocol fees and governance-directed mechanisms such as buyback/burn, liquidity support, and contribution rewards for the $Crabby economy.
+- Design objective: as platform transaction volume grows (films, Spades, AMAs, paid events, NFT activity), $Crabby value capture scales with real usage rather than speculative-only demand.
+
+#### SDM Revenue Source (zdiamondex.store)
+
+- SDM monetization is positioned separately from CrabbyTV qualifying transaction flow.
+- SDM revenue is tied to the exchange/business model at **https://zdiamondex.store/**.
+- This creates a clear split: **$Crabby** captures qualifying CrabbyTV platform transactions, while **$SDM** captures exchange-linked revenue flow.
 
 #### Risk Management
 
