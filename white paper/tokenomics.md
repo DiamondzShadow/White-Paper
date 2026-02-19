@@ -7,47 +7,30 @@ coverY: 0
 
 #### Tokenomics
 
-### Multi-Token Ecosystem Overview
+### Current Value-Capture Architecture (Live Model)
 
-The Diamondz Shadow ecosystem utilizes a sophisticated four-token model, with each token serving specialized functions within our comprehensive entertainment and gaming platform built on Diamond zChain.
+The token structure is now interpreted through a **split value-capture model**:
 
-### Token Architecture
+1. **CRABBY ($Crabby)** captures qualifying CrabbyTV platform transaction flow.
+2. **SDM ($SDM)** captures network and exchange-aligned value flow.
+3. **SDM secure wrappers** provide structured upside extension with diversified reserve backing.
 
-#### SDM: Custom Gas Token
+This chapter is intentionally ordered around the current model first. Legacy expansion modules remain documented
+later in this chapter for continuity.
 
-* **Token Name**: Diamondz Shadow Token
-* **Token Symbol**: SDM
-* **Blockchain**: Diamond zChain (Arbitrum Nitro Layer 3)
-* **Token Standard**: ERC-20
-* **Function**: Network gas token powering all transactions
-* **Transaction Throughput**: 100,000 TPS capacity
-* **Upside Extension**: SDM can also be wrapped into wSDM/gSDM/sSDM (BTC, gold, or USDC-backed baskets) for diversified upside participation
+#### CRABBY ($Crabby): Qualifying Platform Transaction Capture
 
-#### TuBE: Content Creation Token
+- Captures value from qualifying CrabbyTV transaction categories.
+- Aligns token economics with real product usage (films, Spades, AMAs, paid interactions, NFT-linked activity).
+- Designed for usage-driven accrual rather than speculation-only demand.
 
-* **Token Name**: TuBE Token
-* **Token Symbol**: TuBE
-* **Token Standard**: ERC-20
-* **Function**: Content creation, community governance, and entertainment tokenization
-* **Utility**: Fractional ownership of content streams, creator rewards, governance rights
+#### SDM ($SDM): Network Token and Exchange Revenue Rail
 
-#### GaM3: Gaming Interaction Token
+- Native gas token for Diamond zChain transactions.
+- Separate value rail tied to exchange/business activity at **https://zdiamondex.store/**.
+- Also acts as the anchor asset used in all secure wrapper basket designs.
 
-* **Token Name**: GaM3 Token
-* **Token Symbol**: GaM3
-* **Token Standard**: ERC-20 with EIP-2612 permit functionality
-* **Function**: Gaming activities, predictive betting, in-game asset ownership
-* **Utility**: Player-to-player betting, tournament predictions, cross-game asset compatibility
-
-#### DuSTD: Ecosystem Stablecoin
-
-* **Token Name**: DuSTD Stablecoin
-* **Token Symbol**: DuSTD
-* **Token Standard**: ERC-20 with price feed oracles
-* **Function**: Stable value transactions and revenue settlement
-* **Peg**: 1:1 USD through algorithmic and collateral backing
-
-### Secure Basket Wrapper Tokens (wSDM, gSDM, sSDM)
+### SDM Secure Basket Wrapper Layer (wSDM, gSDM, sSDM)
 
 To strengthen treasury-backed token products and provide asset-diversified exposure, the ecosystem introduces
 three hardened wrapper tokens:
@@ -75,11 +58,39 @@ These wrappers are designed with production-focused controls:
 7. **Operational safety controls**
    * Pausable operations, structured events, validation checks, and explicit admin controls
 
-This wrapper model complements the core four-token economy by adding transparent, collateral-aware instruments.
-As well as being the network token, SDM wrapped with gold, BTC, or USDC can provide additional upside exposure
-through diversified reserve backing while remaining inside the Diamondz Shadow ecosystem.
+This wrapper model extends SDM into collateral-diversified instruments while preserving SDM as the core anchor asset.
+As well as being the network token, SDM wrapped with gold, BTC, or USDC can provide additional upside exposure through
+diversified reserve backing while remaining inside the Diamondz Shadow ecosystem.
 
-#### Wrapper Mechanics (How Mint and Redeem Work)
+### Supporting Token Modules (Legacy Expansion Track)
+
+The sections below are retained for expansion-path context and prior architecture continuity:
+
+#### TuBE: Content Creation Token
+
+* **Token Name**: TuBE Token
+* **Token Symbol**: TuBE
+* **Token Standard**: ERC-20
+* **Function**: Content creation, community governance, and entertainment tokenization
+* **Utility**: Fractional ownership of content streams, creator rewards, governance rights
+
+#### GaM3: Gaming Interaction Token
+
+* **Token Name**: GaM3 Token
+* **Token Symbol**: GaM3
+* **Token Standard**: ERC-20 with EIP-2612 permit functionality
+* **Function**: Gaming activities, predictive betting, in-game asset ownership
+* **Utility**: Player-to-player betting, tournament predictions, cross-game asset compatibility
+
+#### DuSTD: Ecosystem Stablecoin
+
+* **Token Name**: DuSTD Stablecoin
+* **Token Symbol**: DuSTD
+* **Token Standard**: ERC-20 with price feed oracles
+* **Function**: Stable value transactions and revenue settlement
+* **Peg**: 1:1 USD through algorithmic and collateral backing
+
+### Wrapper Mechanics (How Mint and Redeem Work)
 
 1. **Price Inputs and Normalization**
    - SDM side uses protocol SDM/USD pricing.
@@ -124,7 +135,7 @@ through diversified reserve backing while remaining inside the Diamondz Shadow e
      - At 1% mint fee, net output is approximately `742.5 wSDM`
    - User can protect execution with `minWsdmOut` so the transaction reverts if output degrades.
 
-### Cyclical Supply Management
+### Supply Management and Emissions
 
 Our ecosystem implements innovative cyclical supply management across all tokens to ensure long-term sustainability:
 
@@ -141,7 +152,7 @@ Our ecosystem implements innovative cyclical supply management across all tokens
 9. After burn events, minting resumes based on contribution
 10. Cycles repeat to maintain economic sustainability
 
-### Token Allocation and Distribution
+### Token Allocation and Distribution (Reference Framework)
 
 #### SDM Token Allocation
 
@@ -180,7 +191,7 @@ Our ecosystem implements innovative cyclical supply management across all tokens
 * **Transparency**: Real-time reserve reporting and regular audits
 * **Cross-Chain Functionality**: Available across multiple blockchain networks
 
-### Comprehensive Token Utility
+### Token Utility Map (Core + Supporting Modules)
 
 #### SDM Utility (Gas Token)
 
@@ -213,7 +224,7 @@ Our ecosystem implements innovative cyclical supply management across all tokens
 * **DeFi Integration**: Stable asset for yield farming and liquidity provision
 * **Cross-Chain Stability**: Maintain purchasing power across all supported networks
 
-### Proof of Contribution Mining
+### Proof of Contribution Mining (Expansion Framework)
 
 Our unique Proof of Contribution system distributes tokens across all four categories based on valuable ecosystem contributions:
 

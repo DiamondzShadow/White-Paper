@@ -7,9 +7,20 @@ coverY: 0
 
 #### Technology and Infrastructure
 
-### Blockchain Architecture
+### Current Model Context (Read First)
 
-Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a high-performance Layer 3 blockchain specifically designed for comprehensive media tokenization and community-driven entertainment.
+This chapter now follows the current operating model:
+
+1. **CrabbyTV** as the primary product and transaction surface
+2. **Wavz** as the validation and creator progression layer
+3. **$Crabby / $SDM** as split value-capture rails
+4. **Secure SDM wrappers** as hardened upside-extension instruments
+
+Some later sections preserve broader expansion and legacy architecture detail for continuity.
+
+### Core Chain Architecture
+
+Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a high-performance Layer 3 blockchain designed for creator economy transactions, validation workflows, and value-routing contracts.
 
 #### Core Components:
 
@@ -44,7 +55,7 @@ Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a h
 
 * **Purpose**: Testing and development environment for Diamond zChain
 
-### Comprehensive Media Tokenization Platform
+### Product and Tokenization Expansion Modules
 
 #### Universal Content Tokenization
 

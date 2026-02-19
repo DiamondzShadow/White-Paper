@@ -1,141 +1,76 @@
-### Diamondz Shadow Token (SDM) White Paper
+### Diamondz Shadow White Paper (Current Model)
 
-## Revolutionizing Media Production Through Comprehensive Tokenization
+## CrabbyTV-First Structure with Split Token Value Rails
 
 ## Executive Summary
 
-The Diamondz Shadow ecosystem represents a paradigm shift in media production and consumption through comprehensive tokenization of all content forms. Built on our custom Diamond zChain—a Layer 3 blockchain leveraging Arbitrum Nitro technology—we've created a revolutionary framework that tokenizes everything from movies and music to gaming achievements and social media streams.
+This whitepaper has been restructured to reflect the **current operating model**, not the older
+token-first presentation.
 
-### MVP Protocol: Wavz - The Beat of the Creator
+The live model is organized around real product usage and clear value-routing:
 
-**Wavz** is our revolutionary social engagement validation system that transforms Web2 creator milestones into gamified on-chain achievements. As "The Beat of the Creator," Wavz brings validated social media data on-chain across all major platforms through a progressive four-tier system:
+1. **CrabbyTV product activity** (films, Spades, AMAs, paid events, creator interactions)
+2. **Wavz validation and progression** (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score)
+3. **Split value capture rails**
+   - **$Crabby**: captures qualifying CrabbyTV platform transaction flow
+   - **$SDM**: captures network and exchange-aligned value (including flow tied to [zdiamondex.store](https://zdiamondex.store/))
+4. **Secure SDM wrapper layer** (`wSDM`, `gSDM`, `sSDM`) for BTC/gold/USDC-backed upside exposure with hardened controls
 
-**The Wavz Progression**:
-- **Milestone Units**: Individual verified achievements (for example, subscriber or view thresholds)
-- **Creator Credits**: Reputation credits accumulated from verified Milestone Units
-- **Reputation Badges**: Higher-tier, non-fungible recognition unlocked at major credit thresholds
-- **Wavz Score**: Composite reputation score combining milestone consistency, credits, badges, and quality
+This framing keeps platform behavior, economics, and contracts aligned in one readable flow.
 
-**Platform Coverage**:
-- **Universal Social Validation**: Oracle system validating YouTube, Twitter, TikTok, Instagram, Twitch, and more
-- **YouTube Milestone**: First live Milestone Unit generation implementation demonstrating the oracle architecture
-- **AI-Powered Fraud Detection**: 95%+ accuracy in detecting fake followers, bot engagement, and metric manipulation
-- **Platform-Agnostic Design**: Single oracle architecture scales to any social platform with an API
-- **Cross-Platform Identity**: Link all social accounts to one unified Wavz score
+### What Changed vs the Old Whitepaper Structure
 
-**Oracle-as-a-Service Revenue Model**:
-- **Oracle Validation Services**: $0.10-0.75 per milestone validation across all platforms
-- **Infrastructure Licensing**: $10K-100K setup + $2K-25K/month for B2B oracle SDK
-- **Identity & Reputation**: $10-29/month for cross-platform identity verification
-- **API Access**: $99-2,500/month for oracle data access across all validated platforms
-- **Platform Revenue Integration**: 10-15% fee on tokenized creator revenue (Phase 2)
-- **Enterprise Solutions**: $50K-500K for custom oracle development and private networks
+- **From legacy model**: broad ecosystem-first, multi-token-first narrative.
+- **To current model**: CrabbyTV product flow first, then token value capture and infrastructure.
+- Legacy sections are retained for historical context but no longer define the primary reading order.
 
-**Year 1 Projected Revenue**: $6.43M (Web2 oracle services)
-**Year 3 Projected Revenue**: $115M+ (full multi-platform oracle ecosystem)
+## Current Model Snapshot
 
-At the core of our ecosystem is a sophisticated four-token model designed to power diverse functionalities:
+### Product Layer (CrabbyTV)
 
-- **SDM**: Our custom gas token optimizing network operations with 100,000+ TPS capacity
-- **TuBE**: ERC-20 token for content creation and community governance
-- **GaM3**: Gaming interaction and predictive betting token
-- **DuSTD**: Ecosystem stablecoin for stable value transactions
+- Creator monetization surfaces run through the CrabbyTV platform experience.
+- Qualifying transaction classes are routed into CRABBY-aligned value accrual pathways.
+- Feature policy and fee bands are governance-managed with explicit risk controls.
 
-In addition to serving as the core network token, SDM can be wrapped into
-BTC/gold/USDC-backed baskets (wSDM, gSDM, sSDM) to provide upside-oriented exposure
-through collateral diversification.
+### Token Layer (Role Separation)
 
-Unlike traditional media models where centralized entities control production, distribution, and monetization, Diamondz Shadow democratizes the entire process. Our platform enables creators to tokenize their work for direct fan investment and transparent revenue, while audiences can invest in content they believe in and share in its success.
+- **CRABBY ($Crabby)**: value capture from qualifying platform transactions.
+- **SDM ($SDM)**: network gas token + exchange/business revenue rail.
+- **wSDM / gSDM / sSDM**: SDM-centered wrappers with diversified reserve backing.
 
-The Diamondz Shadow ecosystem eliminates reliance on speculative trading by anchoring token value to real-world revenue streams from multiple sources, including YouTube milestone achievements, ad revenue tokenization, streaming royalties, NFT sales, and gaming performance. This connection ensures a dynamic, sustainable financial model that grows in parallel with the platform's creative success.
+### Contract Safety Layer (Secure Wrappers)
 
-### Comprehensive Revenue Model
+The secure wrappers implement:
 
-Our economic model generates sustainable revenue through Web2 Oracle Infrastructure and tokenization services:
+- Slippage protection (`min*Out` checks on mint/redeem)
+- Fee-adjusted quote functions
+- Stale-price protections (3-hour freshness threshold)
+- Restricted emergency withdrawals (underlying assets only)
+- Optional ratio enforcement (50/50 or 20/80 targets with tolerance)
+- Pausable operations and treasury-routed fees
 
-**1. Web2 Oracle Infrastructure Revenue** ($6.43M Year 1 → $115M Year 3):
-   - **Oracle Validation Services**: Per-validation fees across YouTube, Twitter, TikTok, Instagram, Twitch, etc.
-   - **Infrastructure Licensing**: B2B oracle SDK for analytics platforms, marketing agencies, Web3 projects
-   - **Identity & Reputation**: Cross-platform identity verification and Sybil resistance services
-   - **API Access**: Data access tiers for developers and enterprises building on validated data
-   - **Platform Revenue Integration**: 10-15% fees on tokenized creator revenue from social platforms
-   - **Enterprise Oracle Solutions**: Custom oracle development and managed oracle services
+## Whitepaper Structure (Current Model Reading Order)
 
-**2. Creator Tokenization Services** (Enabled by Oracle Data):
-   - Creator channel tokenization with verifiable on-chain milestones
-   - Fractional ownership of creator revenue streams
-   - Secondary market trading fees on creator tokens
-   - Token staking and governance mechanisms
+1. [Current Model Architecture (2026)](current-model-architecture.md)
+2. [Introduction](introduction.md)
+3. [Technology and Infrastructure](technology-and-infrastructure.md)
+4. [Tokenomics](tokenomics.md)
+5. [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
+6. [Market Opportunity](market-opportunity.md)
+7. [Roadmap](roadmap.md)
+8. [How to Participate](how-to-participate.md)
+9. [Quality Improvement Proposals (QIPs)](qips.md)
+10. [Validator & Proof of Contribution Flow](validator-and-proof-of-contribution-flow.md)
+11. [Legacy Model Context](diamondz-shadow-ecosystem.md)
 
-**3. Cross-Platform Oracle Expansion** (Year 2-3):
-   - **Music Streaming**: Spotify, Apple Music, SoundCloud validation oracles
-   - **Gaming**: Steam, Xbox, PlayStation achievement validation oracles
-   - **Professional**: LinkedIn, GitHub, academic credentials validation
-   - **Financial**: Shopify, Stripe, PayPal revenue verification (with consent)
-   - **Goal**: Universal Web2-to-Web3 data validation infrastructure
+## Key Innovations (Current Emphasis)
 
-**4. B2B Oracle Licensing** (High-Margin Revenue):
-   - **Analytics Platforms**: License oracle for influencer fraud detection
-   - **Marketing Agencies**: Validate creator metrics before brand deals
-   - **Web3 Projects**: Integrate social proof into tokenomics
-   - **DeFi Protocols**: Use validated income data for credit scoring
-   - **DAO Platforms**: Sybil resistance and reputation systems
-
-**5. Blockchain-Native Revenue**:
-   - Network transaction fees (SDM gas for oracle data recording)
-   - DEX trading fees on creator token trading
-   - NFT marketplace commissions for reputation NFTs
-   - Cross-chain bridge fees for multi-chain oracle deployment
-- CrabbyTV feature fees in a 3-6% band (films/premieres, Spades, AMAs, paid creator interactions), with qualifying flow aligned to CRABBY ($Crabby)
-
-**Key Financial Projections**:
-| Metric | Year 1 | Year 2 | Year 3 |
-|--------|--------|--------|--------|
-| Oracle Services Revenue | $6.43M | $32.7M | $115M |
-| Gross Margin | 70%+ | 72%+ | 75%+ |
-| B2B Clients | 10 | 25 | 100+ |
-| Validated Creators | 5,000 | 10,000 | 50,000 |
-| Platform Integrations | 6 | 15 | 30+ |
-
-**Revenue Growth Strategy**:
-- **Year 1**: Prove YouTube oracle, expand to 5 more social platforms
-- **Year 2**: Scale to 15+ platforms, launch Phase 2 revenue integration
-- **Year 3**: Universal Web2 validation layer across 30+ platforms
-- **Sustainable 10+ year runway** through diversified oracle revenue streams
-
-Our technology infrastructure prioritizes scalability and interoperability. With 100,000+ TPS capacity, native EVM bridge connectivity, Solana integration through Circle CCTP, and thirdweb integration for simplified wallet creation, we've built a system capable of supporting millions of concurrent users across multiple blockchain ecosystems.
-
-Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization layer for the entire media industry—a decentralized, sustainable, and transparent ecosystem that redefines how media is produced, consumed, and monetized. Through our innovative YouTube Milestone MVP and scalable architecture, we're creating a future where the success of content is shared equitably by all participants in the creative process, backed by real revenue generation from day one.
-
-## Table of Contents
-
-1. [Introduction](introduction.md)
-2. [Mission Statement](mission-statement.md)
-3. [Market Opportunity](market-opportunity.md)
-4. [Diamondz Shadow Ecosystem](diamondz-shadow-ecosystem.md)
-5. [Technology and Infrastructure](technology-and-infrastructure.md)
-6. [Tokenomics](tokenomics.md)
-7. [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
-8. [Quality Improvement Proposals (QIPs)](qips.md)
-9. [How to Participate](how-to-participate.md)
-10. [Roadmap](roadmap.md)
-
-
-## Key Innovations
-
-- **Wavz Social Engagement System**: Gamified progression (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score) validating creator authenticity
-- **CrabbyTV Live Creator Progression MVP**: Creator registry and oracle milestone progression layer aligned to CrabbyTV's full creator stack (live streaming, on-chain gaming, NFT minting, paid events, and creator monetization)
-- **Tokenized Transaction Capture**: CRABBY ($Crabby)-aligned value accrual from a percentage of qualifying platform transactions
-- **SDM Exchange Revenue Rail**: SDM monetization aligned to exchange flow at [zdiamondex.store](https://zdiamondex.store/)
-- **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
-- **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
-- **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities (SDM, TuBE, GaM3, DuSTD)
-- **Secure Basket Wrappers**: Hardened wSDM/gSDM/sSDM contracts with slippage controls, stale-price checks, and fee-transparent quotes
-- **Strategic Infrastructure Partnerships**: Enterprise-grade stack powered by QuickNode, Thirdweb, Uniblock, and Lucid Labs
-- **Cross-Chain Tokenization Infrastructure**: Native connectivity to Ethereum, Arbitrum, and Solana ecosystems
-- **Cyclical Supply Management**: Innovative mechanism maintaining economic sustainability
-- **Proof of Contribution Consensus**: Rewards meaningful contributions validated through Wavz scores
-- **AI-Enhanced Validation**: Supporting fraud detection and confidence scoring for all oracle validations
+- **CrabbyTV Live Creator Progression** aligned to live platform behavior and monetization surfaces
+- **Wavz Validation Layer** for verifiable creator progression and anti-fraud controls
+- **$Crabby Transaction Capture Rail** for qualifying platform flows
+- **$SDM Network + Exchange Rail** with explicit separation from CrabbyTV qualifying captures
+- **Secure SDM Wrappers** (`wSDM`, `gSDM`, `sSDM`) with hardened mint/redeem protections
+- **Diamond zChain Infrastructure** with strategic integrations (QuickNode, Thirdweb, Uniblock, Lucid Labs)
 
 ## Strategic Partnerships
 

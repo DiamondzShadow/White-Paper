@@ -9,6 +9,9 @@ coverY: 0
 
 ### Overview of the Ecosystem
 
+> **Context note:** This chapter is retained as legacy ecosystem context.
+> The current operating model is defined in `current-model-architecture.md` and the updated Executive Summary.
+
 The Diamondz Shadow ecosystem represents a revolutionary blockchain solution transforming the entertainment industry through comprehensive tokenization. Our ecosystem creates a symbiotic relationship between creators, audiences, and investors by enabling the tokenization of everything—from movies and music to comedy shows, fashion, gaming, and live streams.
 
 Operating on our custom mainnet "Diamond zChain" (launching June 2025) with "Diamond zLab" testnet, our platform combines advanced tokenomics, community governance, and real-world revenue integration to ensure all stakeholders benefit from the success of Diamondz Shadow productions. This proprietary infrastructure provides high throughput, low gas fees, and seamless interoperability while enabling our unique Proof of Contribution consensus mechanism.

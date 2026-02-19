@@ -9,7 +9,17 @@ coverY: 0
 
 ### The Real Picture: Revenue Tied to Real Value
 
-Most crypto projects fail because they have no real revenue—just speculation. Diamondz Shadow is different. Our economic model is built on **actual revenue from actual content creation**, not hype. Here's how we maintain solvency for decades:
+Most crypto projects fail because they have no real revenue—just speculation.
+Diamondz Shadow is structured around **product-linked transaction flow**, not hype.
+
+In the current operating model:
+
+- **CRABBY ($Crabby)** captures qualifying CrabbyTV platform transaction flow.
+- **SDM ($SDM)** captures network + exchange-aligned value flow (including zdiamondex.store-linked business activity).
+- **wSDM/gSDM/sSDM** provide secured upside-extension rails around SDM.
+
+This split keeps value attribution explicit and auditable.
+Here's how we maintain solvency for decades:
 
 **The Simple Truth:**
 - Creators make content (YouTube videos, music, games)
@@ -20,7 +30,7 @@ Most crypto projects fail because they have no real revenue—just speculation. 
 
 This creates a **self-sustaining flywheel** where the ecosystem gets stronger with each new creator and each piece of content.
 
-### Entertainment and Gaming Production Focus
+### Product-Led Revenue Surfaces
 
 Our ecosystem is built around the creation, distribution, and monetization of high-quality entertainment and gaming productions:
 
@@ -30,7 +40,7 @@ Our ecosystem is built around the creation, distribution, and monetization of hi
 * **Community-Driven Productions**: Content created through decentralized collaboration with community input
 * **Cross-Media Franchises**: Development of intellectual property that spans both entertainment and gaming
 
-### Multi-Token Ecosystem Architecture
+### Value-Rail Architecture (Current + Expansion Modules)
 
 Our ecosystem employs a strategic four-token model, with each token serving a specialized function:
 
