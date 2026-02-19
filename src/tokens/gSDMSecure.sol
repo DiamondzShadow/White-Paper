@@ -21,6 +21,7 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
     IAggregatorV3 public immutable xauUsdOracle;
     uint8 private immutable i_oracleDecimals;
 
+    // SDM/USD price scaled to 6 decimals.
     uint256 public sdmPrice;
     uint256 public sdmPriceUpdatedAt;
     address public treasury;
@@ -33,8 +34,9 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
     uint256 public constant SUGGESTED_XAUT_WEIGHT = 50;
 
     uint256 private constant BASIS_POINTS = 10_000;
-    uint256 private constant STALENESS_THRESHOLD = 24 hours;
+    uint256 private constant STALENESS_THRESHOLD = 3 hours;
     uint256 private constant MAX_FEE = 200; // 2%
+    uint256 private constant MAX_SDM_PRICE = 1_000_000e6; // 1,000,000 USD, 6 decimals
 
     event Minted(
         address indexed user, uint256 sdmIn, uint256 xautIn, uint256 gsdmOut, uint256 feeCharged
@@ -67,7 +69,7 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
             revert ZeroAddress();
         }
         if (_treasury == address(0)) revert ZeroAddress();
-        if (_initialSdmPrice == 0) revert InvalidPrice();
+        if (_initialSdmPrice == 0 || _initialSdmPrice > MAX_SDM_PRICE) revert InvalidPrice();
 
         SDM = IERC20(_sdm);
         XAUT = IERC20(_xaut);
@@ -96,13 +98,13 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
         }
 
         uint256 totalValueUsd = sdmValueUsd + xautValueUsd;
-        gsdmAmount = totalValueUsd * 1e12;
+        uint256 grossGsdmAmount = totalValueUsd * 1e12;
 
         uint256 feeCharged;
         if (mintFee > 0) {
-            feeCharged = (gsdmAmount * mintFee) / BASIS_POINTS;
-            gsdmAmount -= feeCharged;
+            feeCharged = (grossGsdmAmount * mintFee) / BASIS_POINTS;
         }
+        gsdmAmount = grossGsdmAmount - feeCharged;
 
         if (gsdmAmount < minGsdmOut) revert SlippageExceeded();
 
@@ -110,6 +112,7 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
         if (xautAmount > 0) XAUT.safeTransferFrom(msg.sender, address(this), xautAmount);
 
         _mint(msg.sender, gsdmAmount);
+        if (feeCharged > 0) _mint(treasury, feeCharged);
         emit Minted(msg.sender, sdmAmount, xautAmount, gsdmAmount, feeCharged);
     }
 
@@ -241,7 +244,7 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
     }
 
     function updateSDMPrice(uint256 newPrice) external onlyOwner {
-        if (newPrice == 0) revert InvalidPrice();
+        if (newPrice == 0 || newPrice > MAX_SDM_PRICE) revert InvalidPrice();
         sdmPrice = newPrice;
         sdmPriceUpdatedAt = block.timestamp;
         emit SDMPriceUpdated(newPrice, block.timestamp);
@@ -282,6 +285,7 @@ contract gSDMSecure is ERC20, Ownable, ReentrancyGuard, Pausable {
     }
 
     function _getSDMValueUSD(uint256 sdmAmount) private view returns (uint256) {
+        // SDM amount is 18 decimals, SDM price is 6 decimals, output is USD with 6 decimals.
         return (sdmAmount * _getSDMPriceUSD()) / 1e18;
     }
 

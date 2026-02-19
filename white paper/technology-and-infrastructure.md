@@ -625,6 +625,15 @@ This exact flow applies to:
 To extend the Wavz oracle design beyond YouTube-only milestone tracking, the ecosystem introduces the
 **CrabbyTV Live Creator Progression MVP** as a generalized creator progression layer for live streaming creators:
 
+**Current CrabbyTV product surface (from live app flows)**:
+- Live streaming and creator channels ("Stream & Watch")
+- On-chain gaming experiences (including Spades/UNO stake-based play on Arbitrum)
+- NFT minting workflows for creator content (images, video, music, film)
+- Paid interaction events with ticket-gated creator/fan sessions
+- Audiobook publishing and AI-assisted narration options
+- Creator monetization rails (tips, paid content, NFT resale royalties, game winnings)
+- Wallet-native UX (embedded and external wallet connectivity)
+
 **Terminology update for CrabbyTV MVP**:
 - **Milestone Units** represent verified milestone-level achievements
 - **Creator Credits** represent weighted accumulated progress

@@ -63,7 +63,7 @@ These wrappers are designed with production-focused controls:
 2. **Fee-adjusted quoting**
    * `quoteMint` and `quoteRedeem` expose net user output after protocol fees
 3. **Stale price protection**
-   * Oracle reads enforce freshness windows (24h threshold) and reject invalid values
+   * Oracle reads enforce freshness windows (3h default threshold) and reject invalid values
 4. **Restricted emergency withdraw**
    * Emergency transfers are restricted to backing assets and SDM only
 5. **Gas optimizations**
@@ -95,6 +95,7 @@ Diamondz Shadow ecosystem.
    - Mint fee is deducted:
      - `fee = grossWrapperOut * mintFee / 10_000`
      - `netWrapperOut = grossWrapperOut - fee`
+   - Fee shares are minted to treasury, making mint/redeem fee accounting consistent.
    - Transaction reverts if `netWrapperOut < minOut`.
    - Optional ratio checks enforce the strategy target (50/50 or 20/80 with tolerance).
 
