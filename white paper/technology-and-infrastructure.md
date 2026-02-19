@@ -620,6 +620,39 @@ This exact flow applies to:
 - **Twitch**: Subscribers, viewers, streams (Twitch API)
 - **All Other Platforms**: Same architecture, different API endpoints
 
+#### CrabbyTV Echo Creator Nest MVP
+
+To extend the Wavz oracle design beyond YouTube-only milestone tracking, the ecosystem introduces the
+**CrabbyTV Echo Creator Nest MVP** as a generalized creator progression layer:
+
+1. **Creator Registry Layer**
+   - Register and manage creator identities for platform-specific handles and account mappings
+   - Activate/deactivate creator status for moderation and compliance workflows
+
+2. **Oracle-to-Contract Milestone Pipeline**
+   - Authorized oracle operators submit milestones with proof hashes, metric type, confidence score, and timestamp
+   - Duplicate milestone suppression and replay resistance via deterministic milestone hashing
+   - Confidence-threshold auto-verification for high-trust submissions
+
+3. **Gamified Progression Engine**
+   - **Sparks** generated from validated milestone thresholds
+   - **cPoints** accumulation based on Spark conversion rules (10 Sparks = 1 cPoint)
+   - **Beats** progression based on sustained creator momentum (100 cPoints = 1 Beat)
+   - **Wavz score** derived from progression state and confidence-weighted history
+
+4. **Reward and Utility Integration**
+   - Optional token reward minting hooks for verified milestones
+   - Configurable reward multipliers by metric class (followers, views, engagement, etc.)
+   - On-chain progress query interfaces for creator dashboards, investor analytics, and ranking systems
+
+5. **Safety and Operations**
+   - Pausable controls and role-gated oracle submission
+   - Structured event emission for transparent indexing and analytics
+   - Manual verify/reject fallback path for disputed milestones
+
+The CrabbyTV MVP is positioned as a practical "Echo Creator Nest" implementation that converts oracle-validated
+social performance into a reusable on-chain reputation primitive compatible with the broader Wavz architecture.
+
 ### Strategic Partnerships Powering Wavz Infrastructure
 
 The Wavz oracle infrastructure is built on partnerships with leading Web3 infrastructure providers, ensuring enterprise-grade reliability, scalability, and developer experience:

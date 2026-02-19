@@ -46,6 +46,38 @@ The Diamondz Shadow ecosystem utilizes a sophisticated four-token model, with ea
 * **Function**: Stable value transactions and revenue settlement
 * **Peg**: 1:1 USD through algorithmic and collateral backing
 
+### Secure Basket Wrapper Tokens (wSDM, gSDM, sSDM)
+
+To strengthen treasury-backed token products and provide asset-diversified exposure, the ecosystem introduces
+three hardened wrapper tokens:
+
+* **wSDM (Wrapped SDM - Bitcoin Backed)**: 50% SDM + 50% WBTC target composition
+* **gSDM (Gold-backed SDM)**: 50% SDM + 50% XAUT target composition
+* **sSDM (Stable SDM)**: 20% SDM + 80% USDC target composition
+
+These wrappers are designed with production-focused controls:
+
+1. **Slippage protection enforced**
+   * Mint includes minimum output controls (`minWsdmOut`, `minGsdmOut`, `minSsdmOut`)
+   * Redeem includes minimum output controls for both SDM and backing asset
+2. **Fee-adjusted quoting**
+   * `quoteMint` and `quoteRedeem` expose net user output after protocol fees
+3. **Stale price protection**
+   * Oracle reads enforce freshness windows (24h threshold) and reject invalid values
+4. **Restricted emergency withdraw**
+   * Emergency transfers are restricted to backing assets and SDM only
+5. **Gas optimizations**
+   * Oracle decimals are cached to reduce repeated read overhead
+6. **Optional ratio enforcement**
+   * wSDM/gSDM target 50/50 with configurable tolerance
+   * sSDM targets 20/80 with configurable tolerance
+7. **Operational safety controls**
+   * Pausable operations, structured events, validation checks, and explicit admin controls
+
+This wrapper model complements the core four-token economy by adding transparent, collateral-aware instruments
+for users who want directional exposure to BTC, gold, and stablecoin-backed baskets while remaining within the
+Diamondz Shadow ecosystem.
+
 ### Cyclical Supply Management
 
 Our ecosystem implements innovative cyclical supply management across all tokens to ensure long-term sustainability:
