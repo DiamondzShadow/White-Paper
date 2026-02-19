@@ -1,6 +1,6 @@
 ### Diamondz Shadow White Paper (Current Model)
 
-## CrabbyTV-First Structure with Split Token Value Rails
+## Multi-Project Creator Structure with Split Token Value Rails
 
 ## Executive Summary
 
@@ -9,7 +9,10 @@ token-first presentation.
 
 The live model is organized around real product usage and clear value-routing:
 
-1. **CrabbyTV product activity** (films, Spades, AMAs, paid events, creator interactions)
+1. **Ecosystem project activity** across:
+   - **CrabbyTV** ([crabbytv.com](https://crabbytv.com))
+   - **TheTube** ([thetube.media](https://thetube.media))
+   - **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
 2. **Wavz validation and progression** (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score)
 3. **Split value capture rails**
    - **$Crabby**: captures qualifying CrabbyTV platform transaction flow
@@ -26,10 +29,11 @@ This framing keeps platform behavior, economics, and contracts aligned in one re
 
 ## Current Model Snapshot
 
-### Product Layer (CrabbyTV)
+### Product Layer (Ecosystem Projects)
 
-- Creator monetization surfaces run through the CrabbyTV platform experience.
-- Qualifying transaction classes are routed into CRABBY-aligned value accrual pathways.
+- Core ecosystem projects currently include **CrabbyTV**, **TheTube**, and **OnlyShellz**.
+- CrabbyTV is the primary qualifying transaction-capture surface in the current value-routing policy.
+- Additional project-level integration and capture policies are governance-expandable over time.
 - Feature policy and fee bands are governance-managed with explicit risk controls.
 
 ### Token Layer (Role Separation)
@@ -66,6 +70,7 @@ The secure wrappers implement:
 ## Key Innovations (Current Emphasis)
 
 - **CrabbyTV Live Creator Progression** aligned to live platform behavior and monetization surfaces
+- **Multi-Project Ecosystem Footprint** across CrabbyTV, TheTube, and OnlyShellz
 - **Wavz Validation Layer** for verifiable creator progression and anti-fraud controls
 - **$Crabby Transaction Capture Rail** for qualifying platform flows
 - **$SDM Network + Exchange Rail** with explicit separation from CrabbyTV qualifying captures
@@ -106,6 +111,9 @@ Diamondz Shadow is powered by leading Web3 infrastructure providers:
 ## Contact and Resources
 
 - **Website**: [diamondzshadow.com](https://diamondzshadow.com)
+- **Project - CrabbyTV**: [crabbytv.com](https://crabbytv.com)
+- **Project - TheTube**: [thetube.media](https://thetube.media)
+- **Project - OnlyShellz**: [onlyshellz.live](https://onlyshellz.live)
 - **GitHub**: [github.com/DiamondzShadow](https://github.com/DiamondzShadow)
 - **Discord**: [discord.gg/diamondzshadow](https://discord.gg/diamondzshadow)
 - **Twitter**: [@DiamondShadoM](https://twitter.com/DiamondShadoM)

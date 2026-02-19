@@ -8,16 +8,23 @@ the canonical structure for how the whitepaper is read.
 The model is no longer organized as a legacy token-first narrative. It is now organized as a
 **product + transaction-flow + value-capture** system:
 
-1. **CrabbyTV Product Layer** (user activity and monetization flows)
+1. **Ecosystem Product Layer** (user activity and monetization flows)
 2. **Wavz Validation Layer** (milestones, creator integrity, anti-fraud)
 3. **Token Value-Capture Layer** (`$Crabby`, `$SDM`, and secure SDM wrappers)
 4. **Infrastructure + Governance Layer** (chain, contracts, treasury, risk controls)
 
 ---
 
-### 1) CrabbyTV Product Layer (Primary User Surface)
+### 1) Ecosystem Product Layer (Primary User Surfaces)
 
-CrabbyTV is the primary execution surface where creators and audiences transact across:
+Current ecosystem projects include:
+
+- **CrabbyTV** ([crabbytv.com](https://crabbytv.com))
+- **TheTube** ([thetube.media](https://thetube.media))
+- **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
+
+CrabbyTV remains the primary qualifying transaction-capture surface in the current model,
+where creators and audiences transact across:
 
 - Live streaming and creator rooms
 - Films and premieres
@@ -27,6 +34,7 @@ CrabbyTV is the primary execution surface where creators and audiences transact 
 
 These activities generate platform transaction flow. A qualifying subset is routed into the
 `$Crabby` value-capture rail under published fee policy and governance controls.
+Integration policy for TheTube and OnlyShellz is part of the broader governance expansion path.
 
 ---
 
@@ -79,9 +87,9 @@ The model is executed through:
 
 ### Value-Flow Snapshot
 
-1. Users and creators transact on CrabbyTV features.
+1. Users and creators transact across ecosystem project surfaces (CrabbyTV, TheTube, OnlyShellz).
 2. Wavz validates creator milestones and trust signals.
-3. Qualifying platform flow contributes to `$Crabby` value pathways.
+3. Qualifying CrabbyTV flow contributes to `$Crabby` value pathways.
 4. Network and exchange-side flow contributes to `$SDM` pathways.
 5. SDM wrappers provide additional structured exposure using secure contract controls.
 
