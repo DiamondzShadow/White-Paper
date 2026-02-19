@@ -41,6 +41,10 @@ At the core of our ecosystem is a sophisticated four-token model designed to pow
 - **GaM3**: Gaming interaction and predictive betting token
 - **DuSTD**: Ecosystem stablecoin for stable value transactions
 
+In addition to serving as the core network token, SDM can be wrapped into
+BTC/gold/USDC-backed baskets (wSDM, gSDM, sSDM) to provide upside-oriented exposure
+through collateral diversification.
+
 Unlike traditional media models where centralized entities control production, distribution, and monetization, Diamondz Shadow democratizes the entire process. Our platform enables creators to tokenize their work for direct fan investment and transparent revenue, while audiences can invest in content they believe in and share in its success.
 
 The Diamondz Shadow ecosystem eliminates reliance on speculative trading by anchoring token value to real-world revenue streams from multiple sources, including YouTube milestone achievements, ad revenue tokenization, streaming royalties, NFT sales, and gaming performance. This connection ensures a dynamic, sustainable financial model that grows in parallel with the platform's creative success.

@@ -21,6 +21,7 @@ The Diamondz Shadow ecosystem utilizes a sophisticated four-token model, with ea
 * **Token Standard**: ERC-20
 * **Function**: Network gas token powering all transactions
 * **Transaction Throughput**: 100,000 TPS capacity
+* **Upside Extension**: SDM can also be wrapped into wSDM/gSDM/sSDM (BTC, gold, or USDC-backed baskets) for diversified upside participation
 
 #### TuBE: Content Creation Token
 
@@ -74,9 +75,9 @@ These wrappers are designed with production-focused controls:
 7. **Operational safety controls**
    * Pausable operations, structured events, validation checks, and explicit admin controls
 
-This wrapper model complements the core four-token economy by adding transparent, collateral-aware instruments
-for users who want directional exposure to BTC, gold, and stablecoin-backed baskets while remaining within the
-Diamondz Shadow ecosystem.
+This wrapper model complements the core four-token economy by adding transparent, collateral-aware instruments.
+As well as being the network token, SDM wrapped with gold, BTC, or USDC can provide additional upside exposure
+through diversified reserve backing while remaining inside the Diamondz Shadow ecosystem.
 
 #### Wrapper Mechanics (How Mint and Redeem Work)
 
@@ -84,7 +85,7 @@ Diamondz Shadow ecosystem.
    - SDM side uses protocol SDM/USD pricing.
    - Backing-asset side uses oracle pricing (WBTC/USD, XAUT/USD, USDC/USD).
    - All prices are normalized into consistent USD precision before output calculation.
-   - Oracle values must be fresh (24h max staleness) and strictly positive.
+   - Oracle values must be fresh (3h max staleness) and strictly positive.
 
 2. **Mint Flow (User Deposits SDM + Backing Asset)**
    - User submits deposit amounts and a minimum wrapper output.
