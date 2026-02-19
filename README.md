@@ -26,12 +26,42 @@ A sophisticated ERC677 token implementation with burn/mint capabilities, designe
 │   ├── interfaces/
 │   │   ├── IERC677.sol           # ERC677 interface
 │   │   └── IERC677Receiver.sol   # Receiver interface
+│   ├── CrabbyTVMVP.sol           # Echo Creator Nest MVP for CrabbyTV
 │   └── tokens/
-│       └── BurnMintERC677.sol    # Main token contract
+│       ├── BurnMintERC677.sol    # Main token contract
+│       ├── wSDMSecure.sol        # Secure BTC-backed wrapper
+│       ├── gSDMSecure.sol        # Secure gold-backed wrapper
+│       └── sSDMSecure.sol        # Secure stablecoin-backed wrapper
+├── scripts/
+│   ├── youtube-milestone.ts      # Existing YouTube milestone script
+│   └── crabbytv-mvp.ts           # CrabbyTV MVP integration helpers
 ├── foundry.toml                   # Foundry configuration
 ├── remappings.txt                 # Import remappings
 └── README.md
 ```
+
+## CrabbyTV Echo Creator Nest MVP
+
+`CrabbyTVMVP.sol` provides an MVP flow for creator milestone validation and progression:
+
+- **Creator registration** (`registerCreator`, `registerCreatorFor`)
+- **Oracle milestone submission** (`recordMilestone`)
+- **Manual/auto verification** (`verifyMilestone`, confidence-based auto-verify)
+- **Progression model**:
+  - Sparks
+  - cPoints (`10 Sparks = 1 cPoint`)
+  - Beats (`100 cPoints = 1 Beat`)
+  - Wavz score (derived from verified progression + confidence)
+- **Optional token rewards** via a mintable reward token (compatible with `BurnMintERC677` when this MVP contract has minter role)
+
+### CrabbyTV Script Helpers
+
+Use `scripts/crabbytv-mvp.ts` to:
+
+- register creators on-chain
+- record milestones
+- verify milestones
+- query creator progression
 
 ## Setup
 
