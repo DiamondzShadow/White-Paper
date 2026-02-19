@@ -264,7 +264,10 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 
 #### Revenue Generation
 
-1. **Platform Fees**: Small fees from content tokenization and trading
+1. **Platform Fees (CrabbyTV 3-6% Revenue Share Band)**:
+   - **~3% class fees** on selected premium creator interactions (e.g., paid interaction events)
+   - **Up to ~6% class fees** on stake-based competitive gaming flows (e.g., Spades arena house fee model)
+   - Feature-level fee policy remains governance-adjustable within published risk controls
 2. **Gaming Revenue**: Fees from betting, tournaments, and in-game transactions
 3. **Cross-Chain Fees**: Revenue from bridge operations and cross-chain services
 4. **DeFi Yield**: Returns from treasury assets deployed in DeFi protocols
@@ -277,6 +280,12 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 3. **Governance Value**: Increased influence as platform grows
 4. **Utility Expansion**: New use cases increase token demand
 5. **Network Effects**: Growing user base increases all token values
+
+#### SDM Capture of Platform Transaction Flow
+
+- A percentage of qualifying platform transactions is routed into SDM-aligned value accrual pathways.
+- This includes treasury-directed protocol fees and governance-directed mechanisms such as buyback/burn, liquidity support, and contribution rewards.
+- Design objective: as platform transaction volume grows (films, Spades, AMAs, paid events, NFT activity), SDM value capture scales with real usage rather than speculative-only demand.
 
 #### Risk Management
 

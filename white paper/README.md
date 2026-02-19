@@ -82,6 +82,7 @@ Our economic model generates sustainable revenue through Web2 Oracle Infrastruct
    - DEX trading fees on creator token trading
    - NFT marketplace commissions for reputation NFTs
    - Cross-chain bridge fees for multi-chain oracle deployment
+- CrabbyTV feature fees in a 3-6% band (films/premieres, Spades, AMAs, paid creator interactions)
 
 **Key Financial Projections**:
 | Metric | Year 1 | Year 2 | Year 3 |
@@ -120,6 +121,7 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 
 - **Wavz Social Engagement System**: Gamified progression (Milestone Units -> Creator Credits -> Reputation Badges -> Wavz Score) validating creator authenticity
 - **CrabbyTV Live Creator Progression MVP**: Creator registry and oracle milestone progression layer aligned to CrabbyTV's full creator stack (live streaming, on-chain gaming, NFT minting, paid events, and creator monetization)
+- **Tokenized Transaction Capture**: SDM-aligned value accrual from a percentage of qualifying platform transactions
 - **Web2 Oracle Infrastructure**: Universal validation layer for all social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
 - **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering diverse functionalities (SDM, TuBE, GaM3, DuSTD)

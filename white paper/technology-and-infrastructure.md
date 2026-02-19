@@ -627,12 +627,15 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
 
 **Current CrabbyTV product surface (from live app flows)**:
 - Live streaming and creator channels ("Stream & Watch")
+- Film and premiere publishing flows (long-form films, episodic drops, and scheduled premieres)
 - On-chain gaming experiences (including Spades/UNO stake-based play on Arbitrum)
+- Live AMA session infrastructure for creator/community Q&A and audience interaction
 - NFT minting workflows for creator content (images, video, music, film)
 - Paid interaction events with ticket-gated creator/fan sessions
 - Audiobook publishing and AI-assisted narration options
 - Creator monetization rails (tips, paid content, NFT resale royalties, game winnings)
 - Wallet-native UX (embedded and external wallet connectivity)
+- Platform revenue-share rails in a 3-6% range depending transaction type
 
 **Terminology update for CrabbyTV MVP**:
 - **Milestone Units** represent verified milestone-level achievements
@@ -659,6 +662,7 @@ To extend the Wavz oracle design beyond YouTube-only milestone tracking, the eco
    - Optional token reward minting hooks for verified milestones
    - Configurable reward multipliers by metric class (followers, views, engagement, etc.)
    - On-chain progress query interfaces for creator dashboards, investor analytics, and ranking systems
+   - Token value-capture hooks so a percentage of qualifying platform transactions can flow into protocol token economics
 
 5. **Safety and Operations**
    - Pausable controls and role-gated oracle submission
