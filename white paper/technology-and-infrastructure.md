@@ -11,10 +11,11 @@ coverY: 0
 
 This chapter now follows the current operating model:
 
-1. **CrabbyTV** as the primary product and transaction surface
-2. **Wavz** as the validation and creator progression layer
-3. **$Crabby / $SDM** as split value-capture rails
-4. **Secure SDM wrappers** as hardened upside-extension instruments
+1. **Ecosystem project surfaces**: CrabbyTV, TheTube, and OnlyShellz
+2. **CrabbyTV** as the primary qualifying transaction-capture surface
+3. **Wavz** as the validation and creator progression layer
+4. **$Crabby / $SDM** as split value-capture rails
+5. **Secure SDM wrappers** as hardened upside-extension instruments
 
 Some later sections preserve broader expansion and legacy architecture detail for continuity.
 

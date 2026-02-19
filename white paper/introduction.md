@@ -14,10 +14,14 @@ The active model starts with product usage and then maps how value is captured a
 
 At a high level:
 
-1. **CrabbyTV** is the primary product surface where creator and audience transactions happen.
-2. **Wavz** validates creator progression and trust signals.
-3. **$Crabby and $SDM** capture value through different economic rails.
-4. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
+1. **Ecosystem projects** include:
+   - **CrabbyTV** ([crabbytv.com](https://crabbytv.com))
+   - **TheTube** ([thetube.media](https://thetube.media))
+   - **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
+2. **CrabbyTV** is the primary qualifying transaction-capture surface in the current policy model.
+3. **Wavz** validates creator progression and trust signals.
+4. **$Crabby and $SDM** capture value through different economic rails.
+5. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
 
 ### The Core Problem We Are Solving
 
@@ -32,7 +36,7 @@ Creator platforms still leave users with fragmented monetization and weak owners
 
 #### 1) CrabbyTV Product Layer
 
-CrabbyTV is the user-facing layer for creator monetization:
+CrabbyTV is the user-facing layer for qualifying creator monetization flow:
 
 - Films and premieres
 - Spades and competitive formats
@@ -41,6 +45,15 @@ CrabbyTV is the user-facing layer for creator monetization:
 - Live and interactive creator experiences
 
 This creates measurable, qualifying transaction flow.
+
+#### 1b) Ecosystem Project Footprint
+
+Beyond CrabbyTV, the ecosystem project set also includes:
+
+- **TheTube** ([thetube.media](https://thetube.media))
+- **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
+
+These projects are part of the broader ecosystem footprint and integration roadmap.
 
 #### 2) Wavz Validation Layer
 
