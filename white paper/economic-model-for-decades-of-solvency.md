@@ -121,6 +121,31 @@ Secure wrappers (`wSDM`, `gSDM`, `sSDM`) generate policy-managed fee pathways vi
 Wrapper contracts implement slippage checks, stale-price controls (3-hour threshold),
 optional ratio enforcement, and restricted emergency withdrawal logic.
 
+#### 5) Stock-Linked Wrapper Expansion (Gold/BTC + Tokenized Equities)
+
+The same wrapper architecture can support governance-approved baskets that include tokenized stocks
+alongside gold/BTC collateral rails.
+
+Example structure:
+
+- SDM + tokenized stock component
+- SDM + gold-backed reserve component
+- SDM + BTC-backed reserve component
+
+Economic upside:
+
+1. **Diversified return sources**: equity-style growth + hard-asset protection.
+2. **Wider participant base**: attracts both crypto-native and portfolio-diversification users.
+3. **Higher product depth**: enables multiple basket classes by risk profile.
+
+Additional revenue lines created by stock-linked wrappers:
+
+- primary mint/redeem fees on basket entry/exit
+- secondary trading fees from DEX liquidity and routing
+- strategy/index product fees for curated basket families
+- analytics/data access fees for basket performance dashboards
+- treasury routing gains from diversified collateral management
+
 ### Treasury Model
 
 #### Reference Allocation Framework
@@ -180,6 +205,7 @@ Primary operating metrics:
 5. wrapper risk and oracle freshness compliance
 6. community value-capture ratio
 7. token velocity and utility depth
+8. stock-linked wrapper revenue contribution and diversification ratio
 
 By tying revenue to product behavior, separating value rails, and enforcing risk-managed treasury controls,
 the model is designed for durable solvency over decades rather than speculation-driven cycles.

@@ -113,6 +113,32 @@ Reference scenario used in planning:
 - 20% platform / 80% creator split
 - $38,400 derived optional monthly on-chain payout flow at 40% crypto-withdrawal adoption
 
+#### 5. Tokenized Stock + Gold/BTC Wrapper Opportunity
+
+An additional growth market exists in strategy baskets that combine:
+
+- SDM
+- tokenized stock exposure
+- gold-backed collateral
+- BTC-backed collateral
+
+This creates a differentiated product category between pure crypto assets and traditional single-asset products.
+
+**Strategic upside**:
+
+1. **Hybrid return profile**: equity-growth exposure plus hard-asset hedge behavior.
+2. **Broader user appeal**: attracts users who want crypto-native access to diversified baskets.
+3. **Volatility balancing**: gold/BTC components can offset concentration in single growth names.
+4. **Composable DeFi utility**: basket tokens can be used in LPs, collateral systems, and structured vault products.
+
+**Revenue opportunity from these wrappers**:
+
+- mint/redeem protocol fees
+- DEX and liquidity fees
+- listing/pair deployment and routing fees
+- data/index analytics and strategy-license revenue
+- treasury performance uplift from diversified reserve deployment
+
 ### Target Market Segments
 
 #### 1. Content Creators

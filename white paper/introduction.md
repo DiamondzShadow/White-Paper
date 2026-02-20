@@ -22,6 +22,8 @@ At a high level:
 3. **Wavz** validates creator progression and trust signals.
 4. **$Crabby and $SDM** capture value through different economic rails.
 5. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
+6. **Next wrapper expansion** can include governance-approved stock-linked baskets
+   (for example SDM + tokenized stock + gold/BTC components).
 
 ### Web2 Surface, Web3 Rail Philosophy
 
@@ -97,6 +99,21 @@ SDM can be wrapped into:
 
 These wrappers implement security-focused mint/redeem logic:
 slippage checks, fee-adjusted quotes, stale-price guards, pause controls, and restricted emergency withdrawal.
+
+#### 5) Expansion Upside: Tokenized Stocks + Gold/BTC Baskets
+
+Beyond current wrapper products, the same architecture can support governance-approved baskets that include:
+
+- SDM + tokenized stock exposure (for example large-cap equity tokens)
+- SDM + gold-backed collateral
+- SDM + BTC-backed collateral
+
+Why this matters:
+
+1. **Diversified upside profile**: combines growth-oriented equity exposure with hard-asset hedges.
+2. **Lower single-asset dependency**: reduces concentration risk versus single-token positions.
+3. **New revenue pathways**: mint/redeem fees, liquidity-pool fees, treasury routing, and analytics/licensing products.
+4. **Product differentiation**: creates strategy-specific baskets for different risk preferences.
 
 ### Why This Structural Update Matters
 
