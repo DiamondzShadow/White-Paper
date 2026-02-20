@@ -40,14 +40,13 @@ The live model is organized around real product usage and clear value-routing:
 - **Wavz Score**: Composite reputation score combining milestone consistency, credits, badges, and quality
 
 **Platform Coverage**:
-- **Universal Social Validation**: Oracle system validating YouTube, Twitter, TikTok,
-  Instagram, Twitch, and more
-- **YouTube Milestone**: First live Milestone Unit generation implementation demonstrating
-  the oracle architecture
+- **Universal Project Validation**: Oracle system validating social, gaming, event, and pricing data
+- **Project Validator Node Networks**: Projects run validators/nodes with stake-backed participation
+- **Proof of Contribution Scoring**: Validator rewards weighted by uptime, accuracy, and consensus quality
 - **AI-Powered Fraud Detection**: 95%+ accuracy in detecting fake followers, bot engagement,
   and metric manipulation
-- **Platform-Agnostic Design**: Single oracle architecture scales to any social platform with an API
-- **Cross-Platform Identity**: Link all social accounts to one unified Wavz score
+- **Platform-Agnostic Design**: Single oracle architecture scales across social APIs, betting/event feeds, and pricing providers
+- **Cross-Project Identity**: Link accounts and participation signals to one unified reputation model
 
 This framing keeps platform behavior, economics, and contracts aligned in one readable flow.
 
@@ -59,8 +58,10 @@ This framing keeps platform behavior, economics, and contracts aligned in one re
 
 ### Oracle-as-a-Service Revenue Model
 
-- **Oracle Validation Services**: $0.10-0.75 per milestone validation across all platforms
-- **Infrastructure Licensing**: $10K-100K setup + $2K-25K/month for B2B oracle SDK
+- **Oracle Validation Services**: $0.10-0.75 per validated milestone, event outcome, or pricing update
+- **Validator/Node Infrastructure Licensing**: $10K-100K setup + $2K-25K/month for project node stacks and B2B oracle SDK
+- **Sports/Event Oracle Packs**: usage-based feeds for betting and event settlement (NBA-style markets as reference)
+- **Realistic Pricing Oracle Packs**: multi-source feeds for token/FX/commodity/index pricing
 - **Identity & Reputation**: $10-29/month for cross-platform identity verification
 - **API Access**: $99-2,500/month for oracle data access across all validated platforms
 - **Platform Revenue Integration**: 10-15% fee on tokenized creator revenue (Phase 2)
@@ -126,13 +127,13 @@ The secure wrappers implement:
 Our economic model generates sustainable revenue through Web2 oracle infrastructure
 and tokenization services:
 
-**1. Web2 Oracle Infrastructure Revenue** ($6.43M Year 1 -> $115M Year 3):
-- **Oracle Validation Services**: Per-validation fees across YouTube, Twitter, TikTok, Instagram, Twitch, etc.
-- **Infrastructure Licensing**: B2B oracle SDK for analytics platforms, marketing agencies, and Web3 projects
-- **Identity & Reputation**: Cross-platform identity verification and Sybil resistance services
+**1. Project Oracle Infrastructure Revenue** ($6.43M Year 1 -> $115M Year 3):
+- **Oracle Validation Services**: Per-validation fees across creator metrics, sports/event outcomes, and pricing feeds
+- **Infrastructure Licensing**: B2B oracle SDK and project validator/node deployment kits
+- **Proof of Contribution Services**: Reliability scoring and contribution-weighted reward infrastructure for validator sets
 - **API Access**: Data access tiers for developers and enterprises building on validated data
-- **Platform Revenue Integration**: 10-15% fees on tokenized creator revenue from social platforms
-- **Enterprise Oracle Solutions**: Custom oracle development and managed oracle services
+- **Platform Revenue Integration**: 10-15% fees on tokenized creator and event-settlement rails
+- **Enterprise Oracle Solutions**: Custom oracle development and managed validator-node services
 
 **2. Creator Tokenization Services** (Enabled by Oracle Data):
 - Creator channel tokenization with verifiable on-chain milestones
@@ -140,9 +141,11 @@ and tokenization services:
 - Secondary market trading fees on creator tokens
 - Token staking and governance mechanisms
 
-**3. Cross-Platform Oracle Expansion** (Year 2-3):
+**3. Cross-Platform + Cross-Vertical Oracle Expansion** (Year 2-3):
 - **Music Streaming**: Spotify, Apple Music, SoundCloud validation oracles
 - **Gaming**: Steam, Xbox, PlayStation achievement validation oracles
+- **Sports/Event Markets**: NBA-style game outcomes, player-stat settlement feeds, and tournament verification
+- **Realistic Pricing**: token, FX, commodity, and index reference feeds with multi-source confidence checks
 - **Professional**: LinkedIn, GitHub, academic credentials validation
 - **Financial**: Shopify, Stripe, PayPal revenue verification (with consent)
 - **Goal**: Universal Web2-to-Web3 data validation infrastructure
@@ -156,7 +159,7 @@ and tokenization services:
 
 **5. Blockchain-Native Revenue**:
 - Network transaction fees (SDM gas for oracle data recording)
-- DEX trading fees on creator token trading
+- DEX trading fees on creator token trading (**0.3% per transaction** baseline)
 - NFT marketplace commissions for reputation NFTs
 - Cross-chain bridge fees for multi-chain oracle deployment
 - CrabbyTV feature fees in a 3-6% band (films/premieres, Spades, AMAs, paid creator interactions),
@@ -173,9 +176,9 @@ and tokenization services:
 | Platform Integrations | 6 | 15 | 30+ |
 
 **Revenue Growth Strategy**:
-- **Year 1**: Prove YouTube oracle, expand to 5 more social platforms
-- **Year 2**: Scale to 15+ platforms, launch Phase 2 revenue integration
-- **Year 3**: Universal Web2 validation layer across 30+ platforms
+- **Year 1**: Launch project validator/node oracle stack and expand to social + event + pricing adapters
+- **Year 2**: Scale to 15+ validated vertical adapters, launch Phase 2 revenue integration
+- **Year 3**: Universal Web2 validation layer across 30+ platform and data-source integrations
 - **Sustainable 10+ year runway** through diversified oracle revenue streams
 
 ## Whitepaper Structure (Current Model Reading Order)
@@ -216,7 +219,7 @@ and tokenization services:
   of qualifying platform transactions
 - **SDM Exchange Revenue Rail**: SDM monetization aligned to exchange flow at
   [zdiamondex.store](https://zdiamondex.store/)
-- **Web2 Oracle Infrastructure**: Universal validation layer for social media platforms with AI fraud detection
+- **Web2 Oracle Infrastructure**: Universal validation layer for project data (social, events, and pricing feeds) with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
 - **Split-Rail Economic Infrastructure**: `$Crabby` + `$SDM` separated capture logic with governance-scoped expansion modules
 - **Secure Basket Wrappers**: Hardened wSDM/gSDM/sSDM contracts with slippage controls,
@@ -270,8 +273,9 @@ Ultimately, Diamondz Shadow's mission is to create a comprehensive tokenization 
 entire media industry: a decentralized, sustainable, and transparent ecosystem that redefines
 how media is produced, consumed, and monetized.
 
-Through our YouTube Milestone MVP and scalable architecture, we are building a future where
-creative success is validated, monetized, and shared more transparently by all participants.
+Through project-run validator/node infrastructure and scalable oracle architecture, we are building
+a future where creator growth, event outcomes, and pricing data are validated, monetized, and shared
+more transparently by all participants.
 
 ## Contact and Resources
 

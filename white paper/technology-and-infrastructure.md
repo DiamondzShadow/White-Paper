@@ -287,15 +287,16 @@ Our validation system leverages artificial intelligence to provide multi-layered
    [Consensus Layer] → [Bridge Contract] → [Smart Contract State]
    ```
 
-2. **Data Flow Example: YouTube Milestone**:
-   - **Step 1**: Oracle nodes independently fetch channel statistics via YouTube Data API v3
-   - **Step 2**: Each node submits data hash and signature to consensus contract
-   - **Step 3**: AI validation service analyzes historical patterns and assigns confidence score
-   - **Step 4**: If consensus reached (5/7 nodes agree) and AI confidence >75%:
-     - Data is submitted to YouTubeMilestone.sol contract
-     - Milestone recorded with confidence score and verification status
-   - **Step 5**: High confidence milestones (>95%) auto-verify after 24-hour challenge period
-   - **Step 6**: Lower confidence milestones enter community validation queue
+2. **Data Flow Example: Project Event + Pricing Oracle**:
+   - **Step 1**: Oracle nodes independently fetch event and pricing data from multiple providers
+     (for example sports data for NBA outcomes plus market data feeds for token/FX/commodity pricing)
+   - **Step 2**: Each project validator node submits source hashes, signatures, and confidence metadata
+   - **Step 3**: AI + rules validation analyzes anomaly patterns and assigns confidence score
+   - **Step 4**: If consensus is reached (5/7 nodes agree) and AI confidence >75%:
+     - Data is submitted to the relevant on-chain oracle contract module
+     - Oracle record is stored with confidence score and verification status
+   - **Step 5**: High confidence submissions (>95%) auto-verify after challenge window
+   - **Step 6**: Lower confidence submissions enter manual/community validation queue
 
 3. **Real-Time Monitoring and Alerts**:
    - **Dashboard Interface**: Live feed of oracle submissions and validation status
@@ -361,11 +362,11 @@ By combining decentralized oracle networks with cutting-edge AI validation syste
 
 ### MVP Protocol: Wavz - The Beat of the Creator
 
-#### Web2 Oracle Infrastructure for Social Media Validation
+#### Web2 Oracle Infrastructure for Project and Social Validation
 
 **Wavz** is our comprehensive social engagement validation system that serves as the foundational MVP (Minimum Viable Product) for the entire Diamondz Shadow ecosystem. Branded as "The Beat of the Creator," Wavz transforms real-world social media engagement into on-chain verified achievements through a progressive gamification system.
 
-The Wavz system brings real-world social media data on-chain through cryptographically verified oracles, enabling trustless verification of creator achievements across all social platforms. The YouTube Milestone implementation demonstrates our first live use case, with the architecture designed to scale across Twitter, TikTok, Instagram, Twitch, and all major social media platforms.
+The Wavz system brings real-world social media data on-chain through cryptographically verified oracles, enabling trustless verification of creator achievements across all social platforms. Social milestone adapters (including YouTube) demonstrate live use cases, with architecture designed to scale across Twitter, TikTok, Instagram, Twitch, and additional project data sources.
 
 #### The Wavz Progression System
 
@@ -471,9 +472,9 @@ struct SocialMilestone {
 }
 ```
 
-**3. YouTube Milestone Implementation (First Wavz Use Case)**:
+**3. YouTube-Compatible Social Adapter Implementation (Wavz Example)**:
 ```solidity
-// Specialized implementation for YouTube as first live platform
+// Specialized YouTube-compatible adapter within a broader project-oracle architecture
 contract YouTubeMilestone is SocialMilestone {
     enum MilestoneType { SUBSCRIBERS, VIEWS, VIDEOS }
     
@@ -593,51 +594,43 @@ contract WavzScore {
 - **Cross-Platform Bonuses**: +25% rewards for consistent growth across 3+ platforms
 - **Data Encoding**: Full Wavz progression metadata encoded in all token transactions
 
-#### Why YouTube as First Oracle Implementation
+#### Why Project-Run Oracle Networks (Current Focus)
 
-YouTube was strategically chosen as the first implementation of our Web2 oracle infrastructure:
+The current oracle focus is project-first, not single-platform-first. The goal is to let ecosystem
+and partner projects run validators/nodes and monetize verified data through Proof of Contribution.
 
-**1. Comprehensive API Access**:
-- **YouTube Data API v3**: Mature, well-documented API with extensive data access
-- **Real-Time Analytics**: Access to live metrics for instant milestone detection
-- **OAuth 2.0 Integration**: Secure, standardized authentication flow
-- **High Rate Limits**: Sufficient quota for scaling to thousands of creators
-- **Reliable Infrastructure**: Google's API reliability provides stable foundation
+**1. Project-Owned Node Operations**:
+- Projects can run dedicated validator nodes with stake-backed accountability
+- Node operators independently verify data and submit signed attestations
+- Performance is measured by uptime, accuracy, and response latency
 
-**2. Clear Validation Requirements**:
-- **Quantifiable Metrics**: Subscribers, views, videos are objective measurements
-- **Fraud Detection Need**: High value in detecting bot subscribers and fake views
-- **Multi-Data Points**: Can cross-validate across multiple API endpoints
-- **Historical Data**: Access to time-series data for pattern analysis
-- **Public Verification**: Many metrics can be publicly cross-referenced
+**2. Proof of Contribution-Weighted Rewards**:
+- Validator and node rewards are weighted by reliable consensus participation
+- Projects with high-quality validation gain stronger contribution scores
+- Repeated inaccurate submissions reduce score and can trigger slashing paths
 
-**3. Oracle Architecture Validation**:
-- **Proves Multi-Source Aggregation**: Tests data fetching from external APIs
-- **Validates AI Confidence Scoring**: Demonstrates anomaly detection effectiveness
-- **Tests Consensus Mechanisms**: Multiple oracles must agree on milestone validity
-- **Demonstrates Proof Generation**: Creates cryptographic proofs for on-chain recording
-- **Establishes Slashing Economics**: Validates economic security model for oracles
+**3. Multi-Vertical Oracle Coverage**:
+- Creator and engagement metrics
+- Sports/event outcomes (for example, NBA game winners and player stat lines)
+- Realistic pricing feeds (token, FX, commodity, and index references)
+- Gaming outcomes and tournament settlement data
 
-**4. Template for All Social Platforms**:
-
-The YouTube oracle establishes the replicable pattern for all Web2 social platforms:
+**4. Reusable Adapter Pattern**:
 
 ```
-Platform Data Source → OAuth Authentication → API Data Fetch → 
-AI Validation Engine → Multi-Oracle Consensus → Proof Generation →
-Smart Contract Recording → Token Rewards Distribution
+Platform/Event Data Source → Source Adapter → AI + Rule Validation →
+Project Validator Consensus → Proof Generation → Smart Contract Recording
 ```
 
-This exact flow applies to:
-- **Twitter**: Followers, tweets, impressions (Twitter API v2)
-- **TikTok**: Followers, views, engagement (TikTok Business API)
-- **Instagram**: Followers, posts, reels (Instagram Graph API)
-- **Twitch**: Subscribers, viewers, streams (Twitch API)
-- **All Other Platforms**: Same architecture, different API endpoints
+This flow applies to:
+- **Social Platforms**: YouTube, Twitter, TikTok, Instagram, Twitch
+- **Sports/Event Providers**: game schedules, results, and statistics feeds
+- **Market Data Providers**: real-time and historical pricing references
+- **Gaming APIs**: achievement and match outcome verification
 
 #### CrabbyTV Live Creator Progression MVP
 
-To extend the Wavz oracle design beyond YouTube-only milestone tracking, the ecosystem introduces the
+To extend the Wavz oracle design beyond single-platform milestone tracking, the ecosystem introduces the
 **CrabbyTV Live Creator Progression MVP** as a generalized creator progression layer for live streaming creators:
 
 **Current CrabbyTV product surface (from live app flows)**:
@@ -1228,7 +1221,7 @@ For full financial mechanics, see the [Economic Model for Decades of Solvency](e
 1. **Qualifying Platform Fee Capture** from CrabbyTV transaction classes in governance-defined ranges.
 2. **Settlement Infrastructure Revenue** from payout and reconciliation rails.
 3. **Oracle and Analytics Services** for validation, fraud scoring, and API products.
-4. **DEX and Wrapper Fee Pathways** routed through treasury policy.
+4. **DEX and Wrapper Fee Pathways** routed through treasury policy (0.3% swap fee baseline on DEX transactions).
 5. **Cross-Project Revenue Expansion** from TheTube and OnlyShellz under governance-approved capture policy.
 
 **Operating Baseline (Reference Numbers)**:
@@ -1288,35 +1281,40 @@ The rollout follows a progressive adoption sequence:
 
 #### Oracle Infrastructure Expansion Strategy
 
-Each new oracle integration follows the proven architecture:
-1. **API Integration Layer**: Connect to platform's official API or scraping infrastructure
-2. **Data Normalization**: Transform platform-specific data into universal schema
-3. **AI Validation Engine**: Deploy fraud detection models trained on platform data
-4. **Oracle Network Deployment**: 7+ independent oracle nodes for consensus
-5. **Smart Contract Integration**: Deploy platform-specific milestone recording contracts
-6. **Token Reward Calibration**: Set reward multipliers based on platform engagement value
-7. **B2B Licensing**: Offer oracle infrastructure to enterprise clients in that vertical
+Each new oracle integration follows a project deployment architecture:
+1. **Source Adapter Layer**: Connect to official APIs/data providers for each project vertical
+2. **Data Normalization**: Transform source-specific payloads into shared oracle schemas
+3. **AI + Rule Validation Engine**: Run fraud detection and consistency checks
+4. **Project Validator Network Deployment**: 7+ independent project-run validator nodes for consensus
+5. **Smart Contract Integration**: Deploy reusable oracle modules for milestones, events, and pricing
+6. **Proof of Contribution Calibration**: Weight rewards by validator uptime, accuracy, and participation
+7. **B2B + Managed Node Services**: Offer private oracle clusters and managed validator operations
 
 **Oracle-as-a-Service Business Model**:
 
-The Web2 Oracle Infrastructure creates a **horizontal platform** that generates revenue across every industry requiring Web2 data validation:
-- **Social Media Analytics**: Fraud detection and influencer verification
-- **Credit Scoring**: Web3 lending protocols using validated Web2 income
-- **Identity Verification**: Sybil resistance for airdrops, DAOs, whitelists
-- **Reputation Systems**: Professional credentials for Web3 freelance platforms
-- **Gaming Achievements**: Tournament entry requirements and skill verification
-- **Creator Investment**: Verified metrics for tokenized creator revenue
+The Oracle Infrastructure runs as a **project-facing service layer** where teams launch their own
+validator/node sets and consume verified data across multiple verticals:
+- **Project Validator Networks**: bootstrapped validator cohorts and node-ops tooling
+- **Sports and Betting Oracles**: verified event outcomes and stats (for example, NBA markets)
+- **Realistic Pricing Oracles**: multi-source pricing feeds for tokens, FX, commodities, and indices
+- **Identity and Reputation**: Sybil resistance and credential verification
+- **API + Webhook Access**: real-time validated data delivery for dApps and enterprise systems
+- **Private Oracle Clusters**: managed deployments for high-compliance clients
 
 **Why This Matters for Diamondz Shadow Ecosystem**:
 
 The oracle infrastructure isn't just a revenue source—it's the **critical foundation** that enables:
-1. **Trustless Tokenization**: Verifiable data allows confident investment in creator tokens
-2. **Cross-Platform Identity**: Single reputation score across all social presence
-3. **Fraud Prevention**: AI validation protects investors from fake metrics
-4. **Scalable Expansion**: Same oracle architecture works for music, gaming, film, etc.
-5. **Enterprise Revenue**: B2B oracle licensing provides sustainable recurring revenue
-6. **Network Effects**: More platforms → more data → better validation → more users
+1. **Trustless Settlement**: Verifiable outcomes for project events, milestones, and market states
+2. **Project-Owned Infrastructure Revenue**: Validators/nodes earn based on service quality
+3. **Proof of Contribution Accountability**: Rewards tied to measurable validator contribution
+4. **Fraud Prevention**: AI validation protects users from manipulated metrics and feeds
+5. **Scalable Expansion**: One architecture serves creators, games, betting, and pricing markets
+6. **Network Effects**: More projects → more validators → stronger data quality and adoption
 
-Each new oracle integration multiplies the value of the entire ecosystem. The YouTube Milestone oracle doesn't just demonstrate viability—it establishes the **scalable infrastructure** for bringing the entire Web2 creator economy on-chain.
+Each new oracle integration multiplies ecosystem value by adding auditable data and new project revenue
+paths. Project-run validator networks, paired with Proof of Contribution scoring, provide the scale
+needed to support creator analytics, sports/event markets, and realistic pricing infrastructure.
 
-By combining Arbitrum Nitro's proven technology with comprehensive media tokenization, predictive betting mechanisms, seamless fiat/DeFi integration through thirdweb, and robust community building tools, Diamond zChain creates the most comprehensive platform for tokenizing and monetizing all forms of digital media and entertainment.
+By combining Arbitrum Nitro's proven technology with project-centric oracle networks, predictive betting
+modules, robust pricing feeds, and seamless fiat/DeFi integration, Diamond zChain can support a broad
+set of production-grade Web2-to-Web3 validation markets.

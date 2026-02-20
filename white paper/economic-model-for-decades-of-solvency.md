@@ -115,7 +115,7 @@ This rail remains distinct from `$Crabby` qualifying CrabbyTV capture.
 Secure wrappers (`wSDM`, `gSDM`, `sSDM`) generate policy-managed fee pathways via:
 
 - mint/redeem fees
-- DEX/liquidity activity
+- DEX/liquidity activity (0.3% swap fee baseline per transaction, governance-adjustable)
 - treasury-routed reinforcement programs
 
 Wrapper contracts implement slippage checks, stale-price controls (3-hour threshold),

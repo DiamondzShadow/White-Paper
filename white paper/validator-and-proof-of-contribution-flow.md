@@ -12,7 +12,7 @@ Step 1: CONTENT CREATION
 │                                                                     │
 │  👤 CREATOR                →  📹 CONTENT  →  📊 METRICS            │
 │                                                                     │
-│  • YouTuber                   • Videos        • Subscribers        │
+│  • Project Operator           • Events/Data   • Verifiable Signals │
 │  • Musician                   • Music         • Views              │
 │  • Gamer                      • Streams       • Engagement         │
 │  • Developer                  • Code          • Contributions      │
@@ -26,12 +26,12 @@ Step 2: VALIDATOR PROTOCOL
 │                        🤖 AI VALIDATOR                              │
 │                                                                     │
 │  MONITORS:                      VALIDATES:                         │
-│  ✓ YouTube API                  ✓ Authenticity                     │
-│  ✓ Spotify API                  ✓ No fraud                         │
-│  ✓ Twitch API                   ✓ Real metrics                     │
-│  ✓ GitHub API                   ✓ Confidence score                 │
+│  ✓ Social APIs                  ✓ Authenticity                     │
+│  ✓ Sports/Event Feeds           ✓ No fraud                         │
+│  ✓ Pricing Feeds                ✓ Real metrics                     │
+│  ✓ Gaming/Dev APIs              ✓ Confidence score                 │
 │                                                                     │
-│  MILESTONE DETECTED! → 1,000 Subscribers Reached                   │
+│  EVENT DETECTED! → NBA Outcome + Pricing Update Confirmed          │
 │                                                                     │
 │  ┌────────────────────────────────────────────┐                   │
 │  │ Validation Confidence: 98% ✓               │                   │
@@ -44,16 +44,16 @@ Step 2: VALIDATOR PROTOCOL
                                    │
                                    ▼
                                    
-Step 3: ON-CHAIN RECORDING (YouTubeMilestone.sol)
+Step 3: ON-CHAIN RECORDING (ProjectOracleFeed.sol + platform adapters)
 ┌─────────────────────────────────────────────────────────────────────┐
 │                      ⛓️  DIAMOND ZCHAIN                             │
 │                                                                     │
-│  struct Milestone {                                                │
-│      channelId: "UC_DiamodzShadow"                                │
-│      type: SUBSCRIBERS                                             │
-│      threshold: 1000                                               │
-│      count: 1047                                                   │
-│      timestamp: 1728481425                                         │
+│  struct OracleRecord {                                             │
+│      marketId: "NBA_2026_02_20_LAL_BOS_WINNER"                    │
+│      metricType: EVENT_RESULT                                      │
+│      threshold: 1                                                  │
+│      value: 1                                                      │
+│      timestamp: 1771557825                                         │
 │      validationConfidence: 98                                      │
 │      verified: true  ✓                                             │
 │  }                                                                 │
@@ -450,21 +450,21 @@ PLUS: Governance power & community benefits
 1️⃣  CONTENT CONTRIBUTION (40% weight)
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
-    YouTube Milestones          Points      Tokens
+    Project Validation Milestones  Points      Tokens
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    100 subscribers             20          20 ZSDM
-    500 subscribers             50          50 ZSDM
-    1,000 subscribers          100         100 ZSDM
-    5,000 subscribers          500         500 ZSDM
-    10,000 subscribers       1,000       1,000 ZSDM
-    50,000 subscribers       5,000       5,000 ZSDM
-    100,000 subscribers     10,000      10,000 ZSDM
-    1,000,000 subscribers  100,000     100,000 ZSDM
+    100 verified events           20          20 ZSDM
+    500 verified events           50          50 ZSDM
+    1,000 verified events        100         100 ZSDM
+    5,000 verified events        500         500 ZSDM
+    10,000 verified events     1,000       1,000 ZSDM
+    50,000 verified events     5,000       5,000 ZSDM
+    100,000 verified events   10,000      10,000 ZSDM
+    1,000,000 verified events 100,000     100,000 ZSDM
     
     Multipliers:
-    • High engagement (>50% watch time): +50%
-    • Consistent uploads (weekly): +10%
-    • Trending content: +25%
+    • High confidence (>95%): +50%
+    • Consistent validator uptime (30-day): +10%
+    • Multi-source corroboration: +25%
 
 2️⃣  TECHNICAL CONTRIBUTION (25% weight)
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -509,23 +509,23 @@ PLUS: Governance power & community benefits
 ╚════════════════════════════════════════════════════════════════════╝
 
 
-EXAMPLE: Reaching 1,000 YouTube Subscribers
+EXAMPLE: NBA Oracle Market Settlement (Project Example)
 ═══════════════════════════════════════════════════════════════════
 
 ⏱️ TIME  │ STAGE                    │ WHAT HAPPENS
 ─────────┼──────────────────────────┼────────────────────────────────
-00:00    │ 🎯 Milestone Hit         │ You reach 1,000 subscribers!
+00:00    │ 🎯 Event Trigger         │ NBA game closes + result finalized
          │                          │
-00:01    │ 🤖 AI Detection          │ Validator detects achievement
-         │                          │ Queries YouTube API
-         │                          │ Verifies authenticity
+00:01    │ 🤖 AI Detection          │ Validators detect event settlement
+         │                          │ Query sports and pricing APIs
+         │                          │ Verify cross-source consistency
          │                          │
 00:02    │ ✅ Validation Complete   │ Confidence: 98%
          │                          │ Fraud check: PASSED
          │                          │ Ready for recording
          │                          │
-00:03    │ ⛓️  On-Chain Recording   │ Calls YouTubeMilestone.sol
-         │                          │ recordMilestone()
+00:03    │ ⛓️  On-Chain Recording   │ Calls ProjectOracleFeed.sol
+         │                          │ recordOracleResult()
          │                          │ Creates immutable record
          │                          │
 00:04    │ 📊 Score Calculation     │ Content pts: +100
@@ -533,7 +533,7 @@ EXAMPLE: Reaching 1,000 YouTube Subscribers
          │                          │ Total contribution score
          │                          │
 00:05    │ 💰 Token Minting         │ Base: 100 ZSDM
-         │                          │ Bonuses: +30 ZSDM
+         │                          │ Consensus bonus: +30 ZSDM
          │                          │ Calls mint() function
          │                          │
 00:06    │ ✅ COMPLETE              │ 130 ZSDM in your wallet!
@@ -553,14 +553,14 @@ Total Time: ~6 minutes from achievement to tokens in wallet
 ║           WHAT IF VALIDATION IS WRONG?                             ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-Scenario: AI Validator Rejects Your Milestone
+Scenario: AI Validator Rejects Your Event/Price Submission
 ───────────────────────────────────────────────────────────────────
 
 Step 1: FILE DISPUTE
 ┌──────────────────────────────────────────────────┐
-│  You: "I reached 5K subs but no tokens minted"  │
-│  System: "Validation confidence was only 45%"    │
-│  You: Submit proof (screenshots, video, etc.)    │
+│  You: "Event outcome was correct but no tokens minted" │
+│  System: "Validation confidence was only 45%"          │
+│  You: Submit provider proofs and signed evidence       │
 └──────────────────┬───────────────────────────────┘
                    │
                    ▼
@@ -568,7 +568,7 @@ Step 2: ORACLE REVIEW (Manual)
 ┌──────────────────────────────────────────────────┐
 │  Oracle Validator:                               │
 │  ✓ Reviews your evidence                         │
-│  ✓ Checks YouTube directly                       │
+│  ✓ Checks official data providers                │
 │  ✓ Verifies timestamps                           │
 │  ✓ Makes final decision                          │
 └──────────────────┬───────────────────────────────┘
@@ -607,7 +607,7 @@ Timeline: 48 hours maximum for dispute resolution
         ┌────────────────┼────────────────┐
         │                │                │
         ▼                ▼                ▼
-   YouTube API      Spotify API      Twitch API
+   Social APIs      Sports APIs      Pricing APIs
         │                │                │
         └────────────────┼────────────────┘
                          │
@@ -645,7 +645,7 @@ Timeline: 48 hours maximum for dispute resolution
                      │
                      ▼
         ┌────────────────────────────────┐
-        │   YouTubeMilestone.sol         │
+        │   SocialMilestoneAdapter.sol   │
         │                                │
         │   • recordMilestone()          │
         │   • verifyMilestone()          │
@@ -691,7 +691,7 @@ Contract Addresses:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 • BurnMintERC677: 0x2eEe2880F8bC24aeBad3B3c22Dd7541c7D846676
 • ValidatorRegistry: [Pending deployment] (NEW)
-• YouTubeMilestone: [Pending deployment]
+• SocialMilestoneAdapter (YouTube-capable): [Pending deployment]
 • ProofOfContribution: [Pending deployment]
 ```
 

@@ -104,6 +104,7 @@ Representative pairs:
 - wSDM / ETH
 
 Liquidity providers supply wrapper + pair assets and earn pool fees.
+Current DEX policy baseline uses a **0.3% swap fee per transaction** (governance-adjustable).
 
 #### Fee Routing
 
@@ -113,6 +114,7 @@ Protocol and DEX fee flows are governance-routed to:
 - liquidity reinforcement
 - buyback/burn programs (policy-controlled)
 - contributor and staking pathways
+- allocation of the 0.3% DEX swap fee pathway across LPs and treasury policies
 
 ### Revenue-Capture Mapping (Current Policy)
 
