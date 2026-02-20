@@ -71,6 +71,7 @@ This layer supports creator discovery, fraud resistance, and progression-linked 
 - Adds diversified upside framing while keeping SDM central in basket design.
 - Uses hardened wrapper controls (slippage limits, stale-price checks, fee-transparent quotes,
   optional ratio enforcement, and restricted emergency withdrawal logic).
+- Planned expansion includes **40Acres (RWA)** wrapper baskets with gold/BTC/stock-linked components.
 
 ---
 

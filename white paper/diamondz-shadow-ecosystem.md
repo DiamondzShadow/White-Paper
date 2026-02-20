@@ -58,6 +58,7 @@ Potential basket pattern examples:
 - SDM + tokenized large-cap stock + BTC
 - SDM + tokenized growth stock + gold
 - SDM + sector stock basket + BTC/gold hedge mix
+- **40Acres (RWA)** + gold + BTC + tokenized stock overlays
 
 Key upside drivers:
 
@@ -82,6 +83,7 @@ The ecosystem is designed to generate multiple revenue channels instead of a sin
 4. **Stock-linked wrapper revenue (expansion)**
    - strategy basket issuance/redemption fees
    - index/analytics access and structured product pathways
+   - dedicated 40Acres-wrapper revenue programs and liquidity markets
 5. **Oracle and data services**
    - validation, fraud scoring, and API services
 

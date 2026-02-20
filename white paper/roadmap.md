@@ -111,6 +111,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Launch Spotify streaming revenue validation
   * Target: operational baseline of 10,000 active users with $120,000 monthly gifting flow and enforced 20%/80% platform-creator split
   * Launch explicit split-rail reporting (`$Crabby` qualifying capture vs `$SDM` network/exchange capture)
+  * Define governance and risk-policy framework for **40Acres (RWA)** gold/BTC/stock wrapper rollout
 
 ### Advanced Oracle Features
 
@@ -164,6 +165,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Deploy oracles in 100+ countries for global coverage
   * Target: scale hybrid gifting flows from $120,000 monthly baseline toward $500,000+ monthly while preserving compliance-first payout controls
   * Expand qualifying revenue policy from CrabbyTV baseline into governance-approved TheTube/OnlyShellz modules
+  * Launch first **40Acres (RWA)** wrapper markets paired with gold/BTC/stock-linked basket policies
 
 * **Gaming and Esports Oracles**
   * Full integration with Call of Duty, Valorant, League of Legends

@@ -121,6 +121,7 @@ An additional growth market exists in strategy baskets that combine:
 - tokenized stock exposure
 - gold-backed collateral
 - BTC-backed collateral
+- **40Acres (RWA)** as a dedicated real-world-asset basket component
 
 This creates a differentiated product category between pure crypto assets and traditional single-asset products.
 
@@ -138,6 +139,7 @@ This creates a differentiated product category between pure crypto assets and tr
 - listing/pair deployment and routing fees
 - data/index analytics and strategy-license revenue
 - treasury performance uplift from diversified reserve deployment
+- 40Acres-wrapper issuance and redemption fees as a dedicated RWA product line
 
 ### Target Market Segments
 

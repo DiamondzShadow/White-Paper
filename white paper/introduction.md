@@ -24,6 +24,8 @@ At a high level:
 5. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
 6. **Next wrapper expansion** can include governance-approved stock-linked baskets
    (for example SDM + tokenized stock + gold/BTC components).
+7. **40Acres (RWA)** is planned as a dedicated wrapped RWA basket line combining
+   tokenized stock, gold, and BTC components.
 
 ### Web2 Surface, Web3 Rail Philosophy
 
@@ -107,6 +109,7 @@ Beyond current wrapper products, the same architecture can support governance-ap
 - SDM + tokenized stock exposure (for example large-cap equity tokens)
 - SDM + gold-backed collateral
 - SDM + BTC-backed collateral
+- **40Acres (RWA)** as a dedicated wrapper base asset combined with gold/BTC/stock components
 
 Why this matters:
 

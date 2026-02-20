@@ -48,6 +48,18 @@ The ecosystem includes three production-oriented SDM wrapper contracts:
 As well as being the network token, SDM wrapped with gold, BTC, or USDC provides upside-oriented
 exposure through collateral diversification while preserving SDM as the anchor asset.
 
+#### 40Acres (RWA) Wrapper Expansion
+
+The wrapper framework is designed to support a dedicated **40Acres (RWA)** product line where
+40Acres exposure is wrapped with:
+
+- gold-backed collateral components
+- BTC-backed collateral components
+- tokenized stock components
+
+This enables RWA-linked basket products with diversified exposure profiles and additional
+protocol revenue pathways (mint/redeem, liquidity, and data/strategy products).
+
 #### Wrapper Safety Controls (Implemented)
 
 1. **Slippage protection**
@@ -110,6 +122,7 @@ Protocol and DEX fee flows are governance-routed to:
 | Network gas and protocol infrastructure flow | `$SDM` | Tied to network usage and protocol execution. |
 | Exchange/business flow | `$SDM` | Aligned to zdiamondex.store business rail. |
 | Wrapper mint/redeem and related liquidity pathways | SDM-aligned treasury paths | Governed fee routing and risk controls. |
+| 40Acres (RWA) wrapper pathways | Wrapper/RWA treasury paths | Gold/BTC/stock-linked basket product fees and liquidity flows. |
 | TheTube / OnlyShellz project monetization | Governance policy layer | Expansion capture policies can be activated by governance. |
 
 ### Web2 Surface, Web3 Rail Baseline Numbers

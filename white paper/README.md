@@ -30,6 +30,7 @@ The live model is organized around real product usage and clear value-routing:
      (including flow tied to [zdiamondex.store](https://zdiamondex.store/))
 4. **Secure SDM wrapper layer** (`wSDM`, `gSDM`, `sSDM`) for BTC/gold/USDC-backed upside
    exposure with hardened controls
+5. **RWA wrapper expansion** including **40Acres (RWA)** baskets combined with gold/BTC/stocks
 
 **The Wavz Progression**:
 - **Milestone Units**: Individual verified achievements
@@ -82,6 +83,7 @@ This framing keeps platform behavior, economics, and contracts aligned in one re
 - **SDM**: Custom gas token optimizing network operations with 100,000+ TPS capacity
 - **$Crabby**: qualifying platform transaction-capture rail (CrabbyTV policy scope)
 - **wSDM / gSDM / sSDM**: secure SDM wrappers for BTC/gold/USDC-backed exposure
+- **40Acres (RWA) wrapper program**: planned expansion with gold/BTC/stock-linked basket overlays
 - **Legacy expansion modules** (TuBE, GaM3, DuSTD): retained as optional governance-activated modules
 
 In addition to serving as the core network token, SDM can be wrapped into BTC/gold/USDC-backed

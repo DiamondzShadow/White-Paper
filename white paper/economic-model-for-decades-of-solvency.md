@@ -131,6 +131,7 @@ Example structure:
 - SDM + tokenized stock component
 - SDM + gold-backed reserve component
 - SDM + BTC-backed reserve component
+- **40Acres (RWA)** wrapped with gold/BTC/stock-linked components under governance policy
 
 Economic upside:
 
@@ -145,6 +146,7 @@ Additional revenue lines created by stock-linked wrappers:
 - strategy/index product fees for curated basket families
 - analytics/data access fees for basket performance dashboards
 - treasury routing gains from diversified collateral management
+- 40Acres-specific wrapper product fees and liquidity incentives
 
 ### Treasury Model
 
