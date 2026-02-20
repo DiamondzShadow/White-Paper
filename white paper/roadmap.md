@@ -32,27 +32,27 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 * ✓ Create community channels (Discord, Telegram)
 * ✓ Release whitepaper and technical documentation
 
-## Phase 2: MVP Launch - Web2 Oracle Infrastructure (Q3-Q4 2025) ⟳
+## Phase 2: MVP Launch - Project Oracle Infrastructure (Q3-Q4 2025) ⟳
 
 ### Oracle Infrastructure Deployment (MVP)
 
-* ⟳ **Q3 2025 - YouTube Oracle Launch** (First Implementation)
-  * ⟳ Deploy YouTubeMilestone.sol smart contract on mainnet
-  * ⟳ Launch oracle network with 7+ independent validators
-  * ⟳ Implement AI validation engine for fraud detection
-  * ⟳ Deploy BurnMintERC677 token contract for milestone rewards
-  * ⟳ Release creator dashboard for YouTube milestone tracking
-  * ⟳ Target: 100 creators, 1,000+ milestones validated
+* ⟳ **Q3 2025 - Project Oracle Launchpad** (Validator/Node Foundation)
+  * ⟳ Deploy project-oriented oracle contract modules for milestones, events, and pricing
+  * ⟳ Launch oracle network with 7+ independent project validators/nodes
+  * ⟳ Implement AI + rule-based fraud detection and anomaly scoring
+  * ⟳ Integrate Proof of Contribution scoring for validator uptime, accuracy, and participation
+  * ⟳ Release validator operator dashboard for node health, rewards, and dispute status
+  * ⟳ Target: 25 projects onboarded, 10,000+ validated records
 
-* ⟳ **Q4 2025 - Multi-Platform Oracle Expansion**
-  * ⟳ Deploy Twitter/X validation oracle (followers, engagement, impressions)
-  * ⟳ Launch TikTok oracle for viral metrics and creator fund data
-  * ⟳ Implement Instagram oracle for posts, reels, and stories engagement
-  * ⟳ Deploy cross-platform identity linking system
+* ⟳ **Q4 2025 - Vertical Oracle Pack Expansion**
+  * ⟳ Launch social and creator validation adapters (YouTube/X/TikTok/Instagram as one pack)
+  * ⟳ Deploy sports and event betting oracle pack (including NBA game outcome/stat examples)
+  * ⟳ Launch realistic pricing oracle pack (token, FX, commodity, and index references)
+  * ⟳ Deploy cross-project identity and attribution linking
   * ⟳ Launch CrabbyTV Live Creator Progression MVP for creator registry + milestone progression (Milestone Units/Creator Credits/Reputation Badges/Wavz Score)
   * ⟳ Publish governance policy for TheTube and OnlyShellz revenue-routing integration
-  * ⟳ Release unified API for all platform data access
-  * ⟳ Target: 1,000 creators across 4 platforms, 10,000+ validations
+  * ⟳ Release unified API + webhook layer for all oracle packs
+  * ⟳ Target: 75 projects across multiple verticals, 100,000+ validations
 
 ### B2B Oracle Services Launch
 
@@ -60,7 +60,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * ⟳ Package oracle infrastructure as licensable SDK
   * ⟳ Create documentation for enterprise integration
   * ⟳ Build white-label oracle deployment tools
-  * ⟳ Establish managed oracle service offerings
+  * ⟳ Establish managed validator/node service offerings
 
 * ⟳ **Enterprise Partnerships**
   * ⟳ Target 5 B2B clients (analytics platforms, marketing agencies)
@@ -96,19 +96,20 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 
 ### Oracle Platform Expansion
 
-* **New Platform Integrations**
+* **New Vertical Integrations**
   * Deploy Twitch streaming and subscription validation oracle
   * Launch Facebook/Meta creator milestone tracking
   * Implement LinkedIn professional credentials validation
   * Deploy Spotify streaming and playlist tracking oracle
-  * Launch Apple Music and SoundCloud music validation
-  * Target: 5,000+ creators across 10+ platforms
+  * Launch sports/event market coverage for additional leagues beyond NBA examples
+  * Expand realistic pricing feeds with cross-source confidence checks
+  * Target: 5,000+ creators and projects across 10+ validated verticals
 
 * **Phase 2 Revenue Integration** (Major Revenue Unlock)
-  * Integrate YouTube Partner Program API for ad revenue tracking
-  * Implement TikTok Creator Fund revenue tokenization
-  * Deploy Twitch subscription and bits revenue sharing
-  * Launch Spotify streaming revenue validation
+  * Integrate creator platform revenue APIs for ad/subscription tracking
+  * Implement event/betting settlement fee pathways with oracle-backed outcomes
+  * Deploy pricing-feed subscriptions for projects requiring real-time market references
+  * Launch cross-project revenue validation and analytics products
   * Target: operational baseline of 10,000 active users with $120,000 monthly gifting flow and enforced 20%/80% platform-creator split
   * Launch explicit split-rail reporting (`$Crabby` qualifying capture vs `$SDM` network/exchange capture)
   * Define governance and risk-policy framework for **40Acres (RWA)** gold/BTC/stock wrapper rollout
