@@ -108,7 +108,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Implement TikTok Creator Fund revenue tokenization
   * Deploy Twitch subscription and bits revenue sharing
   * Launch Spotify streaming revenue validation
-  * Target: 500 creators tokenizing platform revenue = $8.7M annual revenue
+  * Target: operational baseline of 10,000 active users with $120,000 monthly gifting flow and enforced 20%/80% platform-creator split
 
 ### Advanced Oracle Features
 
@@ -120,7 +120,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Create cross-platform content performance tracking
 
 * **Enterprise Oracle Solutions**
-  * Expand to 25 B2B clients ($3.5M annual recurring revenue)
+  * Expand to 25 B2B clients with recurring infrastructure contracts
   * Deploy custom oracles for gaming platforms (Steam, Xbox, PlayStation)
   * Launch professional credential validation (GitHub, LinkedIn)
   * Implement e-commerce validation oracles (Shopify, Etsy)
@@ -159,7 +159,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Validate 50,000+ creators across global platforms
   * Process 1M+ milestone validations per month
   * Deploy oracles in 100+ countries for global coverage
-  * Target: $115M annual revenue from oracle services
+  * Target: scale hybrid gifting flows from $120,000 monthly baseline toward $500,000+ monthly while preserving compliance-first payout controls
 
 * **Gaming and Esports Oracles**
   * Full integration with Call of Duty, Valorant, League of Legends
@@ -208,7 +208,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Integration with every major Web3 protocol requiring real-world data
   * Standard API adopted by 1,000+ dApps and protocols
   * Process 100M+ validations annually across all platforms
-  * Target: $500M+ annual revenue as critical Web3 infrastructure
+  * Target: maintain fiat-first mainstream UX while sustaining 40%+ optional creator wallet-withdraw adoption
 
 * **New Categories and Verticals**
   * Healthcare data validation (with privacy compliance)

@@ -53,6 +53,17 @@ The secure wrappers implement:
 - Optional ratio enforcement (50/50 or 20/80 targets with tolerance)
 - Pausable operations and treasury-routed fees
 
+### Operating Baseline Numbers (Reference Scenario)
+
+- Active monthly users: **10,000**
+- Average monthly gifting per user: **$12**
+- Monthly gross gifting volume: **$120,000**
+- Platform share (20%): **$24,000/month**
+- Creator share (80%): **$96,000/month**
+- Optional creator crypto withdrawal participation: **40%**
+- Derived monthly on-chain payout flow: **$38,400**
+- Optional rollout incentive: **2% payout bonus** on approved crypto-withdraw paths
+
 ## Whitepaper Structure (Current Model Reading Order)
 
 1. [Current Model Architecture (2026)](current-model-architecture.md)

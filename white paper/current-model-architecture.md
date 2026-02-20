@@ -93,6 +93,20 @@ The model is executed through:
 4. Network and exchange-side flow contributes to `$SDM` pathways.
 5. SDM wrappers provide additional structured exposure using secure contract controls.
 
+### Web2 Surface, Web3 Rail - Operating Numbers
+
+Reference operating scenario used in this whitepaper:
+
+- 10,000 monthly active users
+- $12 average monthly gifting per user
+- $120,000 monthly gifting volume
+- 20% platform share ($24,000/month)
+- 80% creator share ($96,000/month)
+- 40% optional creator crypto withdrawal participation
+- $38,400/month derived on-chain payout flow
+
+Execution principle: users are not forced into crypto purchases; crypto appears as optional creator payout and settlement rails.
+
 ---
 
 ### How to Read the Remaining Whitepaper
