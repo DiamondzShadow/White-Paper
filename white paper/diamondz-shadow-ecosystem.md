@@ -9,116 +9,96 @@ coverY: 0
 
 ### Overview of the Ecosystem
 
-The Diamondz Shadow ecosystem represents a revolutionary blockchain solution transforming the entertainment industry through comprehensive tokenization. Our ecosystem creates a symbiotic relationship between creators, audiences, and investors by enabling the tokenization of everything—from movies and music to comedy shows, fashion, gaming, and live streams.
+> **Context note:** This chapter is retained as legacy ecosystem context.
+> The current operating model is defined in `current-model-architecture.md` and the updated Executive Summary.
+> Canonical token/value routing for current operations is:
+> **$Crabby** (qualifying CrabbyTV flow), **$SDM** (network/exchange flow), and secure wrappers
+> **wSDM/gSDM/sSDM** for SDM-collateralized extension.
 
-Operating on our custom mainnet "Diamond zChain" (launching June 2025) with "Diamond zLab" testnet, our platform combines advanced tokenomics, community governance, and real-world revenue integration to ensure all stakeholders benefit from the success of Diamondz Shadow productions. This proprietary infrastructure provides high throughput, low gas fees, and seamless interoperability while enabling our unique Proof of Contribution consensus mechanism.
+Diamondz Shadow runs as a product-first creator ecosystem with explicit value routing and governance controls.
+Current project surfaces are:
 
-### Multi-Token Architecture
+- **CrabbyTV** (primary qualifying transaction-capture surface)
+- **TheTube**
+- **OnlyShellz**
 
-Our ecosystem employs a strategic four-token model, with each token serving a specialized function:
+### Current Ecosystem Structure
 
-1. **SDM**: Our custom gas token that powers all transactions across the Diamondz Shadow ecosystem, optimized for micro-transactions with minimal fees and high scalability on Diamond zChain.
-2. **TuBE**: The content creation token that fuels our entertainment production ecosystem, enabling tokenization of digital streams across any platform and facilitating community building around content.
-3. **GaM3**: Our gaming interaction token that powers all gaming-related activities, including integration with major titles, betting functionality, and in-game asset transactions.
-4. **DuSTD**: Our ecosystem stablecoin that maintains a 1:1 peg to the US Dollar, providing stability for transactions and serving as the primary settlement currency for entertainment and gaming monetization.
+#### 1) Product Layer
 
-### Core Components of the Ecosystem
+Users and creators engage through films/premieres, live sessions, Spades and competitive formats,
+AMAs, paid interactions, and creator monetization tools.
 
-1. **Comprehensive Tokenization**: Any form of digital entertainment can be tokenized within our ecosystem, creating new ownership and monetization models.
-2. **Community Governance**: Token holders vote on creative and operational decisions, shaping the direction of productions through our on-chain voting system.
-3. **Revenue Integration**: Traditional revenue streams from platforms like YouTube, Twitch, and social media are tracked and distributed through our blockchain, with a portion reinvested into liquidity pools and community rewards.
-4. **Creative Economy**: Contributors earn tokens for their work, fostering a sustainable creative ecosystem with transparent on-chain payments.
-5. **Gaming Integration**: Our GaM3 token enables interaction with major gaming titles, betting on outcomes, and true ownership of in-game assets.
-6. **NFT Functionality**: Exclusive NFTs tied to productions serve as collectibles and additional revenue streams, minted directly on Diamond zChain.
-7. **Proof of Contribution**: Our unique consensus mechanism rewards users based on their meaningful contributions to the ecosystem rather than computational power or token holdings.
+#### 2) Validation Layer (Wavz)
 
-### Token Utility and Governance
+Creator progression and trust are structured through:
 
-Each token in our ecosystem provides specific utility:
+- Milestone Units
+- Creator Credits
+- Reputation Badges
+- Wavz Score
 
-#### SDM Utility
+#### 3) Value-Rail Layer
 
-* Powers all transactions as our custom gas token on Diamond zChain
-* Maintains the security and operation of the network
-* Enables efficient micro-transactions across the platform
+- **$Crabby** captures qualifying CrabbyTV transaction flow.
+- **$SDM** captures network and exchange-aligned value flow (including zdiamondex.store-aligned activity).
+- **wSDM / gSDM / sSDM** provide secure SDM wrapper extension rails.
 
-#### TuBE Utility
+#### 4) Infrastructure and Governance Layer
 
-* Enables tokenization of entertainment content
-* Provides governance rights for content-related decisions
-* Rewards content creators and contributors
-* Facilitates fractional ownership of entertainment productions
+Diamond zChain, oracle systems, treasury policy, and governance workflows execute and audit the model.
 
-#### GaM3 Utility
+### Wrapper Expansion Upside: Tokenized Stocks + Gold/BTC
 
-* Powers all gaming-related activities
-* Enables betting on game outcomes
-* Facilitates in-game asset ownership and trading
-* Supports cross-game asset compatibility
+The wrapper architecture can be expanded through governance to include stock-linked baskets combined with
+gold/BTC collateral components.
 
-#### DuSTD Utility
+Potential basket pattern examples:
 
-* Provides stable value for transactions and payments
-* Serves as primary settlement currency
-* Reduces volatility risk for creators and investors
-* Bridges traditional finance with our token ecosystem
+- SDM + tokenized large-cap stock + BTC
+- SDM + tokenized growth stock + gold
+- SDM + sector stock basket + BTC/gold hedge mix
+- **40Acres (RWA)** + gold + BTC + tokenized stock overlays
 
-### Governance in Action
+Key upside drivers:
 
-Our governance system empowers community members to participate in key decisions:
+1. **Diversified exposure**: balances growth-linked equity behavior with hard-asset hedges.
+2. **Richer product suite**: supports multiple basket classes by risk profile.
+3. **Broader user fit**: serves users seeking non-single-asset exposure inside a crypto-native format.
+4. **Treasury resilience**: diversified reserve composition can improve stress-period stability.
 
-* **Production Selection**: Voting on which entertainment and gaming projects receive funding
-* **Creative Direction**: Influencing storylines, casting, and other creative elements
-* **Revenue Allocation**: Determining how platform revenue is distributed
-* **Technical Development**: Prioritizing platform features and improvements
+### Revenue Integration (Different Revenue Lines)
 
-Our on-chain governance ensures:
+The ecosystem is designed to generate multiple revenue channels instead of a single-source model:
 
-* Transparent voting with immutable records
-* Proportional voting power based on token holdings and contribution history
-* Executable results that automatically trigger production workflows
-* Protection against manipulation through secure smart contracts
+1. **Project transaction capture**
+   - qualifying CrabbyTV classes (policy-defined ranges)
+   - governance-expandable TheTube/OnlyShellz modules
+2. **Network and exchange rail revenue**
+   - SDM-linked gas and execution activity
+   - exchange/business-aligned flows
+3. **Wrapper protocol revenue**
+   - mint/redeem fees
+   - liquidity and routing fees
+4. **Stock-linked wrapper revenue (expansion)**
+   - strategy basket issuance/redemption fees
+   - index/analytics access and structured product pathways
+   - dedicated 40Acres-wrapper revenue programs and liquidity markets
+5. **Oracle and data services**
+   - validation, fraud scoring, and API services
 
-### Revenue Integration
+### Governance and Risk Controls
 
-A key innovation in our ecosystem is the integration of traditional revenue streams with our blockchain:
+Governance controls:
 
-1. **Multi-Platform Integration**: We track performance and revenue across YouTube, Twitch, TikTok, and other platforms in real-time.
-2. **Revenue Smart Contracts**: Platform revenue is automatically converted and distributed according to predefined smart contracts.
-3. **Contribution Tracking**: Our system tracks various forms of contribution (content creation, promotion, community building) and rewards accordingly.
-4. **Transparent Distribution**: All revenue flows are recorded on-chain, providing complete transparency to all stakeholders.
-5. **Gaming Revenue**: Revenue from game sales, in-game purchases, and betting markets is distributed to developers, contributors, and token holders.
+- qualifying capture definitions and fee bands
+- wrapper asset approvals and ratio limits
+- oracle freshness and safety thresholds
+- treasury allocation ranges and incident-response policy
 
-### Proof of Contribution Consensus
+Safety controls include slippage bounds, stale-price guards, pausable operations, and restricted emergency paths.
 
-Unlike traditional consensus mechanisms, our Proof of Contribution system:
+### Legacy Architecture Context
 
-* Rewards users based on meaningful contributions to the ecosystem
-* Considers multiple contribution types across entertainment and gaming
-* Reduces energy consumption compared to Proof of Work
-* Prevents wealth concentration issues common in Proof of Stake
-* Creates a more equitable and participatory network
-* Aligns incentives between creators, audiences, and investors
-
-### Technical Infrastructure
-
-Our blockchain infrastructure is built on:
-
-* **Diamond zChain**: Our custom mainnet launching in June 2025, purpose-built for entertainment and gaming tokenization
-* **Diamond zLab**: Our testnet environment for development and testing
-* **Custom Smart Contracts**: Purpose-built for content creation, revenue sharing, and governance
-* **Cross-Chain Compatibility**: Enabling interaction with other blockchain ecosystems
-* **Decentralized Storage**: Content metadata and ownership records stored on-chain with content on IPFS
-
-### Ecosystem Growth Strategy
-
-The Diamondz Shadow ecosystem grows through:
-
-1. **Entertainment Production**: Creating high-quality films, series, music, and other content that attracts viewers and participants
-2. **Gaming Development**: Building and integrating games that utilize our GaM3 token for enhanced player experiences
-3. **Community Building**: Fostering an engaged community of token holders, creators, and fans
-4. **Technical Development**: Ongoing improvements to our Diamond zChain infrastructure and user interfaces
-5. **Strategic Partnerships**: Collaborating with entertainment studios, gaming publishers, and other blockchain projects
-6. **Educational Initiatives**: Teaching users about blockchain technology and our unique contribution model
-
-By creating a self-reinforcing ecosystem where quality entertainment and gaming content drives engagement, which generates revenue that rewards contributors, we establish a sustainable model for decentralized content creation and distribution designed to thrive for decades.
+Historic references to TuBE, GaM3, and DuSTD are retained for design lineage.
+They are not the canonical current-model rails unless explicitly reactivated by governance.

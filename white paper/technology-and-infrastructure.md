@@ -7,9 +7,21 @@ coverY: 0
 
 #### Technology and Infrastructure
 
-### Blockchain Architecture
+### Current Model Context (Read First)
 
-Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a high-performance Layer 3 blockchain specifically designed for comprehensive media tokenization and community-driven entertainment.
+This chapter now follows the current operating model:
+
+1. **Ecosystem project surfaces**: CrabbyTV, TheTube, and OnlyShellz
+2. **CrabbyTV** as the primary qualifying transaction-capture surface
+3. **Wavz** as the validation and creator progression layer
+4. **$Crabby / $SDM** as split value-capture rails
+5. **Secure SDM wrappers** as hardened upside-extension instruments
+
+Some later sections preserve broader expansion and legacy architecture detail for continuity.
+
+### Core Chain Architecture
+
+Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a high-performance Layer 3 blockchain designed for creator economy transactions, validation workflows, and value-routing contracts.
 
 #### Core Components:
 
@@ -23,11 +35,11 @@ Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a h
 8. **Contribution Metrics**: Includes content creation, curation, promotion, governance participation, gaming achievements, and technical support
 9. **Sybil Resistance**: Multi-factor verification system to prevent identity spoofing and contribution fraud
 10. **Dynamic Reward Allocation**: Adjusts rewards based on ecosystem needs and contribution value
-11. **Multi-Token Smart Contract Infrastructure**:
-12. **SDM Contracts**: Custom gas token contracts optimized for high-frequency transactions
-13. **TuBE Contracts**: ERC-20 contracts for content creation and community governance
-14. **GaM3 Contracts**: Gaming-specific contracts with permit functionality for gasless approvals
-15. **DuSTD Contracts**: Stablecoin contracts with price feed oracles for USD peg maintenance
+11. **Current-Model Token Smart Contract Infrastructure**:
+12. **SDM Contracts**: Network gas and core utility contracts optimized for high-frequency transactions
+13. **CRABBY Contracts**: Qualifying platform-transaction value-capture contracts and policy controls
+14. **Secure Wrapper Contracts**: `wSDM`, `gSDM`, and `sSDM` basket contracts with hardened mint/redeem safety
+15. **Settlement/Expansion Modules**: Additional token and stable-settlement modules (including legacy modules) activated through governance policy
 16. **Content Registry**: On-chain registry of all content metadata, ownership, and revenue distribution rights
 17. **Governance Framework**: DAO-based decision-making system with proposal, voting, and execution mechanisms
 18. **Revenue Distribution**: Automated system for tracking and distributing revenue from multiple sources
@@ -38,13 +50,16 @@ Diamondz Shadow utilizes Arbitrum Nitro technology to create Diamond zChain, a h
 #### Diamond zChain
 
 * **Transaction Throughput**: 100,000 TPS
-* **Multi-Token Support**: SDM, TuBE, GaM3, DuSTD
+* **Current Value-Rail Support**: `$Crabby`, `$SDM`, and secure SDM wrappers (`wSDM/gSDM/sSDM`)
 
 #### Diamond zLab
 
 * **Purpose**: Testing and development environment for Diamond zChain
 
-### Comprehensive Media Tokenization Platform
+### Product and Tokenization Expansion Modules
+
+> **Scope note:** The sections below describe expansion modules and legacy architecture options.
+> The canonical live value rails remain `$Crabby`, `$SDM`, and secure SDM wrappers.
 
 #### Universal Content Tokenization
 
@@ -53,7 +68,7 @@ Our platform enables tokenization of all forms of media and digital content:
 1. **Social Platform Streams**:
 2. **Live Stream Tokenization**: Real-time tokenization of Twitch, YouTube Live, TikTok Live streams
 3. **Content Performance Tracking**: Automated tracking of views, engagement, and revenue metrics
-4. **Community Ownership**: Fractional ownership of streams through TuBE tokens
+4. **Community Ownership**: Fractional and governance-enabled ownership pathways through approved project/token modules
 5. **Revenue Sharing**: Automatic distribution of ad revenue and donations to token holders
 6. **Music Industry Integration**:
 7. **Streaming Platform APIs**: Integration with Spotify, Apple Music, Amazon Music, Google Play Music
@@ -68,7 +83,7 @@ Our platform enables tokenization of all forms of media and digital content:
 
 #### Predictive Betting and Play-to-Earn
 
-Our GaM3 token powers a comprehensive gaming and betting ecosystem:
+Our gaming module framework powers comprehensive gaming and betting integrations:
 
 1. **Predictive Betting Arrangements**:
 2. **Player vs Player Betting**: Direct betting between players on game outcomes
@@ -801,7 +816,7 @@ Lucid Labs provides the DeFi infrastructure that enables liquid markets for crea
 - **Creator Token Launches**: Launch bonding curves for new creator tokens
 - **Milestone Unit-Backed Lending**: Creators borrow against verified Wavz scores
 - **Reputation Badge NFT Fractionalization**: Split high-value Reputation Badges for smaller investors
-- **Liquidity Mining**: Earn TuBE tokens for providing liquidity to creator pools
+- **Liquidity Mining**: Earn governance-defined incentive rewards for providing liquidity to creator pools
 - **Revenue Distribution**: Automated revenue sharing via Lucid Labs smart contracts
 
 **DeFi Primitives for Creators**:
@@ -866,7 +881,7 @@ Dune Analytics provides comprehensive blockchain data analytics that powers tran
 - **NFT Analytics**: Track Milestone Unit NFT and Reputation Badge NFT trading volumes, floor prices, and holder distribution
 
 **Diamond zChain Ecosystem Dashboards**:
-- **Token Economics Dashboard**: SDM, TuBE, GaM3, DuSTD supply, circulation, and velocity metrics
+- **Token Economics Dashboard**: `$Crabby`, `$SDM`, `wSDM`, `gSDM`, `sSDM` supply/circulation metrics (plus any governance-enabled expansion modules)
 - **Creator Economy Analytics**: Total creators validated, Milestone Units minted, Creator Credits distributed, Wavz scores
 - **Revenue Tracking**: Real-time visualization of platform revenue, token burns, and treasury management
 - **Governance Metrics**: DAO proposal activity, voting participation rates, and decision outcomes
@@ -917,7 +932,7 @@ Ormi Labs provides the comprehensive API infrastructure that enables developers 
 - **Unified Blockchain API**: Single API endpoint for all Diamond zChain interactions (transactions, contracts, tokens, NFTs)
 - **WebSocket Subscriptions**: Real-time event streams for milestone achievements, token transfers, and contract events
 - **Historical Data Access**: Complete blockchain history with indexed data for analytics and reporting
-- **Multi-Token API**: Specialized endpoints for SDM, TuBE, GaM3, and DuSTD token operations
+- **Multi-Token API**: Specialized endpoints for `$Crabby`, `$SDM`, wrapper tokens, and approved expansion modules
 - **NFT APIs**: Enhanced metadata and trading APIs for Milestone Unit NFTs and Reputation Badge NFTs
 - **Governance APIs**: DAO proposal submission, voting, and execution endpoints
 
@@ -954,7 +969,7 @@ ormi.events.subscribe('milestone.achieved', (event) => {
 - **Yield Tracking**: Monitor staking rewards, liquidity mining, and governance incentives
 
 **3. Gaming Integration**:
-- **Player Statistics API**: Real-time access to GaM3 token balances and gaming achievements
+- **Player Statistics API**: Real-time access to gaming-module balances and achievement metrics
 - **Tournament Management**: APIs for tournament creation, registration, and prize distribution
 - **In-Game Asset APIs**: Query ownership and metadata for in-game NFT assets
 - **Betting Market Data**: Real-time odds, bet placements, and payout calculations
@@ -985,23 +1000,25 @@ ormi.events.subscribe('milestone.achieved', (event) => {
 - **Enterprise Plans**: Custom SLAs and dedicated support for high-volume projects
 - **White-Label Solutions**: Licensed API infrastructure for ecosystem partners
 
-#### Brale - Stablecoin Infrastructure & Fiat Settlements
+#### Brale - Stable Settlement Infrastructure & Fiat Settlements (Expansion Module)
 **Partnership**: [brale.xyz](https://brale.xyz/)
 
-Brale provides enterprise-grade stablecoin infrastructure that powers DuSTD (Diamond zChain's ecosystem stablecoin) and enables seamless fiat-to-crypto settlements for creators, investors, and projects:
+Brale provides enterprise-grade settlement infrastructure for USD-denominated modules
+(including legacy DuSTD naming in historical architecture) and enables fiat-to-crypto
+settlements for creators, investors, and projects:
 
-**Stablecoin Infrastructure for DuSTD**:
-- **Regulatory-Compliant Issuance**: Brale's licensed infrastructure ensures DuSTD meets regulatory standards
+**Stable Settlement Infrastructure**:
+- **Regulatory-Compliant Issuance**: Brale's licensed infrastructure supports compliant USD-denominated settlement modules
 - **1:1 USD Backing**: Full reserve backing with monthly attestations from third-party auditors
-- **Instant Minting/Redemption**: Creators and investors can convert USD ↔ DuSTD with sub-second settlement
-- **Multi-Chain Support**: DuSTD available across Diamond zChain and all bridged EVM chains
+- **Instant Minting/Redemption**: Creators and investors can convert USD ↔ settlement modules with fast turnaround
+- **Multi-Chain Support**: settlement modules available across Diamond zChain and bridged EVM chains
 - **Banking Integration**: Direct bank account connections for ACH, wire, and SEPA transfers
 - **Treasury Management**: Sophisticated cash management for ecosystem treasury holdings
 
 **Creator Economy Payment Infrastructure**:
 
 **1. Fiat Off-Ramps for Creators**:
-- **Ad Revenue Settlements**: Convert YouTube, Twitch, TikTok ad revenue to DuSTD, then to USD
+- **Ad Revenue Settlements**: Convert YouTube, Twitch, TikTok ad revenue into settlement units, then to USD
 - **Instant Withdrawals**: Creators cash out token earnings to bank accounts within 24 hours
 - **International Payments**: Global creator payouts in 130+ countries with local currency support
 - **Tax Optimization**: Automatic 1099 generation and tax withholding for U.S. creators
@@ -1009,23 +1026,23 @@ Brale provides enterprise-grade stablecoin infrastructure that powers DuSTD (Dia
 
 **2. Investor On-Ramps**:
 - **Accredited Investor Flows**: Streamlined KYC for institutional and high-net-worth investors
-- **Wire Transfer Integration**: Large-scale investments ($50K+) via wire directly to DuSTD
+- **Wire Transfer Integration**: Large-scale investments ($50K+) via wire directly to settlement units
 - **Subscription Payments**: Recurring investments in creator tokens via automatic ACH withdrawals
-- **Crypto-Native Flows**: Accept USDC, USDT, DAI and instantly convert to DuSTD at 1:1 rates
+- **Crypto-Native Flows**: Accept USDC, USDT, DAI and convert into settlement units
 
 **3. Project Treasury Management**:
-- **Yield on Idle Capital**: Ecosystem projects earn yield on DuSTD treasury holdings via Brale's cash management
-- **Payroll in Stablecoins**: Projects pay team members and contractors in DuSTD with Brale's payment rails
+- **Yield on Idle Capital**: Ecosystem projects earn yield on settlement-module treasury holdings via Brale's cash management
+- **Payroll in Stablecoins**: Projects pay team members and contractors in settlement units through Brale payment rails
 - **Multi-Signature Security**: Enterprise-grade custody with hardware security modules (HSMs)
 - **Accounting Integration**: Export transaction history for QuickBooks, Xero, and enterprise ERPs
 
 **Technical Integration with Diamond zChain**:
 
-**DuSTD Smart Contract Architecture**:
+**Settlement Module Smart Contract Architecture**:
 ```solidity
-// DuSTD stablecoin powered by Brale infrastructure
-contract DuSTD is ERC20, BraleReserveToken {
-    // Mint DuSTD when USD deposits confirmed via Brale
+// USD-denominated settlement module powered by Brale infrastructure
+contract SettlementUSD is ERC20, BraleReserveToken {
+    // Mint settlement token when USD deposits confirmed via Brale
     function mint(address recipient, uint256 amount) 
         external 
         onlyBraleOracle 
@@ -1034,11 +1051,11 @@ contract DuSTD is ERC20, BraleReserveToken {
         // Verify USD reserve backing via Brale attestation
         require(braleReserves.verifyBacking(amount), "Insufficient reserves");
         _mint(recipient, amount);
-        emit DuSTDMinted(recipient, amount, block.timestamp);
+        emit SettlementMinted(recipient, amount, block.timestamp);
         return true;
     }
     
-    // Burn DuSTD to redeem USD via Brale
+    // Burn settlement token to redeem USD via Brale
     function redeem(uint256 amount, bytes calldata bankDetails) 
         external 
         returns (bytes32 redemptionId) 
@@ -1046,7 +1063,7 @@ contract DuSTD is ERC20, BraleReserveToken {
         _burn(msg.sender, amount);
         // Trigger USD transfer via Brale payment rails
         redemptionId = braleSettlement.initiateFiatTransfer(msg.sender, amount, bankDetails);
-        emit DuSTDRedeemed(msg.sender, amount, redemptionId, block.timestamp);
+        emit SettlementRedeemed(msg.sender, amount, redemptionId, block.timestamp);
     }
 }
 ```
@@ -1058,9 +1075,9 @@ contract DuSTD is ERC20, BraleReserveToken {
 YouTube Ad Revenue ($10,000) → 
 YouTube pays USD to Diamondz Shadow → 
 USD deposited with Brale → 
-DuSTD minted on Diamond zChain (10,000 DuSTD) → 
+Settlement token minted on Diamond zChain (10,000 units) → 
 Smart contract distributes to creators based on contribution → 
-Creators redeem DuSTD for USD via Brale → 
+Creators redeem settlement tokens for USD via Brale → 
 USD hits creator bank accounts (24-48 hours)
 ```
 
@@ -1068,18 +1085,18 @@ USD hits creator bank accounts (24-48 hours)
 ```
 Investor connects bank account → 
 $50,000 wire transfer to Brale → 
-Brale mints 50,000 DuSTD on Diamond zChain → 
-Investor swaps DuSTD for TuBE or creator tokens via DEX → 
+Brale mints 50,000 settlement units on Diamond zChain → 
+Investor swaps settlement units for `$Crabby`, `$SDM`, wrappers, or approved creator assets via DEX → 
 Investor participates in ecosystem with stable settlement layer
 ```
 
 **Benefits for Projects Building on Diamond zChain**:
 
 **1. Stable Currency for Commerce**:
-- **Predictable Pricing**: Price products/services in DuSTD without crypto volatility risk
+- **Predictable Pricing**: Price products/services in USD-denominated settlement units without crypto volatility risk
 - **Revenue Recognition**: Stablecoin revenue simplifies accounting and financial reporting
 - **Global Accessibility**: Accept payments from users worldwide without forex complexity
-- **DeFi Integration**: Use DuSTD as collateral for loans, liquidity pools, and yield farming
+- **DeFi Integration**: Use approved settlement modules as collateral for loans, liquidity pools, and yield farming
 
 **2. Fiat Gateway Integration**:
 - **White-Label On-Ramps**: Projects can offer fiat on-ramps using Brale infrastructure
@@ -1088,8 +1105,8 @@ Investor participates in ecosystem with stable settlement layer
 - **Compliance Outsourcing**: Brale handles KYC/AML requirements, reducing legal burden
 
 **3. Treasury Management**:
-- **Cash Management**: Earn 4-5% yield on DuSTD treasury holdings (vs. 0% on crypto)
-- **Risk Mitigation**: Convert volatile tokens to DuSTD during market downturns
+- **Cash Management**: Earn yield on settlement-module treasury holdings (policy and market dependent)
+- **Risk Mitigation**: Convert volatile tokens to settlement modules during market downturns
 - **Operating Expenses**: Pay vendors, salaries, and contractors in stablecoins
 - **Financial Planning**: Predictable stablecoin reserves enable better budget forecasting
 
@@ -1102,9 +1119,9 @@ Investor participates in ecosystem with stable settlement layer
 - **Lower Barriers to Entry**: Simplified onboarding without crypto learning curve
 
 **2. Financial Stability & Risk Management**:
-- **Volatility Shield**: DuSTD provides stable value during crypto market crashes
-- **Hedging Mechanism**: Users can park funds in DuSTD during uncertain market conditions
-- **Liquidity Depth**: Deep DuSTD liquidity pools enable efficient trading across all tokens
+- **Volatility Shield**: USD-denominated settlement modules provide stable value during crypto market volatility
+- **Hedging Mechanism**: Users can park funds in settlement modules during uncertain market conditions
+- **Liquidity Depth**: Deep settlement liquidity pools enable efficient trading across supported assets
 - **Price Discovery**: Stablecoin pairs improve price accuracy for creator tokens
 
 **3. Regulatory Confidence**:
@@ -1115,15 +1132,15 @@ Investor participates in ecosystem with stable settlement layer
 
 **4. Ecosystem Network Effects**:
 - **Liquidity Magnet**: Reliable fiat on/off ramps attract more users and capital
-- **Cross-Chain Bridge**: DuSTD serves as universal settlement layer across all chains
-- **DeFi Composability**: DuSTD integration with major DeFi protocols brings liquidity
-- **Institutional Readiness**: Enterprise-grade stablecoin infrastructure attracts large investors
+- **Cross-Chain Bridge**: Settlement modules can serve as universal settlement layers across supported chains
+- **DeFi Composability**: Settlement-module integration with major DeFi protocols brings liquidity
+- **Institutional Readiness**: Enterprise-grade settlement infrastructure attracts large investors
 
 **Brale Revenue Model for Diamond zChain Ecosystem**:
-- **Minting/Redemption Fees**: 0.1-0.5% fee on DuSTD creation and redemption
+- **Minting/Redemption Fees**: 0.1-0.5% fee on settlement module creation and redemption
 - **Payment Processing**: 1-2% on fiat payment transactions (competitive with Stripe/PayPal)
-- **Treasury Yield Share**: Revenue share on yield generated from DuSTD reserves
-- **Enterprise Licensing**: White-label stablecoin infrastructure for large ecosystem projects
+- **Treasury Yield Share**: Revenue share on yield generated from settlement reserves
+- **Enterprise Licensing**: White-label settlement infrastructure for large ecosystem projects
 - **Cross-Border Transfers**: Premium fees for international creator payouts
 
 ### Strategic Partner Ecosystem Summary
@@ -1140,7 +1157,7 @@ The combination of Dune Analytics, Ormi Labs, and Brale creates a comprehensive 
 
 1. **Creator Onboarding Flow**:
    - Thirdweb embedded wallets → seamless account creation
-   - Brale fiat on-ramps → instant DuSTD purchase
+   - Brale fiat on-ramps → instant settlement-unit purchase
    - Ormi Labs APIs → dashboard displays creator stats
    - Dune Analytics → public profile showcasing verified milestones
 
@@ -1171,21 +1188,21 @@ The combination of Dune Analytics, Ormi Labs, and Brale creates a comprehensive 
 - Result: **3x faster creator onboarding**, **5x higher creator retention**
 
 **For DeFi & Trading Projects**:
-- Use DuSTD (powered by Brale) as base trading pair for all creator tokens
+- Use approved USD-denominated settlement modules (powered by Brale) as base trading pairs
 - Integrate Ormi APIs for real-time token price feeds and liquidity data
 - Build custom Dune dashboards to track protocol TVL and trading volumes
 - Result: **Deeper liquidity**, **lower slippage**, **higher trading volumes**
 
 **For Gaming & NFT Projects**:
 - Use Ormi APIs to fetch player achievements and mint Milestone Unit-based rewards
-- Accept DuSTD payments for in-game assets, eliminating crypto volatility
+- Accept settlement-module payments for in-game assets, reducing volatility exposure
 - Display player leaderboards and tournament stats via Dune Analytics
 - Result: **Mainstream accessibility**, **predictable revenue**, **community engagement**
 
 **For Investment & Fund Projects**:
 - Query Ormi APIs to evaluate creator token investment opportunities
 - Monitor portfolio performance with real-time Dune dashboards
-- Use DuSTD for stable denominated fund accounting and investor redemptions
+- Use settlement modules for stable-denominated fund accounting and investor redemptions
 - Result: **Data-driven investment decisions**, **transparent reporting**, **institutional credibility**
 
 **Competitive Advantages of Diamond zChain's Partner Ecosystem**:
@@ -1201,114 +1218,75 @@ This partner ecosystem positions Diamond zChain as the **only blockchain** with 
 
 #### Wavz Revenue Model Overview
 
-The Wavz oracle infrastructure creates multiple revenue streams through validation services across all social platforms. For detailed revenue projections and financial models, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md) section.
+The Wavz model is now run as a **Web2 surface, Web3 rail** system.
+Users transact through mainstream UX (gifts, badges, balances), while settlement can optionally bridge on-chain.
+
+For full financial mechanics, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md).
 
 **Core Revenue Streams**:
 
-**1. Oracle Validation Services**: Per-validation fees for Milestone Unit generation across all platforms ($0.10-0.75 per validation)
+1. **Qualifying Platform Fee Capture** from CrabbyTV transaction classes in governance-defined ranges.
+2. **Settlement Infrastructure Revenue** from payout and reconciliation rails.
+3. **Oracle and Analytics Services** for validation, fraud scoring, and API products.
+4. **DEX and Wrapper Fee Pathways** routed through treasury policy.
+5. **Cross-Project Revenue Expansion** from TheTube and OnlyShellz under governance-approved capture policy.
 
-**2. Infrastructure Licensing**: B2B oracle SDK licensing for enterprises ($10K-100K setup + monthly recurring)
-
-**3. Identity & Reputation Services**: Cross-platform identity verification and Wavz score tracking ($10-29/month per user)
-
-**4. API & Analytics Access**: Data access tiers for developers and enterprises ($99-2,500+/month)
-
-**5. Platform Revenue Integration**: Tokenization fees on creator ad revenue and platform earnings (10-15% platform fee, Phase 2)
-
-**6. Enterprise Solutions**: Custom oracle development and managed services ($50K-500K per engagement)
-
-**Financial Performance Summary**:
-- **Year 1 Revenue**: $6.43M (Wavz oracle infrastructure)
-- **Year 2 Revenue**: $32.7M (multi-platform scale + Phase 2 integration)
-- **Year 3 Revenue**: $115M+ (universal Web2 oracle layer)
-- **Gross Margins**: 70%+ on oracle validation services
-- **Target B2B Clients**: 10 (Year 1) → 25 (Year 2) → 100+ (Year 3)
-
-For comprehensive revenue breakdowns, pricing structures, and detailed financial projections with quarterly breakdowns, refer to the [Economic Model section](economic-model-for-decades-of-solvency.md).
+**Operating Baseline (Reference Numbers)**:
+- **10,000** active monthly users
+- **$12** average monthly gifting per user
+- **$120,000** monthly gross gifting volume
+- **$24,000/month** platform share at 20%
+- **$96,000/month** creator payout flow at 80%
+- **40%** optional creator crypto-withdrawal participation
+- **$38,400/month** derived on-chain payout flow
+- **Weekly batched reconciliation** as default settlement cadence
 
 #### MVP Success Metrics
 
-The Web2 Oracle Infrastructure validates ecosystem viability through key performance indicators:
+The MVP validates viability across adoption, reconciliation accuracy, and risk controls:
 
-**1. Oracle Performance Metrics**:
-- **Uptime SLA**: 99.9% oracle availability across all platforms
-- **Validation Accuracy**: 95%+ AI confidence score accuracy rate
-- **Consensus Rate**: 90%+ oracle node agreement on validations
-- **Fraud Detection**: <0.5% false positive rate, <0.1% false negative rate
-- **Response Time**: <10 seconds for standard validation, <1 second for cached data
-- **API Latency**: <200ms average response time for data queries
+1. **User Economics Metrics**
+   - 10,000 monthly active users baseline
+   - $12 average monthly gifting behavior
+   - $120,000 monthly gifting baseline
+   - 20%/80% platform-to-creator split integrity
 
-**2. Platform Adoption Metrics**:
-- **Year 1 Targets**:
-  - 5,000 creators validated across all platforms
-  - 50,000+ milestone validations recorded on-chain
-  - 10 B2B clients licensing oracle infrastructure
-  - 5 new platform integrations beyond YouTube
-- **Geographic Distribution**: Active validators in 50+ countries
-- **Platform Diversity**: 30% YouTube, 70% other platforms by Year 1 end
+2. **Payout Adoption Metrics**
+   - Creator payout methods live (bank, USDC, SDM)
+   - Optional crypto-withdrawal adoption target: 40%
+   - Incentive efficiency tracking for optional 2% payout bonus programs
 
-**3. Revenue and Economic Metrics**:
-- **Monthly Recurring Revenue**: $500K by Month 12
-- **Gross Margin**: 70%+ on oracle validation services
-- **Customer Acquisition Cost**: <$100 per creator
-- **Lifetime Value**: >$1,000 per creator (3+ year average)
-- **B2B Contract Value**: $50K+ average annual contract value
-- **Revenue Per Validation**: $0.30 average across all platforms
+3. **Operational Metrics**
+   - Batched settlement success rate
+   - Internal-ledger vs on-chain reconciliation accuracy
+   - Treasury routing consistency for SDM-linked fee paths
 
-**4. Technical Infrastructure Metrics**:
-- **Oracle Node Distribution**: 20+ independent oracle operators
-- **Data Source Redundancy**: 3+ data sources per platform
-- **Blockchain Transactions**: 100,000+ on-chain milestone recordings
-- **Cross-Chain Deployment**: Active on 5+ EVM-compatible chains
-- **API Clients**: 100+ third-party applications using oracle data
-
-**5. Ecosystem Growth Metrics**:
-- **Creator Retention**: 80%+ monthly retention rate
-- **Validation Growth**: 40%+ month-over-month validation increase
-- **Platform Expansion**: 1 new platform integration every 6 weeks
-- **Community Validators**: 500+ active community validators
-- **Developer Adoption**: 50+ projects building on oracle infrastructure
+4. **Validation and Security Metrics**
+   - Oracle uptime and data freshness adherence
+   - Fraud-detection quality on creator data
+   - Pause-control and incident-response readiness for wrapper contracts
 
 #### From MVP to Full Ecosystem: Oracle Infrastructure Roadmap
 
-The Web2 Oracle Infrastructure provides the scalable foundation for comprehensive Web2-to-Web3 data validation:
+The rollout follows a progressive adoption sequence:
 
-**Phase 1: Social Media Oracles** (Months 1-12):
-- **Launch** (Q1): YouTube validation oracle (live)
-- **Q2 Expansion**: Twitter/X followers, engagement, and influence metrics
-- **Q3 Expansion**: TikTok and Instagram creator milestones
-- **Q4 Expansion**: Twitch streaming data, Facebook/LinkedIn professional metrics
-- **Goal**: Validate 5,000+ creators across 6+ major social platforms
+1. **Phase 1 - Web2 Native UX**
+   - Users see gifts, badges, and balances with no mandatory crypto language.
+   - Internal credit ledger and compliance-first payout controls are established.
 
-**Phase 2: Creator Economy Oracles** (Year 2):
-- **Music Streaming**: Spotify, Apple Music, YouTube Music, SoundCloud streaming data
-- **Podcast Platforms**: Apple Podcasts, Spotify Podcasts download and listener metrics
-- **Newsletter Platforms**: Substack, Beehiiv subscriber and open rate validation
-- **Video Platforms**: Vimeo, Dailymotion alternative video platform metrics
-- **Goal**: Comprehensive creator economy validation across 15+ platforms
+2. **Phase 2 - Optional Wallet Rails**
+   - Wallet connect and creator wallet payouts become available (opt-in).
+   - Fiat rails remain default for mainstream onboarding.
 
-**Phase 3: Gaming and Esports Oracles** (Year 2):
-- **Game Achievement APIs**: Steam, Xbox Live, PlayStation Network achievement validation
-- **Competitive Gaming**: Call of Duty, Valorant, League of Legends player statistics
-- **Esports Performance**: Tournament results, team rankings, prize pool distributions
-- **Blockchain Gaming**: Axie Infinity, Gods Unchained, Web3 gaming metrics
-- **Goal**: Validate gaming achievements for 10,000+ players across major titles
+3. **Phase 3 - Incentivized Transition**
+   - Optional creator incentives (for example 2% bonus) support crypto-withdraw adoption.
+   - Weekly reconciliation and treasury-routing controls are hardened.
 
-**Phase 4: Financial and Commerce Oracles** (Year 3):
-- **E-commerce Metrics**: Shopify, Etsy, Amazon seller performance validation
-- **Marketplace Reputation**: eBay, Etsy, Facebook Marketplace seller ratings
-- **Freelance Platforms**: Upwork, Fiverr, Freelancer.com profile validation
-- **Payment Processors**: Stripe, PayPal revenue verification (with user consent)
-- **Goal**: Validate real-world business performance for Web3 credit scoring
+4. **Phase 4 - Hybrid Scale**
+   - Web2 UX remains frictionless.
+   - Web3 payout rails and SDM wrapper integrations scale for opt-in participants.
 
-**Phase 5: Professional and Academic Oracles** (Year 3):
-- **Professional Credentials**: LinkedIn skills, certifications, work history validation
-- **Academic Achievements**: Degree verification, publication records, citations
-- **GitHub Contributions**: Developer activity, code contributions, repository stars
-- **Patent and IP**: USPTO, WIPO patent filing and grant validation
-- **Goal**: Professional reputation system for Web3 identity and credentials
-
-**Oracle Infrastructure Expansion Strategy**:
+#### Oracle Infrastructure Expansion Strategy
 
 Each new oracle integration follows the proven architecture:
 1. **API Integration Layer**: Connect to platform's official API or scraping infrastructure

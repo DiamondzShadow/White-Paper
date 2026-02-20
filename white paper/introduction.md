@@ -7,131 +7,138 @@ coverY: 0
 
 #### Introduction
 
-### Reimagining Content Creation Through Comprehensive Media Tokenization
+### Reframing the Whitepaper Around the Live Model
 
-The entertainment industry stands at a transformative crossroads. Despite the proliferation of streaming platforms and content creation tools, the fundamental business model remains unchanged: centralized entities control production, distribution, and monetization, while creators and audiences have limited influence and receive minimal value from the success they help create.
+This whitepaper now follows the **current operating structure** instead of the older ecosystem-first format.
+The active model starts with product usage and then maps how value is captured and secured.
 
-Diamondz Shadow represents a paradigm shift in this model—a decentralized ecosystem where creators, audiences, and investors collaborate as stakeholders through comprehensive tokenization of all media forms. Built on Diamond zChain, our custom Layer 3 blockchain leveraging Arbitrum Nitro technology, we're creating a revolutionary framework that tokenizes everything from movies and music to gaming achievements and social media streams.
+At a high level:
 
-### The Problem: Untokenized Media Value
+1. **Ecosystem projects** include:
+   - **CrabbyTV** ([crabbytv.com](https://crabbytv.com))
+   - **TheTube** ([thetube.media](https://thetube.media))
+   - **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
+2. **CrabbyTV** is the primary qualifying transaction-capture surface in the current policy model.
+3. **Wavz** validates creator progression and trust signals.
+4. **$Crabby and $SDM** capture value through different economic rails.
+5. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
+6. **Next wrapper expansion** can include governance-approved stock-linked baskets
+   (for example SDM + tokenized stock + gold/BTC components).
+7. **40Acres (RWA)** is planned as a dedicated wrapped RWA basket line combining
+   tokenized stock, gold, and BTC components.
 
-The current entertainment landscape suffers from a critical issue: the inability for creators and fans to capture, trade, and monetize the true value of content:
+### Web2 Surface, Web3 Rail Philosophy
 
-1. **Royalty Limitations**: Artists like Nas have demonstrated the power of tokenizing royalties, yet most creators lack access to such mechanisms
-2. **Value Extraction**: Centralized platforms extract 30-55% of revenue, leaving creators with minimal compensation
-3. **Ownership Barriers**: Creators rarely own their content or its underlying value
-4. **Fan Exclusion**: Audiences cannot invest in or benefit from the success of content they help popularize
-5. **Fragmented Monetization**: Revenue streams are siloed across platforms with no unified tokenization model
-6. **Limited Liquidity**: Creative assets remain illiquid despite representing significant value
+The operating model is intentionally staged:
 
-These problems lead to misaligned incentives, where platforms optimize for engagement metrics rather than creator value, and audiences have no stake in the content they love.
+- Front-end: gifts, badges, balances, creator earnings
+- Back-end: mirror ledger, optional wallet withdrawals, batched on-chain settlement
 
-### Our Solution: Universal Media Tokenization with Wavz
+Reference planning numbers:
 
-Diamondz Shadow addresses these challenges through a comprehensive tokenization ecosystem powered by **Wavz - The Beat of the Creator**, our revolutionary social engagement validation system. Built on four revolutionary pillars:
+- 10,000 active users x $12 monthly gifting average = $120,000 monthly gifting volume
+- 20% platform share = $24,000/month
+- 80% creator share = $96,000/month
+- 40% creator crypto-withdrawal participation = $38,400/month optional on-chain payout flow
 
-#### 1. Wavz Social Engagement Validation System
+### The Core Problem We Are Solving
 
-Our **Wavz** platform gamifies and validates creator milestones across all platforms:
+Creator platforms still leave users with fragmented monetization and weak ownership alignment:
 
-**The Wavz Progression**:
-* **Milestone Units**: Individual milestones (100 YouTube subscribers, 500 Twitter followers)
-* **Creator Credits**: Reputation credits accumulated from verified Milestone Units
-* **Reputation Badges**: Engagement-recognition NFTs unlocked at higher credit thresholds
-* **Wavz Score**: Composite reputation score = Milestone Units × Creator Credits × Reputation Badges × Quality
+1. Revenue is concentrated in centralized platform models.
+2. Creator progress signals are easy to spoof without robust validation.
+3. Token narratives often drift away from real product transaction flow.
+4. Users lack transparent mapping from platform activity to token value capture.
 
-**Platform Coverage**:
-* **Social Platform Validation**: YouTube, Twitter, TikTok, Instagram, Twitch - all validated on-chain
-* **Music Royalties**: Spotify, Apple Music, SoundCloud streaming milestones tokenized
-* **Gaming Performance**: Steam, Xbox, PlayStation achievement validation and tokenization
-* **Film and Series**: Production milestones and box office performance tracking
-* **Cross-Platform Identity**: Single Wavz score representing authentic influence across all platforms
-* **AI Fraud Detection**: 95%+ accuracy detecting fake followers and bot engagement
+### The Current Diamondz Shadow Solution
 
-#### 2. Multi-Token Economic Infrastructure
+#### 1) CrabbyTV Product Layer
 
-Our sophisticated four-token ecosystem powers diverse functionalities:
+CrabbyTV is the user-facing layer for qualifying creator monetization flow:
 
-* **SDM**: Custom gas token optimizing network operations with 100,000+ TPS capacity
-* **TuBE**: ERC-20 token for content creation and community governance
-* **GaM3**: Gaming interaction and predictive betting token
-* **DuSTD**: Ecosystem stablecoin for stable value transactions
-* **Cyclical Supply Management**: Innovative mechanism maintaining economic sustainability
-* **Cross-Platform Revenue**: Transparent distribution from all integrated platforms
+- Films and premieres
+- Spades and competitive formats
+- AMAs and paid events
+- NFT-linked creator activity
+- Live and interactive creator experiences
 
-#### 3. Enterprise-Grade Infrastructure with Strategic Partnerships
+This creates measurable, qualifying transaction flow.
 
-Our Diamond zChain provides specialized infrastructure for media tokenization, powered by leading Web3 partners:
+#### 1b) Ecosystem Project Footprint
 
-* **100,000+ TPS Capacity**: Ensuring seamless scaling for millions of concurrent Milestone Unit validations
-* **QuickNode RPC Infrastructure**: Enterprise-grade blockchain access with 99.9% uptime for oracle validators
-* **Thirdweb Integration**: Email/social login via embedded wallets, gasless Milestone Unit minting, 170+ wallet support
-* **Uniblock Analytics**: Real-time Wavz dashboards tracking Milestone Units, Creator Credits, and Reputation Badges across all platforms
-* **Lucid Labs DeFi**: AMM liquidity pools for creator tokens, Reputation Badge NFT marketplace, Milestone Unit-backed lending
-* **EVM Bridge**: Native connectivity to Ethereum, Arbitrum, and other EVM chains
-* **Solana Integration**: Circle CCTP integration for Solana community access
-* **Proof of Contribution**: Consensus mechanism rewarding meaningful contributions validated through Wavz scores
+Beyond CrabbyTV, the ecosystem project set also includes:
 
-#### 4. AI-Enhanced Creative Tools
+- **TheTube** ([thetube.media](https://thetube.media))
+- **OnlyShellz** ([onlyshellz.live](https://onlyshellz.live))
 
-We integrate AI technologies as supporting components to enhance tokenization:
+These projects are part of the broader ecosystem footprint and integration roadmap.
 
-* **Creation Assistance**: AI tools for script development and content creation
-* **Tokenization Optimization**: AI analysis for optimal tokenization structures
-* **Value Prediction**: AI models to help predict content performance and value
-* **Community Management**: AI-assisted moderation and engagement
-* **Smart Contract Enhancement**: AI-optimized contract efficiency
+#### 2) Wavz Validation Layer
 
-### The Vision: A Tokenized Media Economy
+Wavz anchors trust and progression through:
 
-Diamondz Shadow is building a comprehensive tokenization layer for the entire media industry where:
+- **Milestone Units**
+- **Creator Credits**
+- **Reputation Badges**
+- **Wavz Score**
 
-* **Creators** tokenize their work for direct fan investment and transparent revenue
-* **Audiences** invest in content they believe in and share in its success
-* **Investors** gain access to previously illiquid creative assets
-* **Communities** form around shared ownership of tokenized media
-* **AI Systems** enhance the creation and valuation of tokenized assets
+This makes creator progression auditable and usable across product features.
 
-By tokenizing all forms of media and aligning incentives among all participants, we're creating a sustainable ecosystem that transforms how value flows through the entertainment industry.
+#### 3) Split Token Value-Capture Rails
 
-### Revolutionary Media Tokenization Applications
+- **CRABBY ($Crabby)** captures qualifying CrabbyTV platform transaction flow.
+- **SDM ($SDM)** captures network and exchange-aligned value (including
+  [zdiamondex.store](https://zdiamondex.store/)).
+- This separation is intentional and central to the current economic model.
 
-Our approach to comprehensive media tokenization includes:
+#### 4) Secure Wrapper Layer for SDM Upside Extension
 
-#### Royalty Tokenization Revolution
+SDM can be wrapped into:
 
-* **Music Royalty Tokens**: Following Nas's model, enabling all musicians to tokenize streaming royalties
-* **Film Revenue Shares**: Fractional ownership of film and series revenue
-* **Creator Subscription Tokens**: Tokenized access to creator content across platforms
-* **Intellectual Property Fractionalization**: Divide and trade IP rights through tokens
+- **wSDM** (SDM + WBTC)
+- **gSDM** (SDM + XAUT)
+- **sSDM** (SDM + USDC)
 
-#### Gaming and Interactive Tokenization
+These wrappers implement security-focused mint/redeem logic:
+slippage checks, fee-adjusted quotes, stale-price guards, pause controls, and restricted emergency withdrawal.
 
-* **Player Performance Tokens**: Tokenize gaming statistics and achievements
-* **Predictive Betting Markets**: Stake on game outcomes using GaM3 tokens
-* **In-Game Asset Ownership**: True ownership of digital items across games
-* **Tournament Outcome Markets**: Investment in esports team and player performance
+#### 5) Expansion Upside: Tokenized Stocks + Gold/BTC Baskets
 
-#### Social Media Tokenization
+Beyond current wrapper products, the same architecture can support governance-approved baskets that include:
 
-* **Stream Value Capture**: Tokenize the value of social media streams
-* **Engagement Monetization**: Convert likes, shares, and comments into token value
-* **Audience Ownership**: Give audiences ownership stakes in creator channels
-* **Cross-Platform Value Aggregation**: Unify value across multiple platforms
+- SDM + tokenized stock exposure (for example large-cap equity tokens)
+- SDM + gold-backed collateral
+- SDM + BTC-backed collateral
+- **40Acres (RWA)** as a dedicated wrapper base asset combined with gold/BTC/stock components
 
-### Why Now: The Perfect Moment for Media Tokenization
+Why this matters:
 
-Several factors make this the ideal moment for our tokenization vision:
+1. **Diversified upside profile**: combines growth-oriented equity exposure with hard-asset hedges.
+2. **Lower single-asset dependency**: reduces concentration risk versus single-token positions.
+3. **New revenue pathways**: mint/redeem fees, liquidity-pool fees, treasury routing, and analytics/licensing products.
+4. **Product differentiation**: creates strategy-specific baskets for different risk preferences.
 
-1. **Royalty Tokenization Precedent**: Nas and other artists have demonstrated the massive demand for tokenized royalties
-2. **Blockchain Infrastructure**: Layer 3 solutions like our Diamond zChain provide the performance needed for mass-market tokenization
-3. **Creator Dissatisfaction**: 76% of creators seek better monetization alternatives to traditional platforms
-4. **Fan Investment Demand**: 87% of fans want ways to invest in creators they support
-5. **Cross-Chain Maturity**: Technologies like Circle CCTP enable seamless multi-chain tokenization
-6. **AI Enhancement**: AI tools now mature enough to support (not replace) the tokenization process
+### Why This Structural Update Matters
 
-### Join the Media Tokenization Revolution
+The old structure described a broader long-range tokenization vision first.
+The current structure leads with:
 
-Diamondz Shadow invites creators, audiences, developers, and investors to join us in building the future of tokenized media. Whether you're tokenizing your content, investing in tokenized media, developing on our platform, or simply enjoying the enhanced content experience, you're a valued stakeholder in this revolutionary ecosystem.
+1. Product behavior
+2. Validation and trust
+3. Value routing
+4. Contract and infrastructure safety
 
-The following sections detail our technology, tokenization mechanisms, multi-token economics, governance, and roadmap—the blueprint for a new tokenized media economy built on direct creator-audience relationships, transparent value flow, and shared success.
+This improves clarity for builders, users, reviewers, and governance participants.
+
+### How to Read the Whitepaper
+
+Use the following sequence for the current model:
+
+1. **Executive Summary**
+2. **Current Model Architecture (2026)**
+3. **Technology and Infrastructure**
+4. **Tokenomics**
+5. **Economic Model**
+6. **Roadmap / Participation / Governance**
+
+Legacy model sections remain available as historical context and design lineage.
