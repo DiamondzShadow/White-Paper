@@ -19,6 +19,17 @@ We are building a new paradigm for content creation that:
 4. **Democratizes Decisions** through community governance and contribution
 5. **Ensures Sustainability** through diverse revenue streams and economic design
 
+### Current Model Commitments
+
+Our mission is executed through the current operating model:
+
+1. **Multi-project creator footprint** across CrabbyTV, TheTube, and OnlyShellz.
+2. **Wavz-based validation** for milestones, reputation, and anti-fraud trust.
+3. **Split token value rails**:
+   - `$Crabby` for qualifying CrabbyTV platform transaction flow
+   - `$SDM` for network and exchange-aligned value flow
+4. **Secure SDM wrappers** (`wSDM`, `gSDM`, `sSDM`) for collateral-diversified upside exposure.
+
 ## Our Vision
 
 We envision a future where:

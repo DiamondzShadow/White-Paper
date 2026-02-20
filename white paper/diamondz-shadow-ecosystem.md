@@ -11,6 +11,9 @@ coverY: 0
 
 > **Context note:** This chapter is retained as legacy ecosystem context.
 > The current operating model is defined in `current-model-architecture.md` and the updated Executive Summary.
+> Canonical token/value routing for current operations is:
+> **$Crabby** (qualifying CrabbyTV flow), **$SDM** (network/exchange flow), and secure wrappers
+> **wSDM/gSDM/sSDM** for SDM-collateralized extension.
 
 The Diamondz Shadow ecosystem represents a revolutionary blockchain solution transforming the entertainment industry through comprehensive tokenization. Our ecosystem creates a symbiotic relationship between creators, audiences, and investors by enabling the tokenization of everything—from movies and music to comedy shows, fashion, gaming, and live streams.
 

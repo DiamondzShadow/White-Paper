@@ -50,6 +50,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * ⟳ Implement Instagram oracle for posts, reels, and stories engagement
   * ⟳ Deploy cross-platform identity linking system
   * ⟳ Launch CrabbyTV Live Creator Progression MVP for creator registry + milestone progression (Milestone Units/Creator Credits/Reputation Badges/Wavz Score)
+  * ⟳ Publish governance policy for TheTube and OnlyShellz revenue-routing integration
   * ⟳ Release unified API for all platform data access
   * ⟳ Target: 1,000 creators across 4 platforms, 10,000+ validations
 
@@ -109,6 +110,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Deploy Twitch subscription and bits revenue sharing
   * Launch Spotify streaming revenue validation
   * Target: operational baseline of 10,000 active users with $120,000 monthly gifting flow and enforced 20%/80% platform-creator split
+  * Launch explicit split-rail reporting (`$Crabby` qualifying capture vs `$SDM` network/exchange capture)
 
 ### Advanced Oracle Features
 
@@ -141,6 +143,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 * Implement AI-enhanced fraud detection and anomaly alerts
 * Create investor dashboard for creator discovery and analytics
 * Build advanced governance portal for oracle parameters
+* Deploy production wrapper interfaces for `wSDM`, `gSDM`, and `sSDM` with risk-control telemetry
 
 ### Community and Partnerships
 
@@ -160,6 +163,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Process 1M+ milestone validations per month
   * Deploy oracles in 100+ countries for global coverage
   * Target: scale hybrid gifting flows from $120,000 monthly baseline toward $500,000+ monthly while preserving compliance-first payout controls
+  * Expand qualifying revenue policy from CrabbyTV baseline into governance-approved TheTube/OnlyShellz modules
 
 * **Gaming and Esports Oracles**
   * Full integration with Call of Duty, Valorant, League of Legends
@@ -247,6 +251,7 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
   * Token value directly tied to oracle usage and B2B licensing
   * Sustainable 50+ year runway through diversified revenue
   * Regular token buybacks and burns from protocol revenue
+  * Mature wrapper product suite (`wSDM/gSDM/sSDM`) as optional advanced liquidity and treasury instruments
 
 ### Cross-Industry Impact
 

@@ -7,88 +7,33 @@ coverY: 0
 
 ## How We Stay Sustainable Forever
 
-### The Real Picture: Revenue Tied to Real Value
+### The Real Picture: Revenue Tied to Product Usage
 
-Most crypto projects fail because they have no real revenue—just speculation.
-Diamondz Shadow is structured around **product-linked transaction flow**, not hype.
+Most projects fail when token value is disconnected from real activity.
+Diamondz Shadow is structured around **product-linked transaction flow** with explicit value routing.
 
-In the current operating model:
+In the current model:
 
 - **CRABBY ($Crabby)** captures qualifying CrabbyTV platform transaction flow.
-- **SDM ($SDM)** captures network + exchange-aligned value flow (including zdiamondex.store-linked business activity).
-- **wSDM/gSDM/sSDM** provide secured upside-extension rails around SDM.
+- **SDM ($SDM)** captures network and exchange-aligned value (including zdiamondex.store-linked activity).
+- **wSDM / gSDM / sSDM** provide secure, collateralized SDM extension products.
 
-This split keeps value attribution explicit and auditable.
-Here's how we maintain solvency for decades:
+This split keeps attribution auditable and governance-manageable.
 
-**The Simple Truth:**
-- Creators make content (YouTube videos, music, games)
-- Content generates real revenue (ad revenue, streams, views)
-- Revenue funds the ecosystem treasury
-- Treasury rewards contributors with tokens
-- More creators join → More revenue → More sustainability
+### Web2 Surface, Web3 Rail Operating Model
 
-This creates a **self-sustaining flywheel** where the ecosystem gets stronger with each new creator and each piece of content.
+The live system is intentionally staged:
 
-### Product-Led Revenue Surfaces
+- **Web2 surface**: gifts, badges, balances, creator earnings.
+- **Web3 rail**: optional wallet payouts, batched on-chain settlement, and treasury routing.
 
-Our ecosystem is built around the creation, distribution, and monetization of high-quality entertainment and gaming productions:
-
-* **Original Content Production**: Development of films, series, documentaries, and other entertainment formats
-* **Game Development**: Creation of original games and gaming experiences across multiple platforms
-* **Interactive Entertainment**: Production of content that blends traditional media with interactive elements
-* **Community-Driven Productions**: Content created through decentralized collaboration with community input
-* **Cross-Media Franchises**: Development of intellectual property that spans both entertainment and gaming
-
-### Value-Rail Architecture (Current + Expansion Modules)
-
-Our ecosystem employs a strategic four-token model, with each token serving a specialized function:
-
-#### SDM: Custom Gas Token
-
-* Powers all transactions across the Diamondz Shadow ecosystem
-* Optimized for micro-transactions with minimal fees
-* Designed for high transaction volume scalability
-* Maintains reasonable gas costs regardless of token price appreciation
-
-#### TuBE: Content Creation Token
-
-* Fuels our entertainment production ecosystem
-* Enables tokenization of digital streams across any platform (Twitch, YouTube, TikTok, etc.)
-* Facilitates community building around entertainment content
-* Supports fractional ownership of content streams and productions
-* Rewards creators based on engagement metrics
-
-#### GaM3: Gaming Interaction Token
-
-* Powers our gaming production ecosystem
-* Enables all gaming-related activities within our platform
-* Facilitates potential integration with major titles from publishers like Activision
-* Powers betting functionality for competitive gaming
-* Supports in-game asset transactions and cross-game compatibility
-* Creates new revenue opportunities through gaming prediction markets
-
-#### DuSTD: Ecosystem Stablecoin
-
-* Maintains a stable 1:1 peg to the US Dollar
-* Provides protection from market volatility
-* Serves as primary settlement currency for entertainment and gaming monetization
-* Creates a seamless bridge between traditional financial systems and our token ecosystem
-* Enables transparent, stable payments to creators and service providers
-
-### Web2 Surface, Web3 Rail Revenue Structure
-
-The operating model is intentionally built as:
-
-- **Web2 user surface** (gifts, badges, balances, creator earnings)
-- **Web3 settlement rail** (optional wallet payouts, batched on-chain reconciliation)
-
-Users are not forced into crypto at purchase time. Crypto is introduced as an optional payout and settlement path.
+Users are not forced to buy crypto to use product features.
+Crypto appears as an optional payout and settlement rail.
 
 #### Baseline Operating Numbers (Reference Scenario)
 
 | Metric | Value |
-|--------|-------|
+|---|---|
 | Active monthly users | 10,000 |
 | Average monthly gifting per user | $12 |
 | Monthly gross gifting volume | $120,000 |
@@ -101,174 +46,140 @@ Users are not forced into crypto at purchase time. Crypto is introduced as an op
 | Annualized creator share | $1,152,000 |
 | Annualized crypto payout flow (derived) | $460,800 |
 
-These figures are operating reference numbers used for planning and treasury design, not guaranteed outcomes.
+These are reference planning numbers, not guaranteed outcomes.
 
-#### Mirror-Ledger Settlement Mechanics
+### Settlement and Payout Mechanics
 
-1. User buys gifts in fiat (for example through Stripe).
-2. Platform internal credit ledger updates instantly.
-3. Backend maintains token reserve mirror accounting.
-4. Reconciliation settles in controlled batches (for example weekly), not one on-chain transaction per gift.
+#### Mirror-Ledger Settlement
 
-This reduces gas, preserves UX simplicity, and supports cleaner compliance operations.
+1. User purchases gifts/credits through fiat rails.
+2. Internal balances update instantly.
+3. Backend keeps reserve mirror accounting.
+4. Settlement is reconciled in controlled batches (for example weekly).
+
+This lowers gas overhead while preserving mainstream UX.
 
 #### Creator Payout Options (Crypto Optional)
 
-Creators see a standard fiat-denominated balance and can choose payout method:
-
-- ACH / bank transfer
-- Stripe/PayPal payout rails
+- ACH / bank rails
+- Stripe/PayPal-compatible rails
 - USDC wallet withdrawal
 - SDM wallet withdrawal (optional)
 
-Rollout incentives can include a **2% payout bonus** for selected crypto-withdrawal rails once policy approvals are live.
+An optional **2% payout bonus** can be used as an adoption incentive on approved crypto rails.
 
-#### Progressive User Onboarding Model
+### Revenue Structure Across Ecosystem Projects
 
-1. **Phase 1**: No crypto language on user gifting surface.
-2. **Phase 2**: Optional wallet connect for faster creator payouts.
-3. **Phase 3**: Optional incentive layer (for example 2% bonus for crypto withdrawal).
-4. **Phase 4**: Wallet-based loyalty and advanced contribution features.
+Current ecosystem products:
 
-#### Compliance and Risk Controls
+- **CrabbyTV** (primary qualifying transaction-capture surface)
+- **TheTube**
+- **OnlyShellz**
 
-- Clear terms: viewer credits are platform utility credits, not investment products.
-- Creator KYC/KYB for payout access.
-- AML transaction monitoring for scaled crypto withdrawals.
-- No promise of token appreciation.
-- No user revenue-sharing claims for gift purchases.
-- Segregated accounting between user funds and treasury strategy allocations.
+#### 1) CrabbyTV Revenue and Capture
 
-### Comprehensive Revenue Streams Beyond MVP
+CrabbyTV currently anchors qualifying transaction flow through:
 
-#### 1. Entertainment Production and Monetization
+- films and premieres
+- Spades and competitive game interactions
+- AMA sessions
+- paid creator interactions
+- NFT-linked creator activity
 
-* **Stream Tokenization**: Any entertainment stream can be tokenized using TuBE, creating new revenue opportunities
-* **Production Funding**: Community-funded entertainment productions with revenue sharing
-* **Ad Revenue Integration**: Direct integration with YouTube API and other platforms to capture and distribute ad revenue
-* **Premium Content**: Subscription and pay-per-view models for exclusive entertainment content
-* **Licensing Deals**: Revenue from licensing entertainment content to streaming platforms and distributors
-* **Merchandising**: Physical and digital merchandise based on our entertainment IP
+Within governance policy, selected feature classes can apply a **3-6% fee band**.
+A qualifying subset of these flows routes to `$Crabby` value pathways.
 
-#### 2. Gaming Production and Monetization
+#### 2) TheTube and OnlyShellz Revenue Contribution
 
-* **Game Development**: Revenue from original game releases and in-game purchases
-* **Game Integration**: GaM3 tokens enable interaction with major gaming titles
-* **Prediction Markets**: Revenue from gaming prediction markets and betting platforms
-* **In-Game Asset Trading**: Fees from secondary markets for tokenized game assets
-* **Cross-Game Compatibility**: Value creation through interoperable gaming assets
-* **Skill-Based Challenges**: Platform fees from player-to-player challenges
-* **Esports Productions**: Revenue from competitive gaming events and tournaments
+TheTube and OnlyShellz contribute to broader ecosystem revenue through creator monetization surfaces,
+distribution channels, and engagement flows. Capture policy is governance-expandable and can route:
 
-#### 3. Blockchain-Native Revenue
+- treasury-directed platform fees
+- payout/settlement infrastructure revenue
+- analytics and validation service revenue
 
-* **SDM Transaction Fees**: A small portion of gas fees is directed to the treasury
-* **DuSTD Issuance and Redemption**: Nominal fees for minting and redeeming stablecoins
-* **DEX Trading Fees**: Percentage of trading fees from our decentralized exchange
-* **NFT Marketplace Fees**: Commission on NFT sales and royalties from secondary sales
-* **Cross-Chain Bridge Fees**: Fees from users bridging assets to and from our blockchain
+This structure allows cross-project growth without collapsing all revenue into one token rail.
 
-#### 4. Ecosystem Expansion
+#### 3) SDM Network + Exchange Revenue Rail
 
-* **Developer Grants Return**: Revenue share from successful entertainment and gaming projects funded by our ecosystem grants
-* **Infrastructure Services**: Fees from providing infrastructure services to other entertainment and gaming projects
-* **Enterprise Blockchain Solutions**: Custom blockchain solutions for media and gaming companies
-* **Educational Programs**: Revenue from workshops, courses, and certification programs
+SDM captures value from:
 
-### Cyclical Supply Management for Economic Stability
+- network gas activity
+- infrastructure execution fees
+- exchange/business-aligned flow at **https://zdiamondex.store/**
 
-Our innovative token supply management mechanism creates long-term economic stability:
+This rail remains distinct from `$Crabby` qualifying CrabbyTV capture.
 
-1. **Controlled Expansion**: Tokens are minted based on contribution, with a maximum cap of 1.25 billion
-2. **Strategic Contraction**: When the cap is reached, 40% of tokens are burned from liquidity pools
-3. **Renewed Growth**: After reduction to 750 million tokens, controlled minting resumes
+#### 4) Wrapper and Liquidity Revenue Layer
 
-This cyclical approach:
+Secure wrappers (`wSDM`, `gSDM`, `sSDM`) generate policy-managed fee pathways via:
 
-* Prevents unlimited inflation
-* Creates predictable scarcity events
-* Maintains healthy liquidity
-* Rewards long-term holders
-* Ensures new participants can still earn tokens through contribution
+- mint/redeem fees
+- DEX/liquidity activity
+- treasury-routed reinforcement programs
 
-### Treasury Management
+Wrapper contracts implement slippage checks, stale-price controls (3-hour threshold),
+optional ratio enforcement, and restricted emergency withdrawal logic.
 
-The project treasury is managed with sophisticated financial strategies:
+### Treasury Model
 
-#### 1. Asset Diversification
+#### Reference Allocation Framework
 
-* **Stablecoin Reserves**: 30% of treasury assets held in DuSTD and other stablecoins for operational expenses
-* **Strategic Investments**: 25% allocated to strategic investments in complementary entertainment and gaming projects
-* **Protocol-Owned Liquidity**: 20% used to provide liquidity in key trading pairs
-* **Blue-Chip Crypto**: 15% invested in established cryptocurrencies for long-term growth
-* **Traditional Assets**: 10% in traditional financial instruments for risk diversification
+- **40%**: product/content/gaming reinvestment
+- **20%**: technical development and infrastructure
+- **15%**: community and contributor rewards
+- **10%**: liquidity support
+- **10%**: treasury reserves
+- **5%**: buyback/burn or defensive market operations
 
-#### 2. Revenue Allocation
+Percentages are governance-adjustable with risk controls and disclosure.
 
-All revenue flowing into the treasury is allocated according to the following model:
+#### Asset and Exposure Management
 
-* **Entertainment & Gaming Production**: 40% reinvested into creating new content and games
-* **Technical Development**: 20% for blockchain and platform development
-* **Community Rewards**: 15% for contributor rewards and community initiatives
-* **Liquidity Provision**: 10% for maintaining healthy market liquidity
-* **Treasury Reserves**: 10% added to long-term reserves
-* **Buyback and Burn**: 5% for token buybacks during market downturns
+- operational stable reserve policy for payout continuity
+- protocol-owned liquidity in key trading pairs
+- diversified treasury exposure with governance limits
+- incident reserves and insurance pathways for operational risk
 
-#### 3. Risk Management
+### Cyclical Supply and Long-Run Stability
 
-* **Multi-Token Stability**: Our four-token model isolates risks to specific ecosystem components
-* **Production Portfolio Diversification**: Balanced investment across various entertainment and gaming projects
-* **Hedging Strategies**: Using options and futures to hedge against market volatility
-* **Insurance Funds**: Dedicated funds to cover potential security incidents
-* **Scenario Planning**: Regular stress testing against various market conditions
-* **Governance-Approved Limits**: Clear limits on treasury actions requiring governance approval
+The emission design remains contribution-linked with cyclical controls:
 
-### Economic Sustainability Metrics
+1. controlled expansion
+2. policy-driven contraction events
+3. renewal cycles
 
-We track several key metrics to ensure long-term solvency:
+This is intended to prevent uncontrolled inflation while preserving entry opportunities for new contributors.
 
-1. **Runway Calculation**: Treasury assets divided by monthly burn rate, targeting 10+ years of runway
-2. **Revenue Growth Rate**: Targeting minimum 20% year-over-year growth in revenue
-3. **Production ROI**: Measuring return on investment for entertainment and gaming productions
-4. **Revenue-to-Market-Cap Ratio**: Maintaining a healthy ratio compared to industry standards
-5. **Treasury Diversification Index**: Ensuring proper diversification of treasury assets
-6. **Community Value Capture**: Percentage of value flowing back to community contributors
-7. **Token Velocity Metrics**: Monitoring the circulation and utility of each token type
+### Compliance and Operational Safety
 
-### Proof of Contribution: Economic Alignment
+- clear terms: viewer credits are utility credits, not investment products
+- creator KYC/KYB for payout access
+- AML monitoring at scaled crypto-withdraw volume
+- no guaranteed appreciation messaging
+- segregated accounting between user funds and treasury strategy
 
-Our Proof of Contribution consensus mechanism creates perfect economic alignment:
+### Economic Governance and Adaptation
 
-1. **Value Creation → Value Capture**: Those who create value for the ecosystem capture proportional value
-2. **Contribution Verification**: On-chain verification of contributions ensures fair distribution
-3. **Production Participation Rewards**: Rewards for contributing to entertainment and gaming productions
-4. **Sybil Resistance**: Multi-factor verification prevents gaming the system
-5. **Governance Weight**: Contribution history influences governance weight, aligning long-term incentives
-6. **Reputation Systems**: Non-transferable reputation scores create additional economic alignment
+Governance can tune:
 
-### Adaptive Economic Governance
+- fee bands and qualifying-capture policy
+- wrapper parameters and risk limits
+- treasury allocation bands
+- incentives (including optional withdrawal bonuses)
+- rollout policy for TheTube/OnlyShellz capture integration
 
-The economic model includes governance mechanisms to adapt to changing conditions:
+### Long-Term Solvency Metrics
 
-1. **Parameter Adjustment**: Key economic parameters can be adjusted through governance
-2. **Production Prioritization**: Community can vote to prioritize different entertainment and gaming productions
-3. **Revenue Stream Prioritization**: Community can vote to prioritize different revenue streams
-4. **Treasury Rebalancing**: Periodic rebalancing of treasury assets based on market conditions
-5. **Burn Schedule Optimization**: Timing and amount of burns can be optimized through governance
-6. **Fee Structure Updates**: Transaction and service fees can be adjusted to market conditions
-7. **Token Utility Expansion**: New use cases for each token can be proposed and implemented
+Primary operating metrics:
 
-### Long-Term Value Accrual
+1. runway and reserve months
+2. revenue growth and retention
+3. payout reliability and settlement accuracy
+4. cross-project revenue diversification
+5. wrapper risk and oracle freshness compliance
+6. community value-capture ratio
+7. token velocity and utility depth
 
-The Diamondz Shadow ecosystem is designed for value to accrue to all participants over decades:
-
-1. **Entertainment Library Growth**: Expanding library of tokenized entertainment content creates growing revenue streams
-2. **Game Portfolio Expansion**: Development of original games and gaming experiences
-3. **Gaming Integration Expansion**: Increasing adoption of GaM3 tokens across gaming platforms
-4. **Stablecoin Adoption**: Growing DuSTD usage creates additional revenue and utility
-5. **Network Effect Strengthening**: Each new user and creator strengthens the network effect
-6. **Brand Value Appreciation**: The Diamondz Shadow brand becomes increasingly valuable across entertainment and gaming
-7. **Infrastructure Maturation**: Blockchain infrastructure becomes more valuable as adoption grows
-8. **Cross-Media Expansion**: Expansion into multiple entertainment and gaming formats creates additional revenue
-
-By combining our specialized four-token model with a focus on entertainment and gaming productions, blockchain-native economic mechanisms, and our innovative cyclical supply management, the Diamondz Shadow ecosystem creates a sustainable economic foundation designed to thrive for decades, not just years.
+By tying revenue to product behavior, separating value rails, and enforcing risk-managed treasury controls,
+the model is designed for durable solvency over decades rather than speculation-driven cycles.

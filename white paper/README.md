@@ -80,9 +80,9 @@ This framing keeps platform behavior, economics, and contracts aligned in one re
 ### Core Token Infrastructure
 
 - **SDM**: Custom gas token optimizing network operations with 100,000+ TPS capacity
-- **TuBE**: ERC-20 token for content creation and community governance
-- **GaM3**: Gaming interaction and predictive betting token
-- **DuSTD**: Ecosystem stablecoin for stable value transactions
+- **$Crabby**: qualifying platform transaction-capture rail (CrabbyTV policy scope)
+- **wSDM / gSDM / sSDM**: secure SDM wrappers for BTC/gold/USDC-backed exposure
+- **Legacy expansion modules** (TuBE, GaM3, DuSTD): retained as optional governance-activated modules
 
 In addition to serving as the core network token, SDM can be wrapped into BTC/gold/USDC-backed
 baskets (`wSDM`, `gSDM`, `sSDM`) to provide upside-oriented exposure through collateral diversification.
@@ -216,7 +216,7 @@ and tokenization services:
   [zdiamondex.store](https://zdiamondex.store/)
 - **Web2 Oracle Infrastructure**: Universal validation layer for social media platforms with AI fraud detection
 - **Diamond zChain**: Custom Layer 3 blockchain leveraging Arbitrum Nitro technology with 100,000+ TPS capacity
-- **Four-Token Economic Infrastructure**: Sophisticated token ecosystem powering SDM, TuBE, GaM3, and DuSTD
+- **Split-Rail Economic Infrastructure**: `$Crabby` + `$SDM` separated capture logic with governance-scoped expansion modules
 - **Secure Basket Wrappers**: Hardened wSDM/gSDM/sSDM contracts with slippage controls,
   stale-price checks, and fee-transparent quotes
 - **Strategic Infrastructure Partnerships**: Enterprise-grade stack powered by QuickNode,
