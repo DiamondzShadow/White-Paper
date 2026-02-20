@@ -279,7 +279,7 @@ more transparently by all participants.
 
 ## Contact and Resources
 
-- **Website**: [diamondzshadow.com](https://diamondzshadow.com)
+- **Website**: [diamondzshadow.info](https://diamondzshadow.info)
 - **Project - CrabbyTV**: [crabbytv.com](https://crabbytv.com)
 - **Project - TheTube**: [thetube.media](https://thetube.media)
 - **Project - OnlyShellz**: [onlyshellz.live](https://onlyshellz.live)
