@@ -62,6 +62,73 @@ This wrapper model extends SDM into collateral-diversified instruments while pre
 As well as being the network token, SDM wrapped with gold, BTC, or USDC can provide additional upside exposure through
 diversified reserve backing while remaining inside the Diamondz Shadow ecosystem.
 
+### Multi-Asset Collateralized Wrapper Architecture (Structured Expansion)
+
+The wrapped-token architecture is designed around vault-backed baskets where users deposit base assets into
+non-custodial contracts and mint tradable composite units.
+
+#### 1) Core Basket Concept
+
+- User deposits a basket of base assets (for example SDM + BTC + gold token).
+- Vault locks collateral on-chain.
+- Composite wrapper token is minted to represent proportional vault ownership.
+
+#### 2) Mint and Redeem Structure
+
+- **Mint**: deposit basket assets -> mint composite wrapper shares.
+- **Redeem**: burn composite wrapper shares -> receive proportional underlying assets.
+- Redemption follows vault-share accounting, preserving collateral backing transparency.
+
+#### 3) Multi-Price Exposure
+
+Composite wrapper valuation reflects weighted exposure to:
+
+1. SDM price
+2. BTC price
+3. Gold-token price (or other approved reserve asset)
+
+Wrapper market price can deviate from NAV on DEXs, while mint/redeem mechanics support arbitrage-based
+price-efficiency pressure.
+
+#### 4) DEX and Liquidity Structure
+
+Representative trading pairs include:
+
+- wSDM / SDM
+- wSDM / BTC
+- wSDM / USDC
+- wSDM / ETH
+
+Liquidity providers supply wrapper + paired assets and earn pool fees.
+
+#### 5) Fee Routing and SDM Reinforcement
+
+DEX and protocol fees are routed through treasury policy to:
+
+- SDM treasury support
+- buyback/burn programs (governance controlled)
+- staker and contributor reward pathways
+
+This creates volume-linked reinforcement for SDM-centered ecosystem liquidity.
+
+#### 6) Expansion Families
+
+The architecture supports additional basket variants such as:
+
+- SDM + BTC
+- SDM + Gold
+- SDM + tokenized real-world or financial assets (governance approved)
+
+Each variant remains collateralized, redeemable, and independently tradable.
+
+#### 7) Structural Layering
+
+1. Base Assets (SDM, BTC, Gold, USDC, approved additions)
+2. Vault Contracts (multi-asset locking and accounting)
+3. Composite Wrapped Tokens (basket shares)
+4. DEX Trading Pairs and LP markets
+5. Fee Capture and SDM-aligned treasury routing
+
 ### Supporting Token Modules (Legacy Expansion Track)
 
 The sections below are retained for expansion-path context and prior architecture continuity:
@@ -276,9 +343,9 @@ Our unique Proof of Contribution system distributes tokens across all four categ
 
 #### Revenue Generation
 
-1. **Platform Fees (CrabbyTV 3-6% Revenue Share Band)**:
-   - **~3% class fees** on selected premium creator interactions (e.g., paid interaction events)
-   - **Up to ~6% class fees** on stake-based competitive gaming flows (e.g., Spades arena house fee model)
+1. **Platform Transaction Revenue (Web2 Surface Baseline)**:
+   - Reference operating split: **20% platform / 80% creator** on qualifying gifting and interaction flows
+   - Within platform-side capture, feature classes can apply governance-defined fee bands (for example ~3% to ~6% for specific premium flows)
    - Feature-level fee policy remains governance-adjustable within published risk controls
 2. **Gaming Revenue**: Fees from betting, tournaments, and in-game transactions
 3. **Cross-Chain Fees**: Revenue from bridge operations and cross-chain services

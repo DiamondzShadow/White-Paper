@@ -76,123 +76,68 @@ Our ecosystem employs a strategic four-token model, with each token serving a sp
 * Creates a seamless bridge between traditional financial systems and our token ecosystem
 * Enables transparent, stable payments to creators and service providers
 
-### Multi-Layered Revenue Structure
+### Web2 Surface, Web3 Rail Revenue Structure
 
-Our economic model is built on several complementary revenue streams, anchored by our YouTube Milestone MVP protocol that demonstrates immediate revenue generation and validates our comprehensive tokenization approach:
+The operating model is intentionally built as:
 
-#### MVP-Driven Revenue Foundation
+- **Web2 user surface** (gifts, badges, balances, creator earnings)
+- **Web3 settlement rail** (optional wallet payouts, batched on-chain reconciliation)
 
-The YouTube Milestone protocol establishes the foundational revenue model that scales across all media types:
+Users are not forced into crypto at purchase time. Crypto is introduced as an optional payout and settlement path.
 
-**1. Transaction-Based Revenue (Immediate)**:
-- **Milestone Recording Fees**: 2.5% fee on all token rewards minted for achievements
-  - Example: Creator reaches 10,000 subscribers, receives 1,000 tokens
-  - Platform fee: 25 tokens (2.5%)
-  - Annual projection with 5,000 active creators: $1.5M
-- **Verification Fees**: Priority processing for milestone validation
-  - Standard verification: Free (24-48 hour wait)
-  - Priority verification: $5-25 depending on milestone tier
-  - Annual projection: $250K
-- **Secondary Market Trading Fees**: 2% on all channel token trades
-  - As creator channels grow, token values appreciate
-  - Trading volume compounds with ecosystem growth
-  - Annual projection: $500K (Year 1) → $5M (Year 3)
+#### Baseline Operating Numbers (Reference Scenario)
 
-**2. Creator Services Revenue (High Margin)**:
-- **Channel Tokenization Services**: 5% of total tokenization value
-  - Example: Creator tokenizes channel valued at $100,000
-  - Platform revenue: $5,000
-  - Target: 200 channel tokenizations in Year 1 = $1M revenue
-- **Tokenization Management**: Ongoing platform fee of 0.5% annually on tokenized value
-  - Recurring revenue stream that grows with creator success
-  - Aligns platform incentives with creator growth
-- **Smart Contract Customization**: Premium custom tokenization structures
-  - Fee: $500-5,000 per custom implementation
-  - Target: 50 custom implementations in Year 1 = $125K
+| Metric | Value |
+|--------|-------|
+| Active monthly users | 10,000 |
+| Average monthly gifting per user | $12 |
+| Monthly gross gifting volume | $120,000 |
+| Platform share (20%) | $24,000/month |
+| Creator share (80%) | $96,000/month |
+| Creator crypto withdrawal rate (optional) | 40% of creator payouts |
+| Monthly crypto payout flow (derived) | $38,400/month |
+| Annualized gross gifting volume | $1,440,000 |
+| Annualized platform share | $288,000 |
+| Annualized creator share | $1,152,000 |
+| Annualized crypto payout flow (derived) | $460,800 |
 
-**3. Subscription and SaaS Revenue (Recurring)**:
-- **Creator Discovery Platform**:
-  - Basic: $9.99/month (analytics dashboard, 10 tracked creators)
-  - Pro: $29.99/month (advanced analytics, 50 tracked creators, investment insights)
-  - Enterprise: $99.99/month (unlimited tracking, API access, priority support)
-  - Target: 1,000 subscribers average = $40K/month = $480K/year
-- **API Access Tiers**:
-  - Developer: $49/month (10K requests/day)
-  - Business: $199/month (100K requests/day)
-  - Enterprise: Custom pricing (unlimited)
-  - Target: 200 API customers = $20K/month = $240K/year
+These figures are operating reference numbers used for planning and treasury design, not guaranteed outcomes.
 
-**4. YouTube Ad Revenue Integration (Phase 2 - High Scale)**:
-- **Revenue Tokenization Service**: 15% platform fee on tokenized ad revenue
-  - Integration with YouTube Partner Program API
-  - Automatic conversion of ad revenue to tokens
-  - Distribution to channel token holders
-  - Example calculation:
-    - Creator earns $10,000/month in YouTube ads
-    - Tokenizes 50% of revenue ($5,000)
-    - Platform fee: $750/month per creator
-  - Target: 500 creators tokenizing ad revenue = $375K/month = $4.5M/year
-  - Scales exponentially as creator base grows
-- **Revenue Analytics Premium**: $19.99/month for detailed ad revenue forecasting
-  - AI-powered predictions based on historical data
-  - Optimization recommendations for ad revenue
-  - Target: 30% of ad-integrating creators = $30K/year
+#### Mirror-Ledger Settlement Mechanics
 
-**5. B2B and Enterprise Revenue (High Value)**:
-- **White-Label Licensing**: License Wavz oracle protocol to other platforms
-  - Setup fee: $25,000-50,000 per client
-  - Monthly SaaS fee: $2,500-5,000 per client
-  - Target: 5 enterprise clients in Year 1 = $200K setup + $180K recurring = **$380K**
-- **Custom Oracle Development**: Build specialized validation systems
-  - Project fee: $50,000-150,000
-  - Maintenance: $5,000-10,000/month
-  - Target: 2 custom oracle projects in Year 1 = **$200K**
-- **Consulting Services**: Integration support and strategy
-  - Hourly rate: $300-500
-  - Target: **$150K** in Year 1
-- **Total B2B/Enterprise Year 1**: **$730K**
+1. User buys gifts in fiat (for example through Stripe).
+2. Platform internal credit ledger updates instantly.
+3. Backend maintains token reserve mirror accounting.
+4. Reconciliation settles in controlled batches (for example weekly), not one on-chain transaction per gift.
 
-**Web2 Oracle Infrastructure Revenue Projection Summary**:
+This reduces gas, preserves UX simplicity, and supports cleaner compliance operations.
 
-**Year 1 Quarterly Breakdown**:
+#### Creator Payout Options (Crypto Optional)
 
-| Revenue Stream | Q1 | Q2 | Q3 | Q4 | Year 1 Total |
-|----------------|----|----|----|----|--------------|
-| Oracle Validation Services | $150K | $400K | $700K | $900K | **$2.15M** |
-| Infrastructure Licensing (B2B) | $50K | $200K | $400K | $600K | **$1.25M** |
-| Identity & Reputation Services | $50K | $150K | $300K | $500K | **$1M** |
-| API & Analytics Access | $100K | $250K | $400K | $550K | **$1.3M** |
-| B2B Enterprise Solutions | $100K | $180K | $200K | $250K | **$730K** |
-| Platform Revenue Integration | $0 | $0 | $0 | $0 | **$0** (Phase 2) |
-| **Quarterly Total** | **$450K** | **$1.18M** | **$2M** | **$2.8M** | **$6.43M** |
+Creators see a standard fiat-denominated balance and can choose payout method:
 
-*Platform Rollout Timeline*:
-- Q1: YouTube only (beta launch, 500 creators)
-- Q2: YouTube + Twitter (1,500 total creators)
-- Q3: YouTube + Twitter + TikTok + Instagram (3,000 creators)
-- Q4: All platforms + Twitch (5,000 creators)
+- ACH / bank transfer
+- Stripe/PayPal payout rails
+- USDC wallet withdrawal
+- SDM wallet withdrawal (optional)
 
-**Multi-Year Revenue Projections**:
+Rollout incentives can include a **2% payout bonus** for selected crypto-withdrawal rails once policy approvals are live.
 
-| Revenue Stream | Year 1 | Year 2 | Year 3 |
-|----------------|--------|--------|--------|
-| Oracle Validation Services | $2.15M | $8.5M | $25M |
-| Infrastructure Licensing (B2B) | $1.25M | $3.5M | $12M |
-| Identity & Reputation Services | $1M | $4M | $15M |
-| API & Analytics Access | $1.3M | $3.5M | $12M |
-| Platform Revenue Integration | $0 (Phase 2) | $8.7M | $28M |
-| B2B Enterprise Solutions | $730K | $4.5M | $15M |
-| New Platform Integrations | $0 | $0 | $8M |
-| **Total Annual Revenue** | **$6.43M** | **$32.7M** | **$115M** |
+#### Progressive User Onboarding Model
 
-**Oracle Infrastructure Growth Drivers**:
-1. **Platform Expansion**: YouTube → Twitter → TikTok → Instagram → 30+ platforms
-2. **B2B Multiplier**: Each enterprise client brings thousands of creators needing validation
-3. **Cross-Platform Synergy**: Multi-platform bundles increase ARPU by 3-5x
-4. **Phase 2 Revenue Integration**: Direct platform revenue tokenization unlocks exponential growth
-5. **Oracle Licensing**: Other Web3 projects licensing our validation infrastructure
-6. **Identity Services**: Sybil resistance becomes critical need across all Web3
-7. **Network Effects**: More validated data → better AI models → higher accuracy → more users
+1. **Phase 1**: No crypto language on user gifting surface.
+2. **Phase 2**: Optional wallet connect for faster creator payouts.
+3. **Phase 3**: Optional incentive layer (for example 2% bonus for crypto withdrawal).
+4. **Phase 4**: Wallet-based loyalty and advanced contribution features.
+
+#### Compliance and Risk Controls
+
+- Clear terms: viewer credits are platform utility credits, not investment products.
+- Creator KYC/KYB for payout access.
+- AML transaction monitoring for scaled crypto withdrawals.
+- No promise of token appreciation.
+- No user revenue-sharing claims for gift purchases.
+- Segregated accounting between user funds and treasury strategy allocations.
 
 ### Comprehensive Revenue Streams Beyond MVP
 

@@ -23,6 +23,20 @@ At a high level:
 4. **$Crabby and $SDM** capture value through different economic rails.
 5. **wSDM / gSDM / sSDM** extend SDM exposure through secure wrapper baskets.
 
+### Web2 Surface, Web3 Rail Philosophy
+
+The operating model is intentionally staged:
+
+- Front-end: gifts, badges, balances, creator earnings
+- Back-end: mirror ledger, optional wallet withdrawals, batched on-chain settlement
+
+Reference planning numbers:
+
+- 10,000 active users x $12 monthly gifting average = $120,000 monthly gifting volume
+- 20% platform share = $24,000/month
+- 80% creator share = $96,000/month
+- 40% creator crypto-withdrawal participation = $38,400/month optional on-chain payout flow
+
 ### The Core Problem We Are Solving
 
 Creator platforms still leave users with fragmented monetization and weak ownership alignment:

@@ -1213,114 +1213,74 @@ This partner ecosystem positions Diamond zChain as the **only blockchain** with 
 
 #### Wavz Revenue Model Overview
 
-The Wavz oracle infrastructure creates multiple revenue streams through validation services across all social platforms. For detailed revenue projections and financial models, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md) section.
+The Wavz model is now run as a **Web2 surface, Web3 rail** system.
+Users transact through mainstream UX (gifts, badges, balances), while settlement can optionally bridge on-chain.
+
+For full financial mechanics, see the [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md).
 
 **Core Revenue Streams**:
 
-**1. Oracle Validation Services**: Per-validation fees for Milestone Unit generation across all platforms ($0.10-0.75 per validation)
+1. **Qualifying Platform Fee Capture** from CrabbyTV transaction classes in governance-defined ranges.
+2. **Settlement Infrastructure Revenue** from payout and reconciliation rails.
+3. **Oracle and Analytics Services** for validation, fraud scoring, and API products.
+4. **DEX and Wrapper Fee Pathways** routed through treasury policy.
 
-**2. Infrastructure Licensing**: B2B oracle SDK licensing for enterprises ($10K-100K setup + monthly recurring)
-
-**3. Identity & Reputation Services**: Cross-platform identity verification and Wavz score tracking ($10-29/month per user)
-
-**4. API & Analytics Access**: Data access tiers for developers and enterprises ($99-2,500+/month)
-
-**5. Platform Revenue Integration**: Tokenization fees on creator ad revenue and platform earnings (10-15% platform fee, Phase 2)
-
-**6. Enterprise Solutions**: Custom oracle development and managed services ($50K-500K per engagement)
-
-**Financial Performance Summary**:
-- **Year 1 Revenue**: $6.43M (Wavz oracle infrastructure)
-- **Year 2 Revenue**: $32.7M (multi-platform scale + Phase 2 integration)
-- **Year 3 Revenue**: $115M+ (universal Web2 oracle layer)
-- **Gross Margins**: 70%+ on oracle validation services
-- **Target B2B Clients**: 10 (Year 1) → 25 (Year 2) → 100+ (Year 3)
-
-For comprehensive revenue breakdowns, pricing structures, and detailed financial projections with quarterly breakdowns, refer to the [Economic Model section](economic-model-for-decades-of-solvency.md).
+**Operating Baseline (Reference Numbers)**:
+- **10,000** active monthly users
+- **$12** average monthly gifting per user
+- **$120,000** monthly gross gifting volume
+- **$24,000/month** platform share at 20%
+- **$96,000/month** creator payout flow at 80%
+- **40%** optional creator crypto-withdrawal participation
+- **$38,400/month** derived on-chain payout flow
+- **Weekly batched reconciliation** as default settlement cadence
 
 #### MVP Success Metrics
 
-The Web2 Oracle Infrastructure validates ecosystem viability through key performance indicators:
+The MVP validates viability across adoption, reconciliation accuracy, and risk controls:
 
-**1. Oracle Performance Metrics**:
-- **Uptime SLA**: 99.9% oracle availability across all platforms
-- **Validation Accuracy**: 95%+ AI confidence score accuracy rate
-- **Consensus Rate**: 90%+ oracle node agreement on validations
-- **Fraud Detection**: <0.5% false positive rate, <0.1% false negative rate
-- **Response Time**: <10 seconds for standard validation, <1 second for cached data
-- **API Latency**: <200ms average response time for data queries
+1. **User Economics Metrics**
+   - 10,000 monthly active users baseline
+   - $12 average monthly gifting behavior
+   - $120,000 monthly gifting baseline
+   - 20%/80% platform-to-creator split integrity
 
-**2. Platform Adoption Metrics**:
-- **Year 1 Targets**:
-  - 5,000 creators validated across all platforms
-  - 50,000+ milestone validations recorded on-chain
-  - 10 B2B clients licensing oracle infrastructure
-  - 5 new platform integrations beyond YouTube
-- **Geographic Distribution**: Active validators in 50+ countries
-- **Platform Diversity**: 30% YouTube, 70% other platforms by Year 1 end
+2. **Payout Adoption Metrics**
+   - Creator payout methods live (bank, USDC, SDM)
+   - Optional crypto-withdrawal adoption target: 40%
+   - Incentive efficiency tracking for optional 2% payout bonus programs
 
-**3. Revenue and Economic Metrics**:
-- **Monthly Recurring Revenue**: $500K by Month 12
-- **Gross Margin**: 70%+ on oracle validation services
-- **Customer Acquisition Cost**: <$100 per creator
-- **Lifetime Value**: >$1,000 per creator (3+ year average)
-- **B2B Contract Value**: $50K+ average annual contract value
-- **Revenue Per Validation**: $0.30 average across all platforms
+3. **Operational Metrics**
+   - Batched settlement success rate
+   - Internal-ledger vs on-chain reconciliation accuracy
+   - Treasury routing consistency for SDM-linked fee paths
 
-**4. Technical Infrastructure Metrics**:
-- **Oracle Node Distribution**: 20+ independent oracle operators
-- **Data Source Redundancy**: 3+ data sources per platform
-- **Blockchain Transactions**: 100,000+ on-chain milestone recordings
-- **Cross-Chain Deployment**: Active on 5+ EVM-compatible chains
-- **API Clients**: 100+ third-party applications using oracle data
-
-**5. Ecosystem Growth Metrics**:
-- **Creator Retention**: 80%+ monthly retention rate
-- **Validation Growth**: 40%+ month-over-month validation increase
-- **Platform Expansion**: 1 new platform integration every 6 weeks
-- **Community Validators**: 500+ active community validators
-- **Developer Adoption**: 50+ projects building on oracle infrastructure
+4. **Validation and Security Metrics**
+   - Oracle uptime and data freshness adherence
+   - Fraud-detection quality on creator data
+   - Pause-control and incident-response readiness for wrapper contracts
 
 #### From MVP to Full Ecosystem: Oracle Infrastructure Roadmap
 
-The Web2 Oracle Infrastructure provides the scalable foundation for comprehensive Web2-to-Web3 data validation:
+The rollout follows a progressive adoption sequence:
 
-**Phase 1: Social Media Oracles** (Months 1-12):
-- **Launch** (Q1): YouTube validation oracle (live)
-- **Q2 Expansion**: Twitter/X followers, engagement, and influence metrics
-- **Q3 Expansion**: TikTok and Instagram creator milestones
-- **Q4 Expansion**: Twitch streaming data, Facebook/LinkedIn professional metrics
-- **Goal**: Validate 5,000+ creators across 6+ major social platforms
+1. **Phase 1 - Web2 Native UX**
+   - Users see gifts, badges, and balances with no mandatory crypto language.
+   - Internal credit ledger and compliance-first payout controls are established.
 
-**Phase 2: Creator Economy Oracles** (Year 2):
-- **Music Streaming**: Spotify, Apple Music, YouTube Music, SoundCloud streaming data
-- **Podcast Platforms**: Apple Podcasts, Spotify Podcasts download and listener metrics
-- **Newsletter Platforms**: Substack, Beehiiv subscriber and open rate validation
-- **Video Platforms**: Vimeo, Dailymotion alternative video platform metrics
-- **Goal**: Comprehensive creator economy validation across 15+ platforms
+2. **Phase 2 - Optional Wallet Rails**
+   - Wallet connect and creator wallet payouts become available (opt-in).
+   - Fiat rails remain default for mainstream onboarding.
 
-**Phase 3: Gaming and Esports Oracles** (Year 2):
-- **Game Achievement APIs**: Steam, Xbox Live, PlayStation Network achievement validation
-- **Competitive Gaming**: Call of Duty, Valorant, League of Legends player statistics
-- **Esports Performance**: Tournament results, team rankings, prize pool distributions
-- **Blockchain Gaming**: Axie Infinity, Gods Unchained, Web3 gaming metrics
-- **Goal**: Validate gaming achievements for 10,000+ players across major titles
+3. **Phase 3 - Incentivized Transition**
+   - Optional creator incentives (for example 2% bonus) support crypto-withdraw adoption.
+   - Weekly reconciliation and treasury-routing controls are hardened.
 
-**Phase 4: Financial and Commerce Oracles** (Year 3):
-- **E-commerce Metrics**: Shopify, Etsy, Amazon seller performance validation
-- **Marketplace Reputation**: eBay, Etsy, Facebook Marketplace seller ratings
-- **Freelance Platforms**: Upwork, Fiverr, Freelancer.com profile validation
-- **Payment Processors**: Stripe, PayPal revenue verification (with user consent)
-- **Goal**: Validate real-world business performance for Web3 credit scoring
+4. **Phase 4 - Hybrid Scale**
+   - Web2 UX remains frictionless.
+   - Web3 payout rails and SDM wrapper integrations scale for opt-in participants.
 
-**Phase 5: Professional and Academic Oracles** (Year 3):
-- **Professional Credentials**: LinkedIn skills, certifications, work history validation
-- **Academic Achievements**: Degree verification, publication records, citations
-- **GitHub Contributions**: Developer activity, code contributions, repository stars
-- **Patent and IP**: USPTO, WIPO patent filing and grant validation
-- **Goal**: Professional reputation system for Web3 identity and credentials
-
-**Oracle Infrastructure Expansion Strategy**:
+#### Oracle Infrastructure Expansion Strategy
 
 Each new oracle integration follows the proven architecture:
 1. **API Integration Layer**: Connect to platform's official API or scraping infrastructure
