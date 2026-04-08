@@ -87,6 +87,43 @@ A keeper bot monitors pending swaps every 30 seconds, fetches optimal 0x quotes,
 
 Yield accrues to the vault share price — when users withdraw, they receive more USDC than they deposited. A 5% protocol fee is taken on harvested yield.
 
+### 3.5 Risk Management — Leveraged Lending
+
+The recursive lending strategy introduces leverage risk that the protocol actively manages through multiple safeguards:
+
+**E-Mode Self-Hedging**
+
+All yield positions use Aave V3 E-Mode for stablecoin-to-stablecoin lending (USDC supply / USDC borrow). E-Mode provides a 97% loan-to-value ratio and 98% liquidation threshold. Because both sides of the position are denominated in the same asset, price volatility in the broader crypto market does not directly affect the health factor.
+
+**Automated Health Monitoring**
+
+The keeper bot monitors the aggregate health factor of the yield adapter every 30 seconds. If the health factor drops below a configurable threshold (default: 1.5), the keeper triggers automated deleveraging — unwinding loops in reverse order (repay → withdraw → repay → withdraw) until the health factor returns above 2.0.
+
+**Controlled Loop Depth**
+
+The maximum loop depth is 3 for deposits of $1,000 or more. At each loop iteration, the protocol borrows approximately 97% of the previous supply amount, resulting in effective leverage of approximately 3.3x at maximum depth. This stays well within E-Mode safety margins, providing a buffer of approximately 150 basis points above the liquidation threshold.
+
+**Emergency Deleveraging**
+
+The Aave adapter exposes an emergency `withdraw()` function that unwinds all loops and returns the full USDC position to the vault. The admin multisig (Gnosis Safe 2-of-3) can trigger this instantly without waiting for the keeper or DAO governance.
+
+**USDC Depeg Scenario**
+
+The primary tail risk is a USDC depeg event. However, because both supply and borrow are USDC-denominated, a uniform depeg affects both sides equally, preserving the health factor. Risk materializes only if Aave unilaterally changes E-Mode parameters or if the depeg is asymmetric (e.g., aUSDC trades at a different rate than USDC). In this scenario, the keeper's automated deleveraging activates within 30 seconds.
+
+**Risk Parameters Summary**
+
+| Parameter | Value |
+|---|---|
+| Maximum loops | 3 |
+| Effective leverage | ~3.3x |
+| E-Mode LTV | 97% |
+| E-Mode liquidation threshold | 98% |
+| Health factor monitoring interval | 30 seconds |
+| Deleveraging trigger | Health factor < 1.5 |
+| Deleveraging target | Health factor > 2.0 |
+| Emergency unwind | Admin multisig (instant) |
+
 ---
 
 ## 4. Basket Strategies
@@ -171,6 +208,14 @@ SDM (`0x602b869eEf1C9F0487F31776bad8Af3C4A173394` on Arbitrum) is the native uti
 | Protocol yield fee | 5% | On harvested Aave/lending yield |
 | Minimum deposit | $5 USDC | Per deposit |
 
+**Fee Design Rationale**
+
+The on-time withdrawal fee (1.2%) is intentionally higher than the early exit fee (0.9%). The lock tier multiplier — not the fee differential — is the primary incentive for long-term deposits. A user who locks for 365 days receives 3.0x shares per dollar deposited, while a FLEX user receives only 1.0x. Breaking a lock early forfeits this multiplier advantage, which at higher tiers represents a significantly larger cost than the 0.9% fee.
+
+The on-time fee is the standard protocol service fee applied to all withdrawals, including FLEX tier (which has no lock). The early exit fee is reduced because the user has already incurred a substantial penalty by losing their multiplier benefit. DAW NFT holders receive a further reduction (0.3%) as a loyalty reward.
+
+In practice, the net incentive to maintain a lock is driven almost entirely by the multiplier: a 365-day depositor earning 3.0x shares would sacrifice approximately 200% of additional value by exiting early, making the 0.3% fee differential inconsequential by comparison. On-chain reference: `earlyExitFeeBps=90, onTimeFeeBps=120` at `0x14f46cd4947b43258A516070483cCcf80E79a6Aa`.
+
 ### 5.3 Revenue Flywheel
 
 All protocol revenue (withdrawal fees + 5% yield fee) flows through a **revenue router** that splits 50/50:
@@ -224,8 +269,10 @@ The Governor contract is an OpenZeppelin Governor with GovernorVotes, GovernorVo
 1. **Proposal Creation**: Any address holding the minimum proposal threshold of vSDM can submit a proposal encoding one or more contract calls.
 2. **Voting Delay**: 1-block delay after proposal creation before voting begins.
 3. **Voting Period**: 7-day voting window. vSDM holders vote For, Against, or Abstain.
-4. **Quorum Check**: Passes if For > Against AND total For + Abstain ≥ 9% of total vSDM supply at snapshot.
+4. **Quorum Check**: Passes if For > Against AND total For + Abstain ≥ 9% of total vSDM supply at snapshot.\*
 5. **Queue to Timelock**: Passed proposals are queued with a 48-hour delay.
+
+> \*Quorum follows the standard OpenZeppelin `GovernorCountingSimple` implementation (`COUNTING_MODE: support=bravo&quorum=for,abstain`). Against votes are intentionally excluded from the quorum calculation, consistent with Compound Governor Bravo, Uniswap, and all major DAOs using OpenZeppelin Governor. The rationale is that quorum measures participation in favor of governance action, not total participation. Voters who oppose a proposal are expressing preference for the status quo — counting them toward quorum could allow contentious proposals to pass technical thresholds despite majority opposition.
 6. **Execution**: After 48-hour delay, anyone can trigger execution.
 7. **Cancellation**: Creator or Guardian (Gnosis Safe multisig) can cancel before execution.
 

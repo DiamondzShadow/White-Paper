@@ -114,7 +114,7 @@ This rail remains distinct from `$Crabby` qualifying CrabbyTV capture.
 
 The Shadow Peoples Vault generates direct protocol revenue through two fee channels:
 
-- **Withdrawal fees**: 0.9% early (0.3% for DAW NFT holders), 1.2% on-time
+- **Withdrawal fees**: 1.2% standard service fee on all withdrawals; 0.9% on early exits (0.3% for DAW NFT holders) — see [Vault Whitepaper Section 5](shadow-peoples-vault.md) for fee design rationale
 - **Yield performance fee**: 5% on all harvested Aave/lending yield
 
 All vault protocol revenue flows through a revenue router that splits 50/50:
