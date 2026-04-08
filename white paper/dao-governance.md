@@ -23,8 +23,8 @@ vSDM is an ERC20Votes wrapper. Users call `wrap(amount)` to convert SDM → vSDM
 ## 5.3 Proposal Lifecycle
 
 1. **Proposal Creation** — Any vSDM holder submits encoded contract calls
-2. **Voting Delay** — ~1 day (7,200 blocks at ~0.25s/block on Arbitrum)
-3. **Voting Period** — ~3 days (21,600 blocks)
+2. **Voting Delay** — ~1 day (7,200 L1 blocks; Arbitrum's block.number tracks Ethereum L1 at ~12s/block)
+3. **Voting Period** — ~3 days (21,600 L1 blocks)
 4. **Quorum Check** — Passes if `For > Against` AND `For + Abstain ≥ 9%` of total vSDM supply
 
 > *Note: Quorum follows standard OpenZeppelin GovernorCountingSimple (`COUNTING_MODE: support=bravo&quorum=for,abstain`). Against votes are intentionally excluded from quorum, consistent with Compound Governor Bravo and all major DAOs using OZ Governor.*

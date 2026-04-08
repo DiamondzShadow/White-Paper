@@ -27,9 +27,9 @@ The DiamondzChain Bridge enables cross-chain asset transfer between Arbitrum One
 
 | Amount (USD) | Fee | Burn Back Fee |
 |-------------|-----|---------------|
-| $1–$10 | Flat $0.42 | 0.60% |
-| $10–$100 | Flat $0.30 | 0.60% |
-| $100+ | 0.30% | 0.60% |
+| $1 to < $10 | Flat $0.42 | 0.60% |
+| $10 to < $100 | Flat $0.30 | 0.60% |
+| ≥ $100 | 0.30% | 0.60% |
 
 **SDM Holder Discount:** 50% fee reduction for wallets holding 9,000+ SDM.
 
@@ -41,14 +41,14 @@ The DiamondzChain Bridge enables cross-chain asset transfer between Arbitrum One
 
 Six wrapped tokens provide native representations of Arbitrum assets:
 
-| zwToken | DZX Address | Decimals | Arbitrum Source |
-|---------|------------|----------|-----------------|
-| zwUSDC | `0x07005e3C06eB59A61ceF073342a5209026518CD4` | 6 | USDC `0xaf88d065...8e5831` |
-| zwBTC | `0xE665f92a018827e79CDC3b64dB799B4Ba5Da70c7` | 8 | WBTC `0x2f2a2543...C5B0f` |
-| zwSDM | `0x0b8244AdCDBCbC63Dfff3dc6e5037d4A6C553069` | 18 | SDM `0x602b869e...3394` |
-| zwPGOLD | `0x75F95a08304BFfAa83952C22be2Ec8dcEfD36b2d` | 18 | PGOLD `0x3e76BB02...4F91` |
-| zwARB | `0x9BACD2CE1FcF456C3F57EED3915Aa98F66A72849` | 18 | ARB `0x912CE591...6548` |
-| zwETH | `0x0E43A32913e1659E7c11eeCa15992Ef8993BFd1B` | 18 | WETH `0x82aF4944...fBab1` |
+| zwToken | DZX Address | Dec | Arbitrum Source |
+|---------|------------|-----|-----------------|
+| zwUSDC | `0x07005e3C06eB59A61ceF073342a5209026518CD4` | 6 | `0xaf88d065e77c8cC2239327C5EDb3A432268e5831` |
+| zwBTC | `0xE665f92a018827e79CDC3b64dB799B4Ba5Da70c7` | 8 | `0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f` |
+| zwSDM | `0x0b8244AdCDBCbC63Dfff3dc6e5037d4A6C553069` | 18 | `0x602b869eEf1C9F0487F31776bad8Af3C4A173394` |
+| zwPGOLD | `0x75F95a08304BFfAa83952C22be2Ec8dcEfD36b2d` | 18 | `0x3e76BB02286BFeAA89DD35f11253f2CbCE634F91` |
+| zwARB | `0x9BACD2CE1FcF456C3F57EED3915Aa98F66A72849` | 18 | `0x912CE59144191C1204E64559FE8253a0e49E6548` |
+| zwETH | `0x0E43A32913e1659E7c11eeCa15992Ef8993BFd1B` | 18 | `0x82aF49447D8a07e3bd95BD0d56f35241523fBab1` |
 
 Each zwToken uses OZ v4 ERC20Upgradeable + AccessControl + UUPS. `BRIDGE_ROLE` is held by BridgeValidatorV2; `DEFAULT_ADMIN_ROLE` by Gnosis Safe.
 

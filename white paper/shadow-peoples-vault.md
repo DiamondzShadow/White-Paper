@@ -55,9 +55,10 @@ The recursive lending strategy introduces leverage risk managed through multiple
 | Maximum loops | 3 |
 | Effective leverage | ~3.3x |
 | E-Mode LTV | 97% |
-| Liquidation threshold | 98% |
-| Health monitor interval | 30 seconds |
-| Deleverage trigger | Health factor < 1.5 |
+| E-Mode liquidation threshold | 98% |
+| Health factor monitoring interval | 30 seconds |
+| Deleveraging trigger | Health factor < 1.5 |
+| Deleveraging target | Health factor > 2.0 |
 | Emergency unwind | Admin multisig (instant) |
 
 ---

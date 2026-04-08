@@ -45,7 +45,7 @@ All protocol revenue flows through a self-reinforcing flywheel: deposits → fee
 
 - **Website**: [diamondzshadow.info](https://diamondzshadow.info)
 - **CrabbyTV**: [crabbytv.com](https://crabbytv.com)
-- **DZX Exchange**: [zdiamondex.store](https://zdiamondex.store/)
+- **DZX Exchange**: [zdiamondex.store](https://zdiamondex.store)
 - **GitHub**: [github.com/DiamondzShadow](https://github.com/DiamondzShadow)
 - **Discord**: [discord.gg/diamondzshadow](https://discord.gg/diamondzshadow)
 - **Twitter**: [@DiamondShadoM](https://twitter.com/DiamondShadoM)

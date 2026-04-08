@@ -17,6 +17,7 @@ YieldBridgeRelay (`0x8B04A9385485a79d1A11D829F6BFceC21d463789`) manages a divers
 | AaveLoopAdapter | `0xF011Bc5B0893279b72AF4D1c933856D94a3433a9` | 70% | Aave V3 E-Mode recursive lending |
 | LidoStETHAdapter | `0x2d1371c8A9b607012e95cFf57bB20705ce88c9A5` | 20% | Lido stETH liquid staking |
 | FlashArbAdapter | `0x0aa891Ee89Ee927b051fe92A5B7a2e6849695f5A` | 5% | Aave V3 flash loan arbitrage |
+| Withdrawal Buffer | YieldBridgeRelay | 5% | USDC reserve for instant withdrawals |
 
 ---
 
