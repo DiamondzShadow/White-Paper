@@ -110,7 +110,40 @@ SDM captures value from:
 
 This rail remains distinct from `$Crabby` qualifying CrabbyTV capture.
 
-#### 4) Wrapper and Liquidity Revenue Layer
+#### 4) DeFi Vault Revenue Layer (Shadow Peoples Vault)
+
+The Shadow Peoples Vault generates direct protocol revenue through two fee channels:
+
+- **Withdrawal fees**: 0.9% early (0.3% for DAW NFT holders), 1.2% on-time
+- **Yield performance fee**: 5% on all harvested Aave/lending yield
+
+All vault protocol revenue flows through a revenue router that splits 50/50:
+- **50% → SDM buyback** via DODO SDM/USDC pool, then seeded back as LP
+- **50% → Treasury** (Gnosis Safe multisig)
+
+This creates a self-reinforcing economic loop where vault growth deepens SDM liquidity,
+strengthens governance, and attracts more vault deposits. As the vault expands to Solana,
+Hyperliquid, and additional chains, each deployment adds a new revenue source flowing into
+the same SDM flywheel.
+
+**Vault revenue scales with TVL**: At $1M TVL with a blended 5% APY yield and average 1%
+withdrawal fee, the vault generates approximately $25K/year in yield fees + withdrawal fees —
+all of which drives SDM buy pressure and LP depth.
+
+#### 4B) Yield Seeder as a Service (YSaaS)
+
+The Yield Seeder architecture is licensable to external DeFi projects and DAOs, creating a
+high-margin B2B revenue stream:
+
+- **Deployment fees**: Per-chain contract deployment and configuration
+- **Protocol fee share**: Configurable basis points on yield harvested by client vaults
+- **Keeper hosting**: Managed infrastructure for automated rebalancing, harvesting, and buyback execution
+- **Consulting**: Custom basket design, governance module configuration, and strategy optimization
+
+YSaaS revenue is SDM-aligned: licensing fees and protocol shares flow through the treasury
+and buyback pathways, reinforcing the core flywheel.
+
+#### 5) Wrapper and Liquidity Revenue Layer
 
 Secure wrappers (`wSDM`, `gSDM`, `sSDM`) generate policy-managed fee pathways via:
 
@@ -121,7 +154,7 @@ Secure wrappers (`wSDM`, `gSDM`, `sSDM`) generate policy-managed fee pathways vi
 Wrapper contracts implement slippage checks, stale-price controls (3-hour threshold),
 optional ratio enforcement, and restricted emergency withdrawal logic.
 
-#### 5) Stock-Linked Wrapper Expansion (Gold/BTC + Tokenized Equities)
+#### 6) Stock-Linked Wrapper Expansion (Gold/BTC + Tokenized Equities)
 
 The same wrapper architecture can support governance-approved baskets that include tokenized stocks
 alongside gold/BTC collateral rails.
@@ -208,6 +241,10 @@ Primary operating metrics:
 6. community value-capture ratio
 7. token velocity and utility depth
 8. stock-linked wrapper revenue contribution and diversification ratio
+9. vault TVL growth and protocol revenue generation across chains
+10. SDM buyback volume and DODO pool liquidity depth
+11. Yield Seeder licensing client count and recurring fee revenue
+12. vSDM governance participation rate and proposal throughput
 
 By tying revenue to product behavior, separating value rails, and enforcing risk-managed treasury controls,
 the model is designed for durable solvency over decades rather than speculation-driven cycles.

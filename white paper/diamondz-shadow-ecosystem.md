@@ -67,6 +67,28 @@ Key upside drivers:
 3. **Broader user fit**: serves users seeking non-single-asset exposure inside a crypto-native format.
 4. **Treasury resilience**: diversified reserve composition can improve stress-period stability.
 
+### DeFi Vault Layer (Shadow Peoples Vault)
+
+The ecosystem now includes the **Shadow Peoples Vault**, a multi-chain DeFi basket vault protocol
+that connects directly to SDM tokenomics:
+
+- **User deposits** USDC → receives diversified basket exposure (70%) + lending yield (30%) + tradeable NFT position.
+- **Protocol revenue** (withdrawal fees + 5% yield fee) flows through a revenue router:
+  50% → SDM buyback via DODO pool + LP seeding, 50% → treasury.
+- **vSDM governance** gives SDM holders direct on-chain control over vault parameters, baskets, fees, and treasury.
+- **Yield Seeder** automates the buyback + LP seeding cycle and is designed as a licensable service for external projects.
+
+Multi-chain deployments:
+- **Arbitrum** (live V11): 0x API swaps, Aave V3 yield, 4-token basket
+- **Solana** (Phase 2): Jupiter swaps, Kamino yield, 4 baskets
+- **Hyperliquid** (Phase 3): HyperEVM DEX, HyperLend yield, 2 baskets
+- **Robinhood Chain / Shido** (Phase 4+): EVM forks of V11
+
+The vault creates a direct economic loop between DeFi activity and SDM value:
+vault deposits → protocol fees → SDM buyback → deeper liquidity → stronger governance → better vault → more deposits.
+
+For the full technical specification, see [Shadow Peoples Vault](shadow-peoples-vault.md).
+
 ### Revenue Integration (Different Revenue Lines)
 
 The ecosystem is designed to generate multiple revenue channels instead of a single-source model:
@@ -86,6 +108,15 @@ The ecosystem is designed to generate multiple revenue channels instead of a sin
    - dedicated 40Acres-wrapper revenue programs and liquidity markets
 5. **Oracle and data services**
    - validation, fraud scoring, and API services
+6. **DeFi vault protocol revenue**
+   - withdrawal fees (0.3%–1.2% depending on lock tier and DAW NFT status)
+   - 5% performance fee on harvested lending yield
+   - 50% of all vault revenue drives SDM buyback + LP seeding
+7. **Yield Seeder as a Service (YSaaS)**
+   - deployment fees for external DeFi projects
+   - ongoing protocol fee share on yield harvested by client vaults
+   - keeper infrastructure hosting and monitoring
+   - custom basket and strategy consulting
 
 ### Governance and Risk Controls
 

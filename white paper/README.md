@@ -31,6 +31,10 @@ The live model is organized around real product usage and clear value-routing:
 4. **Secure SDM wrapper layer** (`wSDM`, `gSDM`, `sSDM`) for BTC/gold/USDC-backed upside
    exposure with hardened controls
 5. **RWA wrapper expansion** including **40Acres (RWA)** baskets combined with gold/BTC/stocks
+6. **Shadow Peoples Vault** — a multi-chain DeFi basket vault protocol with a 70/30 basket-yield
+   split, NFT position receipts, vSDM governance, and an SDM revenue flywheel
+7. **Yield Seeder as a Service (YSaaS)** — licensable buyback + LP seeding infrastructure
+   for external DeFi projects and DAOs
 
 **The Wavz Progression**:
 - **Milestone Units**: Individual verified achievements
@@ -99,6 +103,19 @@ baskets (`wSDM`, `gSDM`, `sSDM`) to provide upside-oriented exposure through col
 Unlike traditional media models where centralized entities control production, distribution,
 and monetization, Diamondz Shadow democratizes the process. Creators can tokenize work for
 direct fan investment and transparent revenue, while audiences can support content they believe in.
+
+### DeFi Vault Layer (Shadow Peoples Vault)
+
+- **Shadow Peoples Vault**: Multi-chain basket vault protocol — users deposit USDC, receive
+  diversified basket exposure (70%) + lending yield (30%), and a tradeable NFT position receipt.
+- **vSDM Governance**: SDM holders wrap into vSDM for on-chain DAO governance of all vault
+  parameters, basket compositions, fee structures, and treasury allocation.
+- **SDM Revenue Flywheel**: 50% of vault protocol revenue buys SDM on the DODO pool and seeds
+  it back as LP; 50% goes to treasury. This creates continuous buy pressure and deeper liquidity.
+- **Yield Seeder**: The Seeder contract automates buyback + LP seeding and is designed as a
+  licensable service (Yield Seeder as a Service) for external projects.
+- **Multi-Chain**: Arbitrum (live V11), Solana (Phase 2), Hyperliquid (Phase 3), with EVM
+  forks planned for Robinhood Chain and Shido.
 
 ### Contract Safety Layer (Secure Wrappers)
 
@@ -193,7 +210,8 @@ and tokenization services:
 8. [How to Participate](how-to-participate.md)
 9. [Quality Improvement Proposals (QIPs)](qips.md)
 10. [Validator & Proof of Contribution Flow](validator-and-proof-of-contribution-flow.md)
-11. [Legacy Model Context](diamondz-shadow-ecosystem.md)
+11. [Shadow Peoples Vault — Multi-Chain DeFi Basket Vault Protocol](shadow-peoples-vault.md)
+12. [Legacy Model Context](diamondz-shadow-ecosystem.md)
 
 ## Table of Contents
 
@@ -207,6 +225,7 @@ and tokenization services:
 8. [Quality Improvement Proposals (QIPs)](qips.md)
 9. [How to Participate](how-to-participate.md)
 10. [Roadmap](roadmap.md)
+11. [Shadow Peoples Vault — Multi-Chain DeFi Basket Vault Protocol](shadow-peoples-vault.md)
 
 ## Key Innovations
 
@@ -224,6 +243,16 @@ and tokenization services:
 - **Split-Rail Economic Infrastructure**: `$Crabby` + `$SDM` separated capture logic with governance-scoped expansion modules
 - **Secure Basket Wrappers**: Hardened wSDM/gSDM/sSDM contracts with slippage controls,
   stale-price checks, and fee-transparent quotes
+- **Shadow Peoples Vault**: Multi-chain DeFi basket vault with 70/30 basket-yield split,
+  curated token baskets, Aave/Kamino/HyperLend yield, and ERC-721 position NFT receipts
+- **SDM Revenue Flywheel**: Vault protocol revenue drives 50% SDM buyback + DODO LP seeding,
+  creating a self-reinforcing cycle of buy pressure and deepening liquidity
+- **vSDM Governance**: Vote-escrowed SDM wrapper enabling on-chain DAO governance with
+  9% quorum, 7-day voting, and 48-hour Timelock safety across all vault parameters
+- **Yield Seeder as a Service (YSaaS)**: White-label buyback + LP seeding infrastructure
+  licensable by external DeFi projects, DAOs, and protocol treasuries
+- **Multi-Chain Native Vaults**: Chain-native deployments (Arbitrum, Solana, Hyperliquid)
+  using each chain's best swap aggregators and lending protocols — no bridging required
 - **Strategic Infrastructure Partnerships**: Enterprise-grade stack powered by QuickNode,
   Thirdweb, Uniblock, and Lucid Labs
 - **Cross-Chain Tokenization Infrastructure**: Native connectivity to Ethereum, Arbitrum, and Solana ecosystems
@@ -295,4 +324,4 @@ a solicitation to buy, or a recommendation for any security. The information con
 subject to change and may be incomplete. Diamondz Shadow makes no representation or warranty as
 to the accuracy or completeness of the information.
 
-© 2025 Diamondz Shadow. All rights reserved.
+© 2025–2026 Diamondz Shadow. All rights reserved.
