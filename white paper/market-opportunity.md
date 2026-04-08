@@ -5,6 +5,8 @@ coverY: 0
 
 # Market Opportunity
 
+> **Archived — Superseded by Whitepaper v3.0.** The current whitepaper starts at [README.md](README.md).
+
 #### Market Opportunity
 
 ### The Convergence of Content Creation and Blockchain Technology

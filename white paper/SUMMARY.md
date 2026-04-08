@@ -1,17 +1,32 @@
 # Table of contents
 
-* [Executive Summary](README.md)
-* [Current Model Architecture (2026)](current-model-architecture.md)
-* [Introduction](introduction.md)
-* [Technology and Infrastructure](technology-and-infrastructure.md)
-* [Tokenomics](tokenomics.md)
-* [Economic Model for Decades of Solvency](economic-model-for-decades-of-solvency.md)
-* [Market Opportunity](market-opportunity.md)
-* [Roadmap](roadmap.md)
-* [How to Participate](how-to-participate.md)
-* [Quality Improvement Proposals (QIPs)](qips.md)
-* [Validator & Proof of Contribution Flow](validator-and-proof-of-contribution-flow.md)
-* [Shadow Peoples Vault — Multi-Chain DeFi Basket Vault Protocol](shadow-peoples-vault.md)
+## Whitepaper v3.0
+
+* [Abstract & Overview](README.md)
+* [SDM Token & Multi-Token Economy](sdm-token.md)
+* [Shadow Peoples Vault V11](shadow-peoples-vault.md)
+* [DiamondzChain Bridge & zwTokens](diamondz-bridge.md)
+* [DAO Governance](dao-governance.md)
+* [Diamond Basket Vault & Yield Infrastructure](defi-infrastructure.md)
+* [Ecosystem Platforms & Revenue Flywheel](ecosystem.md)
+* [Multi-Chain Expansion](multi-chain-expansion.md)
+* [Security & Infrastructure](security-and-infrastructure.md)
+
+## Legacy & Historical Context
+
 * [Legacy Model Context](diamondz-shadow-ecosystem.md)
   * [Mission Statement (Legacy)](mission-statement.md)
-  * [Diamondz Validator — The Ascendant Wave Sale (Historical)](diamondz-validator-ascendant-wave-sale.md)
+  * [Ascendant Wave Sale (Historical)](diamondz-validator-ascendant-wave-sale.md)
+
+## Archived (Superseded by v3.0)
+
+* [Introduction (v2)](introduction.md)
+* [Current Model Architecture (v2)](current-model-architecture.md)
+* [Technology and Infrastructure (v2)](technology-and-infrastructure.md)
+* [Tokenomics (v2)](tokenomics.md)
+* [Economic Model (v2)](economic-model-for-decades-of-solvency.md)
+* [Market Opportunity (v2)](market-opportunity.md)
+* [Roadmap (v2)](roadmap.md)
+* [How to Participate (v2)](how-to-participate.md)
+* [QIPs (v2)](qips.md)
+* [Validator & Proof of Contribution (v2)](validator-and-proof-of-contribution-flow.md)

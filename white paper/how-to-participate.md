@@ -8,6 +8,8 @@ coverY: 0
 
 # How to Participate
 
+> **Archived — Superseded by Whitepaper v3.0.** The current whitepaper starts at [README.md](README.md).
+
 #### How to Participate in the Diamondz Shadow Ecosystem
 
 ### Getting Started (Current Model)
