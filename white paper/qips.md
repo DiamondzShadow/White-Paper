@@ -1,5 +1,7 @@
 # Quality Improvement Proposals (QIPs)
 
+> **Archived — Superseded by Whitepaper v3.0.** QIP-001 through QIP-004 remain implemented. The current whitepaper starts at [README.md](README.md).
+
 ## Overview
 
 This document outlines the Quality Improvement Proposals (QIPs) for the Diamondz Shadow ecosystem. These proposals represent significant technical enhancements, security improvements, and feature additions that strengthen the platform's infrastructure and capabilities.

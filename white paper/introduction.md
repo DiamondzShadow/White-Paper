@@ -5,6 +5,8 @@ coverY: 0
 
 # Introduction
 
+> **Archived — Superseded by Whitepaper v3.0.** This file is retained for historical context. The current whitepaper starts at [README.md](README.md).
+
 #### Introduction
 
 ### Reframing the Whitepaper Around the Live Model

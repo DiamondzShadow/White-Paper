@@ -1,5 +1,7 @@
 # VALIDATOR PROTOCOLS & PROOF OF CONTRIBUTION FLOW
 
+> **Archived — Superseded by Whitepaper v3.0.** Bridge validator consensus is now documented in [diamondz-bridge.md](diamondz-bridge.md). The current whitepaper starts at [README.md](README.md).
+
 ## THE COMPLETE VISUAL FLOW
 
 ```

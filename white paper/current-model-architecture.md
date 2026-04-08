@@ -1,5 +1,7 @@
 # Current Model Architecture (2026)
 
+> **Archived — Superseded by Whitepaper v3.0.** This file is retained for historical context. The current whitepaper starts at [README.md](README.md).
+
 #### Current Operating Structure
 
 This chapter defines the **live operating model** of the Diamondz Shadow ecosystem and should be treated as

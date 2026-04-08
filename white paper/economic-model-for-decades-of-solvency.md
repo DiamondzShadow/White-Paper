@@ -5,6 +5,8 @@ coverY: 0
 
 # Economic Model for Decades of Solvency
 
+> **Archived — Superseded by Whitepaper v3.0.** Revenue flywheel and fee structures are now documented in [ecosystem.md](ecosystem.md) and [shadow-peoples-vault.md](shadow-peoples-vault.md).
+
 ## How We Stay Sustainable Forever
 
 ### The Real Picture: Revenue Tied to Product Usage

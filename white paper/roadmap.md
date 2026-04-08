@@ -5,6 +5,8 @@ coverY: 0
 
 # Roadmap
 
+> **Archived — Superseded by Whitepaper v3.0.** Multi-chain expansion timelines are now in [multi-chain-expansion.md](multi-chain-expansion.md).
+
 ## Vision and Strategy
 
 The Diamondz Shadow roadmap outlines our journey to revolutionize content creation and distribution through blockchain technology. Our strategy balances technical development, content production, and community building to create a self-sustaining ecosystem powered by our custom OP Stack blockchain and Proof of Contribution consensus mechanism.

@@ -5,6 +5,8 @@ coverY: 0
 
 # Technology and Infrastructure
 
+> **Archived — Superseded by Whitepaper v3.0.** This file is retained for historical context. The current whitepaper starts at [README.md](README.md).
+
 #### Technology and Infrastructure
 
 ### Current Model Context (Read First)

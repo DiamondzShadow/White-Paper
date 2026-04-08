@@ -5,6 +5,8 @@ coverY: 0
 
 # Tokenomics
 
+> **Archived — Superseded by Whitepaper v3.0.** See [sdm-token.md](sdm-token.md) for the current token specification.
+
 #### Tokenomics
 
 ### Current Value-Capture Architecture (Canonical Model)
