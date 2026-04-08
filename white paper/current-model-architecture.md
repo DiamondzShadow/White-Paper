@@ -11,7 +11,8 @@ The model is no longer organized as a legacy token-first narrative. It is now or
 1. **Ecosystem Product Layer** (user activity and monetization flows)
 2. **Wavz Validation Layer** (milestones, creator integrity, anti-fraud)
 3. **Token Value-Capture Layer** (`$Crabby`, `$SDM`, and secure SDM wrappers)
-4. **Infrastructure + Governance Layer** (chain, contracts, treasury, risk controls)
+4. **DeFi Vault Layer** (Shadow Peoples Vault — basket vaults, yield, vSDM governance, Seeder)
+5. **Infrastructure + Governance Layer** (chain, contracts, treasury, risk controls)
 
 ---
 
@@ -75,7 +76,22 @@ This layer supports creator discovery, fraud resistance, and progression-linked 
 
 ---
 
-### 4) Infrastructure + Governance Layer
+### 4) DeFi Vault Layer (Shadow Peoples Vault)
+
+The Shadow Peoples Vault is a multi-chain DeFi basket vault protocol that connects directly to SDM tokenomics:
+
+- Users deposit USDC and receive diversified basket exposure (70%) + lending yield (30%) + tradeable ERC-721 position NFT.
+- Protocol revenue (withdrawal fees + 5% yield fee) splits 50/50: half buys SDM on the DODO pool and seeds it back as LP; half goes to treasury.
+- **vSDM** (vote-escrowed SDM) gives holders on-chain governance over all vault parameters, baskets, fees, and treasury.
+- The **Yield Seeder** automates buyback + LP seeding and is designed as a licensable service for external DeFi projects.
+
+Live on Arbitrum (V11) with expansion planned for Solana, Hyperliquid, Robinhood Chain, and Shido.
+
+For the full technical specification, see [Shadow Peoples Vault](shadow-peoples-vault.md).
+
+---
+
+### 5) Infrastructure + Governance Layer
 
 The model is executed through:
 
@@ -93,6 +109,9 @@ The model is executed through:
 3. Qualifying CrabbyTV flow contributes to `$Crabby` value pathways.
 4. Network and exchange-side flow contributes to `$SDM` pathways.
 5. SDM wrappers provide additional structured exposure using secure contract controls.
+6. Shadow Peoples Vault deposits generate protocol revenue that drives SDM buyback + LP seeding via the Seeder contract.
+7. vSDM holders govern all vault parameters, basket compositions, and fee structures through on-chain proposals.
+8. Yield Seeder infrastructure is licensed to external projects, generating additional SDM-aligned revenue.
 
 ### Web2 Surface, Web3 Rail - Operating Numbers
 
@@ -120,6 +139,7 @@ To stay aligned with the current model, read in this order:
 4. **Technology and Infrastructure**
 5. **Tokenomics**
 6. **Economic Model**
-7. **Roadmap / Participation / Governance**
+7. **Shadow Peoples Vault** (DeFi basket vault, vSDM governance, Yield Seeder)
+8. **Roadmap / Participation / Governance**
 
 Legacy model chapters are retained for historical context, not as the primary operating narrative.

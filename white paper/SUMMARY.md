@@ -11,6 +11,7 @@
 * [How to Participate](how-to-participate.md)
 * [Quality Improvement Proposals (QIPs)](qips.md)
 * [Validator & Proof of Contribution Flow](validator-and-proof-of-contribution-flow.md)
+* [Shadow Peoples Vault — Multi-Chain DeFi Basket Vault Protocol](shadow-peoples-vault.md)
 * [Legacy Model Context](diamondz-shadow-ecosystem.md)
   * [Mission Statement (Legacy)](mission-statement.md)
   * [Diamondz Validator — The Ascendant Wave Sale (Historical)](diamondz-validator-ascendant-wave-sale.md)

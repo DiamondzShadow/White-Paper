@@ -166,6 +166,90 @@ Reference operating scenario:
 4. **Governance controls** manage fee bands, ratio tolerances, and rollout policy.
 5. **Compliance-first payout design** keeps fiat and crypto rails operationally separated.
 
+### SDM and DeFi: The Vault Revenue Flywheel
+
+SDM's utility extends beyond network gas and wrapper collateral. Through the **Shadow Peoples Vault**,
+SDM becomes the economic anchor of a multi-chain DeFi basket vault protocol that generates continuous
+demand and liquidity reinforcement.
+
+#### How the Vault Connects to SDM
+
+1. Users deposit USDC into the vault and receive diversified basket exposure (70%) plus lending yield (30%).
+2. The vault collects protocol revenue from withdrawal fees and a 5% fee on harvested yield.
+3. All protocol revenue flows through a **revenue router** that splits 50/50:
+   - **50% → SDM Buyback**: Purchased via the DODO SDM/USDC pool, then seeded back as LP.
+   - **50% → Treasury**: Gnosis Safe multisig for operations and development.
+4. The buyback creates **constant buy pressure** on SDM while simultaneously deepening DODO pool
+   liquidity — a self-reinforcing cycle where vault growth strengthens SDM, which strengthens governance,
+   which improves vault parameters, which attracts more deposits.
+
+#### vSDM — Vote-Escrowed SDM for Governance
+
+SDM holders wrap their tokens 1:1 into **vSDM** (vote-escrowed SDM) to gain governance power over all vault parameters. vSDM uses OpenZeppelin ERC20Votes with EIP-712 signatures, enabling gasless delegation and snapshot-based voting.
+
+vSDM governance controls:
+- **Vault parameters**: fee rates, deposit limits, whitelist, pause/unpause
+- **Basket parameters**: token weights, add/remove tokens, rebalance thresholds
+- **Revenue parameters**: buyback/treasury split ratio, buyback destination pool
+- **Yield parameters**: yield allocation percentage, lending loop tiers, harvest frequency
+
+Governance operates through the Governor contract (9% quorum, 7-day voting period) with a 48-hour
+Timelock delay before execution, giving users time to exit before any parameter change takes effect.
+
+#### SDM Lock Tiers and Vault Share Multipliers
+
+Vault depositors who lock positions receive share multipliers that increase effective yield:
+
+| Tier | Lock Duration | Share Multiplier |
+|---|---|---|
+| FLEX | No lock | 1.0x |
+| Bronze | 30 days | 1.2x |
+| Silver | 90 days | 1.5x |
+| Gold | 180 days | 2.0x |
+| Diamond | 365 days | 3.0x |
+
+This lock-tier system incentivizes long-term participation and reduces selling pressure on vault
+positions and SDM alike.
+
+#### Seeder Contract — Buyback + LP Seeding
+
+The Seeder contract (`0xc3ef5B6e...3A66`) automates the revenue flywheel:
+
+1. Collects accumulated protocol fees (withdrawal fees + yield performance fee).
+2. Splits per governance-set ratio (default 50/50).
+3. Executes SDM buyback on the DODO SDM/USDC pool.
+4. Seeds purchased SDM back into the pool as LP, deepening liquidity.
+5. Routes treasury share to the Gnosis Safe multisig.
+
+The Seeder is a core protocol primitive — and its architecture is designed for external licensing.
+See the Yield Seeder as a Service section in the vault whitepaper for details.
+
+#### Yield Seeder as a Service (YSaaS) — Revenue Expansion
+
+The Yield Seeder architecture is **offered as a white-label service** to other DeFi projects and DAOs:
+
+- **Starter tier**: Seeder contract + revenue router + basic keeper
+- **Growth tier**: Multi-basket vault + lending adapter + position NFT
+- **Enterprise tier**: Multi-chain deployment + custom governance + white-label UI
+
+This positions SDM not just as a governance and gas token, but as the anchor of a **DeFi infrastructure
+licensing business** where external projects pay deployment fees and ongoing protocol fee shares,
+all of which flow back through the SDM buyback flywheel.
+
+### Revenue-Capture Mapping (Current Policy — Updated with Vault)
+
+| Source Class | Primary Rail | Notes |
+|---|---|---|
+| CrabbyTV qualifying transaction classes | `$Crabby` | Includes selected feature classes (films, Spades, AMAs, paid events). |
+| Network gas and protocol infrastructure flow | `$SDM` | Tied to network usage and protocol execution. |
+| Exchange/business flow | `$SDM` | Aligned to zdiamondex.store business rail. |
+| Wrapper mint/redeem and related liquidity pathways | SDM-aligned treasury paths | Governed fee routing and risk controls. |
+| 40Acres (RWA) wrapper pathways | Wrapper/RWA treasury paths | Gold/BTC/stock-linked basket product fees. |
+| **Vault withdrawal fees** | **SDM buyback (50%) + Treasury (50%)** | **Revenue router splits all vault protocol fees.** |
+| **Vault yield performance fee (5%)** | **SDM buyback (50%) + Treasury (50%)** | **Harvested lending yield fee flows through revenue router.** |
+| **Yield Seeder licensing (YSaaS)** | **SDM-aligned treasury + buyback** | **External project deployment and protocol fee shares.** |
+| TheTube / OnlyShellz project monetization | Governance policy layer | Expansion capture policies activated by governance. |
+
 ### Legacy Expansion Context
 
 Previous references to TuBE, GaM3, and DuSTD remain part of legacy architecture context.

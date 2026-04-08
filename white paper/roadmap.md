@@ -92,6 +92,26 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 * ⟳ Grow community to 5,000 members
 * ⟳ Release oracle validation dashboard for transparency
 
+## Phase 2B: Shadow Peoples Vault — Arbitrum Launch (Q2 2026)
+
+### DeFi Basket Vault Protocol
+
+* **Vault V11 Deployment on Arbitrum**
+  * Deploy Vault V11, Swapper V3, Aave Adapter, Position NFT, and Seeder contracts
+  * Launch 4-token basket (wETH 30%, wBTC 15%, PEPE 15%, ARB 10%) with 30% USDC yield via Aave V3
+  * Activate keeper bot for automated swaps (30s polling), rebalancing (4h / 5% drift), and yield harvesting (8h)
+  * Mint tradeable ERC-721 position NFTs with on-chain SVG art for every deposit
+
+* **vSDM Governance Stack**
+  * Deploy vSDM (vote-escrowed SDM), Governor, and Timelock contracts
+  * Enable on-chain DAO governance with 9% quorum, 7-day voting, 48-hour Timelock delay
+  * Begin governance transition from Gnosis Safe multisig to hybrid DAO model
+
+* **SDM Revenue Flywheel**
+  * Activate Seeder contract for 50/50 SDM buyback + treasury split on all protocol revenue
+  * DODO SDM/USDC pool LP seeding from buyback flow
+  * Lock tier system live (FLEX through Diamond, up to 3.0x share multiplier)
+
 ## Phase 3: Oracle Scaling & Phase 2 Revenue Integration (Q1-Q2 2026)
 
 ### Oracle Platform Expansion
@@ -155,6 +175,35 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 * Launch developer grants for building on oracle infrastructure
 * Develop cross-promotion with DeFi and DAO platforms
 
+## Phase 3B: Shadow Peoples Vault — Solana Expansion (Q3 2026)
+
+### Multi-Chain Vault Rollout: Solana
+
+* **Solana Vault Deployment**
+  * Deploy native Anchor program on Solana (no bridging, no wrapped assets)
+  * Integrate Jupiter Swap V2 as swap aggregator across all Solana AMMs
+  * Integrate Kamino Finance / MarginFi as lending yield protocol
+  * Launch 4 Solana baskets: Blue Chip (S1), DeFi (S2), Meme & Community (S3), Infrastructure (S4)
+
+* **Solana Infrastructure**
+  * Deploy TypeScript keeper bot using `@jup-ag/api` and `@solana/web3.js`
+  * Squads Protocol multisig for admin operations (2-of-3 threshold)
+  * SPL Token vault shares + Metaplex NFT position receipts (tradeable on Tensor, Magic Eden)
+
+## Phase 3C: Shadow Peoples Vault — Hyperliquid Expansion (Q4 2026)
+
+### Multi-Chain Vault Rollout: Hyperliquid
+
+* **Hyperliquid Vault Deployment**
+  * Fork V11 Solidity contracts for HyperEVM with minimal modifications
+  * Integrate HyperLend as yield protocol ($337.8M TVL)
+  * Launch 2 Hyperliquid baskets: Ecosystem (H1) and Cross-Chain Majors (H2)
+  * Safe multisig on HyperEVM for admin, transitioning to Governor fork
+
+* **Cross-Chain UI**
+  * Unified Lovable/Thirdweb frontend covering Arbitrum, Solana, and Hyperliquid vaults
+  * Single dashboard for deposits, positions, yield tracking, and governance across all chains
+
 ## Phase 4: Universal Web2 Oracle Layer (Q3-Q4 2026)
 
 ### Oracle Network at Scale
@@ -205,6 +254,34 @@ The Diamondz Shadow roadmap outlines our journey to revolutionize content creati
 * Implement optimistic oracle patterns for instant finality
 * 99.99% uptime SLA across all oracle services
 * Advanced fraud detection with <0.01% false negative rate
+
+## Phase 4B: Vault Additional Chains & Yield Seeder Licensing (2027)
+
+### Multi-Chain Vault Expansion
+
+* **Additional Chain Deployments**
+  * Robinhood Chain vault (EVM fork of V11)
+  * Shido vault (EVM fork of V11)
+  * Community-voted chain expansions via vSDM governance
+
+* **Advanced Vault Strategies**
+  * Auto-rebalancing algorithms with tighter drift thresholds
+  * AI-driven basket optimization via WAVS data intelligence layer
+  * Cross-chain yield optimization and strategy routing
+
+### Yield Seeder as a Service (YSaaS) — Public Launch
+
+* **External Licensing Program**
+  * Publish Yield Seeder documentation and integration guides
+  * Launch Starter, Growth, and Enterprise service tiers
+  * Onboard first external DAOs and DeFi protocols as YSaaS clients
+  * Revenue from deployment fees + ongoing protocol fee share → SDM buyback flywheel
+
+* **YSaaS Infrastructure**
+  * Multi-chain Seeder deployment tooling
+  * White-label governance modules (forked vSDM pattern)
+  * Managed keeper infrastructure for external clients
+  * Custom basket and strategy consulting services
 
 ## Phase 5: Web2-to-Web3 Bridge Standard (2027 and Beyond)
 
