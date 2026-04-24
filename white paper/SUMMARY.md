@@ -1,14 +1,17 @@
 # Table of contents
 
-## Whitepaper v3.0
+## Whitepaper v4.0
 
 * [Abstract & Overview](README.md)
 * [SDM Token & Multi-Token Economy](sdm-token.md)
-* [Shadow Peoples Vault V11](shadow-peoples-vault.md)
+* [ShadowVault V15](shadow-peoples-vault.md)
 * [DiamondzChain Bridge & zwTokens](diamondz-bridge.md)
 * [DAO Governance](dao-governance.md)
 * [Diamond Basket Vault & Yield Infrastructure](defi-infrastructure.md)
-* [Ecosystem Platforms & Revenue Flywheel](ecosystem.md)
+* [Financial NFTs & NFT-Backed Lending](financial-nfts.md)
+* [ShadowzDex — The Intent DEX](shadowzdex.md)
+* [Ecosystem Platforms & Unified Fee Flywheel](ecosystem.md)
+* [Protocol Integrations — 0x, Uniswap, Chainlink](protocol-integrations.md)
 * [Multi-Chain Expansion](multi-chain-expansion.md)
 * [Security & Infrastructure](security-and-infrastructure.md)
 
@@ -18,7 +21,7 @@
   * [Mission Statement (Legacy)](mission-statement.md)
   * [Ascendant Wave Sale (Historical)](diamondz-validator-ascendant-wave-sale.md)
 
-## Archived (Superseded by v3.0)
+## Archived (Superseded)
 
 * [Introduction (v2)](introduction.md)
 * [Current Model Architecture (v2)](current-model-architecture.md)
