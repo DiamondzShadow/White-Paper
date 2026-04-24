@@ -1,132 +1,64 @@
-# Diamondz Shadow Movies Token
+# Shadow Diamondz — Ecosystem Whitepaper
 
-A sophisticated ERC677 token implementation with burn/mint capabilities, designed for cross-chain transfers via Chainlink CCIP.
+**Whitepaper v4.0 · April 2026 · [Shadow Diamondz Game + Movie Development, Inc.](https://diamondzshadow.info)**
 
-## Features
+This repository is the source of truth for the Shadow Diamondz ecosystem whitepaper. The rendered book is published via GitBook; markdown sources live in [`white paper/`](./white%20paper) and are synced on push to `main`.
 
-- **ERC677 Standard**: Extended ERC20 with `transferAndCall` functionality
-- **Role-Based Access Control**: Separate minter and burner roles
-- **Supply Management**: 4 billion initial supply, 5 billion maximum supply cap
-- **Chainlink CCIP Compatible**: Built for seamless cross-chain token transfers
-- **Gamification Events**: Enhanced tracking and milestone events
-- **OpenZeppelin Security**: Built on industry-standard, audited contracts
+---
 
-## Token Specifications
+## Read the whitepaper
 
-- **Initial Supply**: 4,000,000,000 tokens (4 billion)
-- **Maximum Supply**: 5,000,000,000 tokens (5 billion)
-- **Decimals**: 18
-- **Standard**: ERC677 (ERC20 + transferAndCall)
+Start here: **[`white paper/README.md`](./white%20paper/README.md)** — the Abstract, section index, and version metadata.
 
-## Project Structure
+### v4.0 sections (current)
 
-```
-.
-├── src/
-│   ├── interfaces/
-│   │   ├── IERC677.sol           # ERC677 interface
-│   │   └── IERC677Receiver.sol   # Receiver interface
-│   ├── CrabbyTVMVP.sol           # CrabbyTV creator progression MVP
-│   └── tokens/
-│       ├── BurnMintERC677.sol    # Main token contract
-│       ├── wSDMSecure.sol        # Secure BTC-backed wrapper
-│       ├── gSDMSecure.sol        # Secure gold-backed wrapper
-│       └── sSDMSecure.sol        # Secure stablecoin-backed wrapper
-├── scripts/
-│   ├── youtube-milestone.ts      # Existing YouTube milestone script
-│   └── crabbytv-mvp.ts           # CrabbyTV MVP integration helpers
-├── foundry.toml                   # Foundry configuration
-├── remappings.txt                 # Import remappings
-└── README.md
-```
+| # | Section |
+|---|---------|
+| 2 | [SDM Token & Multi-Token Economy](./white%20paper/sdm-token.md) |
+| 3 | [ShadowVault V15](./white%20paper/shadow-peoples-vault.md) |
+| 4 | [DiamondzChain Bridge & zwTokens](./white%20paper/diamondz-bridge.md) |
+| 4.1–4.3 | [Diamond Basket Vault & Yield Infrastructure](./white%20paper/defi-infrastructure.md) |
+| 5 | [DAO Governance](./white%20paper/dao-governance.md) |
+| 6 | [Financial NFTs & NFT-Backed Lending](./white%20paper/financial-nfts.md) |
+| 7 | [ShadowzDex — The Intent DEX](./white%20paper/shadowzdex.md) |
+| 8–10 | [Ecosystem Platforms & Unified Fee Flywheel](./white%20paper/ecosystem.md) |
+| 11 | [Protocol Integrations — 0x, Uniswap, Chainlink](./white%20paper/protocol-integrations.md) |
+| 12 | [Multi-Chain Expansion](./white%20paper/multi-chain-expansion.md) |
+| 13–14 | [Security & Infrastructure](./white%20paper/security-and-infrastructure.md) |
 
-## CrabbyTV Creator Progression MVP
+Legacy context (pre-v3) is retained under [`white paper/archive/`](./white%20paper/archive).
 
-`CrabbyTVMVP.sol` provides an MVP flow for creator milestone validation and progression:
+---
 
-- **Creator registration** (`registerCreator`, `registerCreatorFor`)
-- **Oracle milestone submission** (`recordMilestone`)
-- **Manual/auto verification** (`verifyMilestone`, confidence-based auto-verify)
-- **Progression model**:
-  - Milestone Units
-  - Creator Credits (`10 Milestone Units = 1 Creator Credit`)
-  - Reputation Badges (`100 Creator Credits = 1 Reputation Badge`)
-  - Wavz Score (derived from verified progression + confidence)
-- **Optional token rewards** via a mintable reward token (compatible with `BurnMintERC677` when this MVP contract has minter role)
+## What's in v4.0
 
-### CrabbyTV Script Helpers
+- **ShadowVault V15** live on Arbitrum (Morpho / GMX / Aave / Fluid), Polygon (Aave / Gains / Aave / C4C), and HyperEVM (HyperSkin / ShadowPass). 9 vaults, 12/3/3 fee schedule, live-value financial NFTs.
+- **ShadowzDex** — intent-based DEX at [dex.diamondz.one](https://dex.diamondz.one) with an attestor-signed 11-field intent, venue adapters for 0x / Uniswap V2–V3 / Sushi V2 / V15, and cross-chain settlement over Chainlink CCIP (Arb ↔ Polygon ↔ Base).
+- **EcosystemMarketplace + LendingPool v1.4** — NFT marketplace with royalty router, NFT-backed lending with yield-to-loan auto-repay, cross-chain position wrappers via CCIP and LayerZero.
+- **Unified fee flywheel** — every protocol fee routes to a single revenue router: 50% SDM buyback via DODO + Uniswap V3 LP seeding, 50% Arbitrum treasury Safe.
+- **Protocol integrations deep-dive** — how we use 0x Swap API v2, Uniswap V2/V3 pools + LPFeeGateway, and Chainlink CCIP + Data Feeds.
 
-Use `scripts/crabbytv-mvp.ts` to:
+---
 
-- register creators on-chain
-- record milestones
-- verify milestones
-- query creator progression
+## Contributing
 
-## Setup
+Markdown edits to `white paper/*.md` are reviewed via pull request. GitBook renders from `main` on merge. Section numbering is stable — when adding a section, append rather than renumber unless a majority restructure is warranted.
 
-### Prerequisites
+## Resources
 
-- [Foundry](https://book.getfoundry.sh/getting-started/installation)
+- **Website**: [diamondzshadow.info](https://diamondzshadow.info)
+- **DEX**: [dex.diamondz.one](https://dex.diamondz.one)
+- **CrabbyTV**: [crabbytv.com](https://crabbytv.com)
+- **DZX Exchange**: [zdiamondex.store](https://zdiamondex.store)
+- **GitHub**: [github.com/DiamondzShadow](https://github.com/DiamondzShadow)
+- **Discord**: [discord.gg/diamondzshadow](https://discord.gg/diamondzshadow)
+- **Twitter**: [@DiamondShadoM](https://twitter.com/DiamondShadoM)
+- **Email**: [development@diamondzshadow.com](mailto:development@diamondzshadow.com)
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-
-```bash
-forge install OpenZeppelin/openzeppelin-contracts@v4.9.0
-```
-
-### Compile
-
-```bash
-forge build
-```
-
-### Test
-
-```bash
-forge test
-```
-
-## Contract Overview
-
-### BurnMintERC677
-
-The main token contract implementing:
-
-- **Minting**: Only authorized minters can create new tokens (up to max supply)
-- **Burning**: Only authorized burners can destroy tokens
-- **Cross-Chain Minting**: Special function for CCIP cross-chain mints with metadata
-- **Gamification**: Tracks total minted per address and emits milestone events
-
-### Key Functions
-
-#### Minting
-- `mint(address account, uint256 amount)`: Mint tokens to an address
-- `mintWithCCIPData(...)`: Mint with cross-chain metadata
-
-#### Burning
-- `burn(uint256 amount)`: Burn tokens from caller
-- `burnFrom(address account, uint256 amount)`: Burn tokens from another address
-
-#### Access Control
-- `grantMintRole(address minter)`: Grant minting permission
-- `revokeMintRole(address minter)`: Revoke minting permission
-- `grantBurnRole(address burner)`: Grant burning permission
-- `revokeBurnRole(address burner)`: Revoke burning permission
-
-#### ERC677
-- `transferAndCall(address to, uint256 amount, bytes data)`: Transfer tokens and call recipient
-
-## Security
-
-- Built on OpenZeppelin v4.9.0 contracts
-- Role-based access control with owner management
-- Maximum supply cap prevents over-minting
-- Custom errors for gas-efficient reverts
+---
 
 ## License
 
-MIT
+MIT — see [LICENSE](./LICENSE).
+
+*© 2025–2026 Shadow Diamondz Game + Movie Development, Inc.*
