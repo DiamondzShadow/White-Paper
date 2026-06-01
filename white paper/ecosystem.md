@@ -1,6 +1,8 @@
 # 8. CrabbyTV Platform
 
-CrabbyTV is the ecosystem's live-streaming platform with virtual gift/tipping, co-host multi-video grid, and FAST channel distribution (Roku, Fire TV, Apple TV). The AI co-host (Beyond Presence avatar + Claude + 11Labs) can join livestreams with a $0.99/min USDC pre-deposit model routed to the Arbitrum Safe.
+CrabbyTV is the ecosystem's live-streaming platform with virtual gift/tipping, co-host multi-video grid, and FAST channel distribution (Roku, Fire TV, Apple TV). The AI co-host (Beyond Presence avatar + Claude + 11Labs) can join livestreams with a per-minute USDC pre-deposit model routed to the Arbitrum Safe.
+
+> The Crabby stack has since grown into a full **creator and entertainment layer** — Crabby Social v2, Crabs in a Barrel, the launchpad, and streaming NFTs. The complete treatment, including the canonical CRABBY v2 token and current addresses, is in **§15 (Crabby Creator Ecosystem)**, **§16 (Launchpad)**, and **§17 (Streaming NFTs)**. This section retains the original CrabbyTV MVP context.
 
 ---
 
@@ -19,7 +21,8 @@ CrabbyTV is the ecosystem's live-streaming platform with virtual gift/tipping, c
 
 | Contract | Address | Purpose |
 |----------|---------|---------|
-| CrabbyToken | `0x33e3DdD8d9952DE9D8D005529F844c8d9c14f3Af` | Platform utility token |
+| **CRABBY (v2, canonical)** | `0x05387b385be4D5038C755e7efA3D742f1b5B2bEB` | Platform utility token (3B supply, UUPS proxy) |
+| CrabbyToken (v1, deprecated) | `0x33e3DdD8d9952DE9D8D005529F844c8d9c14f3Af` | Superseded — do not wire |
 | CrabbyPoolV1 | `0x12470c8ce5e5CbBaF4367b65ee42Ee2E8Db86812` | WETH/PGOLD/wSOL 3-asset pool |
 | CrabbyLPFarm | `0xf5ca0303211f18E5a896e6D1478865b5F94cFa27` | Stake CRABLP, earn CRABBY |
 | CrabbyMultiZap | `0xCf5c4A9C90c198E3bAf04c4fe682608D40409Bb9` | Single-asset entry via 0x quote |
@@ -49,7 +52,15 @@ Every protocol in the ecosystem — ShadowVault V15, ShadowzDex, the EcosystemMa
 | **DiamondzChain Bridge — small tx** | $0.42 / $0.30 flat | `BridgeLock.lock` on Arb | BridgeFeeDAO → 50% treasury / 26% validators / 14% zwSDM pool / 10% SDM pool |
 | **DiamondzChain Bridge — large tx** | 0.30% | `BridgeLock.lock` ≥ $100 | BridgeFeeDAO (same split) |
 | **DiamondzChain Bridge — burn-back** | 0.60% | zwToken `bridgeBurn` | BridgeFeeDAO (same split) |
-| **AI co-host (CrabbyTV)** | $0.99/min | USDC pre-deposit | Arb Safe (direct) |
+| **AI co-host (CrabbyTV)** | per-minute | USDC pre-deposit | Arb Safe (direct) |
+| **Launchpad — platform fee** | 2–3% base, 10% cap | `LaunchpadRegistry` per sale, floats with marketing | Arb Safe (direct) |
+| **Launchpad — creation fee** | $450 USDC (waived ≥100k SDM) | `launchpad-registrar` gate | Arb Safe (direct) |
+| **Presale — royalty** | 0.5% (waived for allowlist) | `TemplatePresale` secondary | Arb Safe (direct) |
+| **Crabby Social — post-trade split** | 10 bps | `CrabbyPostMarketV2` | Treasury 2 bps / creator + repost + community |
+| **Crabby Social — community LP fees** | 30% of V3 swap fees | `CommunityLPVault.collectFees` | Arb Safe (30%) / creator (70%) |
+| **ShadowzPerps — HL builder fee** | 0.3 bps/trade | HL builder code | swept → Arb Safe |
+| **ShadowzPerps — AI chat** | $0.10/request | x402 → Base Safe | bridged → Arb Safe |
+| **DEX-agent — limit fill / DCA** | 5 bps / $0.10 | prepaid credits | Arb Safe (direct) |
 
 ---
 
@@ -91,7 +102,11 @@ Fees collected on Polygon and HyperEVM (V15 Pool E HyperSkin, Pool F ShadowPass,
 | **ShadowVault V15** | LIVE (Arb/Poly/Hyper) | 9-vault USDC deposit-and-earn with live-value financial NFTs. See §3. |
 | **ShadowzDex** | LIVE (Arb) | Intent DEX at [dex.diamondz.one](https://dex.diamondz.one), CCIP cross-chain mesh. See §7. |
 | **EcosystemMarketplace + Lending** | LIVE (Arb/Poly) | NFT marketplace, NFT-backed lending, cross-chain position wrappers. See §6. |
-| **CrabbyTV** | LIVE | Live streaming, AI co-host (0.99/min), CRABBY token, FAST channels. |
+| **Crabby Creator Ecosystem** | LIVE (Arb) | CRABBY v2, Crabby Social v2, Crabs in a Barrel, CrabbyTV. See §15. |
+| **ShadowzDex Launchpad** | LIVE (Arb) | Position-NFT presales, yield sinks, durable registration. See §16. |
+| **Streaming NFTs** | LIVE (Arb) | Content-bearing Position NFTs, holder-gated watch Worker. See §17. |
+| **ShadowzPerps** | LIVE (HL) | Hyperliquid perps at [perps.diamondz.one](https://perps.diamondz.one), AI co-pilot + keeper. See §18. |
+| **CrabbyTV** | LIVE | Live streaming, AI co-host, CRABBY token, FAST channels. See §8, §15. |
 | **RetroSphere** | Planned | Retro gaming, RETRO token, Game Pool ETF baskets |
 | **TheTube** | Planned | Film crowdfunding with CrowdfundEscrowV2 |
 | **Beast DEX** | Referenced | 68-chain aggregator on Arbitrum |

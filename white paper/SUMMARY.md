@@ -1,6 +1,6 @@
 # Table of contents
 
-## Whitepaper v4.0
+## Whitepaper v4.1
 
 * [Abstract & Overview](README.md)
 * [SDM Token & Multi-Token Economy](sdm-token.md)
@@ -14,6 +14,13 @@
 * [Protocol Integrations — 0x, Uniswap, Chainlink](protocol-integrations.md)
 * [Multi-Chain Expansion](multi-chain-expansion.md)
 * [Security & Infrastructure](security-and-infrastructure.md)
+
+## Creator & Entertainment Layer
+
+* [Crabby Creator Ecosystem](crabby-ecosystem.md)
+* [ShadowzDex Launchpad & Position-NFT Presales](launchpad.md)
+* [Streaming NFTs — Content-Bearing Position NFTs](streaming-nfts.md)
+* [ShadowzPerps — AI-Co-Piloted Perpetuals](shadowz-perps.md)
 
 ## Legacy & Historical Context
 
