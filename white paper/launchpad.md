@@ -22,18 +22,36 @@ A monolithic factory exceeded the 24 KB contract limit (it was ~33 KB), so the d
 
 ## 16.2 Position-NFT Presales
 
-Bespoke presales (`TemplatePresale` / `TemplatePresaleV2`) mint one ERC-721 **Position NFT** per commit. Each NFT is a financial primitive on day one: its USD value is read live by a `PresaleValuer`, idle USDC is parked in a yield sink (§16.3), and the NFT is both marketplace-listable and borrowable. Two are live:
+Bespoke presales (`TemplatePresale` / `TemplatePresaleV2`) mint one ERC-721 **Position NFT** per commit. Each NFT is a financial primitive on day one: its USD value is read live by a `PresaleValuer` (§16.3), idle USDC is parked in a yield sink (§16.4), and the NFT is both marketplace-listable and borrowable (§16.5). Two are live:
 
 | Sale | Address | Token | Renderer v2 | PresaleValuer | Raise band | Offered |
 |------|---------|-------|-------------|---------------|------------|---------|
 | **CrabbyTV Presale (v4)** | `0x4b2aa1B3c109c3f26BFd57B046dFCdE5e2d97709` | CRAB | `0xEDCfC6FDAF2D673d60E17256EF2920F929f65D49` | `0x5786354626E4D7853a2ef0671c366aaFD1e13439` | $50k–$500k | 100M CRAB |
 | **Shadow Reborn (SDM)** | `0xcAf1A1fBf073E2A109BD794CCa35D8C85e01bc69` | SDM | `0x8Ab05fb2eBABF1Db7e9695752B26843d890D0E50` | `0xD44F3597be846DBdB6707c88C3Ed2f693B1388FF` | $25k–$250k | 50M SDM |
 
-Both grant a **10% weighted-USD holder bonus** (for V15 holders), carry a 0.5% royalty (waived for allowlisted holders), and settle to the Arbitrum treasury Safe `0x18b2b2ce7d05Bfe0883Ff874ba0C536A89D07363`. The Position NFT's on-chain renderer encodes tier (Bronze/Silver/Gold), committed USD, and founder status, and — for Shadow Reborn — injects a deep-link to the streaming watch surface (§17).
+Both grant a **10% weighted-USD holder bonus** (for V15 holders), carry a 0.5% royalty (waived for allowlisted holders), and settle to the Arbitrum treasury Safe `0x18b2b2ce7d05Bfe0883Ff874ba0C536A89D07363`. The Position NFT's on-chain renderer encodes tier (Bronze/Silver/Gold), committed USD, and founder status, and — for Shadow Reborn — injects a deep-link to the streaming watch surface (§17). The **current Shadow Reborn (SDM) sale** is `TemplatePresale` `0xcAf1A1fBf073E2A109BD794CCa35D8C85e01bc69` (deployed 2026-05-29), serving SDM token `0x602b869eEf1C9F0487F31776bad8Af3C4A173394`, with renderer v2 promoted on 2026-05-30; the public window opens 2026-06-12 and closes 2026-07-28. It supersedes the earlier round-based fungible-SDM vesting sale.
 
 ---
 
-## 16.3 IYieldSink — Presale Deposits Earn While Pending
+## 16.3 Presale Oracle — PresaleValuer
+
+A presale Position NFT is only usable as collateral (§16.5) or marketplace-priced if something can price it on-chain, conservatively, every block. That oracle is **`PresaleValuer`** — one immutable contract per sale, bound to its presale at deploy with no owner, no upgrade, and no setter (Shadow Reborn: `0xD44F3597be846DBdB6707c88C3Ed2f693B1388FF`; CrabbyTV v4: `0x5786354626E4D7853a2ef0671c366aaFD1e13439`).
+
+**What it reads.** It calls the presale's `positions(tokenId)`, which returns the full position struct: `usdValue`, `weightedUsd`, `usdcAmount`, `ethAmount`, `tier`, `founder`, and `redeemed`.
+
+**What it returns — and what it deliberately ignores.** The valuation is the position's **face committed USD (`usdValue`) only** — the +10% holder weighting (`weightedUsd`) is *not* counted. This is the conservative, refund-aligned value:
+
+- **Pre-finalize**, a cancelled sale refunds the committed amount — so the committed USD is exactly what the holder can recover.
+- **Post-finalize**, the position redeems tokens worth roughly the committed USD at the sale's implied price.
+- The holder bonus only ever materializes as *extra tokens*, never as an extra refund, so counting it would overstate recoverable value and over-collateralize a loan.
+
+**Interface shape.** `PresaleValuer` exposes `estimatePositionValue(posId) → (principalUsdc, yieldUsdc, totalUsdc)`, with the USD value (6-dec USDC units) in the third slot — the exact `IVaultValue` shape the ShadowVault V15 `NFTValuer` and `LendingPool` already consume (§6.3). It is wired into `NFTValuer` via **mirror mode** (`setMirrorMode`), so a presale NFT prices and lends through the *same* valuer path as a native vault position. A redeemed or refunded position (NFT burned) returns **0**, as does the `tokenId = 0` interface probe `NFTValuer` makes at config time.
+
+**Risk controls layered on top.** The borrow haircut is *not* inside the valuer — it is applied above it: `DiggerRegistry.maxLtvBps` caps borrowing at 27% of the valuer's USD figure, with an optional further clamp on the `NFTValuer` side. And because a presale position cannot be "unwound" by a vault call, default is handled by **marketplace auction**, not an automated vault redemption. The result is an oracle that is intentionally pessimistic at every step: face value (not bonus), 27% LTV (not face), auction liquidation (not forced unwind).
+
+---
+
+## 16.4 IYieldSink — Presale Deposits Earn While Pending
 
 Idle presale USDC is not dead capital. `IYieldSink` is a **trust-minimized, vault-bound** sink: a sink is bound to exactly one presale at deploy and can *only* return funds to that vault — no owner, no upgrade, no path to move funds elsewhere.
 
@@ -51,7 +69,7 @@ Aave is primary because aUSDC grows monotonically and `totalAssets()` always cov
 
 ---
 
-## 16.4 Borrow Against a Presale Position
+## 16.5 Borrow Against a Presale Position
 
 Both live presales are registered `IN_HOUSE` in `DiggerRegistry`, making their Position NFTs lending collateral. The `/borrow` page scans the `BORROWABLE_PRESALES` set (CrabbyTV Presale + Shadow Reborn) and surfaces a holder's positions.
 
@@ -66,7 +84,7 @@ Flow: connect → view presale Position NFTs → borrow up to `usdValue × 27%` 
 
 ---
 
-## 16.5 Durable Sale Registration — Temporal + Worker
+## 16.6 Durable Sale Registration — Temporal + Worker
 
 A sale that is *paid but not listed* is the launchpad's worst failure mode. Registration is therefore made durable by two cooperating pieces:
 

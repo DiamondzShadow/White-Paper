@@ -65,9 +65,11 @@ HyperCore hidden costs to budget: 1 USDC HyperCore activation, 1 USDC per `spotS
 
 ---
 
-## 12.5 DiamondzChain (L3, ID 7791) — LIVE
+## 12.5 DiamondzChain (L3, ID 7791) — LIVE & Convergence Target
 
-The Arbitrum-Orbit AnyTrust L3 that hosts the zwToken bridge mirror:
+DiamondzChain ("zChain") is the Arbitrum-Orbit AnyTrust L3 that is the **long-term home of the entire ecosystem**. Today it is live as the zwToken bridge mirror; the strategic direction is that every ecosystem project deploys natively on zChain, with the bridge as the bootstrap that seeds liquidity and identity before native contracts go live (see §12.9).
+
+The contracts live on DiamondzChain today:
 
 | Contract | Status |
 |----------|--------|
@@ -118,3 +120,25 @@ MVP decisions locked: internal audit (not external), deployer-admin for beta, Ph
 ## 12.8 Future Chains
 
 The V15 multichain queue has **Base → Sonic → BNB → Berachain** in order. Base is a same-day port because the Arb V15 code compiles unchanged; the other three are budgeted against ecosystem governance priorities. DZX Exchange on DiamondzChain (hybrid DEX with AMM pools + bonding curves) and Robinhood Chain (BigUp stock vault) are separate tracks driven by product, not by V15 replication.
+
+---
+
+## 12.9 DiamondzChain Convergence — Every Project On zChain
+
+Arbitrum is where the ecosystem *originated*; **DiamondzChain (ID 7791) is where it is converging**. The end-state architecture is a single L3 that hosts every product — DeFi base and creator layer alike — with the cross-chain mesh (§9.4) reduced to an on-ramp rather than the place value lives. Consolidating onto one chain removes the liquidity fragmentation, per-chain gas friction, and bridge-risk surface that a multi-chain footprint imposes, and it lets the SDM buyback flywheel (§9) and zwToken economy (§4) run end-to-end inside one settlement domain.
+
+The bridge mirror is the bootstrap: zwUSDC / zwSDM / zwBTC / zwETH / zwARB / zwPGOLD and the bridged DBV share (`zDi0`) already give zChain the asset base and identity needed for native deployments to launch against real liquidity. Native rollout then proceeds project-by-project:
+
+| Ecosystem project | On zChain today | Target |
+|-------------------|-----------------|--------|
+| zwToken bridge + validator set | ✅ LIVE | native |
+| SDM / zwSDM economy | ✅ zwSDM mirror | native SDM market |
+| ShadowVault V15 vaults | bridge-mirrored NFTs | native vaults |
+| EcosystemMarketplace + LendingPool | — | native (NFTs already mirror in) |
+| ShadowzDex (intent DEX) | — | native + DZX hybrid (AMM + bonding curves) |
+| ShadowzDex Launchpad + presales | — | native issuance venue |
+| Streaming NFTs | — | native renderer + watch gating |
+| Crabby creator ecosystem (Social, CrabbyTV, barrels) | — | native CRABBY + social markets |
+| ShadowzPerps | HL-routed | native settlement + zChain fee sweep |
+
+This is a roadmap, stated as direction, not a claim of present deployment: each row above migrates as its native contracts are audited and funded, governed through the DAO (§5). Until a project is native, it operates on its origin chain and bridges value to zChain — so the convergence is incremental and never strands users. DZX Exchange (§12.8) is the first net-new product designed zChain-native from the start.
