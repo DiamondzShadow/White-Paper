@@ -78,7 +78,7 @@ Our platform enables tokenization of all forms of media and digital content:
 9. **Royalty Tokenization**: Convert music royalties into tradeable tokens
 10. **Fan Investment**: Enable fans to invest in artists' future earnings through token ownership
 11. **Gaming Ecosystem Tokenization**:
-12. **Game Performance Tracking**: Integration with Call of Duty, GTA, and other major titles
+12. **Game Performance Tracking**: Integration with major game titles
 13. **Player Statistics**: Tokenize player achievements, rankings, and performance metrics
 14. **In-Game Asset Ownership**: True ownership of skins, weapons, and other digital assets
 15. **Tournament Integration**: Tokenize esports tournament outcomes and player performances
@@ -195,14 +195,13 @@ Our platform integrates with major content, music, and gaming platforms:
 13. **Gaming Platform Integration**:
 14. **Steam Web API**: Track gaming achievements and playtime
 15. **Call of Duty API**: Monitor player statistics and match performance
-16. **Rockstar Games API**: Track GTA and other game metrics
-17. **Discord API**: Integrate community management and rewards
-18. **Custom Game APIs**: Direct integration with ecosystem games
-19. **Revenue Tracking and Distribution**:
-20. **Real-time Data Processing**: Automated collection and processing of platform metrics
-21. **Smart Contract Automation**: Automatic distribution based on contribution algorithms
-22. **Cross-Platform Analytics**: Unified dashboard for all platform performance
-23. **Transparent Reporting**: All revenue flows recorded on-chain for complete transparency
+16. **Discord API**: Integrate community management and rewards
+17. **Custom Game APIs**: Direct integration with ecosystem games
+18. **Revenue Tracking and Distribution**:
+19. **Real-time Data Processing**: Automated collection and processing of platform metrics
+20. **Smart Contract Automation**: Automatic distribution based on contribution algorithms
+21. **Cross-Platform Analytics**: Unified dashboard for all platform performance
+22. **Transparent Reporting**: All revenue flows recorded on-chain for complete transparency
 
 ### Oracle Design and Validation Systems
 
